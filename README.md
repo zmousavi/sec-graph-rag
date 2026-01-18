@@ -24,7 +24,18 @@ export GOOGLE_API_KEY=your-api-key-here
 
 ### 3. Download Vector Database
 
-Download the pre-built vector database from [GitHub Releases](https://github.com/zmousavi/FinancialAgent/releases) and extract it.
+**Option A: Download from GCS (recommended)**
+```bash
+python -m financial_agent.gcs_storage download --bucket bedrock-financial-agent
+```
+
+**Option B: Auto-download when using the agent**
+```python
+from financial_agent import FinancialVectorDB
+
+# Will auto-download from GCS if local doesn't exist
+db = FinancialVectorDB("vector_db", bucket_name="bedrock-financial-agent")
+```
 
 ### 4. Use the Agent
 
@@ -121,24 +132,46 @@ GOOGLE_CLOUD_LOCATION=us-central1
 ## Run the Pipeline
 
 ```bash
-# 1. Download SEC filings
-python scripts/01_download_filings.py
+# Run full pipeline
+python -m financial_agent.pipeline
 
-# 2. Clean filing text
-python scripts/02_clean_sec_data.py
-
-# 3. Analyze document structure
-python scripts/03_analyze_documents.py
-
-# 4. Create chunks
-python scripts/04_create_chunks.py
-
-# 5. Generate embeddings (requires GCP)
-python scripts/05_create_embeddings.py
-
-# 6. Set up vector database
-python scripts/06_setup_vector_db.py
+# Or run individual stages
+python -m financial_agent.pipeline --stage download
+python -m financial_agent.pipeline --stage clean
+python -m financial_agent.pipeline --stage chunk
+python -m financial_agent.pipeline --stage embed
+python -m financial_agent.pipeline --stage vectordb
 ```
+
+## Upload Vector Database to GCS
+
+After building the vector database, upload it to Google Cloud Storage:
+
+```bash
+python -m financial_agent.gcs_storage upload --bucket bedrock-financial-agent
+```
+
+## GCS Setup (First Time)
+
+1. Install gcloud CLI: https://cloud.google.com/sdk/docs/install
+2. Authenticate:
+   ```bash
+   gcloud auth application-default login
+   ```
+3. Set your project:
+   ```bash
+   gcloud config set project YOUR_PROJECT_ID
+   ```
+4. Create a bucket:
+   ```bash
+   gsutil mb gs://your-bucket-name
+   ```
+5. Update `scripts/config.yaml` with your bucket name:
+   ```yaml
+   gcs:
+     bucket_name: "your-bucket-name"
+     vector_db_prefix: "vector_db/"
+   ```
 
 ## Project Structure
 
@@ -148,15 +181,17 @@ financial-agent/
 │   └── financial_agent/        # The pip-installable library
 │       ├── __init__.py
 │       ├── agent.py            # FinancialAgent class
-│       ├── vector_db.py        # Vector database search
-│       └── chunk_utils.py      # Text chunking utilities
+│       ├── vector_db.py        # Vector database search (supports GCS)
+│       ├── pipeline.py         # Pipeline orchestrator
+│       └── gcs_storage.py      # GCS upload/download utilities
 ├── scripts/                    # Data pipeline scripts
 │   ├── 01_download_filings.py
 │   ├── 02_clean_sec_data.py
 │   ├── 03_analyze_documents.py
 │   ├── 04_create_chunks.py
 │   ├── 05_create_embeddings.py
-│   └── 06_setup_vector_db.py
+│   ├── 06_setup_vector_db.py
+│   └── config.yaml             # Pipeline configuration
 ├── vector_db/                  # Pre-built FAISS index
 ├── pyproject.toml
 └── README.md

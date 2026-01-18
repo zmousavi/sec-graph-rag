@@ -49,6 +49,11 @@ vertex_ai:
   embedding_model: "text-embedding-005"  # Google's embedding model
   llm_model: "gemini-1.5-flash"  # Google's LLM for chat (or gemini-1.5-pro for better quality)
 
+# Google Cloud Storage
+gcs:
+  bucket_name: "bedrock-financial-agent"
+  vector_db_prefix: "vector_db/"
+
 sec_api:
   key_env_var: "SEC_API_KEY"   # read from .env
 sec_headers:

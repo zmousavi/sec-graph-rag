@@ -2,7 +2,7 @@
 vector_db.py - Vector database for financial document retrieval.
 
 This module provides the FinancialVectorDB class which:
-1. Loads a pre-built FAISS index from disk
+1. Loads a pre-built FAISS index from disk (or downloads from GCS if not found)
 2. Searches for similar document chunks using embeddings
 3. Filters results by company, section, or document type
 4. Supports hybrid search (semantic + keyword matching)
@@ -13,6 +13,7 @@ import json
 import re
 import numpy as np
 import faiss
+from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 
@@ -26,25 +27,40 @@ class FinancialVectorDB:
     Usage:
         db = FinancialVectorDB("path/to/vector_db")
         results = db.search(query_embedding, k=5, company_filter="AAPL")
+
+        # Force download from GCS (overwrites local)
+        db = FinancialVectorDB("path/to/vector_db", bucket_name="my-bucket", force_download=True)
     """
 
-    def __init__(self, db_path: str):
+    def __init__(self, db_path: str, bucket_name: str = None, blob_prefix: str = "vector_db/", force_download: bool = False):
         """
         Initialize the vector database.
 
         Args:
             db_path: Path to directory containing faiss_index.index and chunks_metadata.json
+            bucket_name: GCS bucket name (optional - if provided, can download from GCS)
+            blob_prefix: GCS blob prefix (default: "vector_db/")
+            force_download: If True, always download from GCS (overwrites local)
         """
         self.db_path = db_path
+        self.bucket_name = bucket_name
+        self.blob_prefix = blob_prefix
         self.index = None
         self.chunks = None
-        self._load_db()
+        self._load_db(force_download=force_download)
 
-    def _load_db(self):
-        """Load FAISS index and chunks metadata from disk."""
+    def _load_db(self, force_download: bool = False):
+        """Load FAISS index and chunks metadata from disk, downloading from GCS if needed."""
         index_path = os.path.join(self.db_path, "faiss_index.index")
         metadata_path = os.path.join(self.db_path, "chunks_metadata.json")
 
+        local_exists = os.path.exists(index_path) and os.path.exists(metadata_path)
+
+        # Download from GCS if needed
+        if self.bucket_name and (force_download or not local_exists):
+            self._download_from_gcs()
+
+        # Check again after potential download
         if not os.path.exists(index_path) or not os.path.exists(metadata_path):
             raise FileNotFoundError(f"Vector database not found at {self.db_path}")
 
@@ -58,6 +74,12 @@ class FinancialVectorDB:
             self.chunks = data['chunks']
 
         print(f"Loaded metadata for {len(self.chunks)} chunks")
+
+    def _download_from_gcs(self):
+        """Download vector database files from GCS."""
+        from financial_agent.gcs_storage import download_vector_db
+        print(f"Downloading vector database from gs://{self.bucket_name}/{self.blob_prefix}")
+        download_vector_db(self.bucket_name, self.db_path, self.blob_prefix)
 
     def search(self, query_embedding: np.ndarray, k: int = 5,
                company_filter: Optional[str] = None,

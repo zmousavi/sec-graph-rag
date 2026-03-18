@@ -1,0 +1,40 @@
+=================================================================
+Q: Which specific supplier did Rivian terminate in 2023 and what was the exact exit penalty?
+Mode:     graph_rag
+Tickers:  ['RIVN']
+Clusters: [560, 1059]
+Latency:  {'embed_ms': 505.6, 'search_ms': 29.7, 'traverse_ms': 2.5, 'llm_ms': 2007.4, 'total_ms': 2545.3}
+
+ANSWER:
+Rivian Automotive terminated its body stamping supply agreement with Shiloh Industries, effective October 31, 2023. The company incurred a contractual early-exit penalty of $47.3 million, which is payable to Shiloh by December 15, 2023. This information is detailed in Rivian's article from October 2023, specifically in section [1].
+
+PATHS:
+  [0.8849] RIVN article 2023 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA_10K_2022__3__Item_2_PROPERTIES
+  [0.8848] RIVN article 2023 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA_10K_2022__3__Item_2_PROPERTIES
+  [0.8076] RIVN article 2023 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA_10K_2022__3__Item_2_PROPERTIES
+  [0.7955] RIVN 10-K 2023 | Item 15. Exhibit and Financial Statement Schedules
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7931] RIVN 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7905] RIVN letter 2023-Q4 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> RIVN_10K_2023
+  [0.7823] RIVN 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7822] RIVN 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+
+=================================================================
+Q: Which specific supplier did Rivian terminate in 2023 and what was the exact exit penalty?
+Mode:     rag
+Tickers:  ['RIVN']
+Clusters: None
+Latency:  {'embed_ms': 304.1, 'search_ms': 18.6, 'traverse_ms': 0, 'llm_ms': 1086.5, 'total_ms': 1409.2}
+
+ANSWER:
+Rivian Automotive terminated its body stamping supply agreement with Shiloh Industries in 2023. The exact exit penalty incurred for this termination is $47.3 million, which is payable to Shiloh by December 15, 2023.
+
+PATHS: none
+

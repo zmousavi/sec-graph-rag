@@ -1,0 +1,1563 @@
+[
+  {
+    "timestamp": "2026-03-17T04:21:12.218047+00:00",
+    "mode": "graph_rag",
+    "question": "Which electric vehicle startup, after failing to secure additional financing, ceased all operations in early 2025 and transferred control of its assets to an independent administrator for liquidation rather than attempting to restructure as a going concern?",
+    "answer": "The electric vehicle startup that ceased all operations in early 2025 and filed for liquidation under Chapter 7 of the Bankruptcy Code is Canoo, Inc. On January 17, 2025, Canoo and its subsidiaries filed for liquidation, and a Chapter 7 trustee was appointed to manage the liquidation of the Debtors' assets and liabilities, effectively eliminating the authority of the Company's Board of Directors and executive officers (Canoo, Inc. | 8-K 2025-01-21 | Item 1.03).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {
+      "years": [
+        "2025"
+      ]
+    },
+    "clusters_used": [
+      1013,
+      311,
+      292,
+      3308,
+      453,
+      1019
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0",
+          "F_8K_2025-12-15__0__Item_2_06_Material_Impairments",
+          "F_8K_2025-12-15",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8114,
+        "label": "F 8-K 2025-12-15 | Item 2.06. Material Impairments"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2025-10-24__33__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2025-10-24__33__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2025-10-24",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7835,
+        "label": "F 10-Q 2025-10-24 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__75__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10K_2025__75__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2025",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7822,
+        "label": "F 10-K 2025 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-11-04__0__Item_1_Financial_Statements_unaudited__chunk_32",
+          "RIVN_10Q_2025-11-04__0__Item_1_Financial_Statements_unaudited",
+          "RIVN_10Q_2025-11-04",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7796,
+        "label": "RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)"
+      },
+      {
+        "node_ids": [
+          "GOEV_8K_2025-01-21__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0",
+          "GOEV_8K_2025-01-21__0__Item_1_03_Bankruptcy_or_Receivership",
+          "GOEV_8K_2025-01-21",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.776,
+        "label": "GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership"
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors__chunk_48",
+          "LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors",
+          "LCID_10Q_2025-08-05",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7757,
+        "label": "LCID 10-Q 2025-08-05 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_61",
+          "RIVN_10K_2025__8__Item_8_Financial_Statements_and_Supplementary_Data",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7742,
+        "label": "RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-05-06__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13",
+          "RIVN_10Q_2025-05-06__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10Q_2025-05-06",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7671,
+        "label": "RIVN 10-Q 2025-05-06 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_12",
+          "RIVN_10K_2025__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.765,
+        "label": "RIVN 10-K 2025 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 594.6,
+      "search_ms": 34.7,
+      "traverse_ms": 2.0,
+      "llm_ms": 5816.3,
+      "total_ms": 6447.7
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:21:20.307754+00:00",
+    "mode": "rag",
+    "question": "Which electric vehicle startup, after failing to secure additional financing, ceased all operations in early 2025 and transferred control of its assets to an independent administrator for liquidation rather than attempting to restructure as a going concern?",
+    "answer": "The electric vehicle startup that ceased all operations in early 2025 and transferred control of its assets to an independent administrator for liquidation is Canoo, Inc. This information is detailed in the SEC filing F | 8-K 2025-01-21 | Item 1.03, which states that Canoo and certain subsidiaries filed for liquidation under Chapter 7 of Title 11 of the United States Code on January 17, 2025. The Chapter 7 trustee will assume control over the assets and liabilities of the company, effectively eliminating the authority and powers of its Board of Directors and executive officers (see excerpt [4]).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {
+      "years": [
+        "2025"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.8114,
+        "label": "F 8-K 2025-12-15 | Item 2.06. Material Impairments"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__75__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7822,
+        "label": "F 10-K 2025 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-11-04__0__Item_1_Financial_Statements_unaudited__chunk_32"
+        ],
+        "edge_types": [],
+        "score": 0.7796,
+        "label": "RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)"
+      },
+      {
+        "node_ids": [
+          "GOEV_8K_2025-01-21__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.776,
+        "label": "GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership"
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors__chunk_48"
+        ],
+        "edge_types": [],
+        "score": 0.7757,
+        "label": "LCID 10-Q 2025-08-05 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_61"
+        ],
+        "edge_types": [],
+        "score": 0.7742,
+        "label": "RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__88__Item_16_Form_10_K_Summary__chunk_62"
+        ],
+        "edge_types": [],
+        "score": 0.7688,
+        "label": "F 10-K 2025 | Item 16. Form 10-K Summary."
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_70"
+        ],
+        "edge_types": [],
+        "score": 0.7675,
+        "label": "TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-05-06__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13"
+        ],
+        "edge_types": [],
+        "score": 0.7671,
+        "label": "RIVN 10-Q 2025-05-06 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 290.8,
+      "search_ms": 17.2,
+      "traverse_ms": 0,
+      "llm_ms": 7781.4,
+      "total_ms": 8089.4
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:21:23.152838+00:00",
+    "mode": "graph_rag",
+    "question": "Which electric commercial truck company, having previously developed hydrogen-based powertrain technology, entered formal insolvency proceedings in early 2025 and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers?",
+    "answer": "The electric commercial truck company that entered formal insolvency proceedings in early 2025 and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers is Nikola Corporation. They filed voluntary Chapter 11 bankruptcy petitions on February 19, 2025, and are pursuing a structured sale of their assets while operating as debtors-in-possession (source: Nikola Corporation, Form 8-K, February 19, 2025, Item 1.03).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {
+      "years": [
+        "2025"
+      ]
+    },
+    "clusters_used": [
+      3004,
+      311,
+      2889
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-05-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2",
+          "WKHS_10Q_2025-05-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10Q_2025-05-15",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8045,
+        "label": "WKHS 10-Q 2025-05-15 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-11-10__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_4",
+          "WKHS_10Q_2025-11-10__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10Q_2025-11-10",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8045,
+        "label": "WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-08-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_4",
+          "WKHS_10Q_2025-08-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10Q_2025-08-15",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8031,
+        "label": "WKHS 10-Q 2025-08-15 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0",
+          "F_8K_2025-12-15__0__Item_2_06_Material_Impairments",
+          "F_8K_2025-12-15",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8014,
+        "label": "F 8-K 2025-12-15 | Item 2.06. Material Impairments"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-11-10__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_5",
+          "WKHS_10Q_2025-11-10__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10Q_2025-11-10",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7985,
+        "label": "WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0",
+          "NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership",
+          "NKLA_8K_2025-02-19",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7952,
+        "label": "NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership."
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-05-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_3",
+          "WKHS_10Q_2025-05-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10Q_2025-05-15",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7946,
+        "label": "WKHS 10-Q 2025-05-15 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 295.4,
+      "search_ms": 43.4,
+      "traverse_ms": 3.4,
+      "llm_ms": 2502.5,
+      "total_ms": 2844.8
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:21:27.989367+00:00",
+    "mode": "rag",
+    "question": "Which electric commercial truck company, having previously developed hydrogen-based powertrain technology, entered formal insolvency proceedings in early 2025 and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers?",
+    "answer": "The excerpts provided do not contain any information regarding an electric commercial truck company that previously developed hydrogen-based powertrain technology, entered formal insolvency proceedings in early 2025, and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers. Therefore, I cannot answer this question based on the information given.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {
+      "years": [
+        "2025"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-05-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.8045,
+        "label": "WKHS 10-Q 2025-05-15 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-11-10__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_4"
+        ],
+        "edge_types": [],
+        "score": 0.8045,
+        "label": "WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-08-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_4"
+        ],
+        "edge_types": [],
+        "score": 0.8031,
+        "label": "WKHS 10-Q 2025-08-15 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.8014,
+        "label": "F 8-K 2025-12-15 | Item 2.06. Material Impairments"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2025-11-10__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_5"
+        ],
+        "edge_types": [],
+        "score": 0.7985,
+        "label": "WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 1540.9,
+      "search_ms": 20.1,
+      "traverse_ms": 0,
+      "llm_ms": 3274.8,
+      "total_ms": 4836.0
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:21:36.590398+00:00",
+    "mode": "graph_rag",
+    "question": "Which electric vehicle manufacturer entered bankruptcy protection in mid-2024 after its restructuring negotiations with creditors collapsed, causing its outstanding debt obligations to become immediately due and payable?",
+    "answer": "Fisker Group Inc. entered bankruptcy protection in mid-2024 after its restructuring negotiations with creditors collapsed, prompting the company and its subsidiaries to file for voluntary Chapter 11 bankruptcy on June 17 and 19, 2024. The Bankruptcy Court granted joint administration of these cases under Case No. 24-11390 (TMH), and the company continued to operate as \"debtors in possession\" while seeking court approval for various motions, including payment of employee wages and vendor obligations (FSR | 8-K 2024-06-24 | Item\u20091.03).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {
+      "years": [
+        "2024"
+      ]
+    },
+    "clusters_used": [
+      415,
+      2826,
+      2889,
+      311,
+      3189,
+      1168
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "FSR_8K_2024-06-24__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0",
+          "FSR_8K_2024-06-24__0__Item_1_03_Bankruptcy_or_Receivership",
+          "FSR_8K_2024-06-24",
+          "FSR"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7728,
+        "label": "FSR 8-K 2024-06-24 | Item\u20091.03. | Bankruptcy or Receivership."
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__2__Item_1A_Risk_Factors__chunk_0",
+          "NKLA_10K_2024__2__Item_1A_Risk_Factors",
+          "NKLA_10K_2024",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7718,
+        "label": "NKLA 10-K 2024 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2024-04-25",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7714,
+        "label": "F 10-Q 2024-04-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_91",
+          "NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data",
+          "NKLA_10K_2024",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7707,
+        "label": "NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data"
+      },
+      {
+        "node_ids": [
+          "FSR_8K_2024-05-08__1__Item_8_01_Other_Events__chunk_0",
+          "FSR_8K_2024-05-08__1__Item_8_01_Other_Events",
+          "FSR_8K_2024-05-08",
+          "FSR"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7704,
+        "label": "FSR 8-K 2024-05-08 | Item 8.01\u00a0\u00a0\u00a0\u00a0Other Events"
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_85",
+          "NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data",
+          "NKLA_10K_2024",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7704,
+        "label": "NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2024-10-29__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2024-10-29__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2024-10-29",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7689,
+        "label": "F 10-Q 2024-10-29 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-08-09__2__Item_1_Financial_Statements__chunk_54",
+          "NKLA_10Q_2024-08-09__2__Item_1_Financial_Statements",
+          "NKLA_10Q_2024-08-09",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7686,
+        "label": "NKLA 10-Q 2024-08-09 | Item 1. Financial Statements"
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_1",
+          "NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107",
+          "NKLA_10K_2024",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7677,
+        "label": "NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107"
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2",
+          "NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107",
+          "NKLA_10K_2024",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7656,
+        "label": "NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 614.2,
+      "search_ms": 46.3,
+      "traverse_ms": 2.4,
+      "llm_ms": 7937.7,
+      "total_ms": 8600.7
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:21:43.106256+00:00",
+    "mode": "rag",
+    "question": "Which electric vehicle manufacturer entered bankruptcy protection in mid-2024 after its restructuring negotiations with creditors collapsed, causing its outstanding debt obligations to become immediately due and payable?",
+    "answer": "Fisker Group Inc. entered bankruptcy protection in mid-2024 after its restructuring negotiations with creditors collapsed, resulting in the company commencing voluntary cases under chapter 11 of title 11 of the United States Code on June 17, 2024. This information can be found in the SEC filing FSR | 8-K 2024-06-24 | Item\u20091.03. | Bankruptcy or Receivership.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {
+      "years": [
+        "2024"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "FSR_8K_2024-06-24__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7729,
+        "label": "FSR 8-K 2024-06-24 | Item\u20091.03. | Bankruptcy or Receivership."
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__2__Item_1A_Risk_Factors__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7719,
+        "label": "NKLA 10-K 2024 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7714,
+        "label": "F 10-Q 2024-04-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_91"
+        ],
+        "edge_types": [],
+        "score": 0.7707,
+        "label": "NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data"
+      },
+      {
+        "node_ids": [
+          "FSR_8K_2024-05-08__1__Item_8_01_Other_Events__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7706,
+        "label": "FSR 8-K 2024-05-08 | Item 8.01\u00a0\u00a0\u00a0\u00a0Other Events"
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_85"
+        ],
+        "edge_types": [],
+        "score": 0.7704,
+        "label": "NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2024-10-29__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7689,
+        "label": "F 10-Q 2024-10-29 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-08-09__2__Item_1_Financial_Statements__chunk_54"
+        ],
+        "edge_types": [],
+        "score": 0.7687,
+        "label": "NKLA 10-Q 2024-08-09 | Item 1. Financial Statements"
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.7678,
+        "label": "NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107"
+      },
+      {
+        "node_ids": [
+          "NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7656,
+        "label": "NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 411.2,
+      "search_ms": 17.7,
+      "traverse_ms": 0,
+      "llm_ms": 6086.7,
+      "total_ms": 6515.6
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:21:53.752102+00:00",
+    "mode": "graph_rag",
+    "question": "After which corporate transaction did an EV startup's board conclude that substantial doubt about the company's ability to continue as a going concern had been eliminated, and what was the company's primary operational focus at that time?",
+    "answer": "Substantial doubt about Canoo Inc.'s ability to continue as a going concern was eliminated after the company secured a new financing deal, specifically a secured working capital facility, which allowed for working capital advances of up to $12 million. This conclusion was reached in their 10-Q filing dated November 14, 2024, which indicated their confidence in bringing additional capital and financing to support their operations. At that time, Canoo's primary operational focus was on commercializing its proprietary electric vehicle platform and continuing to develop and deliver its electric vehicles (EVs) amid various capital and macroeconomic challenges, including a global semiconductor shortage (Canoo Inc. 10-Q, November 14, 2024, Item 2: Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      2664,
+      2826,
+      3004,
+      2674,
+      1013,
+      1168
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GOEV_10Q_2024-11-14__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "GOEV_10Q_2024-11-14__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GOEV_10Q_2024-11-14",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8024,
+        "label": "GOEV 10-Q 2024-11-14 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10",
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "GOEV_10K_2022",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8011,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_17",
+          "NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "NKLA_10Q_2024-08-09",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7991,
+        "label": "NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2020-08-07__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_3",
+          "GOEV_10Q_2020-08-07__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "GOEV_10Q_2020-08-07",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7984,
+        "label": "GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2024-08-19__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "WKHS_10Q_2024-08-19__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10Q_2024-08-19",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7981,
+        "label": "WKHS 10-Q 2024-08-19 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__88__Item_16_Form_10_K_Summary__chunk_3",
+          "F_10K_2025__88__Item_16_Form_10_K_Summary",
+          "F_10K_2025",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7958,
+        "label": "F 10-K 2025 | Item 16. Form 10-K Summary."
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_15",
+          "NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "NKLA_10Q_2020-11-09",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7954,
+        "label": "NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2021-05-17__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8",
+          "GOEV_10Q_2021-05-17__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GOEV_10Q_2021-05-17",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7954,
+        "label": "GOEV 10-Q 2021-05-17 | Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10",
+          "WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10K_2023",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7943,
+        "label": "WKHS 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_9",
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "GOEV_10K_2022",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7939,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 174.2,
+      "search_ms": 37.4,
+      "traverse_ms": 3.0,
+      "llm_ms": 10431.0,
+      "total_ms": 10645.7
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:22:04.957170+00:00",
+    "mode": "rag",
+    "question": "After which corporate transaction did an EV startup's board conclude that substantial doubt about the company's ability to continue as a going concern had been eliminated, and what was the company's primary operational focus at that time?",
+    "answer": "The conclusion that substantial doubt about the startup's ability to continue as a going concern had been eliminated appears to relate to the corporate transaction involving a private placement of common stock. This transaction, noted in the NKLA 10-Q filed on August 9, 2024, included a private placement that raised approximately $200 million through the issuance of Toggle Convertible Notes, which were expected to provide significant liquidity for the company (NKLA | 10-Q 2024-08-09 | Item 2). \n\nAt the time of this transaction, NKLA's primary operational focus was on scaling its production, distribution, and servicing of battery electric vehicles (BEVs) and fuel cell electric vehicles (FCEVs) (NKLA | 10-Q 2024-08-09 | Item 2). \n\nThis shift in focus likely facilitated the board's confidence in the company's operational viability, allowing them to eliminate doubts regarding their going concern assumption.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GOEV_10Q_2024-11-14__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.8023,
+        "label": "GOEV 10-Q 2024-11-14 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.8011,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_17"
+        ],
+        "edge_types": [],
+        "score": 0.7992,
+        "label": "NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2020-08-07__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_3"
+        ],
+        "edge_types": [],
+        "score": 0.7985,
+        "label": "GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2024-08-19__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7981,
+        "label": "WKHS 10-Q 2024-08-19 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__88__Item_16_Form_10_K_Summary__chunk_3"
+        ],
+        "edge_types": [],
+        "score": 0.7958,
+        "label": "F 10-K 2025 | Item 16. Form 10-K Summary."
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_15"
+        ],
+        "edge_types": [],
+        "score": 0.7954,
+        "label": "NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2021-05-17__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7954,
+        "label": "GOEV 10-Q 2021-05-17 | Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.7943,
+        "label": "WKHS 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_9"
+        ],
+        "edge_types": [],
+        "score": 0.7939,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 188.8,
+      "search_ms": 22.6,
+      "traverse_ms": 0,
+      "llm_ms": 10993.4,
+      "total_ms": 11204.8
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:22:09.202113+00:00",
+    "mode": "graph_rag",
+    "question": "Which EV manufacturer agreed to exclusively supply last-mile electric delivery vehicles to a single commercial customer for a fixed period, followed by a right-of-first-refusal window, with no minimum purchase commitment specified in the agreement?",
+    "answer": "Rivian Automotive, Inc. agreed to exclusively supply last-mile electric delivery vehicles (EDVs) to Amazon.com NV Investment Holdings LLC through the Electric Delivery Vehicle (EDV) Agreement. Under this agreement, Rivian was committed to exclusively providing last-mile delivery vehicles to Amazon until the fourth anniversary of the Initial Delivery Date. Following this period, Amazon had a right of first refusal to purchase any last-mile delivery vehicles produced by Rivian, but the agreement does not contain a minimum purchase commitment. This arrangement allows Amazon to purchase vehicles from Rivian without specifying minimum quantities (see Rivian's DEF 14A 2022-04-27, Section: Transactions with Amazon.com NV Investment Holdings LLC and its Affiliates).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      1013,
+      2389,
+      2826,
+      2664
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_64",
+          "RIVN_DEF14A_2024-04-29__0__Full_Document",
+          "RIVN_DEF14A_2024-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8073,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2022-04-27__0__Full_Document__chunk_74",
+          "RIVN_DEF14A_2022-04-27__0__Full_Document",
+          "RIVN_DEF14A_2022-04-27",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8068,
+        "label": "RIVN DEF 14A 2022-04-27 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors__chunk_8",
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7975,
+        "label": "RIVN 10-K 2023 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-05-07__5__Item_1A_Risk_Factors__chunk_8",
+          "RIVN_10Q_2024-05-07__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2024-05-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7967,
+        "label": "RIVN 10-Q 2024-05-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_78",
+          "RIVN_DEF14A_2025-04-29__0__Full_Document",
+          "RIVN_DEF14A_2025-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.796,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_9",
+          "RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2024-08-06",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7957,
+        "label": "RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_77",
+          "RIVN_DEF14A_2025-04-29__0__Full_Document",
+          "RIVN_DEF14A_2025-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7929,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_65",
+          "RIVN_DEF14A_2024-04-29__0__Full_Document",
+          "RIVN_DEF14A_2024-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7915,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors__chunk_5",
+          "RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2023-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7901,
+        "label": "RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2023-05-01__0__Full_Document__chunk_68",
+          "RIVN_DEF14A_2023-05-01__0__Full_Document",
+          "RIVN_DEF14A_2023-05-01",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7884,
+        "label": "RIVN DEF 14A 2023-05-01 | Full Document"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 195.3,
+      "search_ms": 46.7,
+      "traverse_ms": 2.6,
+      "llm_ms": 3999.9,
+      "total_ms": 4244.6
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:22:17.346527+00:00",
+    "mode": "rag",
+    "question": "Which EV manufacturer agreed to exclusively supply last-mile electric delivery vehicles to a single commercial customer for a fixed period, followed by a right-of-first-refusal window, with no minimum purchase commitment specified in the agreement?",
+    "answer": "The EV manufacturer that agreed to exclusively supply last-mile electric delivery vehicles to a single commercial customer is Rivian Automotive, Inc. Under the terms of the EDV Agreement with Amazon Logistics, Inc., Rivian committed to exclusively provide last-mile delivery vehicles to Logistics until the fourth anniversary of the Initial Delivery Date. Following this period, from the fourth to the sixth anniversary of the Initial Delivery Date, Amazon Logistics would have a right of first refusal to purchase any last-mile delivery vehicles produced by Rivian. Importantly, there is no minimum purchase commitment specified in the agreement (as noted in the excerpts from SEC filings, particularly the DEF 14A from 2022 and subsequent amendments) [2][9].",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_64"
+        ],
+        "edge_types": [],
+        "score": 0.8072,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2022-04-27__0__Full_Document__chunk_74"
+        ],
+        "edge_types": [],
+        "score": 0.8068,
+        "label": "RIVN DEF 14A 2022-04-27 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7974,
+        "label": "RIVN 10-K 2023 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-05-07__5__Item_1A_Risk_Factors__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7967,
+        "label": "RIVN 10-Q 2024-05-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_78"
+        ],
+        "edge_types": [],
+        "score": 0.796,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_9"
+        ],
+        "edge_types": [],
+        "score": 0.7957,
+        "label": "RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_77"
+        ],
+        "edge_types": [],
+        "score": 0.7929,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_65"
+        ],
+        "edge_types": [],
+        "score": 0.7914,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors__chunk_5"
+        ],
+        "edge_types": [],
+        "score": 0.7902,
+        "label": "RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2023-05-01__0__Full_Document__chunk_68"
+        ],
+        "edge_types": [],
+        "score": 0.7883,
+        "label": "RIVN DEF 14A 2023-05-01 | Full Document"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 301.2,
+      "search_ms": 24.6,
+      "traverse_ms": 0,
+      "llm_ms": 7818.3,
+      "total_ms": 8144.2
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:22:24.691586+00:00",
+    "mode": "graph_rag",
+    "question": "Which automaker's autonomous vehicle subsidiary had its state operating permits suspended after regulators found that company representatives had not been fully transparent about a secondary vehicle movement during a pedestrian accident investigation?",
+    "answer": "The automaker whose autonomous vehicle subsidiary had its state operating permits suspended is General Motors (GM). This occurred with Cruise, GM's autonomous vehicle subsidiary, after regulators determined that Cruise representatives were not fully transparent about a secondary movement of a Cruise AV during an investigation into a pedestrian accident. The incident led to the California Department of Motor Vehicles (DMV) suspending Cruise's permits to operate AVs in California without a safety driver, as detailed in GM's 10-K filing for 2023, Item 1A. Risk Factors.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      415,
+      1852,
+      604,
+      1053,
+      3037,
+      1618
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10",
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7721,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__2__Item_1A_Risk_Factors__chunk_2",
+          "GM_10K_2023__2__Item_1A_Risk_Factors",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7687,
+        "label": "GM 10-K 2023 | Item\u00a01A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-04-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "GM_10Q_2024-04-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2024-04-23",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7665,
+        "label": "GM 10-Q 2024-04-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2025__1__Item_1_BUSINESS__chunk_6",
+          "TSLA_10K_2025__1__Item_1_BUSINESS",
+          "TSLA_10K_2025",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7647,
+        "label": "TSLA 10-K 2025 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-04-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10",
+          "GM_10Q_2023-04-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-04-25",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7629,
+        "label": "GM 10-Q 2023-04-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "F_10K_2024__37__Item_3_Legal_Proceedings_Continued__chunk_0",
+          "F_10K_2024__37__Item_3_Legal_Proceedings_Continued",
+          "F_10K_2024",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7618,
+        "label": "F 10-K 2024 | Item 3. Legal Proceedings (Continued)"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_11",
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-07-25",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7613,
+        "label": "GM 10-Q 2023-07-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-07-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "GM_10Q_2024-07-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2024-07-23",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7612,
+        "label": "GM 10-Q 2024-07-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2024__1__Item_1_Business__chunk_1",
+          "GM_10K_2024__1__Item_1_Business",
+          "GM_10K_2024",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.748,
+        "label": "GM 10-K 2024 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2025-10-23__2__Item_1_FINANCIAL_STATEMENTS__chunk_37",
+          "TSLA_10Q_2025-10-23__2__Item_1_FINANCIAL_STATEMENTS",
+          "TSLA_10Q_2025-10-23",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.746,
+        "label": "TSLA 10-Q 2025-10-23 | Item 1. FINANCIAL STATEMENTS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 206.0,
+      "search_ms": 47.6,
+      "traverse_ms": 3.5,
+      "llm_ms": 7087.6,
+      "total_ms": 7344.9
+    }
+  },
+  {
+    "timestamp": "2026-03-17T04:22:28.820096+00:00",
+    "mode": "rag",
+    "question": "Which automaker's autonomous vehicle subsidiary had its state operating permits suspended after regulators found that company representatives had not been fully transparent about a secondary vehicle movement during a pedestrian accident investigation?",
+    "answer": "The automaker whose autonomous vehicle subsidiary had its state operating permits suspended is General Motors (GM). This occurred with its subsidiary Cruise, following an accident involving a pedestrian in San Francisco where regulators perceived that Cruise representatives were not explicit about a secondary movement of the Cruise AV. The California Department of Motor Vehicles (DMV) suspended Cruise's permits to operate AVs in California as a result [Source: GM | 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations; GM | 10-K 2023 | Item 1A. Risk Factors].",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.7721,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__2__Item_1A_Risk_Factors__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7687,
+        "label": "GM 10-K 2023 | Item\u00a01A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-04-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7665,
+        "label": "GM 10-Q 2024-04-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2025__1__Item_1_BUSINESS__chunk_6"
+        ],
+        "edge_types": [],
+        "score": 0.7647,
+        "label": "TSLA 10-K 2025 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-04-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.7629,
+        "label": "GM 10-Q 2023-04-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "F_10K_2024__37__Item_3_Legal_Proceedings_Continued__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7618,
+        "label": "F 10-K 2024 | Item 3. Legal Proceedings (Continued)"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_11"
+        ],
+        "edge_types": [],
+        "score": 0.7613,
+        "label": "GM 10-Q 2023-07-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-07-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7612,
+        "label": "GM 10-Q 2024-07-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-10-31__7__Item_1A_RISK_FACTORS__chunk_20"
+        ],
+        "edge_types": [],
+        "score": 0.7529,
+        "label": "NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2024__1__Item_1_Business__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.748,
+        "label": "GM 10-K 2024 | Item\u00a01. Business"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 125.6,
+      "search_ms": 22.5,
+      "traverse_ms": 0,
+      "llm_ms": 3980.0,
+      "total_ms": 4128.2
+    }
+  }
+]

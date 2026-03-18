@@ -1,0 +1,40 @@
+Tesla, Inc. — Supercharger Network Expansion Report
+Energy Infrastructure Division — Full Year 2023
+
+Overview
+
+Tesla's Supercharger network is the world's largest proprietary fast-charging network for electric vehicles and a core element of the company's value proposition to both current and prospective vehicle owners. The network's coverage, reliability, and charging speed are consistently cited by consumers as among the most important factors in their decision to purchase a Tesla vehicle, and the network's opening to non-Tesla vehicles in North America represents a significant strategic shift with implications for network economics, utilization rates, and competitive positioning.
+
+This report summarizes Supercharger network growth for full year 2023, covering new station openings, connector additions, international expansion, third-party vehicle charging activity, and the financial contribution of the Supercharging business to Tesla's energy generation and storage segment.
+
+Network Growth — Full Year 2023
+
+Tesla opened 1,142 new Supercharger stations globally in 2023, bringing the total network to 5,265 stations with 48,082 individual charging connectors as of December 31, 2023. The 2023 additions represent a 28% increase in station count and a 31% increase in connector count year-over-year, with connector growth slightly outpacing station growth reflecting Tesla's strategy of expanding the number of stalls at existing high-utilization stations to reduce queuing during peak demand periods.
+
+Geographic distribution of new station openings was weighted toward North America (542 new stations) and Europe (387 new stations), with the remainder in Asia Pacific (143 new stations) and other markets (70 new stations). China, where Tesla operates through a separate network under regulatory arrangements with local authorities, added 312 new stations through the Tesla China organization.
+
+The average new station opened in 2023 was equipped with 8.4 charging stalls, compared to an average of 6.2 stalls at existing stations, reflecting Tesla's updated station design standards that prioritize higher stall counts to accommodate increasing vehicle volumes and third-party vehicle access. New stations opened in 2023 are equipped exclusively with the V3 Supercharger hardware capable of peak output of 250 kilowatts per vehicle, while approximately 40% of the legacy network operates on older V2 hardware rated at 150 kilowatts peak.
+
+Third-Party Vehicle Access Program
+
+Tesla opened the Supercharger network to non-Tesla electric vehicles in North America beginning in November 2023, following its earlier rollout in Europe and selected other markets. The North American rollout requires non-Tesla vehicle owners to use the Tesla app to initiate and pay for charging sessions, with billing at a per-kilowatt-hour rate that is generally higher than the rate charged to Tesla vehicle owners.
+
+Charging revenue from third-party vehicles represented approximately 4% of total Supercharger revenue in Q4 2023, the first quarter with meaningful non-Tesla charging volume in North America. Tesla has not provided specific guidance on the long-term mix target for third-party vehicle charging but has indicated that the program is expected to meaningfully improve network utilization rates, particularly at stations in lower-traffic corridors where Tesla vehicle density is insufficient to maintain economically efficient utilization.
+
+Several major automakers, including Ford, General Motors, Rivian, and Volvo, have announced plans to adopt the North American Charging Standard (NACS) connector developed by Tesla, which will allow their future vehicle models to charge natively at Supercharger stations without an adapter. GM's announced NACS adoption, expected to take effect for model year 2025 vehicles, is projected to meaningfully expand the addressable vehicle population for Supercharger access.
+
+Station Reliability and Uptime
+
+Supercharger network uptime, defined as the percentage of individual charging stalls available for use at any given time, averaged 99.1% for the full year 2023, consistent with Tesla's target of 99% or higher availability. Downtime events were primarily attributable to utility grid interruptions (accounting for 43% of downtime), scheduled maintenance (31%), and equipment failures (26%). Tesla's field service organization completed approximately 18,000 maintenance visits to Supercharger stations globally in 2023.
+
+The company has implemented a remote monitoring system that provides real-time visibility into individual stall status and proactively dispatches service teams for anomalous readings before failures occur. The proactive maintenance program, introduced in 2022, has reduced mean time to repair for charger hardware failures by approximately 35% compared to the prior reactive maintenance model.
+
+Financial Contribution
+
+The Supercharging business is reported within Tesla's Services and Other revenue segment, which also includes vehicle service, used vehicle sales, and non-warranty after-sales services. Tesla does not separately disclose Supercharging revenue, but industry analysts estimate 2023 Supercharging revenue at approximately $1.8 to $2.2 billion based on publicly available network statistics and charging rate data. The segment carries higher gross margins than Tesla's automotive manufacturing business, reflecting the relatively low variable cost per kilowatt-hour delivered once the fixed infrastructure investment has been made.
+
+Tesla has indicated that Supercharger economics improve materially at higher utilization rates, with stations operating above approximately 30% utilization generating positive EBITDA on a cash basis before amortization of capital investment. The expansion of third-party vehicle access is expected to push a meaningful portion of the network above this utilization threshold.
+
+Outlook for 2024
+
+Tesla has guided that Supercharger capital expenditure will remain at approximately 8% to 10% of total annual capital expenditure in 2024, consistent with 2023 levels. The company plans to open more than 1,200 additional stations in 2024, with particular emphasis on filling coverage gaps in secondary and tertiary markets in North America and accelerating expansion in Southeast Asia and the Middle East. The company also plans to complete V2 to V3 hardware upgrades at approximately 800 legacy stations in 2024, improving charging speeds for both Tesla and third-party vehicles at those locations.

@@ -1,0 +1,1529 @@
+=================================================================
+Q: Which electric vehicle startup, after failing to secure additional financing, ceased all operations in early 2025 and transferred control of its assets to an independent administrator for liquidation rather than attempting to restructure as a going concern?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1013, 311, 292, 3308, 453, 1019]
+Latency:  {'embed_ms': 876.5, 'search_ms': 2731.7, 'traverse_ms': 337.8, 'llm_ms': 11216.6, 'total_ms': 15162.7}
+
+ANSWER:
+- Candidate entities: Canoo, Rivian, Ford, Lucid
+- Selected entity: Canoo, Inc.
+- Supporting facts (combined across passages): Canoo, Inc. filed for liquidation under Chapter 7 of the Bankruptcy Code on January 17, 2025. This filing indicates that the company ceased all operations and transferred control of its assets to a Chapter 7 trustee, effectively removing authority from the company's Board of Directors and executive officers. Furthermore, Canoo chose not to restructure and proceeded directly with liquidation instead of seeking additional financing or attempting to continue operations. Following this filing, Canoo received a notification from Nasdaq about its impending delisting due to its bankruptcy status. 
+
+Therefore, Canoo, Inc. is the electric vehicle startup that ceased all operations and transferred control of its assets for liquidation in early 2025.
+
+PATHS:
+  [0.6238] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.568] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5653] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5571] RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5519] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5514] LCID 10-Q 2025-08-05 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.548] RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5326] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.531] RIVN 10-K 2025 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5156] LCID 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.515] LCID 10-Q 2025-08-05 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5128] RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5124] RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4995] F 10-Q 2025-07-31 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.466] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4323] F 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3919] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3878] F 10-K 2022 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3742] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.37] GOEV 8-K 2025-01-24 | Item 3.01 | Notice of Delisting of Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.312] F 10-K 2022 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which electric vehicle startup, after failing to secure additional financing, ceased all operations in early 2025 and transferred control of its assets to an independent administrator for liquidation rather than attempting to restructure as a going concern?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 1955.3, 'search_ms': 24.0, 'traverse_ms': 0, 'llm_ms': 4614.5, 'total_ms': 6593.9}
+
+ANSWER:
+- Candidate entities: Canoo, Inc., Nikola Corporation
+- Selected entity: Canoo, Inc.
+- Supporting facts (from passages):
+  - Canoo, Inc. along with its subsidiaries filed for liquidation under Chapter 7 of the Bankruptcy Code on January 17, 2025, after failing to secure additional financing. This led to the appointment of a Chapter 7 trustee who assumed control over the company's assets and liabilities for liquidation purposes. 
+
+Final Answer: Canoo, Inc.
+
+PATHS:
+  [0.8114] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+            -> F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0
+  [0.7835] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+            -> F_10Q_2025-10-24__33__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7822] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+            -> F_10K_2025__75__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7796] RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)
+            -> RIVN_10Q_2025-11-04__0__Item_1_Financial_Statements_unaudited__chunk_32
+  [0.776] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+            -> GOEV_8K_2025-01-21__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7757] LCID 10-Q 2025-08-05 | Item 1A. Risk Factors.
+            -> LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors__chunk_48
+  [0.7742] RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data
+            -> RIVN_10K_2025__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_61
+  [0.7688] F 10-K 2025 | Item 16. Form 10-K Summary.
+            -> F_10K_2025__88__Item_16_Form_10_K_Summary__chunk_62
+  [0.7675] TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_70
+  [0.7671] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> RIVN_10Q_2025-05-06__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13
+  [0.765] RIVN 10-K 2025 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> RIVN_10K_2025__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_12
+  [0.7645] WKHS 10-Q 2025-11-10 | Item 1. FINANCIAL STATEMENTS
+            -> WKHS_10Q_2025-11-10__2__Item_1_FINANCIAL_STATEMENTS__chunk_17
+  [0.7627] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+            -> NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+
+=================================================================
+Q: Which EV company that previously emphasized hydrogen infrastructure later entered court-supervised restructuring and indicated it would both pursue asset sales and maintain limited support for deployed vehicles?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [2826, 311, 1013, 2889, 415]
+Latency:  {'embed_ms': 524.3, 'search_ms': 9287.1, 'traverse_ms': 23.9, 'llm_ms': 12047.2, 'total_ms': 21882.6}
+
+ANSWER:
+- Candidate entities: Nikola Corporation, Ford Motor Company
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages):
+  - Nikola Corporation emphasized the development of hydrogen fuel cell electric vehicles (FCEVs) and hydrogen fueling infrastructure.
+  - On February 19, 2025, Nikola Corporation filed for Chapter 11 bankruptcy, which included a structured sale of its assets as part of the bankruptcy process (passages 9 and 15).
+  - The company indicated that it would continue to provide limited service support for trucks currently deployed in the field (passage 9).
+  - Nikola's strategy to pursue asset sales and maintain this limited support reflects their restructuring efforts in the wake of these significant financial issues.
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.608] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5828] NKLA 10-K 2024 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.579] NKLA 10-Q 2023-05-09 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5776] RIVN 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5724] NKLA 10-Q 2022-08-04 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5719] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5718] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5711] RIVN 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5693] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5681] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5669] RIVN 10-Q 2025-08-05 | Item 1. Financial Statements (unaudited)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5521] GM 10-Q 2023-10-24 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.547] GM 10-Q 2024-07-23 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5469] GM 10-Q 2024-10-22 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5137] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5025] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.4485] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3884] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3584] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3107] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which EV company that previously emphasized hydrogen infrastructure later entered court-supervised restructuring and indicated it would both pursue asset sales and maintain limited support for deployed vehicles?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 389.3, 'search_ms': 20.9, 'traverse_ms': 0, 'llm_ms': 5713.9, 'total_ms': 6124.1}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - Nikola Corporation emphasized hydrogen infrastructure through its development of a hydrogen fueling ecosystem and charging stations (Passage 2).
+  - The company filed for Chapter 11 bankruptcy on February 19, 2025, as part of its restructuring efforts (Passage 18). 
+  - Nikola indicated that it would pursue a structured sale of its assets while maintaining limited support for vehicles already in the field (Passage 18).
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.8037] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+            -> F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0
+  [0.7945] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-11-04__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1
+  [0.792] NKLA 10-K 2024 | Item 1. Business
+            -> NKLA_10K_2024__1__Item_1_Business__chunk_3
+  [0.7892] NKLA 10-Q 2023-05-09 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2023-05-09__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.7889] NKLA 10-Q 2024-05-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-05-07__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.7888] RIVN 10-K 2024 | Item 1A. Risk Factors
+            -> RIVN_10K_2024__1__Item_1A_Risk_Factors__chunk_4
+  [0.7869] NKLA 10-K 2022 | Item 1. Business
+            -> NKLA_10K_2022__1__Item_1_Business__chunk_10
+  [0.7861] NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.786] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+            -> F_10Q_2025-10-24__33__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.786] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.7859] NKLA 10-Q 2022-08-04 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2022-08-04__7__Item_1A_RISK_FACTORS__chunk_10
+  [0.7856] RIVN 10-K 2024 | Item 1A. Risk Factors
+            -> RIVN_10K_2024__1__Item_1A_Risk_Factors__chunk_22
+  [0.7856] NKLA 10-K 2023 | Item 1. Business
+            -> NKLA_10K_2023__1__Item_1_Business__chunk_9
+  [0.7854] NKLA 10-K 2022 | Item 1A. Risk Factors
+            -> NKLA_10K_2022__2__Item_1A_Risk_Factors__chunk_10
+  [0.7852] NKLA 10-K 2022 | Item 1. Business
+            -> NKLA_10K_2022__1__Item_1_Business__chunk_8
+  [0.7846] GM 10-K 2022 | Item 1. Business
+            -> GM_10K_2022__1__Item_1_Business__chunk_16
+  [0.7842] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-10-29__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7842] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+            -> NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+
+=================================================================
+Q: Which EV company that previously focused on hydrogen technologies later disclosed that it would continue supporting existing customers while pursuing a sale of its assets under court oversight?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [2826, 311, 2889, 415, 1013]
+Latency:  {'embed_ms': 579.8, 'search_ms': 9147.6, 'traverse_ms': 28.4, 'llm_ms': 7552.1, 'total_ms': 17308.0}
+
+ANSWER:
+- Candidate entities: Ford Motor Company, Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages):
+  - Nikola Corporation filed for Chapter 11 bankruptcy on February 19, 2025, and is seeking to pursue a structured sale of its assets under the oversight of the Bankruptcy Court. 
+  - The company plans to continue supporting existing customers while implementing this structured sale process, which would require court approval.
+  - Nikola has ceased business operations and is in the process of winding down while executing its Plan of Liquidation, confirmed by the Bankruptcy Court, which involves the cancellation of all equity interests without any distributions to shareholders.
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.5752] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5676] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5657] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5578] NKLA 10-Q 2024-05-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5537] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5524] NKLA 10-K 2023 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5519] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5514] NKLA 10-Q 2022-11-03 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5478] RIVN 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5466] GM 10-K 2022 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5454] GM 10-Q 2024-04-23 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5423] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5417] GM 10-Q 2022-10-25 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5375] RIVN 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5085] NKLA 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.4991] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4025] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3772] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3347] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.2975] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which EV company that previously focused on hydrogen technologies later disclosed that it would continue supporting existing customers while pursuing a sale of its assets under court oversight?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 277.8, 'search_ms': 23.7, 'traverse_ms': 0, 'llm_ms': 4283.2, 'total_ms': 4584.7}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - Nikola Corporation filed voluntary petitions for relief under chapter 11 on February 19, 2025, indicating a formal bankruptcy process (Passage 2).
+  - The company has disclosed plans to continue supporting its existing customers while pursuing the structured sale of its assets under court oversight during the bankruptcy proceedings (Passage 2).
+  - Nikola has previously focused on hydrogen technologies and continues to operate limited service and support operations for trucks currently in the field (Passage 2).
+  - The Bankruptcy Court confirmed a Plan of Liquidation on September 12, 2025, which includes the cancellation of all common stock and termination of equity interests, further indicating the company's strategic shift and financial challenges (Passage 3). 
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.7882] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+            -> F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0
+  [0.7836] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+            -> NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7829] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.7782] NKLA 10-Q 2024-05-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-05-07__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_14
+  [0.778] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-11-04__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1
+  [0.7764] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+            -> F_10Q_2025-10-24__33__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.776] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7756] NKLA 10-K 2023 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_21
+  [0.7754] NKLA 10-Q 2022-11-03 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2022-11-03__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.7751] NKLA 10-K 2023 | Item 1A. Risk Factors
+            -> NKLA_10K_2023__2__Item_1A_Risk_Factors__chunk_13
+  [0.775] NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_18
+  [0.7745] NKLA 10-Q 2023-05-09 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2023-05-09__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.7742] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-10-29__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7737] RIVN 10-K 2024 | Item 1A. Risk Factors
+            -> RIVN_10K_2024__1__Item_1A_Risk_Factors__chunk_4
+  [0.7736] NKLA 10-Q 2023-11-02 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2023-11-02__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_21
+  [0.7731] NKLA 10-Q 2022-08-04 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2022-08-04__7__Item_1A_RISK_FACTORS__chunk_10
+  [0.7724] GM 10-K 2022 | Item 1. Business
+            -> GM_10K_2022__1__Item_1_Business__chunk_16
+  [0.772] NKLA 10-Q 2022-11-03 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2022-11-03__7__Item_1A_RISK_FACTORS__chunk_2
+
+=================================================================
+Q: Which electric commercial truck company, having previously developed hydrogen-based powertrain technology, later entered court-supervised restructuring proceedings and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [2826, 2490, 2889, 3004]
+Latency:  {'embed_ms': 411.1, 'search_ms': 5358.1, 'traverse_ms': 114.2, 'llm_ms': 10987.6, 'total_ms': 16871.1}
+
+ANSWER:
+- Candidate entities: Nikola Corporation, Workhorse Group Inc.
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages):
+  
+  Nikola Corporation developed hydrogen-based powertrain technology through its heavy-duty trucks, including battery electric vehicles (BEVs) and fuel cell electric vehicles (FCEVs). The company faced significant financial challenges, culminating in a filing for Chapter 11 bankruptcy on February 19, 2025. During this time, Nikola indicated it would continue limited service operations for existing fleet customers while pursuing a structured sale of its assets, which it expected to complete following bankruptcy proceedings. This process involved the cancellation of all equity interests, meaning that shareholders may not receive any distributions resulting from the asset sales. Nikola's operational plan amid the bankruptcy included ceasing manufacturing operations but maintaining certain service operations, specifically for trucks already in the field.
+
+PATHS:
+  [0.6431] NKLA 10-Q 2024-05-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6384] NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6314] NKLA 10-K 2022 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6307] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6168] NKLA 10-K 2023 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6072] WKHS 10-K 2022 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.6067] WKHS 10-K 2022 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.6055] WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.6009] WKHS 10-Q 2025-08-15 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.599] WKHS 10-K 2023 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5872] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5778] NKLA 10-K 2022 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5752] WKHS 10-K 2024 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5569] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5271] NKLA 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.0919] NKLA 10-K 2023 | Item 16. Form 10-K Summary | 134
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.0857] NKLA 10-K 2022 | Item 16. Form 10-K Summary | 135
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+
+=================================================================
+Q: Which electric commercial truck company, having previously developed hydrogen-based powertrain technology, later entered court-supervised restructuring proceedings and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 207.1, 'search_ms': 23.4, 'traverse_ms': 0, 'llm_ms': 5100.6, 'total_ms': 5331.2}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - Nikola Corporation previously developed hydrogen-based powertrain technology (passages 2, 4, 6, 8, 10, 14).
+  - It has entered court-supervised restructuring proceedings (passages 6, 9).
+  - The company announced plans to sell its remaining assets (passages 6, 9) while continuing limited service operations for existing fleet customers (passages 2, 3, 4, 10).
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.8218] NKLA 10-Q 2024-05-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-05-07__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8198] NKLA 10-K 2023 | Item 1. Business
+            -> NKLA_10K_2023__1__Item_1_Business__chunk_9
+  [0.8192] NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8168] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-11-04__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1
+  [0.8153] NKLA 10-K 2022 | Item 1A. Risk Factors
+            -> NKLA_10K_2022__2__Item_1A_Risk_Factors__chunk_10
+  [0.8151] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.8146] NKLA 10-Q 2024-10-31 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-10-31__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8142] NKLA 10-K 2023 | Item 1A. Risk Factors
+            -> NKLA_10K_2023__2__Item_1A_Risk_Factors__chunk_11
+  [0.8135] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.8116] NKLA 10-K 2024 | Item 1. Business
+            -> NKLA_10K_2024__1__Item_1_Business__chunk_3
+  [0.8106] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-11-04__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8094] NKLA 10-Q 2022-08-04 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2022-08-04__7__Item_1A_RISK_FACTORS__chunk_10
+  [0.8087] NKLA 10-Q 2023-05-09 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2023-05-09__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.8082] NKLA 10-K 2023 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.8081] NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2024-10-31__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.806] NKLA 10-Q 2023-11-02 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2023-11-02__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.806] NKLA 10-Q 2021-08-03 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-08-03__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1
+  [0.8042] WKHS 10-K 2022 | Item 1. BUSINESS
+            -> WKHS_10K_2022__1__Item_1_BUSINESS__chunk_2
+
+=================================================================
+Q: Which electric commercial truck company, having previously developed hydrogen-based powertrain technology, entered formal insolvency proceedings and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [2826, 2889, 3004, 311]
+Latency:  {'embed_ms': 214.0, 'search_ms': 5600.8, 'traverse_ms': 21.4, 'llm_ms': 10557.8, 'total_ms': 16394.1}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages): Nikola Corporation filed for Chapter 11 bankruptcy on February 19, 2025, ceasing business operations and initiating a structured sale of its assets while entering formal insolvency proceedings. The company plans to sell substantially all assets and has confirmed a Plan of Liquidation, resulting in a total cessation of its truck manufacturing and sales activities. Despite the bankruptcy, Nikola announced it would continue to provide some limited service operations for existing fleet customers through March 2025. The company had previously developed hydrogen-based powertrain technology as part of its focus on zero-emissions transportation solutions.
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.6321] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6201] NKLA 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6196] NKLA 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6058] NKLA 10-Q 2023-11-02 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5972] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5959] WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5955] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5945] WKHS 10-Q 2025-08-15 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5939] WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5754] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5233] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5163] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4711] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4505] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3945] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3623] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3062] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which electric commercial truck company, having previously developed hydrogen-based powertrain technology, entered formal insolvency proceedings and announced plans to sell its remaining assets while continuing limited service operations for existing fleet customers?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 272.3, 'search_ms': 23.4, 'traverse_ms': 0, 'llm_ms': 9215.3, 'total_ms': 9511.1}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages): Nikola Corporation entered formal insolvency proceedings under Chapter 11 of the Bankruptcy Code on February 19, 2025. They have announced plans to sell their remaining assets while continuing limited service operations for existing fleet customers, particularly related to their hydrogen refueling brand, HYLA. The company has previously developed hydrogen-based powertrain technology for their FCEV trucks and intends to operate under the jurisdiction of the Bankruptcy Court while exploring asset sale options. They have ceased manufacturing and are focusing on winding down operations.
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.8157] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.8134] NKLA 10-Q 2024-05-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-05-07__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8101] NKLA 10-K 2022 | Item 1A. Risk Factors
+            -> NKLA_10K_2022__2__Item_1A_Risk_Factors__chunk_10
+  [0.8101] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-11-04__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1
+  [0.81] NKLA 10-K 2023 | Item 1. Business
+            -> NKLA_10K_2023__1__Item_1_Business__chunk_9
+  [0.8098] NKLA 10-K 2023 | Item 1A. Risk Factors
+            -> NKLA_10K_2023__2__Item_1A_Risk_Factors__chunk_11
+  [0.808] NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8079] NKLA 10-Q 2024-10-31 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-10-31__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8078] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.8032] NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2024-10-31__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.8027] NKLA 10-Q 2023-11-02 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2023-11-02__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.8025] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-11-04__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8022] NKLA 10-Q 2023-05-09 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2023-05-09__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.8019] NKLA 10-Q 2024-08-09 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2024-08-09__7__Item_1A_RISK_FACTORS__chunk_13
+  [0.8015] NKLA 10-Q 2022-08-04 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2022-08-04__7__Item_1A_RISK_FACTORS__chunk_10
+  [0.7984] NKLA 10-K 2023 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7983] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+            -> NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7979] WKHS 10-Q 2025-05-15 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> WKHS_10Q_2025-05-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+
+=================================================================
+Q: Which electric vehicle manufacturer entered bankruptcy protection in mid-2024 after its restructuring negotiations with creditors collapsed, causing its outstanding debt obligations to become immediately due and payable?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [415, 2826, 2889, 311, 3189, 1168]
+Latency:  {'embed_ms': 405.2, 'search_ms': 2332.4, 'traverse_ms': 30.0, 'llm_ms': 7002.4, 'total_ms': 9770.2}
+
+ANSWER:
+- Candidate entities: Fisker Inc., Nikola Corporation
+- Selected entity: Fisker Inc.
+- Supporting facts (combined across passages): 
+
+Fisker Group Inc. and its parent company, Fisker Inc., filed for voluntary Chapter 11 bankruptcy in mid-2024 after unsuccessful restructuring negotiations with creditors, causing their debt obligations to become immediately due and payable. This filing occurred on June 17 and 19, 2024, leading to the operation as “debtors in possession” while enabling access to necessary cash collateral to continue business operations temporarily under the jurisdiction of the Bankruptcy Court. 
+
+In previous developments, Fisker had entered into various agreements and forbearance arrangements concerning missed interest payments on convertible notes and the threat of stock delisting. Ultimately, the failure to achieve restructuring and the absence of successful negotiations with investors contributed to the company's decision to seek bankruptcy protection.
+
+PATHS:
+  [0.5446] FSR 8-K 2024-06-24 | Item 1.03. | Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5443] NKLA 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5442] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5415] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5403] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5401] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5384] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5375] NKLA 10-Q 2024-08-09 | Item 1. Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.535] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5315] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5221] F 10-Q 2024-07-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5123] GM 10-K 2024 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5085] GM 10-Q 2024-04-23 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5073] GM 10-Q 2024-10-22 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4894] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4787] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4663] FSR 8-K 2024-03-18 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4454] FSR 8-K 2024-04-04 | Item 1.01 | Entry into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4449] FSR 8-K 2024-04-22 | Item 1.01 | Entry into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.427] FSR 8-K 2024-01-22 | Item 1.01 | Entry into a Material Definitive Agreement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4154] FSR 8-K 2024-03-18 | Item 1.01 | Entry Into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which electric vehicle manufacturer entered bankruptcy protection in mid-2024 after its restructuring negotiations with creditors collapsed, causing its outstanding debt obligations to become immediately due and payable?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 347.0, 'search_ms': 25.6, 'traverse_ms': 0, 'llm_ms': 2851.9, 'total_ms': 3224.5}
+
+ANSWER:
+Reasoning (brief):
+- Candidate entities: Fisker Group Inc., Nikola Corporation
+- Selected entity: Fisker Group Inc. 
+- Supporting facts (from passages):
+  - Fisker Group Inc. commenced a voluntary case under chapter 11 bankruptcy on June 17, 2024, due to restructuring negotiations with creditors collapsing, which resulted in its outstanding debt obligations becoming immediately due (Passage [1]).
+
+Final Answer: Fisker Group Inc.
+
+PATHS:
+  [0.7729] FSR 8-K 2024-06-24 | Item 1.03. | Bankruptcy or Receivership.
+            -> FSR_8K_2024-06-24__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7719] NKLA 10-K 2024 | Item 1A. Risk Factors
+            -> NKLA_10K_2024__2__Item_1A_Risk_Factors__chunk_0
+  [0.7714] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7707] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_91
+  [0.7706] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+            -> FSR_8K_2024-05-08__1__Item_8_01_Other_Events__chunk_0
+  [0.7704] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_85
+  [0.7689] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-10-29__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7687] NKLA 10-Q 2024-08-09 | Item 1. Financial Statements
+            -> NKLA_10Q_2024-08-09__2__Item_1_Financial_Statements__chunk_54
+  [0.7678] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_1
+  [0.7656] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.7611] F 10-Q 2024-07-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-07-25__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7563] GM 10-K 2024 | Item 8.
+            -> GM_10K_2024__9__Item_8__chunk_73
+  [0.755] GM 10-Q 2024-04-23 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2024-04-23__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_29
+  [0.7545] GM 10-Q 2024-10-22 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2024-10-22__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_36
+  [0.7543] GM 10-Q 2024-10-22 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2024-10-22__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_37
+  [0.7534] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_84
+  [0.7531] GM 10-Q 2024-07-23 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2024-07-23__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_35
+  [0.7531] GM 10-Q 2024-07-23 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2024-07-23__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_36
+
+=================================================================
+Q: Which EV manufacturer disclosed that failed restructuring negotiations with creditors triggered an event of default that accelerated its outstanding debt, leading it to seek bankruptcy protection?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [311, 415, 2889, 2826, 1168, 292]
+Latency:  {'embed_ms': 205.0, 'search_ms': 9724.6, 'traverse_ms': 30.4, 'llm_ms': 8467.4, 'total_ms': 18427.5}
+
+ANSWER:
+- Candidate entities: Ford Motor Company, Nikola Corporation, Fisker Inc.
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages):
+   - On February 19, 2025, Nikola Corporation, along with certain subsidiaries, filed voluntary petitions under Chapter 11 of the Bankruptcy Code in the U.S. Bankruptcy Court for the District of Delaware (Passage [2]).
+   - The filing of these bankruptcy petitions constituted an event of default that accelerated certain obligations under its outstanding debt (Passages [6], [7]).
+   - Consequently, Nikola sought bankruptcy protection as part of its efforts to pursue a structured sale of its assets while operating under court jurisdiction (Passage [6]).
+
+Final Answer: Nikola Corporation disclosed that failed restructuring negotiations with creditors triggered an event of default that accelerated its outstanding debt, leading it to seek bankruptcy protection.
+
+PATHS:
+  [0.5631] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5548] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5447] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5299] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5145] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5139] NKLA 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5139] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5118] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5097] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5083] NKLA 10-Q 2024-08-09 | Item 1. Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5034] GM 10-K 2024 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4987] GM 10-Q 2025-07-22 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4927] FSR 10-Q 2021-11-15 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4925] GM 10-Q 2023-07-25 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4914] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.4788] FSR 10-K 2023 | Item 1A.    Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4011] FSR 10-K 2022 | Item 1A.    Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.393] FSR 10-Q 2021-05-17 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.3773] F 10-K 2024 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3344] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3242] FSR 10-K 2023 | Item 8.    Financial Statements and Supplementary Data.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.1351] FSR 10-K 2023 | Item 16. | Form 10-K Summary | 121
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.1152] FSR 10-K 2022 | Item 16. | Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which EV manufacturer disclosed that failed restructuring negotiations with creditors triggered an event of default that accelerated its outstanding debt, leading it to seek bankruptcy protection?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 309.6, 'search_ms': 25.6, 'traverse_ms': 0, 'llm_ms': 3986.4, 'total_ms': 4321.7}
+
+ANSWER:
+- Candidate entities: Ford Motor Company, Nikola Corporation, Fisker Inc.
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - On February 19, 2025, Nikola Corporation and certain of its direct subsidiaries filed voluntary petitions for relief under chapter 11 of the Bankruptcy Code, representing an event of default that accelerated its debt obligations (Passages 2, 8, 9).
+  - The bankruptcy filing was a result of failed restructuring negotiations with creditors, prompting them to seek to liquidate assets under a structured auction process (Passages 2, 8). 
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.7809] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+            -> F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0
+  [0.7772] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+            -> NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7724] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+            -> FSR_8K_2024-05-08__1__Item_8_01_Other_Events__chunk_0
+  [0.764] F 10-K 2025 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+            -> F_10K_2025__75__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7633] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_91
+  [0.7597] FSR 8-K 2024-06-24 | Item 1.03. | Bankruptcy or Receivership.
+            -> FSR_8K_2024-06-24__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7569] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7566] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_1
+  [0.7564] NKLA 10-K 2024 | Item 1A. Risk Factors
+            -> NKLA_10K_2024__2__Item_1A_Risk_Factors__chunk_0
+  [0.7554] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-10-29__32__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.755] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> RIVN_10Q_2025-05-06__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13
+  [0.7545] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_85
+  [0.7538] GM 10-Q 2022-10-25 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2022-10-25__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_48
+  [0.7538] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_8K_2024-06-24__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7535] NKLA 10-Q 2024-08-09 | Item 1. Financial Statements
+            -> NKLA_10Q_2024-08-09__2__Item_1_Financial_Statements__chunk_54
+  [0.7532] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+            -> F_10Q_2025-10-24__33__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7531] GM 10-Q 2024-04-23 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2024-04-23__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_40
+  [0.7522] GM 10-Q 2024-10-22 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2024-10-22__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_48
+
+=================================================================
+Q: Which EV company disclosed that its inability to reach agreement with creditors caused its debt to be accelerated, ultimately resulting in a bankruptcy filing?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [2889, 2826, 1013, 311, 1168, 3308]
+Latency:  {'embed_ms': 169.6, 'search_ms': 8797.7, 'traverse_ms': 26.2, 'llm_ms': 7706.6, 'total_ms': 16700.2}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages): On February 19, 2025, Nikola Corporation filed for Chapter 11 bankruptcy protection, which was triggered by its inability to reach agreements with creditors that led to the acceleration of its debt obligations. The bankruptcy filing initiated a structured sale of the company's assets while operating as debtors-in-possession. The event constituted an event of default that accelerated certain obligations under the company's convertible notes, therefore resulting in significant financial distress, culminating in the bankruptcy filing and the confirmation of a liquidation plan by the Bankruptcy Court. 
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.5785] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5717] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5698] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5413] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5412] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5411] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5389] NKLA 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5361] RIVN 10-K 2022 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5357] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5354] NKLA 10-Q 2024-08-09 | Item 1. Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5345] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5305] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5295] RIVN 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5287] FSR 10-Q 2021-11-15 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5275] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5232] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.4606] FSR 10-Q 2022-11-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4538] FSR 10-Q 2022-05-09 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4532] FSR 10-Q 2023-05-09 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4461] FSR 10-Q 2022-08-08 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4221] FSR 10-Q 2021-05-17 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.3822] GOEV 8-K 2025-01-24 | Item 3.01 | Notice of Delisting of Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+
+=================================================================
+Q: Which EV company disclosed that its inability to reach agreement with creditors caused its debt to be accelerated, ultimately resulting in a bankruptcy filing?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 161.9, 'search_ms': 24.8, 'traverse_ms': 0, 'llm_ms': 6540.5, 'total_ms': 6727.3}
+
+ANSWER:
+- Candidate entities: Nikola Corporation, Canoo, Inc.
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - On February 19, 2025, Nikola Corporation filed for Chapter 11 bankruptcy due to its inability to reach agreements with creditors, which resulted in the acceleration of its debt obligations.
+  - The filing constituted an event of default that affected their Convertible Senior Notes due in 2026.
+  - Following the bankruptcy petition, the company engaged in a structured sale of its assets and ultimately confirmed a liquidation plan approved by the Bankruptcy Court.
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.7883] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+            -> NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7862] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+            -> GOEV_8K_2025-01-21__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.785] F 8-K 2025-12-15 | Item 2.06. Material Impairments
+            -> F_8K_2025-12-15__0__Item_2_06_Material_Impairments__chunk_0
+  [0.7781] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_91
+  [0.7715] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+            -> FSR_8K_2024-05-08__1__Item_8_01_Other_Events__chunk_0
+  [0.7712] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> RIVN_10Q_2025-05-06__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13
+  [0.7703] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7703] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_1
+  [0.7692] NKLA 10-K 2024 | Item 1A. Risk Factors
+            -> NKLA_10K_2024__2__Item_1A_Risk_Factors__chunk_0
+  [0.7674] RIVN 10-K 2022 | Item 1A. Risk Factors
+            -> RIVN_10K_2022__1__Item_1A_Risk_Factors__chunk_22
+  [0.7674] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.767] NKLA 10-Q 2024-08-09 | Item 1. Financial Statements
+            -> NKLA_10Q_2024-08-09__2__Item_1_Financial_Statements__chunk_54
+  [0.7647] TSLA 10-Q 2024-10-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2024-10-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_30
+  [0.7646] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_8K_2024-06-24__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7646] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_85
+  [0.7645] GM 10-Q 2022-10-25 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2022-10-25__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_48
+  [0.7639] RIVN 10-K 2024 | Item 1A. Risk Factors
+            -> RIVN_10K_2024__1__Item_1A_Risk_Factors__chunk_27
+  [0.7634] FSR 8-K 2024-06-24 | Item 1.03. | Bankruptcy or Receivership.
+            -> FSR_8K_2024-06-24__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+
+=================================================================
+Q: Which manufacturer disclosed that failed negotiations with creditors triggered an event causing its obligations to become immediately due, and how did that event lead to its subsequent bankruptcy filing?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1168, 2889, 3004, 3379, 2624, 3308]
+Latency:  {'embed_ms': 151.0, 'search_ms': 5248.0, 'traverse_ms': 14.5, 'llm_ms': 9438.2, 'total_ms': 14851.7}
+
+ANSWER:
+- Candidate entities: Nikola Corporation, Fisker Inc., Canoo Inc., Workhorse Group Inc.
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages):
+   Nikola Corporation disclosed that failed negotiations with creditors triggered its bankruptcy filing. On February 19, 2025, Nikola and its subsidiaries filed voluntary Chapter 11 petitions, constituting an event of default under certain debt instruments. This event caused approximately $31.8 million and $12.4 million in principal amounts of debt to become immediately due, along with accrued interest. However, because of the bankruptcy filing, enforcement of these payment obligations is stayed, and the company is now pursuing a structured liquidation plan. Following the bankruptcy petition, Nikola ceased most operations and is in the process of winding down while implementing the liquidation plan confirmed by the Bankruptcy Court, effectively resulting in the cancellation of all equity interests without any distribution to shareholders.
+
+---
+
+Final Answer: Nikola Corporation disclosed that failed negotiations with creditors triggered its bankruptcy filing. The filing constituted an event of default, causing immediate due obligations, and led to the cessation of its business operations while pursuing a structured liquidation plan.
+
+PATHS:
+  [0.5495] NKLA 8-K 2025-02-19 | Item 2.04            Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5464] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5414] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5323] FSR 10-K 2023 | Item 8.    Financial Statements and Supplementary Data.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.532] FSR 10-Q 2023-11-22 | Item 2.04 Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5128] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.503] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.497] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.4942] WKHS 10-K 2024 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.4928] NKLA 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.4891] WKHS 10-Q 2025-08-15 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.4815] WKHS 10-Q 2025-11-10 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.4118] GOEV 8-K 2025-01-24 | Item 3.01 | Notice of Delisting of Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.3499] FSR 10-K 2022 | Item 16.    Form 10-K Summary
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.3237] FSR 10-K 2022 | Item 8.    Financial Statements and Supplementary Data.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.2983] FSR 10-K 2022 | Item 15.    Exhibit and Financial Statement Schedules.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.1367] FSR 10-K 2023 | Item 16. | Form 10-K Summary | 121
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.1235] FSR 10-K 2022 | Item 16. | Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which manufacturer disclosed that failed negotiations with creditors triggered an event causing its obligations to become immediately due, and how did that event lead to its subsequent bankruptcy filing?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 150.3, 'search_ms': 24.0, 'traverse_ms': 0, 'llm_ms': 15594.4, 'total_ms': 15768.7}
+
+ANSWER:
+- Candidate entities: Fisker Inc., Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - Nikola Corporation filed voluntary petitions for relief under Chapter 11 on February 19, 2025, which constituted an event of default that triggered the acceleration of certain obligations under its debt instruments, including the 8.00% / 11.00% Convertible Senior PIK Toggle Notes due 2026 and the 8.00% / 8.00% Series C Convertible Senior PIK Toggle Notes due 2026 (Passage 12, 14).
+  - The filing of these petitional forms led to the immediate due of obligations under the indentures governing these debt instruments without prior notice (Passage 1).
+  - Following this event, on February 26, 2025, Nikola's common stock was suspended from trading and subsequently delisted, further complicating its financial stability (Passage 16). 
+  - The combination of failed negotiations with creditors regarding these debt obligations and the resulting bankruptcy filing emphasized the challenges Nikola faced in maintaining operations (Passage 14, 16). 
+
+Final Answer: Nikola Corporation.
+
+PATHS:
+  [0.7749] NKLA 8-K 2025-02-19 | Item 2.04            Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> NKLA_8K_2025-02-19__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7739] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+            -> FSR_8K_2024-05-08__1__Item_8_01_Other_Events__chunk_0
+  [0.771] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_8K_2024-06-24__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7667] FSR 10-K 2023 | Item 8.    Financial Statements and Supplementary Data.
+            -> FSR_10K_2023__9__Item_8_Financial_Statements_and_Supplementary_Data__chunk_61
+  [0.7662] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+            -> FSR_8K_2024-05-08__0__Item_1_01_Entry_into_a_Material_Definitive_Agreeme__chunk_1
+  [0.7661] FSR 10-Q 2023-11-22 | Item 2.04 Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_10Q_2023-11-22__9__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7564] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+            -> GOEV_8K_2025-01-21__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7555] FSR 8-K 2024-04-22 | Item 1.01 | Entry into a Material Definitive Agreement
+            -> FSR_8K_2024-04-22__0__Item_1_01_Entry_into_a_Material_Definitive_Agreeme__chunk_0
+  [0.7551] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+            -> FSR_8K_2024-05-08__0__Item_1_01_Entry_into_a_Material_Definitive_Agreeme__chunk_0
+  [0.7533] FSR 8-K 2024-03-18 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_8K_2024-03-18__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7526] FSR 8-K 2024-06-24 | Item 1.03. | Bankruptcy or Receivership.
+            -> FSR_8K_2024-06-24__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7522] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_1
+  [0.7516] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_91
+  [0.7489] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+            -> NKLA_8K_2025-02-19__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7475] WKHS 10-K 2024 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> WKHS_10K_2024__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_9
+  [0.7467] NKLA 10-K 2024 | Item 1A. Risk Factors
+            -> NKLA_10K_2024__2__Item_1A_Risk_Factors__chunk_0
+  [0.7449] WKHS 10-Q 2025-08-15 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> WKHS_10Q_2025-08-15__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10
+  [0.7443] FSR 8-K 2024-04-04 | Item 1.01 | Entry into a Material Definitive Agreement
+            -> FSR_8K_2024-04-04__0__Item_1_01_Entry_into_a_Material_Definitive_Agreeme__chunk_0
+
+=================================================================
+Q: In which EV startup’s quarterly filing from late 2020 did the board first conclude that a business combination had eliminated all substantial doubt about the company’s going concern status, and what two types of electric vehicles was it developing at that time?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [2826, 2674]
+Latency:  {'embed_ms': 151.3, 'search_ms': 402.0, 'traverse_ms': 60.8, 'llm_ms': 7428.6, 'total_ms': 8044.9}
+
+ANSWER:
+- Candidate entities: Nikola Corporation (NKLA), GOEV
+- Selected entity: Nikola Corporation (NKLA)
+- Supporting facts (combined across passages):
+  - In Nikola's quarterly filing dated November 9, 2020, the board concluded that a business combination had eliminated substantial doubt about the company’s going concern status (passage [2]).
+  - At that time, Nikola was developing two types of electric vehicles: battery electric vehicles (BEVs) and hydrogen fuel cell electric vehicles (FCEVs) (passages [1], [2], and [4]).
+  
+Final Answer: Nikola Corporation (NKLA); battery electric vehicles (BEVs) and hydrogen fuel cell electric vehicles (FCEVs).
+
+PATHS:
+  [0.6155] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6149] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.6088] GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5932] NKLA 10-Q 2020-08-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5499] GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.4856] GOEV 10-Q 2019-11-08 | Item 3. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.4759] GOEV 10-Q 2020-11-12 | Item 3. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.4682] GOEV 10-Q 2020-05-06 | Item 3. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.4663] GOEV 10-Q 2020-08-07 | Item 3. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.462] GOEV 10-Q 2019-11-08 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.4534] GOEV 10-Q 2020-05-06 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+
+=================================================================
+Q: In which EV startup’s quarterly filing from late 2020 did the board first conclude that a business combination had eliminated all substantial doubt about the company’s going concern status, and what two types of electric vehicles was it developing at that time?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 140.4, 'search_ms': 24.1, 'traverse_ms': 0, 'llm_ms': 3153.2, 'total_ms': 3317.7}
+
+ANSWER:
+- Candidate entities: Nikola Corporation (NKLA), VectoIQ
+- Selected entity: Nikola Corporation (NKLA)
+- Supporting facts (from passages): 
+  - In the quarterly filing from late 2020, Nikola Corporation's board concluded that a business combination had eliminated all substantial doubt about the company's going concern status. This conclusion was drawn following the completion of their business merger with VectoIQ. 
+  - At that time, Nikola was developing both battery electric vehicles (BEVs) and fuel cell electric vehicles (FCEVs). Specifically, initial revenue generation from BEV trucks was expected in late 2021, while FCEV trucks were projected to start generating revenue in the second half of 2023. 
+
+Final Answer: Nikola Corporation (NKLA); BEVs and FCEVs.
+
+PATHS:
+  [0.8073] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_15
+  [0.8069] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.8039] GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> GOEV_10Q_2020-08-07__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_3
+
+=================================================================
+Q: Which EV startup disclosed in a quarterly filing that a completed business combination resolved prior going concern uncertainty, and what types of electric vehicles was it developing at the time?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1013, 2826, 1168, 2674, 1053, 311]
+Latency:  {'embed_ms': 204.6, 'search_ms': 7012.3, 'traverse_ms': 29.9, 'llm_ms': 10465.7, 'total_ms': 17712.6}
+
+ANSWER:
+- Candidate entities: Fisker Inc., Rivian Automotive Inc., Nikola Corporation, Ford Motor Company, Tesla Inc.
+- Selected entity: Fisker Inc.
+- Supporting facts (combined across passages):
+  - Fisker Inc. disclosed in a quarterly filing on August 11, 2021, that a completed business combination had resolved prior going concern uncertainty. This business combination involved a merger with a publicly-listed special purpose acquisition company (SPAC), Spartan Acquisition Corp. III.
+  - At the time, Fisker was developing a range of electric vehicles, with a notable focus on the Fisker Ocean SUV as part of its strategic partnerships, including a manufacturing agreement with Magna and a project called ‘PEAR’ (Personal Electric Automotive Revolution) developed in collaboration with Hon Hai Technology Group (Foxconn).
+
+Final Answer: Fisker Inc. disclosed in a quarterly filing that a completed business combination resolved prior going concern uncertainty, and it was developing electric vehicles, including the Fisker Ocean SUV and the 'PEAR' project at the time.
+
+PATHS:
+  [0.6275] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.6235] F 10-Q 2024-10-29 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.6211] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.613] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.6129] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.6062] GOEV 10-Q 2021-08-16 | Item 6. | ​ | Exhibits | ​ | 38
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.605] RIVN 10-Q 2025-08-05 | Item 1. Financial Statements (unaudited)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.6042] RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.6005] GOEV 10-Q 2023-08-14 | Item 6. | Exhibits | 45
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.6004] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.599] F 10-Q 2025-10-24 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5981] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5977] NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5961] TSLA 10-Q 2025-10-23 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5934] FSR 10-Q 2021-11-15 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5898] TSLA 10-Q 2025-07-24 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5894] GOEV 10-Q 2024-11-14 | Item 6. | Exhibits | 61
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5862] TSLA 10-Q 2025-04-23 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5002] FSR 10-Q 2022-11-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4929] FSR 10-Q 2022-08-08 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4914] FSR 10-Q 2023-05-09 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4851] FSR 10-Q 2022-05-09 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4309] FSR 10-Q 2021-05-17 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which EV startup disclosed in a quarterly filing that a completed business combination resolved prior going concern uncertainty, and what types of electric vehicles was it developing at the time?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 303.5, 'search_ms': 25.5, 'traverse_ms': 0, 'llm_ms': 14002.9, 'total_ms': 14332.0}
+
+ANSWER:
+- Candidate entities: Rivian, Fisker
+- Selected entity: Rivian
+- Supporting facts (from passages): Rivian disclosed in a quarterly filing that it entered into a joint venture with Volkswagen Group to focus on software and electronic control units. This partnership aimed to address going concern uncertainties, with Rivian developing new electric vehicles, including consumer vehicles, commercial electric vans (EDVs), and software services. Additionally, Rivian's revenues from new electric vehicles are driven by both consumer and commercial sales, reflecting its strategy to support the production and sale of electric vehicles. 
+
+Final Answer: Rivian, developing consumer and commercial electric vehicles (EDVs).
+
+PATHS:
+  [0.8134] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+            -> FSR_10Q_2021-08-11__1__Item_1_Financial_Statements__chunk_37
+  [0.8107] F 10-Q 2024-04-25 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+            -> F_10Q_2024-04-25__31__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.8103] GOEV 10-Q 2024-11-14 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GOEV_10Q_2024-11-14__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2
+  [0.8065] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors__chunk_5
+  [0.8059] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+            -> FSR_10Q_2021-08-11__1__Item_1_Financial_Statements__chunk_36
+  [0.8031] GOEV 10-Q 2021-08-16 | Item 6. | ​ | Exhibits | ​ | 38
+            -> GOEV_10Q_2021-08-16__1__Item_6_Exhibits_38__chunk_1
+  [0.8029] RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)
+            -> RIVN_10Q_2025-11-04__0__Item_1_Financial_Statements_unaudited__chunk_32
+  [0.8025] RIVN 10-Q 2025-08-05 | Item 1. Financial Statements (unaudited)
+            -> RIVN_10Q_2025-08-05__0__Item_1_Financial_Statements_unaudited__chunk_15
+  [0.8008] GOEV 10-Q 2023-08-14 | Item 6. | Exhibits | 45
+            -> GOEV_10Q_2023-08-14__1__Item_6_Exhibits_45__chunk_3
+  [0.8003] RIVN 10-Q 2025-05-06 | Item 1. Financial Statements (unaudited)
+            -> RIVN_10Q_2025-05-06__0__Item_1_Financial_Statements_unaudited__chunk_10
+  [0.8002] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_15
+  [0.7997] NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_17
+  [0.7987] NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_2
+  [0.7982] TSLA 10-Q 2025-10-23 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> TSLA_10Q_2025-10-23__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0
+  [0.7981] RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)
+            -> RIVN_10Q_2025-11-04__0__Item_1_Financial_Statements_unaudited__chunk_14
+  [0.798] RIVN 10-Q 2025-11-04 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-11-04__5__Item_1A_Risk_Factors__chunk_4
+  [0.7969] FSR 10-Q 2021-11-15 | Item 1. Financial Statements.
+            -> FSR_10Q_2021-11-15__1__Item_1_Financial_Statements__chunk_44
+  [0.7957] LCID 10-Q 2025-08-05 | Item 1A. Risk Factors.
+            -> LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors__chunk_48
+
+=================================================================
+Q: Which manufacturer entered into a commercial agreement that restricted its ability to sell a specific vehicle type to other customers for a defined period, and how did that agreement change after the exclusivity window expired?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1013, 1618, 2389, 311, 3157, 415]
+Latency:  {'embed_ms': 463.4, 'search_ms': 6860.4, 'traverse_ms': 60.2, 'llm_ms': 17726.7, 'total_ms': 25110.9}
+
+ANSWER:
+- Candidate entities: Rivian Automotive, Ford Motor Company
+- Selected entity: Rivian Automotive
+- Supporting facts (combined across passages): 
+
+Rivian Automotive entered into a commercial agreement with Amazon in February 2019, referred to as the EDV Agreement, which involved the design, development, and supply of electric delivery vans (EDVs) for Amazon's last-mile delivery operations. This agreement initially included certain exclusivity provisions, which restricted Rivian's ability to sell commercial vans to other customers for a specified period, effectively making Amazon a primary customer for Rivian's EDVs.
+
+In November 2023, Rivian amended the EDV Agreement to change the exclusivity and first refusal rights that Amazon had previously held. As a result of this amendment, Rivian is now allowed to sell commercial vans to third parties, subject to particular fees and conditions regarding customer types and vehicle volumes. Specifically, restrictions related to last mile delivery vehicles will apply for five years from January 1, 2024, while fees related to all commercial van sales will apply for ten years from that date, unless the agreement is terminated. This change significantly enhanced Rivian's ability to expand its customer base after the exclusivity period that previously limited its sales opportunities.
+
+PATHS:
+  [0.5286] RIVN DEF 14A 2022-04-27 | Full Document
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5058] F 10-K 2024 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5003] RIVN DEF 14A 2025-04-29 | Full Document
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4893] RIVN 10-Q 2023-08-08 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4852] FSR 8-K 2024-01-10 | Item 8.01    Other Events
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4849] F 10-K 2023 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4685] RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4684] RIVN DEF 14A 2024-04-29 | Full Document
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4666] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4643] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4619] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4605] F 10-Q 2025-05-06 | Item 1. Legal Proceedings.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4601] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4458] GM 10-K 2024 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.441] GM 10-K 2024 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4395] GM 10-K 2025 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4088] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3912] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3803] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.3671] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.363] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which manufacturer entered into a commercial agreement that restricted its ability to sell a specific vehicle type to other customers for a defined period, and how did that agreement change after the exclusivity window expired?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 342.9, 'search_ms': 20.5, 'traverse_ms': 0, 'llm_ms': 17610.7, 'total_ms': 17974.1}
+
+ANSWER:
+- Candidate entities: Amazon, Rivian Automotive, Ford Motor Company
+- Selected entity: Rivian Automotive
+- Supporting facts (from passages):
+  - In November 2023, Rivian amended its EDV Agreement with Amazon, which previously restricted Rivian from selling commercial vans to other commercial customers. After the exclusivity period, Rivian can now sell commercial vans to third parties, subject to certain distribution fees and limitations based on customer type and vehicle volume. The fees and limitations are structured to be in effect for five to ten years from January 1, 2024. Initial exclusivity was for four years after Amazon first received EDVs, followed by a two-year right of first refusal period. 
+
+Final Answer: Rivian Automotive entered into a commercial agreement with Amazon that initially restricted its ability to sell commercial vans to other customers, and after the exclusivity window expired, the agreement was amended to allow Rivian to sell commercial vans to third parties, subject to certain fees and restrictions.
+
+PATHS:
+  [0.7649] RIVN DEF 14A 2022-04-27 | Full Document
+            -> RIVN_DEF14A_2022-04-27__0__Full_Document__chunk_77
+  [0.7528] F 10-K 2024 | Item 3. Legal Proceedings (Continued)
+            -> F_10K_2024__37__Item_3_Legal_Proceedings_Continued__chunk_0
+  [0.7507] RIVN DEF 14A 2025-04-29 | Full Document
+            -> RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_77
+  [0.7444] RIVN 10-Q 2023-08-08 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-08-08__5__Item_1A_Risk_Factors__chunk_6
+  [0.7429] FSR 8-K 2024-01-10 | Item 8.01    Other Events
+            -> FSR_8K_2024-01-10__1__Item_8_01_Other_Events__chunk_0
+  [0.7417] F 10-K 2023 | Item 3. Legal Proceedings (Continued)
+            -> F_10K_2023__36__Item_3_Legal_Proceedings_Continued__chunk_0
+  [0.7406] GM 10-K 2024 | Item 1. Business
+            -> GM_10K_2024__1__Item_1_Business__chunk_2
+  [0.7388] RIVN 10-Q 2023-05-09 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-05-09__5__Item_1A_Risk_Factors__chunk_6
+  [0.735] RIVN DEF 14A 2024-04-29 | Full Document
+            -> RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_64
+  [0.7342] RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_9
+  [0.7333] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors__chunk_12
+  [0.7329] RIVN 10-Q 2024-05-07 | Item 1A. Risk Factors
+            -> RIVN_10Q_2024-05-07__5__Item_1A_Risk_Factors__chunk_8
+  [0.7313] TSLA 10-K 2022 | Item 1. BUSINESS
+            -> TSLA_10K_2022__1__Item_1_BUSINESS__chunk_5
+  [0.7313] RIVN 10-Q 2023-11-07 | Item 5. Other Information
+            -> RIVN_10Q_2023-11-07__7__Item_5_Other_Information__chunk_0
+  [0.7306] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2022__21__Item_1A_Risk_Factors_Continued__chunk_1
+  [0.7303] F 10-Q 2025-05-06 | Item 1. Legal Proceedings.
+            -> F_10Q_2025-05-06__62__Item_1_Legal_Proceedings__chunk_0
+  [0.7297] F 10-K 2022 | Item 3. Legal Proceedings (Continued)
+            -> F_10K_2022__31__Item_3_Legal_Proceedings_Continued__chunk_0
+  [0.7296] RIVN 10-Q 2025-08-05 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-08-05__5__Item_1A_Risk_Factors__chunk_12
+
+=================================================================
+Q: Which commercial vehicle manufacturer later entered bankruptcy proceedings, and what language did it use in its most recent annual report to describe uncertainties about its future operations?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [3037, 2889, 2826, 2453, 415, 2490]
+Latency:  {'embed_ms': 157.2, 'search_ms': 2320.5, 'traverse_ms': 29.6, 'llm_ms': 12213.0, 'total_ms': 14720.3}
+
+ANSWER:
+- Candidate entities: Nikola Corporation (NKLA), Workhorse Group Inc. (WKHS)
+- Selected entity: Nikola Corporation (NKLA)
+- Supporting facts (combined across passages):
+  - Nikola Corporation filed for Chapter 11 bankruptcy on February 19, 2025, ceasing business operations and selling substantially all assets. The company structured a Plan of Liquidation, which was confirmed by the Bankruptcy Court, resulting in the cancellation of its common stock without any distributions to shareholders.
+  - In its most recent annual report (10-K), Nikola outlined numerous risks and uncertainties about its future operations, primarily focusing on the impact of its bankruptcy proceedings, potential future performance of its vehicles, capital needs, and overall business viability. The report included forward-looking statements that acknowledge these uncertainties and the potential that actual outcomes could diverge significantly from the company's expectations due to various challenges.
+
+Final Answer: Nikola Corporation entered bankruptcy proceedings on February 19, 2025. In its most recent annual report, it described uncertainties about its future operations, especially relating to its bankruptcy and liquidation, future production capabilities, capital needs, and overall business viability.
+
+PATHS:
+  [0.5734] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5721] NKLA 10-K 2024 | Item 4.  Mine Safety Disclosures
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5643] NKLA 10-K 2024 | Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5337] WKHS 10-K 2024 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.528] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5278] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5271] WKHS 10-K 2024 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5264] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.524] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5207] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5099] NKLA 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5078] GM 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5064] NKLA 10-K 2023 | Item 16. Form 10-K Summary | 134
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5028] GM 10-K 2025 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5007] GM 10-K 2023 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4778] WKHS 10-K 2024 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.4616] GM 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.461] WKHS 10-K 2024 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.4557] GM 10-K 2025 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.327] GM 10-K 2024 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.327] GM 10-K 2022 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.3157] GM 10-Q 2020-11-05 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+
+=================================================================
+Q: Which commercial vehicle manufacturer later entered bankruptcy proceedings, and what language did it use in its most recent annual report to describe uncertainties about its future operations?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 158.2, 'search_ms': 19.0, 'traverse_ms': 0, 'llm_ms': 4146.4, 'total_ms': 4323.6}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - Nikola Corporation is currently undergoing bankruptcy proceedings as evidenced by the discussions of its Plan of Liquidation and the cessation of business operations, including stopping the manufacture and sale of trucks (passages [1], [2], [3], [5], [9]).
+  - Nikola's most recent annual report contains forward-looking statements that address uncertainties related to the company's future operations, including the effects of the company's bankruptcy, the need for additional capital, and various risk factors that could impact their ability to continue operations (passages [8], [9], [14]).
+
+Final Answer: Nikola Corporation entered bankruptcy proceedings, and it described uncertainties about its future operations in forward-looking statements referring to its ongoing bankruptcy and liquidation risks.
+
+PATHS:
+  [0.7871] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.7862] NKLA 10-K 2024 | Item 4.  Mine Safety Disclosures
+            -> NKLA_10K_2024__5__Item_4_Mine_Safety_Disclosures__chunk_0
+  [0.783] NKLA 10-K 2024 | Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections
+            -> NKLA_10K_2024__12__Item_9C_Disclosure_Regarding_Foreign_Jurisdictions__chunk_0
+  [0.7667] WKHS 10-K 2024 | Item 1. BUSINESS
+            -> WKHS_10K_2024__1__Item_1_BUSINESS__chunk_4
+  [0.7647] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_4
+  [0.7644] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2023__2__Item_1A_RISK_FACTORS__chunk_3
+  [0.7642] WKHS 10-K 2024 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2024__2__Item_1A_RISK_FACTORS__chunk_3
+  [0.7636] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_3
+  [0.7627] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7604] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2023__2__Item_1A_RISK_FACTORS__chunk_2
+  [0.7599] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2023__2__Item_1A_RISK_FACTORS__chunk_4
+  [0.7556] NKLA 10-K 2023 | Item 1A. Risk Factors
+            -> NKLA_10K_2023__2__Item_1A_Risk_Factors__chunk_13
+  [0.7555] WKHS 10-K 2024 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2024__2__Item_1A_RISK_FACTORS__chunk_0
+  [0.7543] NKLA 10-K 2023 | Item 16. Form 10-K Summary | 134
+            -> NKLA_10K_2023__0__Item_16_Form_10_K_Summary_134__chunk_1
+  [0.7539] GM 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GM_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_11
+  [0.7539] WKHS 10-K 2022 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2022__2__Item_1A_RISK_FACTORS__chunk_2
+  [0.7534] WKHS 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> WKHS_10K_2024__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_11
+  [0.7534] WKHS 10-K 2022 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2022__2__Item_1A_RISK_FACTORS__chunk_1
+
+=================================================================
+Q: Which company disclosed both regulatory or legal scrutiny of its business practices and later expressed substantial doubt about its ability to continue operating?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1013, 3037, 2826, 968, 2247, 453]
+Latency:  {'embed_ms': 182.4, 'search_ms': 11847.0, 'traverse_ms': 64.7, 'llm_ms': 8900.9, 'total_ms': 20995.0}
+
+ANSWER:
+- Candidate entities: Rivian Automotive, Nikola Corporation
+- Selected entity: Nikola Corporation
+
+**Supporting facts (combined across passages):**
+1. Nikola Corporation has undergone significant regulatory scrutiny, facing investigations by the Staff of the Division of Enforcement and the SDNY, related to its financial practices and projections, with implications of potential legal actions and penalties (Evidence [14]).
+2. The company has a substantial history of financial losses, reporting net losses of approximately $966.3 million in 2023 with an accumulated deficit of around $3.6 billion. This situation has raised significant doubt about its ability to continue operations without securing additional capital (Evidence [15]).
+3. Nikola has also faced negative publicity due to past allegations against its former executive chairman, contributing to reputational harm and regulatory scrutiny that could adversely affect its business operations (Evidence [15]).
+
+These combined facts from different passages indicate that Nikola Corporation disclosed both regulatory scrutiny and later expressed substantial doubt about its ability to continue operating.
+
+PATHS:
+  [0.5366] GM 10-Q 2022-10-25 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5248] RIVN 10-Q 2022-05-11 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5194] RIVN 10-K 2025 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5193] RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5162] TSLA 10-Q 2021-04-28 | Item 1. LEGAL PROCEEDINGS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5159] LCID 10-Q 2021-11-15 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5148] WKHS 10-Q 2021-11-09 | Item 1. LEGAL PROCEEDINGS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5145] WKHS 10-K 2023 | Item 3. LEGAL PROCEEDINGS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5137] TSLA 10-Q 2020-10-26 | Item 1. LEGAL PROCEEDINGS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5133] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5114] LCID 10-Q 2021-06-01 | Item 4. Controls and Procedures
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5113] GM 10-Q 2024-07-23 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5097] NKLA 10-Q 2021-05-07 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5087] GM 10-K 2022 | Item 3. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5071] NKLA 10-Q 2021-05-07 | Item 1. Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5046] NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5034] LCID 10-Q 2022-05-05 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5008] LCID 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.4987] TSLA 10-Q 2023-04-24 | Item 1. LEGAL PROCEEDINGS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.4119] GM 10-Q 2021-05-05 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4119] GM 10-Q 2021-10-27 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4119] GM 10-Q 2021-08-04 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4031] GM 10-Q 2020-11-05 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+
+=================================================================
+Q: Which company disclosed both regulatory or legal scrutiny of its business practices and later expressed substantial doubt about its ability to continue operating?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 261.0, 'search_ms': 23.9, 'traverse_ms': 0, 'llm_ms': 3774.8, 'total_ms': 4059.7}
+
+ANSWER:
+- Candidate entities: Nikola Corporation, Rivian, General Motors, Ford Motor Company
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - Passage [4] describes that Nikola Corporation faced significant legal scrutiny, including various investigations by the SEC and a grand jury relating to accusations made by Hindenburg Research about its business practices.
+  - It mentions subpoenas that were issued to the company and its executives, highlighting substantial legal scrutiny of its operations.
+  - Additionally, Nikola expressed that due to its financial difficulties—incurring net losses—it had significant doubt about its ability to continue as a going concern, as discussed in Passage [5]. This directly states that substantial doubt exists regarding Nikola’s ability to continue operations due to ongoing financial challenges and the potential need for additional financing. 
+
+Thus, these combined pieces of information answer the question regarding the company that disclosed both regulatory or legal scrutiny and substantial doubt about its ability to continue operating. 
+
+Final Answer: Nikola Corporation
+
+PATHS:
+  [0.7686] GM 10-Q 2022-10-25 | Item 1. Legal Proceedings
+            -> GM_10Q_2022-10-25__5__Item_1_Legal_Proceedings__chunk_0
+  [0.7667] RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_37
+  [0.7636] F 10-Q 2021-10-28 | Item 1. Legal Proceedings.
+            -> F_10Q_2021-10-28__69__Item_1_Legal_Proceedings__chunk_0
+  [0.7632] NKLA 10-Q 2021-05-07 | Item 1. Financial Statements
+            -> NKLA_10Q_2021-05-07__2__Item_1_Financial_Statements__chunk_21
+  [0.7627] NKLA 10-Q 2021-08-03 | Item 1. Financial Statements
+            -> NKLA_10Q_2021-08-03__2__Item_1_Financial_Statements__chunk_30
+  [0.7621] RIVN 10-Q 2022-05-11 | Item 1. Legal Proceedings
+            -> RIVN_10Q_2022-05-11__4__Item_1_Legal_Proceedings__chunk_1
+  [0.7596] RIVN 10-K 2025 | Item 1A. Risk Factors
+            -> RIVN_10K_2025__1__Item_1A_Risk_Factors__chunk_41
+  [0.7595] TSLA 10-Q 2021-04-28 | Item 1. LEGAL PROCEEDINGS
+            -> TSLA_10Q_2021-04-28__6__Item_1_LEGAL_PROCEEDINGS__chunk_0
+  [0.7594] RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors__chunk_34
+  [0.7593] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2025__13__Item_1A_Risk_Factors_Continued__chunk_0
+  [0.7581] TSLA 10-Q 2020-10-26 | Item 1. LEGAL PROCEEDINGS
+            -> TSLA_10Q_2020-10-26__5__Item_1_LEGAL_PROCEEDINGS__chunk_0
+  [0.7579] LCID 10-Q 2021-11-15 | Item 1A. Risk Factors.
+            -> LCID_10Q_2021-11-15__7__Item_1A_Risk_Factors__chunk_43
+  [0.7576] WKHS 10-Q 2021-11-09 | Item 1. LEGAL PROCEEDINGS
+            -> WKHS_10Q_2021-11-09__6__Item_1_LEGAL_PROCEEDINGS__chunk_0
+  [0.7575] RIVN 10-Q 2022-08-11 | Item 1A. Risk Factors
+            -> RIVN_10Q_2022-08-11__5__Item_1A_Risk_Factors__chunk_39
+  [0.7575] WKHS 10-K 2023 | Item 3. LEGAL PROCEEDINGS
+            -> WKHS_10K_2023__5__Item_3_LEGAL_PROCEEDINGS__chunk_0
+  [0.7568] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2023__2__Item_1A_RISK_FACTORS__chunk_0
+  [0.7566] WKHS 10-Q 2022-05-10 | Item 1. FINANCIAL STATEMENTS
+            -> WKHS_10Q_2022-05-10__2__Item_1_FINANCIAL_STATEMENTS__chunk_14
+  [0.7561] GM 10-Q 2024-07-23 | Item 1. Legal Proceedings
+            -> GM_10Q_2024-07-23__5__Item_1_Legal_Proceedings__chunk_0
+

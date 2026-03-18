@@ -1,0 +1,11 @@
+file,linked_to,title,ticker,form_type,period
+demo_docs/synthetic/tsla_cfo_retention_grant_2024.txt,RIVN_10K_2023__1__Item_1A_Risk_Factors,Tesla CFO Retention Grant 2024,TSLA,research,2024
+demo_docs/synthetic/rivn_edv_insurance_analysis_2023.txt,GM_10K_2023__8__Item_7A,Rivian EDV Insurance and TCO Analysis 2023,RIVN,research,2023
+demo_docs/synthetic/gm_ultium_yield_report_2023.txt,TSLA_10K_2022__3__Item_2_PROPERTIES,GM Ultium Cells Lordstown Yield Report Q3 2023,GM,research,2023-Q3
+demo_docs/synthetic/ford_bluoval_city_update_2023.txt,LCID_10K_2023__2__Item_1A_Risk_Factors,Ford BlueOval City Construction Update 2023,F,research,2023
+demo_docs/synthetic/lcid_saudi_delivery_2023.txt,F_10K_2023__101__Item_16_Form_10_K_Summary,Lucid PIF Saudi Arabia Delivery Report Q3 2023,LCID,research,2023-Q3
+demo_docs/synthetic/rivn_factory_automation_2024.txt,GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin,Rivian Normal Factory Automation Program 2024,RIVN,research,2024
+demo_docs/synthetic/gm_equinox_ev_pricing_2023.txt,TSLA_10K_2023__2__Item_1A_RISK_FACTORS,GM Chevy Equinox EV Pricing Strategy 2023,GM,research,2023
+demo_docs/synthetic/ford_supplier_quality_2023.txt,RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin,Ford Battery Supplier Quality Report Q2 2023,F,research,2023-Q2
+demo_docs/synthetic/lcid_gravity_crash_test_2023.txt,GM_10K_2023__10__Item_9A_Controls_and_Procedures,Lucid Gravity SUV Crash Test Certification 2023,LCID,research,2023
+demo_docs/synthetic/tsla_supercharger_expansion_2023.txt,TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN,Tesla Supercharger Network Expansion Full Year 2023,TSLA,research,2023

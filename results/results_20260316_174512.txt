@@ -1,0 +1,754 @@
+=================================================================
+Q: What are Tesla's main risk factors in their 2023 annual report?
+Mode:     graph_rag
+Tickers:  ['TSLA']
+Clusters: [502, 1060, 604]
+Latency:  {'embed_ms': 1213.2, 'search_ms': 113.8, 'traverse_ms': 4.2, 'llm_ms': 14118.7, 'total_ms': 15450.0}
+
+ANSWER:
+In Tesla's 2023 10-K filing, specifically in the 'Item 1A. RISK FACTORS' section, several critical risks are highlighted that could adversely affect the company's business. Here are the main risk factors outlined:
+
+1. **Product Launch and Production Delays**: Tesla may face potential delays in launching new products and ramping up production, which could impact sales and financial performance (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+2. **Supplier Relationships and Component Shortages**: Challenges in managing supplier relationships and shortages of key components could hinder production capabilities and limit Tesla's ability to meet demand (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+3. **Forecasting Demand**: Accurately predicting demand for electric vehicles and energy products is crucial. Any discrepancies in forecasted demand versus actual could lead to financial losses (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+4. **Labor and Union Activities**: The potential for union activities to disrupt operations can lead to increased costs and risks of work stoppages, affecting production and sales (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+5. **Product Recalls**: As a manufacturing company, Tesla must manage the inherent risk of product recalls due to safety concerns or non-compliance, which can generate significant expenses and reputational harm (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+6. **Warranty Reserves**: Insufficient warranty reserves to cover future claims could adversely affect Tesla's financial condition and operational results (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+7. **Insurance Coverage**: Tesla's current insurance coverage may not be adequate to protect against all business risks, potentially leading to significant financial exposure (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+8. **Debt Covenant Compliance**: The terms of certain debt facilities impose restrictions that could limit Tesla's operational flexibility and financial activities (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+9. **Employee Retention and Talent Acquisition**: The ability to attract and retain key employees is critical for operations, and competition for skilled personnel is high, particularly in the electric vehicle sector (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+10. **Changes in Regulations**: Tesla's operations are subject to evolving laws and regulations that could impose substantial costs or unfavorable changes upon its business (SOURCE: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+These risk factors emphasize the challenges Tesla may confront as it continues to grow its business and navigate the competitive landscape of electric vehicles and energy solutions.
+
+PATHS:
+  [0.83] TSLA 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8273] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8197] TSLA 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8179] TSLA 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8166] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8142] TSLA 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8127] TSLA 10-K 2023 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8102] TSLA 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8077] TSLA 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8071] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+
+=================================================================
+Q: What are Tesla's main risk factors in their 2023 annual report?
+Mode:     rag
+Tickers:  ['TSLA']
+Clusters: None
+Latency:  {'embed_ms': 1011.4, 'search_ms': 27.2, 'traverse_ms': 0, 'llm_ms': 15730.7, 'total_ms': 16769.4}
+
+ANSWER:
+Tesla's 2023 annual report outlines several main risk factors that could adversely affect the company’s business, financial condition, and operating results. These risk factors include:
+
+1. **Cybersecurity Vulnerabilities**: Tesla encourages reporting of potential vulnerabilities in its products and aims to address them. However, it acknowledges that unauthorized access or data loss could result in legal claims and harm its brand and operating results. The report states, “any unauthorized access to or control of our products…could result in legal claims or government investigations.”
+
+2. **Labor and Union Activities**: Reports of union activities or efforts to organize workers could lead to increased costs and potential work stoppages. The filing notes, “our business may be adversely affected by any disruptions caused by union activities,” indicating that union troubles could disrupt operations.
+
+3. **Product Recalls**: Tesla must manage the risk of product recalls due to safety concerns or regulatory non-compliance. The report expresses, “such recalls…could result in significant expense, supply chain complications and service burdens, and may harm our brand…”
+
+4. **Warranty Reserves**: There is a risk that Tesla's warranty reserves may be inadequate to cover future claims, which could harm its financial results. The document mentions, “If our warranty reserves are inadequate to cover future warranty claims on our products, our financial condition and operating results may be harmed.”
+
+5. **Insurance Coverage**: Tesla may face liabilities from product liability claims and other risks without adequate insurance coverage, affecting its financial stability. It states that “we generally self-insure against the risk of product liability claims for vehicle exposure.”
+
+6. **Regulatory Investigations**: The company regularly receives information requests and subpoenas from regulators, which may lead to enforcement actions and could have a material adverse impact on its business. The filings outline strong regulatory scrutiny and potential investigations by various agencies, stating, “If an unfavorable ruling or development were to occur in these or other possible legal proceedings…there exists the possibility of a material adverse impact on our business…”
+
+7. **Intellectual Property Risks**: The potential for intellectual property theft and the inability to protect proprietary information could harm Tesla’s competitive position. It emphasizes that “the theft or unauthorized use or publication of our trade secrets and confidential information could affect our competitive position.”
+
+8. **Employee Retention**: The ability to attract and retain key employees, particularly leadership, is crucial for Tesla’s success. The excerpts note, “the loss of the services of any of our key employees or any significant portion of our workforce could disrupt our operations.”
+
+9. **Compliance with ESG Expectations**: Increasing scrutiny regarding environmental, social, and governance practices could result in additional costs and reputational harm if not managed according to stakeholder expectations.
+
+10. **Market Competition**: Tesla faces intense competition from established and emerging automotive manufacturers entering the electric vehicle market, which could impact its market share and sales. The report indicates that “many established and new automobile manufacturers have entered or have announced plans to enter the market for electric and other alternative fuel vehicles.”
+
+These risk factors reflect a comprehensive understanding of various challenges Tesla faces, including technological vulnerabilities, labor relations, regulatory scrutiny, competitive pressures, and operational complexities.
+
+PATHS: none
+
+=================================================================
+Q: What was Ford's revenue in 2023?
+Mode:     graph_rag
+Tickers:  ['F']
+Clusters: [944, 536, 260]
+Latency:  {'embed_ms': 321.0, 'search_ms': 53.1, 'traverse_ms': 3.2, 'llm_ms': 3890.6, 'total_ms': 4268.0}
+
+ANSWER:
+Ford's total revenue in 2023 was $176.191 billion, which includes revenues from both its automotive operations and the Ford Credit segment (Source: F | 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations, Selected Income Statement Information).
+
+PATHS:
+  [0.8561] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8551] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8479] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8478] F 10-K 2023 | Item 16. Form 10-K Summary.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8437] F 10-K 2023 | Item 16. Form 10-K Summary.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8332] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8322] F 10-K 2023 | Item 16. Form 10-K Summary.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: What was Ford's revenue in 2023?
+Mode:     rag
+Tickers:  ['F']
+Clusters: None
+Latency:  {'embed_ms': 901.1, 'search_ms': 24.3, 'traverse_ms': 0, 'llm_ms': 2075.3, 'total_ms': 3000.7}
+
+ANSWER:
+Ford's total revenue in 2023 was $176.191 billion, as indicated in the excerpts. Specifically, the revenue from vehicles, parts, and accessories was $161.052 billion, with additional revenues from used vehicles, services and other revenue, leasing income, financing income, and insurance income contributing to the total.
+
+PATHS: none
+
+=================================================================
+Q: How much cash did Rivian have at the end of 2023?
+Mode:     graph_rag
+Tickers:  ['RIVN']
+Clusters: [560, 529]
+Latency:  {'embed_ms': 2064.6, 'search_ms': 45.0, 'traverse_ms': 2.7, 'llm_ms': 3736.3, 'total_ms': 5848.7}
+
+ANSWER:
+At the end of 2023, Rivian had $7,857 million in cash and cash equivalents, as reported in the consolidated balance sheets in Rivian's 10-K filing for 2023 (Item 8, Financial Statements and Supplementary Data).
+
+PATHS:
+  [0.8586] RIVN letter 2023-Q4 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> RIVN_10K_2023
+  [0.8395] RIVN 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8379] RIVN 10-K 2023 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8342] RIVN 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8312] RIVN letter 2023-Q4 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> RIVN_10K_2023
+  [0.8286] RIVN 10-K 2023 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+
+=================================================================
+Q: How much cash did Rivian have at the end of 2023?
+Mode:     rag
+Tickers:  ['RIVN']
+Clusters: None
+Latency:  {'embed_ms': 902.7, 'search_ms': 21.9, 'traverse_ms': 0, 'llm_ms': 1635.4, 'total_ms': 2560.1}
+
+ANSWER:
+At the end of 2023, Rivian Automotive, Inc. had $7,857 million in cash and cash equivalents. This information can be found in Chunk 3, which details the consolidated balance sheets.
+
+PATHS: none
+
+=================================================================
+Q: Compare the risk factors of Tesla and Ford in their 2023 annual reports.
+Mode:     graph_rag
+Tickers:  ['TSLA', 'F']
+Clusters: [944, 371, 1060]
+Latency:  {'embed_ms': 748.3, 'search_ms': 36.8, 'traverse_ms': 3.7, 'llm_ms': 16827.4, 'total_ms': 17616.3}
+
+ANSWER:
+In their 2023 annual reports, both Tesla and Ford highlight a range of operational, financial, and regulatory risks reflecting the current challenges in the automotive industry, particularly related to their transitions towards electrification and technology advancements. 
+
+### Key Areas of Comparison:
+
+1. **Supply Chain and Component Dependencies**:
+   - **Ford** emphasizes dependency on suppliers for components and raw materials critical for vehicle production, especially for electric vehicles (EVs). Shortages or inability to source essential materials like lithium, cobalt, nickel, and graphite could disrupt production and increase costs (10-K 2023, Item 1A, Risk Factors) (Excerpt 5).
+   - **Tesla**, similarly, faces risks associated with its supply chain, particularly concerning the components critical for its electric and autonomous vehicle technologies. It acknowledges risks from potential supply shortages and production disruptions, highlighting the industry's competitive landscape as additional strains on acquiring necessary components (10-K 2023, Item 8, Risk Factors) (Excerpt 4).
+
+2. **Regulatory Compliance**:
+   - **Ford** is subject to a rapidly changing regulatory environment, which includes compliance with safety, emissions, and environmental standards. Non-compliance may lead to significant fines and modifications to product plans, further impacting its financial status and operational capabilities (10-K 2023, Item 1A, Risk Factors) (Excerpt 6).
+   - **Tesla** also notes substantial legal and regulatory scrutiny, especially concerning allegations related to product defects and compliance with safety regulations. Ongoing investigations and litigation could present substantial risks and financial implications for Tesla's operations and reputation (10-K 2023, Item 8, Risk Factors) (Excerpt 4).
+
+3. **Technological Advancements and Market Acceptance**:
+   - **Ford** identifies the challenge of keeping pace with technology advancements and market acceptance of its electrified and connected vehicle offerings. The company commits significant investments in these areas but expresses concern over potential slow adoption rates impacting financial returns (10-K 2023, Item 1A, Risk Factors) (Excerpt 7).
+   - **Tesla** underscores the rapid pace of competition from both traditional and new entrants in the EV market, emphasizing the necessity of continued innovation and advancement in vehicle technologies and the importance of market acceptance for new offerings. Failure to effectively launch or improve products could harm Tesla's business and financial performance (10-K 2023, Item 8, Risk Factors) (Excerpt 4).
+
+4. **Financial and Operational Risks**:
+   - **Ford** acknowledges concerns about rising costs associated with raw materials and labor, alongside the impact of inflationary pressures on its production and profitability across different vehicle segments (10-K 2023, Item 7, MD&A) (Excerpt 1).
+   - **Tesla** highlights risks related to warranty costs and the management of its supply chain costs, which are affected by broader economic issues and technological uncertainties (10-K 2023, Item 8, Financial Statements) (Excerpt 8).
+
+In summary, both companies detail significant operational dependencies on suppliers, a complex regulatory landscape, challenges related to technological advancements and market acceptance, and overarching financial risks. While their risks are framed within a similar context of transitioning to electrified vehicle production, the specific nature of these risks, and how they may impact their operations and financial outcomes, reflect their unique business models and market positions.
+
+PATHS:
+  [0.8066] F 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7955] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7953] F 10-K 2023 | Item 7.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7951] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.791] F 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7889] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7887] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7867] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+
+=================================================================
+Q: Compare the risk factors of Tesla and Ford in their 2023 annual reports.
+Mode:     rag
+Tickers:  ['TSLA', 'F']
+Clusters: None
+Latency:  {'embed_ms': 201.7, 'search_ms': 17.0, 'traverse_ms': 0, 'llm_ms': 13195.7, 'total_ms': 13414.4}
+
+ANSWER:
+The risk factors outlined in the 2023 annual reports for Tesla and Ford highlight various operational, financial, regulatory, and market-related challenges faced by both companies. Here's a comparison based on the provided excerpts:
+
+### Operational Risks
+
+**Ford:**
+- Heavily dependent on suppliers for components and raw materials, particularly critical for electric vehicle (EV) production, which involves lithium, cobalt, nickel, graphite, and manganese. Any disruption in the supply chain can significantly impact vehicle production (Chunks 1, 5).
+- The company faces production challenges due to supplier labor shortages and rising claims related to inflation affecting their supply base (Chunk 1).
+
+**Tesla:**
+- Tesla also relies on suppliers for critical components, including those required for electric vehicle production. The company’s supply chain is similarly vulnerable to disruptions caused by shortages of raw materials necessary for battery production, which could disrupt operations (Chunk 3).
+
+### Financial Risks
+
+**Ford:**
+- Risks tied to litigation, governmental investigations, and the impact of regulatory changes on its financial condition (Chunk 2, 5).
+- Inflationary pressure and fluctuations in commodity prices could adversely affect costs and overall profitability (Chunk 5).
+
+**Tesla:**
+- Expects potential financial impacts from ongoing investigations and litigation that could adversely affect its brand and financial results (Chunk 4).
+- Tesla also cites financial uncertainty due to compliance with changing regulations and the market acceptance of its EV products, reflecting risks from credit loss expectations (Chunk 2).
+
+### Regulatory and Compliance Risks
+
+**Ford:**
+- Must adjust product plans and facilities for compliance with evolving safety, emissions, and environmental standards. This dynamic creates a potential for increased costs and operational disruptions (Chunk 8).
+- Engages in substantial expenditures for compliance, with ongoing lawsuits potentially affecting operational costs despite regulatory compliance (Chunk 8).
+
+**Tesla:**
+- Faces scrutiny from various regulatory bodies, impacting its ability to operate without reputational and financial risks. Ongoing investigations concerning product quality and regulatory practices add to its uncertainties (Chunk 4).
+- Similar to Ford, compliance with environmental regulations affects operational costs and necessitates adapting production strategies to meet new standards and consumer expectations (Chunk 6).
+
+### Market and Competitive Risks
+
+**Ford:**
+- Noted increased competition in the automotive market, particularly regarding pricing pressures due to excess capacity and the shift toward electrification, which may lead to lower profitability (Chunk 1).
+- Faces challenges due to lower-than-expected adoption rates of electric vehicles, affecting planned production volumes and operational costs (Chunk 1).
+
+**Tesla:**
+- Competes in a highly competitive EV market with both established automakers and new entrants. This competition emphasizes the need for innovation and market adaptability (Chunk 6).
+- The company must continue to enhance its offerings in light of increased competition for self-driving technologies and charging solutions (Chunk 6).
+
+### Summary
+Both Ford and Tesla face significant operational challenges related to their supply chains, heightened regulatory scrutiny, and competitive pressures in the evolving automotive industry. Ford emphasizes its dependence on suppliers and market pressures from electrification, while Tesla's risks stem from ongoing legal inquiries and competitive positioning within the fast-developing EV market. Overall, each company’s risk landscape reflects their unique strategic positions and operational focuses within the automotive industry, and while they share common risk themes, the specifics of their challenges and the potential impacts on their businesses differ.
+
+PATHS: none
+
+=================================================================
+Q: Which EV companies mention battery supply chain as a risk?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [560, 502, 944]
+Latency:  {'embed_ms': 304.9, 'search_ms': 31.6, 'traverse_ms': 5.1, 'llm_ms': 12252.7, 'total_ms': 12594.3}
+
+ANSWER:
+Several electric vehicle (EV) companies mention battery supply chain risks in their filings:
+
+1. **Rivian Automotive, Inc.**: In their 10-K for 2025 (Item 1A. Risk Factors), Rivian discusses their dependence on the continued supply of battery cells for their vehicles. They highlight that the inability or unwillingness of battery cell manufacturers to build or operate facilities to meet the required numbers and chemistries would impact their manufacturing and delivery timelines, potentially adversely affecting their financial condition (Source: RIVN | 10-K 2025 | Item 1A. Risk Factors).
+
+2. **Ford Motor Company**: In their 2024 10-K filing (Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations), Ford notes that prices for raw materials for EVs, such as lithium and cobalt, remain volatile and that increased costs or supply constraints could negatively impact their production costs and operational performance (Source: F | 10-K 2024 | Item 7).
+
+3. **Lucid Motors (LCID)**: In their 2025 10-K (Item 1A. Risk Factors), Lucid mentions the potential disruptions in the supply chain for crucial components, including materials for lithium-ion batteries, which could interfere with their ability to manufacture and distribute products efficiently (Source: LCID | 10-K 2025 | Item 1A. Risk Factors).
+
+4. **Tesla, Inc.**: In their 2023 10-K (Item 1A. Risk Factors), Tesla acknowledges the necessity of maintaining a reliable supply of battery cells and the potential challenges of meeting volume needs from suppliers, which could affect their growth and profitability (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+These excerpts indicate a shared recognition among EV manufacturers of the critical nature of battery supply chains to their operational success and profitability.
+
+
+PATHS:
+  [0.817] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8109] F 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8085] RIVN 10-Q 2025-11-04 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8064] RIVN 10-Q 2025-08-05 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8055] RIVN 10-K 2025 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8055] GM 10-K 2025 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8054] LCID 10-K 2025 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.8044] TSLA 10-K 2024 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8044] RIVN 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8032] TSLA 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+
+=================================================================
+Q: Which EV companies mention battery supply chain as a risk?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 762.3, 'search_ms': 7.3, 'traverse_ms': 0, 'llm_ms': 16993.5, 'total_ms': 17763.1}
+
+ANSWER:
+The excerpts provided mention Rivian Automotive, Inc. as a company that recognizes the battery supply chain as a risk. Specifically, it mentions that "our business depends on the continued supply of battery cells for our vehicles" and that the "inability or unwillingness of battery cell manufacturers to build or operate battery cell manufacturing plants to supply the numbers of battery cells... would impact our projected manufacturing and delivery timelines, and adversely affect our business, prospects, financial condition, results of operations, or cash flows" (Chunk 1).
+
+Additionally, it highlights the risks associated with their existing suppliers, stating, "we are dependent on our existing vendors and suppliers, a significant number of which are single or limited source suppliers" and the challenges they may face in obtaining battery cells (Chunk 3).
+
+While the provided excerpts primarily focus on Rivian, they hint at general industry risks that may apply to other EV companies as well, such as "commodity and energy prices" impacting costs for batteries and components (Chunk 2). However, Rivian specifically names the risk related to the battery supply chain in relation to its production and operational strategies. 
+
+No other EV companies are explicitly mentioned in the excerpts regarding battery supply chain risks. Therefore, Rivian is the only company highlighted in this context based on the provided information.
+
+PATHS: none
+
+=================================================================
+Q: How do Tesla and Rivian describe their manufacturing challenges?
+Mode:     graph_rag
+Tickers:  ['TSLA', 'RIVN']
+Clusters: [560, 540]
+Latency:  {'embed_ms': 251.0, 'search_ms': 39.1, 'traverse_ms': 3.0, 'llm_ms': 20209.1, 'total_ms': 20502.3}
+
+ANSWER:
+Tesla and Rivian, both prominent players in the electric vehicle (EV) market, face significant manufacturing challenges, albeit with their unique circumstances and strategies.
+
+**Rivian's Manufacturing Challenges:**
+Rivian highlights various challenges in its manufacturing process, especially concerning supply chain vulnerabilities and production capacity. The company operates its manufacturing facility in Normal, Illinois, which is designed to produce up to 215,000 vehicles annually when running at full capacity. However, Rivian's production has often run significantly below this capacity, leading to higher per-unit costs due to lower utilization rates. For example, Rivian stated that the production capacity at its Normal Factory is currently operating below full capacity, which results in higher overhead costs per unit (see 10-K 2024, Item 7). The company has also faced various manufacturing-related component shortages and challenges with raw materials, particularly battery components such as lithium and nickel. Rivian indicated a proactive approach to mitigating risks associated with sole-sourcing materials, including qualifying alternative suppliers and developing contingency plans (see 10-K 2024, Item 1).
+
+**Tesla's Manufacturing Challenges:**
+While not explicitly detailed in the provided excerpts, Tesla often grapples with similar challenges related to supply chain disruptions, ramping production levels, and managing costs. Tesla has faced constraints in scaling its production due to challenges in securing sufficient battery supplies and other critical components, particularly during periods of rapid growth. Tesla's manufacturing operations are also characterized by high levels of automation and significant investment in optimizing their production lines to enhance efficiency and reduce costs.
+
+In summary, while both Tesla and Rivian encounter manufacturing challenges related to capacity and supply chain vulnerabilities, Rivian specifically emphasizes its current struggles with production efficiency and component shortages as pivotal issues affecting its operational performance, as noted in its recent filings.
+
+PATHS:
+  [0.8285] RIVN 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8214] RIVN 10-K 2024 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8195] RIVN 10-K 2022 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.819] RIVN 10-K 2025 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8103] RIVN 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8095] RIVN 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8095] RIVN 10-Q 2024-11-07 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8091] RIVN 10-Q 2025-11-04 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8084] RIVN 10-K 2024 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8075] RIVN 10-K 2025 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+
+=================================================================
+Q: How do Tesla and Rivian describe their manufacturing challenges?
+Mode:     rag
+Tickers:  ['TSLA', 'RIVN']
+Clusters: None
+Latency:  {'embed_ms': 179.8, 'search_ms': 17.2, 'traverse_ms': 0, 'llm_ms': 10897.2, 'total_ms': 11094.3}
+
+ANSWER:
+The excerpts from Rivian's SEC filings provide a detailed view of their manufacturing challenges, although there are no direct references to Tesla or their specific descriptions of manufacturing challenges. Here are the relevant details regarding Rivian's manufacturing challenges:
+
+1. **Production Capacity and Efficiency Issues**: Rivian mentions that their manufacturing facility in Normal, Illinois, is currently operating below full capacity, leading to high costs per unit of production. The text states that "the production capacity at our manufacturing facility... is operating significantly below full vehicle production rate capacity," which results in "cost of revenues to operate the plant being much higher per unit of production" (Chunk 8).
+
+2. **Supply Chain Vulnerabilities**: Rivian acknowledges facing component shortages, particularly for certain raw materials, which complicates their manufacturing process. They note that "we have faced and continue to face various manufacturing-related product component shortages," exacerbated by suppliers struggling to match Rivian's vehicle ramp rate (Chunk 3).
+
+3. **Sole-Source Supplier Risks**: Many raw materials and components are sourced from "mostly single- or limited-source suppliers, for which no immediate or readily available alternative supplier exists." To mitigate these risks, Rivian seeks to qualify alternative suppliers and develop contingency plans (Chunk 4).
+
+4. **Challenges with Battery Raw Materials**: Rivian identifies battery raw materials—like lithium, nickel, graphite, and cobalt—as particularly vulnerable aspects of their supply chain. They note that "timelines for these upstream materials are notably longer and more variable than the downstream supply chain due to factors outside of our control" (Chunk 3).
+
+5. **Cost Control and Efficiency Improvements**: Rivian is working to improve efficiencies following a plant retooling upgrade but admits that achieving necessary cost reductions is contingent on timely production launches and scaling to meet production volumes (Chunk 5).
+
+In summary, Rivian's description of manufacturing challenges centers on issues related to production capacity, supply chain constraints, reliance on limited-source suppliers, and the complexity of managing battery raw materials, along with the broader need for cost control as they scale operations. There is no information provided in the excerpts regarding how Tesla describes its own manufacturing challenges. Therefore, without further context or excerpts from Tesla, we cannot compare or contrast their descriptions.
+
+PATHS: none
+
+=================================================================
+Q: How did Tesla's risk factors change between 2022 and 2023?
+Mode:     graph_rag
+Tickers:  ['TSLA']
+Clusters: [1060, 1053, 502]
+Latency:  {'embed_ms': 161.4, 'search_ms': 39.7, 'traverse_ms': 3.0, 'llm_ms': 9622.2, 'total_ms': 9826.4}
+
+ANSWER:
+Tesla's risk factors as outlined in their 2022 and 2023 10-K filings reflect some notable continuities as well as some evolving concerns in the company's operational landscape. 
+
+In the 2022 risk factors (Item 1A of the 10-K), Tesla highlighted challenges related to the ongoing impact of the COVID-19 pandemic on supply chains, labor shortages, and production delays. The company also emphasized issues surrounding supplier reliability and the necessity for increased battery cell supply as critical to its operations. Additionally, factors such as the cyclical nature of the automotive market and increasing competition were also underscored as potential risks affecting their business, financial condition, and operational results (TSLA | 10-K 2022 | Item 1A. RISK FACTORS).
+
+When examining the 2023 risk factors, while some issues from the previous year remained relevant, there was an intensified focus on macroeconomic pressures such as rising interest rates and inflation, which had become more prominent concerns for the automotive industry (TSLA | 10-K 2023 | Item 1A. RISK FACTORS). The heightened emphasis on these external economic conditions suggests that as 2023 progressed, these factors were seen as increasingly impacting consumer behavior and overall demand for electric vehicles.
+
+Furthermore, the 2023 filing pointed out the regulatory challenges Tesla faces regarding its direct-to-consumer sales model and increasing scrutiny on its Autopilot and FSD technologies. The uncertainty surrounding government regulations around electric vehicle sales was flagged as a risk that could further complicate operational challenges (TSLA | 10-K 2023 | Item 1A. RISK FACTORS).
+
+In summary, Tesla's risk landscape shifted from a relatively stronger focus on supply chain disruptions and production delays in 2022 to a broader inclusion of economic factors like interest rates and regulatory scrutiny in 2023. This evolution indicates a more complex interplay of external economic dynamics and regulatory frameworks within which Tesla must operate.
+
+PATHS:
+  [0.7918] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.7866] TSLA transcript 2023-Q4 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA
+  [0.785] TSLA 10-K 2023 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.7822] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.7798] TSLA 10-K 2022 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.7787] TSLA 10-K 2022 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.7745] TSLA transcript 2023-Q4 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA
+  [0.7708] TSLA transcript 2023-Q4 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA
+  [0.7707] TSLA 10-K 2022 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.7686] TSLA 10-K 2022 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+
+=================================================================
+Q: How did Tesla's risk factors change between 2022 and 2023?
+Mode:     rag
+Tickers:  ['TSLA']
+Clusters: None
+Latency:  {'embed_ms': 720.3, 'search_ms': 13.0, 'traverse_ms': 0, 'llm_ms': 9559.5, 'total_ms': 10292.9}
+
+ANSWER:
+Tesla's risk factors experienced notable changes between 2022 and 2023. Here are the key aspects as reflected in the SEC filings:
+
+1. **Legal Proceedings**: The legal landscape for Tesla became more complex in 2023. There were multiple ongoing lawsuits and class actions, particularly related to allegations concerning the company's Autopilot and Full Self-Driving (FSD) technologies. For instance, in October 2023, a similar proposed class action was filed in San Diego, following a previous class action that alleged material misrepresentations between February 19, 2019, and February 17, 2023 (Chunk 1). This indicates an escalation and expansion of legal risks related to product offerings and corporate governance.
+
+2. **Regulatory Investigations**: The filings noted that Tesla continued to receive inquiries and subpoenas from various governmental agencies, including the SEC and DOJ, which indicates that regulatory scrutiny remains a significant risk factor (Chunk 1). Furthermore, the ongoing investigations pertain not only to operational aspects but also specifically to FSD capabilities, hinting at a shift towards more focused regulatory concerns.
+
+3. **Market Conditions**: While Tesla noted record production and deliveries in 2023, they also faced increasing challenges due to higher interest rates and inflation (Chunk 2). This reflects an environmental risk that did not prominently feature in the previous year's filings. The company's ability to maintain sales growth amid economic volatility became a new consideration for investors.
+
+4. **Supply Chain Dependence**: The increased dependence on battery supply chains for vehicle production highlighted potential risks in material availability and price volatility (Chunk 5). In 2023, Tesla acknowledged that disruption in battery supply could significantly impact production, which was a more pronounced concern compared to the previous year’s filings.
+
+5. **Market Dynamics and Competition**: The competitive landscape for electric vehicles became more aggressive in 2023, impacting demand for Tesla’s vehicles. The company now faces increased competition not just from other EV makers but also from internal competition among its vehicle models (Chunk 5). This shift represents a more intricate competitive risk environment compared to 2022.
+
+6. **Cybersecurity**: In 2023, Tesla faced a potential class action related to a data breach involving misappropriated data, which brought cybersecurity risks to the forefront of its risk assessment (Chunk 1). Such legal challenges regarding data privacy had not been a main focus previously.
+
+7. **Financial Stability and Capital Requirements**: Tesla's finances reflected growing revenues and cash reserves, yet the risks of capital requirements for expansion remained paramount. For example, significant investments in production and technology remained essential to manage growth, which underlined a risk factor associated with cash flows and investment returns that may not materialize as planned (Chunk 5).
+
+In summary, Tesla's risk factors from 2022 to 2023 evolved significantly, highlighting increased legal and regulatory scrutiny, economic challenges, supply chain dependencies, competitive pressures, cybersecurity threats, and financial risks associated with ongoing capital investments.
+
+PATHS: none
+
+=================================================================
+Q: What does GM say about its electric vehicle strategy?
+Mode:     graph_rag
+Tickers:  ['GM']
+Clusters: [940, 944]
+Latency:  {'embed_ms': 261.3, 'search_ms': 33.6, 'traverse_ms': 2.7, 'llm_ms': 9277.1, 'total_ms': 9574.7}
+
+ANSWER:
+General Motors (GM) outlines a comprehensive electric vehicle (EV) strategy focused on scaling production, enhancing vehicle offerings, and fostering an ecosystem for EV adoption. Here are the key points from their recent filings:
+
+1. **Production Capacity Goals**: GM aims to achieve an annual EV production capacity of one million units in North America by 2025. The company plans to leverage its Ultium platform, a dedicated EV propulsion architecture, to support this goal and expand the EV portfolio to include a diverse range of vehicles across various segments and price points (10-K 2023, Item 1. Business).
+
+2. **Investment in Infrastructure**: GM has committed significant resources to enhance charging infrastructure, investing nearly $750 million through 2025. This will support customers' access to comprehensive charging solutions at home, work, and in public spaces. Currently, GM's EV drivers can access over 174,000 chargers across the U.S. and Canada, with plans for future partnerships to expand this network extensively (10-K 2023, Item 1. Business).
+
+3. **Manufacturing and Battery Production**: GM is actively investing in manufacturing facilities to support EV production, including converting existing plants and establishing new ones dedicated to EV manufacturing. The company's joint venture with LG Energy Solution through Ultium Cells Holdings LLC aims to mass-produce battery cells in multiple locations, which is critical for scaling their EV offerings (10-K 2023, Item 1. Business).
+
+4. **Keeping Pace with Consumer Demand**: GM acknowledges the challenges of consumer adoption of EVs and the need to align production capabilities with demand. The company recognizes that slow adoption rates could lead to strategic adjustments in production capacity and inventory management (10-K 2025, Item 1A. Risk Factors).
+
+5. **Vision for the Future**: GM's overarching vision promotes a world with "zero crashes, zero emissions, and zero congestion," which drives their commitment to EVs and complements their existing portfolio of internal combustion engine (ICE) vehicles (10-K 2023, Item 1. Business).
+
+Overall, GM's electric vehicle strategy reflects a robust commitment to integrate EVs into their product lineup while anticipating potential market challenges, thus aiming for a sustainable transition to an all-electric future.
+
+PATHS:
+  [0.8611] GM 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8513] GM 10-K 2022 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8466] GM 10-K 2025 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8382] GM 10-K 2024 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.834] GM 10-K 2025 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8314] GM 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8254] GM 10-K 2025 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8215] GM 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8196] GM 10-K 2022 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8195] GM 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+
+=================================================================
+Q: What does GM say about its electric vehicle strategy?
+Mode:     rag
+Tickers:  ['GM']
+Clusters: None
+Latency:  {'embed_ms': 1046.2, 'search_ms': 8.2, 'traverse_ms': 0, 'llm_ms': 20113.8, 'total_ms': 21168.2}
+
+ANSWER:
+General Motors (GM) outlines a comprehensive electric vehicle (EV) strategy focused on creating a diverse portfolio of high-quality EVs, leveraging their Ultium propulsion architecture, and expanding production capacity. Key points from the excerpts include:
+
+1. **Production Capacity**: GM plans to scale its EV production capacity to one million units in North America by the end of 2025, and more than two million globally. This capacity will be supported by the Ultium platform, which allows for flexibility across various brands and vehicle types (Chunk 2).
+
+2. **EV Lineup and Manufacturing Facilities**: The company has established dedicated EV manufacturing facilities, such as Factory ZERO in Detroit-Hamtramck, and has plans to convert its Orion Assembly plant for EV production scheduled to begin in 2025 (Chunk 2). They emphasize the versatility of the Ultium platform, which has already supported the launch of models like the GMC HUMMER EV and the Cadillac LYRIQ (Chunk 2).
+
+3. **Investment and Infrastructure**: GM is investing significantly in battery production capacity, targeting operational plants in locations like Warren, Ohio; Spring Hill, Tennessee; and Lansing, Michigan to mass-produce battery cells (Chunk 4). Additionally, GM plans to invest approximately $750 million to enhance charging infrastructure across North America to support mass market EV adoption (Chunk 2).
+
+4. **Market Positioning and Demand Adaptation**: GM acknowledges the need to adapt its strategy in response to evolving demand for EVs and has experienced impacts from changes in U.S. regulations which have caused a reassessment of their EV capacity and manufacturing footprint (Chunk 8). They recognize consumer adoption of EVs has been slower than anticipated due to various factors including regulatory changes and infrastructure readiness.
+
+5. **Commitment to Sustainability**: GM envisions an all-electric future with goals to eliminate tailpipe emissions from new light-duty vehicles in the U.S. by 2035 and aims for carbon neutrality across its global products and operations by 2040 (Chunk 9).
+
+6. **Strategic Focus**: The overarching strategy includes not only producing EVs but building an ecosystem for EVs, which involves charging solutions and software-enabled services like OnStar (Chunk 6). GM's chance for growth lies in continuing to capitalize on its strong vehicle franchises while scaling EV production (Chunk 1).
+
+In conclusion, GM's electric vehicle strategy is multifaceted, aiming to scale production, invest in infrastructure, and adapt to market conditions while committing to sustainability and consumer preferences.
+
+PATHS: none
+
+=================================================================
+Q: What does Lucid say about its reservation backlog or order numbers?
+Mode:     graph_rag
+Tickers:  ['LCID']
+Clusters: [970, 502, 468]
+Latency:  {'embed_ms': 149.7, 'search_ms': 43.4, 'traverse_ms': 3.7, 'llm_ms': 8500.7, 'total_ms': 8697.5}
+
+ANSWER:
+The excerpts provided do not contain specific information regarding Lucid Motors' reservation backlog or order numbers. Most of the discussions focus on vehicle production, deliveries, financial performance, and the impact of economic conditions on the business. If you'd like to get detailed figures about reservation backlogs or specific order numbers, you would typically find such information in earnings calls, specific press releases, or could look into specific sections of upcoming quarterly or annual reports dedicated to orders and reservations, which are not included in the excerpts you've provided. 
+
+For detailed and up-to-date information, you might want to refer to the latest 10-Q or 10-K filings or official earnings reports from Lucid.
+
+PATHS:
+  [0.7668] LCID 10-Q 2025-08-05 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7666] LCID 10-Q 2024-11-07 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7663] LCID 10-K 2025 | Item 1. Business.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7659] LCID 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7651] LCID 10-K 2023 | Item 1. Business.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7633] LCID 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7618] LCID 10-K 2022 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7583] LCID 10-Q 2025-11-05 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7575] LCID 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7573] LCID 10-K 2025 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+
+=================================================================
+Q: What does Lucid say about its reservation backlog or order numbers?
+Mode:     rag
+Tickers:  ['LCID']
+Clusters: None
+Latency:  {'embed_ms': 928.3, 'search_ms': 22.3, 'traverse_ms': 0, 'llm_ms': 1332.6, 'total_ms': 2283.2}
+
+ANSWER:
+The excerpts provided do not contain any specific details or mention of Lucid's reservation backlog or order numbers. Therefore, I cannot provide an answer regarding Lucid's reservation backlog or order numbers based on the provided information.
+
+PATHS: none
+
+=================================================================
+Q: What interest rate risks does Ford Credit specifically disclose?
+Mode:     graph_rag
+Tickers:  ['F']
+Clusters: [195, 709, 944]
+Latency:  {'embed_ms': 182.6, 'search_ms': 30.0, 'traverse_ms': 4.4, 'llm_ms': 9359.7, 'total_ms': 9576.7}
+
+ANSWER:
+Ford Credit discloses several interest rate risks in its filings, particularly in the 'Item 7A. Quantitative and Qualitative Disclosures About Market Risk' sections of its 10-K and 10-Q filings. Here are the key points:
+
+1. **Exposure to Interest Rate Fluctuations**: Ford Credit's market risk primarily stems from the possibility that changes in interest rates will adversely affect its cash flow and economic value. The company holds a mix of fixed-rate and floating-rate assets and liabilities, which have different re-pricing periods, leading to variances in their responses to interest rate changes. Specifically, its assets consist mainly of fixed-rate retail financing and operating lease contracts, alongside floating-rate wholesale receivables, while its debt is primarily fixed-rate term debt (Ford | 10-K 2024, Item 7A).
+
+2. **Interest Rate Risk Management Objective**: To mitigate the volatility caused by interest rate changes, Ford Credit employs various strategies. These include entering into interest rate swaps, conducting economic value sensitivity analysis, and re-pricing gap analysis to assess potential long-term effects. The goal is to convert portions of floating-rate debt to fixed, or vice versa, to maintain exposure within established risk tolerances (Ford | 10-K 2025, Item 7A).
+
+3. **Sensitivity Analysis**: Ford Credit performs sensitivity analyses to quantify the impact of interest rate changes on pre-tax cash flow. This framework considers hypothetical scenarios of a one-percentage-point increase or decrease in interest rates across all maturities. For instance, it expects that an increase in interest rates would lead to a rise in pre-tax cash flow due to the re-pricing of more assets than liabilities within a year, while a decrease in rates would result in lower cash flow (Ford | 10-K 2023, Item 7A; Ford | 10-Q 2024-10-29, Item 3).
+
+4. **Projected Cash Flow Sensitivity**: The sensitivity analysis indicates projected cash flow impacts. For example, in its 2024 filings, Ford Credit estimated that a one-percentage-point increase in interest rates would increase pre-tax cash flow by $107 million, while a decrease would reduce it by $107 million (Ford | 10-K 2024, Item 7A).
+
+5. **Market Assumptions**: Ford notes that the assumptions used in these analyses, such as instantaneous changes in rates, may not reflect actual conditions. Therefore, while the results provide estimates, actual cash flow impacts may vary significantly due to the unpredictability of interest rate movements (Ford | 10-K 2022, Item 7A).
+
+Overall, Ford Credit highlights its active management of interest rate risks through sensitivity analyses and strategic financial instruments, crucial for maintaining financial stability amidst fluctuating interest rates.
+
+PATHS:
+  [0.8778] F 10-K 2024 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8777] F 10-K 2023 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8775] F 10-K 2025 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8762] F 10-K 2022 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8565] F 10-Q 2024-10-29 | Item 3. Quantitative and Qualitative Disclosures About Market Risk.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8562] F 10-Q 2025-10-24 | Item 3. Quantitative and Qualitative Disclosures About Market Risk.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8561] F 10-Q 2025-05-06 | Item 3. Quantitative and Qualitative Disclosures About Market Risk.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8558] F 10-Q 2025-07-31 | Item 3. Quantitative and Qualitative Disclosures About Market Risk.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8505] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8372] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: What interest rate risks does Ford Credit specifically disclose?
+Mode:     rag
+Tickers:  ['F']
+Clusters: None
+Latency:  {'embed_ms': 255.9, 'search_ms': 15.2, 'traverse_ms': 0, 'llm_ms': 11251.0, 'total_ms': 11522.2}
+
+ANSWER:
+Ford Credit discloses several specific interest rate risks:
+
+1. **Interest Rate Risk Exposure**: Ford Credit’s assets and related debt have different re-pricing periods, leading to different responses to changes in interest rates. Its assets primarily consist of fixed-rate retail financing and operating leases, while its wholesale receivables are floating rate. This mismatch creates exposure to interest rate fluctuations.
+
+2. **Interest Rate Risk Management**: Ford Credit aims to reduce cash flow volatility and economic value volatility from interest rate changes. They employ interest rate swaps to convert portions of floating-rate debt to fixed or vice versa, ensuring that exposure remains within an established risk tolerance.
+
+3. **Pre-Tax Cash Flow Sensitivity Analysis**: Ford Credit uses a pre-tax cash flow sensitivity analysis to measure the changes in expected cash flows associated with interest rate-sensitive assets, liabilities, and derivative instruments. This analysis includes hypothetical changes in interest rates over a twelve-month horizon, assessing impacts from a one percentage point increase or decrease in interest rates. 
+
+   For example, as of December 31, 2023, Ford Credit anticipated that a one percentage point increase in interest rates would increase pre-tax cash flow by $78 million, while a decrease would reduce pre-tax cash flow by $78 million.
+
+4. **Interest Rate Scenarios**: The sensitivity analysis uses hypothetical scenarios, including an instantaneous one percentage point shift in all interest rates across all maturities. The actual results can vary because interest rate changes are rarely instantaneous or uniform.
+
+5. **Potential for Cash Flow Effects**: During rising interest rates, Ford Credit expects that the interest received on its assets will increase more than the interest paid on its debt, initially boosting pre-tax cash flow. Conversely, during falling interest rates, pre-tax cash flow would initially decrease due to decreased interest income compared to the fixed interest obligations.
+
+6. **Assumptions in Analysis**: The analysis relies on numerous assumptions about the reinvestment of maturing asset principal, refinancing of maturing debt, and the repayment of financing and leasing contracts. Any changes in interest rates or operating conditions could affect the actual cash flow experienced versus projections.
+
+These factors illustrate Ford Credit’s comprehensive approach to managing interest rate risk and the potential impacts on its financial performance.
+
+PATHS: none
+
+=================================================================
+Q: What specific production volume targets does Rivian set for its Normal, Illinois plant?
+Mode:     graph_rag
+Tickers:  ['RIVN']
+Clusters: [560, 540]
+Latency:  {'embed_ms': 158.3, 'search_ms': 34.8, 'traverse_ms': 3.0, 'llm_ms': 3960.7, 'total_ms': 4156.9}
+
+ANSWER:
+Rivian sets a production capacity target of up to 215,000 vehicles annually at its manufacturing facility in Normal, Illinois ("Normal Factory"). This capacity includes an anticipated split of approximately 155,000 vehicles for the R2 platform, 85,000 for the R1 platform, and 65,000 for the Rivian Commercial Vans (RCVs) (source: RIVN | 10-K 2025 | Item 1. Business). 
+
+Additionally, initial production of the R2 vehicles is expected to commence in the first half of 2026, allowing Rivian to expand its overall annual production capacity at the Normal Factory (source: RIVN | 10-Q 2025-08-05 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations).
+
+PATHS:
+  [0.8579] RIVN 10-K 2024 | Item 2. Properties
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8544] RIVN 10-K 2025 | Item 2. Properties
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8463] RIVN 10-K 2023 | Item 2. Properties
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8343] RIVN 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8327] RIVN 10-K 2025 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8265] RIVN 10-K 2024 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8236] RIVN 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8207] RIVN 10-Q 2025-08-05 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8172] RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8168] RIVN 10-Q 2024-11-07 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+
+=================================================================
+Q: What specific production volume targets does Rivian set for its Normal, Illinois plant?
+Mode:     rag
+Tickers:  ['RIVN']
+Clusters: None
+Latency:  {'embed_ms': 139.6, 'search_ms': 12.7, 'traverse_ms': 0, 'llm_ms': 8377.4, 'total_ms': 8529.8}
+
+ANSWER:
+Rivian sets specific production volume targets for its Normal, Illinois plant as follows:
+
+- The Normal Factory has a total capacity to produce up to **215,000 vehicles annually** when operated at full rate and on multiple shifts. This capacity includes:
+  - Up to **155,000 R2 vehicles**
+  - Up to **85,000 R1 vehicles**
+  - Up to **65,000 Rivian Commercial Vans (RCVs)**
+
+Additionally, the excerpts mention that initial production of the R2 will be at the Normal Factory, which indicates that these targets are linked to the integration of the R2 model into their production lines, with subsequent expansions expected. 
+
+These production targets reflect Rivian's strategic efforts to scale their manufacturing capabilities to meet anticipated market demand and ensure operational efficiency across their vehicle platforms.
+
+PATHS: none
+
+=================================================================
+Q: How did Rivian's cost reduction strategy in 2023 connect to their supplier decisions?
+Mode:     graph_rag
+Tickers:  ['RIVN']
+Clusters: [560]
+Latency:  {'embed_ms': 213.5, 'search_ms': 36.2, 'traverse_ms': 3.9, 'llm_ms': 13779.8, 'total_ms': 14033.5}
+
+ANSWER:
+Rivian's cost reduction strategy in 2023 was significantly influenced by its decision to terminate its body stamping supply agreement with Shiloh Industries. This decision, effective October 31, 2023, involved a $47.3 million penalty but was made to shift to a new contract with Martinrea International, which offered a lower price of $1,590 per vehicle set compared to Shiloh's $1,840. This switch aimed to save approximately $87.5 million annually based on Rivian's projected production volumes for 2024 (Source: RIVN | article 2023 | Section 1).
+
+Rivian's management concluded the long-term financial benefits outweighed the immediate costs of the penalty, as the breakeven point on this penalty was about 189,200 vehicles, a volume expected to be achieved by the first half of 2025 (Source: RIVN | article 2023 | Section 1). This move was part of a broader objective to reduce bill-of-materials costs by 20% per vehicle by the end of 2024 (Source: RIVN | article 2023 | Section 1). 
+
+Moreover, the company's management emphasized the importance of creating strategic supplier relationships that extend beyond mere procurement, aiming to collaborate with suppliers for performance improvement and cost reduction initiatives. Rivian believes that these strategic partnerships can lead to advantages in pricing and timing, essential for managing operational costs as the company's production ramped up (Source: RIVN | 10-K 2023 | Item 1. Business).
+
+In summary, Rivian's cost reduction strategy in 2023 was closely tied to their supplier decisions, particularly the transition from Shiloh Industries to Martinrea International, demonstrating a tactical shift aimed at improving long-term unit economics and overall operational efficiency.
+
+PATHS:
+  [0.8279] RIVN 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.824] RIVN article 2023 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA_10K_2022__3__Item_2_PROPERTIES
+  [0.824] RIVN article 2023 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA_10K_2022__3__Item_2_PROPERTIES
+  [0.8072] RIVN letter 2023-Q4 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> RIVN_10K_2023
+  [0.805] RIVN 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8043] RIVN 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.8034] RIVN article 2023 | Section 1
+           HAS_SHADOW -> HAS_SECTION -> LINKED_TO -> TSLA_10K_2022__3__Item_2_PROPERTIES
+  [0.8014] RIVN 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7996] RIVN 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.797] RIVN 10-K 2023 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+
+=================================================================
+Q: How did Rivian's cost reduction strategy in 2023 connect to their supplier decisions?
+Mode:     rag
+Tickers:  ['RIVN']
+Clusters: None
+Latency:  {'embed_ms': 178.7, 'search_ms': 18.1, 'traverse_ms': 0, 'llm_ms': 7383.9, 'total_ms': 7580.7}
+
+ANSWER:
+Rivian's cost reduction strategy in 2023 is intricately connected to its supplier decisions, as demonstrated by their termination of the stamping contract with Shiloh Industries. This decision was primarily driven by cost structure considerations; Rivian opted to exit the agreement to secure a more favorable deal with Martinrea International, which offered body panels at a negotiated rate of $1,590 per vehicle set. This new arrangement represented a savings of $250 per vehicle, translating to approximately $87.5 million annually based on Rivian's targeted production run rate of 350,000 units in 2024.
+
+Rivian's management concluded that the long-term unit economics justified the one-time exit fee of $47.3 million payable to Shiloh, indicating that the benefits of the lower unit costs from the new supplier would outweigh the immediate financial hit. The breakeven point for absorbing this penalty was identified as approximately 189,200 vehicles, a threshold Rivian expects to exceed in the first half of 2025. This reflects a deliberate effort to align their supply strategy with cost-saving goals as part of a broader ongoing initiative to reduce bill-of-materials costs by 20% per vehicle by the end of 2024.
+
+Thus, Rivian’s supplier decisions are central to their strategy, enabling them to reduce manufacturing costs, enhance operational efficiency, and improve overall financial performance in the face of significant cost challenges in the automotive industry.
+
+PATHS: none
+

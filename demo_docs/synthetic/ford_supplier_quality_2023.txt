@@ -1,0 +1,36 @@
+Ford Motor Company — Supplier Quality Management Report
+Battery and EV Supply Chain — Q2 2023
+
+Executive Overview
+
+Ford's Supplier Technical Assistance and Quality organization manages quality compliance across a supply base of approximately 1,100 direct material suppliers globally. For the electric vehicle supply chain specifically, the STA&Q team has established a dedicated EV supplier quality function staffed by engineers with expertise in battery cell chemistry, power electronics, and high-voltage system integration.
+
+This report covers Q2 2023 performance for Ford's battery and EV component supply chain, including corrective action statistics, controlled shipping events, and supplier development activities. The report is prepared quarterly for Ford's Chief Quality Officer and Purchasing leadership, with selected metrics reported to the Ford Board of Directors' Product, Safety, and Sustainability Committee.
+
+Overview of Supplier Quality Framework
+
+Ford's EV supplier quality program is structured around four classification tiers: Standard Monitoring, Enhanced Monitoring, Corrective Action Required, and Controlled Shipping. Suppliers are assessed monthly on delivery performance, parts per million defect rates, field quality metrics (where applicable), and response time to quality notifications from Ford receiving plants.
+
+New EV suppliers entering the supply base are subject to an initial qualification audit covering process capability studies, control plans, and measurement system analysis for all characteristics designated as critical by Ford's engineering team. Qualification audits for battery module and high-voltage component suppliers require verification of additional safety-related processes including thermal runaway prevention testing, dielectric strength verification, and abuse testing protocols.
+
+Q2 2023 Corrective Action Activity
+
+Ford's supplier quality division issued 14 formal corrective action requests to battery module suppliers in Q2 2023, with 3 suppliers placed on controlled shipping status. The 14 corrective action requests represent an increase of 4 compared to Q1 2023, reflecting the expanded supplier base associated with the Mustang Mach-E production ramp and early production activities for the F-150 Lightning. Corrective actions were issued for the following categories of quality escapes: cell-to-module bonding adhesive curing variation (4 CARs), high-voltage connector seating force non-conformance (3 CARs), battery management system firmware version control errors (3 CARs), module dimensional variation affecting pack assembly fit (2 CARs), and thermal interface material application inconsistency (2 CARs).
+
+Of the 14 corrective action requests, 11 were issued to suppliers in North America and 3 to suppliers in South Korea. The three South Korean suppliers are cell suppliers for the Mustang Mach-E high-performance variant, where Ford sources cells from SK On and its affiliates. Response times for the South Korean suppliers averaged 8.3 days from CAR issuance to containment plan submission, compared to an average of 4.1 days for North American suppliers, reflecting communication and time zone challenges that Ford and the suppliers are working to address through enhanced local technical representation.
+
+Controlled Shipping Events
+
+The three suppliers placed on controlled shipping status in Q2 2023 were all North American battery module assemblers. Controlled shipping is the most serious quality intervention short of part resourcing and requires the supplier to implement 100% inspection at source, 100% inspection at Ford receiving facilities, and weekly progress reporting to Ford's quality leadership. Two of the three controlled shipping events were resolved within the quarter, with the suppliers demonstrating sustained defect rates below the required threshold and receiving standard monitoring status restoration by June 2023. The third supplier remains on controlled shipping status as of the report date, with expected resolution in Q3 2023 pending completion of process capability improvement actions.
+
+No Ford vehicle production lines were disrupted by battery supply quality events in Q2 2023. Ford's receiving inspection and in-process containment activities were effective in detecting non-conforming parts prior to installation. However, the inspection-intensive containment approach is not cost-effective at scale, and Ford's quality team has emphasized to affected suppliers that the expectation is process-based defect prevention rather than inspection-based defect detection.
+
+Supplier Development Initiatives
+
+Ford launched two supplier development programs in Q2 2023 focused on improving battery supply chain quality maturity. The first program, the EV Supplier Quality Academy, provides structured training on Ford's quality requirements, advanced quality planning methods, and EV-specific technical standards to engineering and quality personnel at new and developing suppliers. Fourteen suppliers enrolled in the academy's Q2 cohort, with sessions delivered at Ford's Michigan Assembly Plant and online.
+
+The second program, the Battery Process Optimization Initiative, pairs Ford manufacturing engineers with supplier process engineers to conduct structured improvement events at supplier facilities. Two improvement events were completed in Q2 2023, focused on cell-to-module assembly process standardization at two battery module suppliers in Michigan and Ohio.
+
+Outlook for Q3 2023
+
+Ford's STA&Q team anticipates continued elevated corrective action activity in Q3 2023 as additional battery suppliers ramp capacity for F-150 Lightning production increases. The team has pre-positioned supplier development engineers at the four highest-risk supplier facilities and has implemented a weekly executive quality review cadence with the leadership teams of the three suppliers on controlled shipping status. Management expects to reduce the open corrective action count by 40% by the end of Q3 through sustained improvement efforts and, where necessary, controlled resourcing of persistent quality non-performers.

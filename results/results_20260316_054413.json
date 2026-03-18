@@ -1,0 +1,180 @@
+[
+  {
+    "timestamp": "2026-03-16T05:44:12.175007+00:00",
+    "mode": "graph_rag",
+    "question": "Which specific supplier did Rivian terminate in 2023 and what was the exact exit penalty?",
+    "answer": "Rivian Automotive terminated its body stamping supply agreement with Shiloh Industries, effective October 31, 2023. The company incurred a contractual early-exit penalty of $47.3 million, which is payable to Shiloh by December 15, 2023. This information is detailed in Rivian's article from October 2023, specifically in section [1].",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      560,
+      1059
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_RIVN_0700613b_sec_1_shd_1",
+          "upload_RIVN_0700613b_sec_1",
+          "upload_RIVN_0700613b",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8849,
+        "label": "RIVN article 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_305736de_sec_1_shd_1",
+          "upload_RIVN_305736de_sec_1",
+          "upload_RIVN_305736de",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8848,
+        "label": "RIVN article 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_cf794616_sec_1_shd_1",
+          "upload_RIVN_cf794616_sec_1",
+          "upload_RIVN_cf794616",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8076,
+        "label": "RIVN article 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__15__Item_15_Exhibit_and_Financial_Statement_Schedules__chunk_1",
+          "RIVN_10K_2023__15__Item_15_Exhibit_and_Financial_Statement_Schedules",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7955,
+        "label": "RIVN 10-K 2023 | Item 15. Exhibit and Financial Statement Schedules"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_5",
+          "RIVN_10K_2023__0__Item_1_Business",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7931,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_d9da934b_sec_1_shd_1",
+          "upload_RIVN_d9da934b_sec_1",
+          "upload_RIVN_d9da934b",
+          "RIVN_10K_2023"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.7905,
+        "label": "RIVN letter 2023-Q4 | Section 1"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_0",
+          "RIVN_10K_2023__0__Item_1_Business",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7823,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_3",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7822,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 505.6,
+      "search_ms": 29.7,
+      "traverse_ms": 2.5,
+      "llm_ms": 2007.4,
+      "total_ms": 2545.3
+    }
+  },
+  {
+    "timestamp": "2026-03-16T05:44:13.584342+00:00",
+    "mode": "rag",
+    "question": "Which specific supplier did Rivian terminate in 2023 and what was the exact exit penalty?",
+    "answer": "Rivian Automotive terminated its body stamping supply agreement with Shiloh Industries in 2023. The exact exit penalty incurred for this termination is $47.3 million, which is payable to Shiloh by December 15, 2023.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 304.1,
+      "search_ms": 18.6,
+      "traverse_ms": 0,
+      "llm_ms": 1086.5,
+      "total_ms": 1409.2
+    }
+  }
+]

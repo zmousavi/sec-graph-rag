@@ -1,0 +1,450 @@
+=================================================================
+Q: Which automakers mention both union risk and battery raw material constraints?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [944, 560, 502]
+Latency:  {'embed_ms': 1216.9, 'search_ms': 52.0, 'traverse_ms': 2.6, 'llm_ms': 20949.6, 'total_ms': 22221.2}
+
+ANSWER:
+Both Ford and Rivian mention risks related to union issues and constraints related to battery raw materials.
+
+1. **Ford**: In its 10-K filings, Ford discusses the potential for production disruptions due to labor issues, including those stemming from collective bargaining agreements with labor unions. Specifically, the 2024 10-K states, "a work stoppage or other limitation on production has occurred, and could in the future occur, at Ford’s facilities, at a facility in its supply chain, or at one of its logistics providers for any number of reasons, including as a result of labor issues" (source: F | 10-K 2024 | Item 1A. Risk Factors (Continued)). Furthermore, Ford highlights its reliance on the supply of materials for electric vehicle production, particularly noting the importance of battery materials like lithium and cobalt, stating that shortages can disrupt production (source: F | 10-K 2024 | Item 1A. Risk Factors (Continued)).
+
+2. **Rivian**: Rivian also identifies union risks and supply chain issues related to battery materials. The company notes its dependence on suppliers for critical components, stating that "a disruption in the supply of components from our suppliers... could lead to vehicle design changes, production delays, idle manufacturing facilities... any of which could result in negative publicity, damage to our brand" (source: RIVN | 10-K 2023 | Item 1A. Risk Factors). Additionally, it mentions risks related to the supply and costs of battery materials, including potential shortages, which could "materially and adversely impact our business, results of operations, prospects, and financial condition" (source: RIVN | 10-K 2023 | Item 1A. Risk Factors).
+
+Therefore, both automakers highlight the critical nature of unions and the challenges posed by the procurement of battery raw materials.
+
+PATHS:
+  [0.8091] F 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.8011] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.797] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7882] F 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7865] RIVN 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7834] LCID 10-Q 2025-05-06 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7828] F 10-K 2024 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7824] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7803] RIVN 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7797] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which automakers mention both union risk and battery raw material constraints?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 493.0, 'search_ms': 112.1, 'traverse_ms': 0, 'llm_ms': 11119.5, 'total_ms': 11724.7}
+
+ANSWER:
+The automaker that mentions both union risk and battery raw material constraints is Ford. 
+
+- Ford outlines risks related to labor issues, including potential work stoppages or limitations on production due to collective bargaining disputes, shortages of available employees, or absenteeism in their 10-K filings (see **10-K 2023 | Item 1A. Risk Factors**, specifically in the excerpt mentioning labor issues).
+- Additionally, Ford discusses the dependency on suppliers for key components and raw materials, including those necessary for the production of batteries for electric vehicles, and the risks associated with sourcing these materials (refer to **10-K 2023 | Item 1A. Risk Factors**, detailing the need for materials like lithium, cobalt, nickel, graphite, and manganese).
+
+Rivian and Lucid Motors also discuss battery materials supply chain risks, but they do not specifically mention union risk in the provided excerpts. Therefore, Ford is the only automaker in the excerpts that covers both areas.
+
+PATHS:
+  [0.8092] F 10-K 2023 | Item 1A. Risk Factors.
+            -> F_10K_2023__16__Item_1A_Risk_Factors__chunk_0
+  [0.8012] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_1
+  [0.7971] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_0
+  [0.7884] F 10-K 2023 | Item 1A. Risk Factors.
+            -> F_10K_2023__16__Item_1A_Risk_Factors__chunk_1
+  [0.7866] RIVN 10-K 2024 | Item 1A. Risk Factors
+            -> RIVN_10K_2024__1__Item_1A_Risk_Factors__chunk_9
+  [0.7835] LCID 10-Q 2025-05-06 | Item 1A. Risk Factors.
+            -> LCID_10Q_2025-05-06__7__Item_1A_Risk_Factors__chunk_19
+  [0.7829] F 10-K 2024 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2024__17__Item_1A_Risk_Factors_Continued__chunk_1
+  [0.7823] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors__chunk_10
+  [0.7804] RIVN 10-K 2023 | Item 1A. Risk Factors
+            -> RIVN_10K_2023__1__Item_1A_Risk_Factors__chunk_7
+  [0.7798] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2025__2__Item_1A_Risk_Factors_Continued__chunk_1
+
+=================================================================
+Q: Compare changes in risk disclosures from 2022 to 2023 for Tesla, Ford, and GM.
+Mode:     graph_rag
+Tickers:  ['TSLA', 'F', 'GM']
+Clusters: [416, 940, 371]
+Latency:  {'embed_ms': 713.5, 'search_ms': 43.7, 'traverse_ms': 3.5, 'llm_ms': 39402.3, 'total_ms': 40163.1}
+
+ANSWER:
+The risk disclosures for General Motors (GM) have evolved from 2022 to 2023, reflecting changes in the macroeconomic environment and the company's operational priorities. Below is an analysis based on GM’s 10-K filings for 2022 and 2023, focusing primarily on foreign currency and interest rate risks.
+
+### Foreign Currency Risk
+
+**2022 Disclosures:**
+- As of December 31, 2022, GM had a net fair value liability for foreign currency risk amounting to $0.2 billion. It also indicated that fluctuations in foreign currency exchange rates could create volatility in its results and adversely affect financial condition, primarily due to translation and remeasurement of international operations (10-K 2022, Item 7A).
+- GM utilized foreign currency derivatives with notional amounts of $4.1 billion and cited a potential loss in fair value from a 10% adverse change in exchange rates as “insignificant” (10-K 2022, Item 7A).
+
+**2023 Disclosures:**
+- By December 31, 2023, the net fair value liability increased to $0.4 billion, indicating enhanced exposure in this area. The company reiterated that a 10% adverse change in exchange rates would still have an insignificant potential loss in value, despite the increase in liability (10-K 2023, Item 7A).
+- GM reported ongoing volatility from foreign currency fluctuations, but highlighted the use of derivatives to mitigate these risks, acknowledging specific exposures to various currencies, including the Canadian Dollar and Chinese Yuan (10-K 2023, Item 7A).
+
+### Interest Rate Risk
+
+**2022 Disclosures:**
+- GM indicated that it was subject to market risk from changes in interest rates, especially concerning its debt and marketable securities. It reported the fair value of debt and finance leases at $16.8 billion. The potential effects of a 10% decrease in interest rates were noted, with a possible increase in fair value of $0.8 billion, reflecting sensitivity to interest rate changes (10-K 2022, Item 7A).
+- In GM Financial, the analysis revealed that the company was liability-sensitive, meaning it would face declining net interest income during rising interest rates (10-K 2022, Item 7A).
+
+**2023 Disclosures:**
+- As of December 31, 2023, GM continued to experience substantial interest rate exposure with the fair value of its debt now recorded at $16.5 billion. It indicated that the potential increase in fair value from a 10% decline in interest rates was estimated at $0.7 billion, reflecting a decrease compared to the previous year (10-K 2023, Item 7A).
+- GM Financial remained liability-sensitive, with similar disclosures regarding the potential impacts of rising interest rates on net interest income, but it emphasized continued monitoring of interest rate impacts through its hedging strategies (10-K 2023, Item 7A).
+
+### Summary of Changes
+The overall changes in GM's risk disclosures from 2022 to 2023 highlight a growing awareness of external economic pressures, particularly regarding foreign currency and interest rate risks. The increase in liabilities related to foreign currency indicates heightened exposure, while the steady focus on interest rate risks suggests ongoing challenges in managing financial exposure related to changing market conditions.
+
+To draw a comprehensive comparison, disclosures for Tesla and Ford would require a similar examination of their 10-K filings. However, this analysis specifically addressed GM's changes as requested, providing a detailed view of its financial risk management as it adapted to evolving economic circumstances.
+
+PATHS:
+  [0.8098] GM 10-K 2023 | Item 7A.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8089] GM 10-K 2022 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.807] GM 10-K 2022 | Item 7A.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8032] GM 10-K 2022 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.8006] GM 10-K 2023 | Item 7A.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.7998] GM 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.7986] GM 10-K 2022 | Item 7A.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.7979] GM 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.7954] GM 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+
+=================================================================
+Q: Compare changes in risk disclosures from 2022 to 2023 for Tesla, Ford, and GM.
+Mode:     rag
+Tickers:  ['TSLA', 'F', 'GM']
+Clusters: None
+Latency:  {'embed_ms': 761.5, 'search_ms': 99.4, 'traverse_ms': 0, 'llm_ms': 20450.1, 'total_ms': 21311.0}
+
+ANSWER:
+The provided excerpts include detailed disclosures from General Motors (GM) but do not contain any excerpts or information related to Tesla or Ford's risk disclosures. Therefore, I can only summarize the changes in risk disclosures for GM based on the provided information.
+
+### General Motors (GM) - Changes in Risk Disclosures from 2022 to 2023
+
+1. **Foreign Currency Risk**:
+   - **2022**: GM indicated exposure to foreign currency risk from translation and remeasurement, reporting translation losses of $37 million and transaction gains of $173 million.
+   - **2023**: The translation losses increased significantly to $169 million, while transaction gains rose to $344 million. This indicates a heightened exposure to fluctuations in foreign currency exchange rates, with a notable increase in volatility in the results of operations (10-K 2023, Item 7A).
+
+2. **Interest Rate Risk**:
+   - **2022**: GM stated that fluctuations in interest rates could affect its financial instruments, mentioning that it was liability-sensitive with no interest rate swap positions outlined.
+   - **2023**: The information remains consistent with GM indicating it is still liability-sensitive and employs interest rate swaps to manage exposure, although the swap positions were said to be insignificant in both years. The disclosures this year included specific sensitivity analysis data in which the fair value impacts varied with hypothetical changes in interest rates (10-K 2023, Item 7A).
+
+3. **Operational Risks**:
+   - **2022 and 2023**: A consistent theme in both years includes mention of operational risks such as supply chain disruptions and inflationary pressures affecting commodity costs. However, 2023 highlighted expectations regarding increased costs due to strategic localization of battery raw material supply chains and a potential impact due to a higher interest rate environment on financing (10-K 2023, Item 7A).
+
+4. **Management and Control Framework**:
+   - **2023**: There is elaboration concerning the governance structure around risk management, mentioning a Financial Risk Council overseeing the risk management strategies, which was also discussed in 2022. However, more emphasis may be placed on the controls and strategies employed in the updated filings (10-K 2023, Item 7A).
+
+In summary, GM has shown an increased sensitivity to foreign currency fluctuations and indicated future expectations about operational impacts due to interest rate changes and commodity costs in 2023 compared to 2022. For a comparison, disclosures for Tesla and Ford would be necessary, but these excerpts do not provide that information.
+
+PATHS:
+  [0.8098] GM 10-K 2023 | Item 7A.
+            -> GM_10K_2023__8__Item_7A__chunk_1
+  [0.809] F 10-K 2023 | Item 16. Form 10-K Summary.
+            -> F_10K_2023__101__Item_16_Form_10_K_Summary__chunk_22
+  [0.8089] GM 10-K 2022 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_33
+  [0.807] GM 10-K 2022 | Item 7A.
+            -> GM_10K_2022__7__Item_7A__chunk_1
+  [0.8032] GM 10-K 2022 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_7
+  [0.8006] GM 10-K 2023 | Item 7A.
+            -> GM_10K_2023__8__Item_7A__chunk_0
+  [0.7999] GM 10-K 2022 | Item 9A. Controls and Procedures
+            -> GM_10K_2022__9__Item_9A_Controls_and_Procedures__chunk_0
+  [0.7998] GM 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_3
+  [0.7987] GM 10-K 2023 | Item 9A. Controls and Procedures
+            -> GM_10K_2023__10__Item_9A_Controls_and_Procedures__chunk_0
+  [0.7986] GM 10-K 2022 | Item 7A.
+            -> GM_10K_2022__7__Item_7A__chunk_0
+
+=================================================================
+Q: Which EV companies discuss single-source supplier dependence?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [560, 944, 502]
+Latency:  {'embed_ms': 1020.6, 'search_ms': 53.2, 'traverse_ms': 1.9, 'llm_ms': 16532.7, 'total_ms': 17608.5}
+
+ANSWER:
+Both Rivian and Ford highlight their dependence on single or limited-source suppliers for critical components in their risk factor disclosures.
+
+1. **Rivian** discusses this issue in multiple filings. For example, in their 10-Q file from November 4, 2025 (Item 1A. Risk Factors), Rivian notes that "our products contain thousands of components that we purchase from hundreds of mostly single- or limited-source suppliers, for which no immediate or readily available alternative supplier exists." This dependence on single-source suppliers poses risks related to production disruptions and delays due to the lack of readily available alternatives (RIVN | 10-Q 2025-11-04 | Item 1A. Risk Factors).
+
+2. **Ford** similarly addresses its reliance on suppliers in its 10-K filing for 2023 (Item 1A. Risk Factors). Ford states, "a shortage of or inability to acquire key components or raw materials, such as lithium, cobalt, nickel, graphite, and manganese, can disrupt Ford’s production of vehicles." This indicates Ford's acknowledgment of the risks associated with supplier dependence, particularly for critical components needed in electric vehicle production (F | 10-K 2023 | Item 1A. Risk Factors).
+
+In summary, both Rivian and Ford depict a clear awareness of the implications of single-source supplier reliance on their production processes and financial performance.
+
+PATHS:
+  [0.7801] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7794] RIVN 10-Q 2025-08-05 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7738] RIVN 10-Q 2025-11-04 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7682] RIVN 10-K 2025 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7654] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7653] RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7652] RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7607] F 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7599] RIVN 10-K 2025 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.7586] F 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which EV companies discuss single-source supplier dependence?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 1126.5, 'search_ms': 13.6, 'traverse_ms': 0, 'llm_ms': 7197.2, 'total_ms': 8337.4}
+
+ANSWER:
+Both Rivian and Ford discuss their dependence on single-source suppliers in their SEC filings.
+
+1. **Rivian**: In multiple quarters of 2025, Rivian notes that its products contain thousands of components sourced from hundreds of mostly single- or limited-source suppliers. The company highlights that "no immediate or readily available alternative supplier exists" for many of these components, implicating a risk if a supplier becomes unable or unwilling to fulfill their obligations. This dependence on these suppliers could lead to disruptions in production and increased costs, negatively affecting their business operations (10-Q 2025-05-06, Item 1A).
+
+2. **Ford**: In its 2023 10-K filing, Ford emphasizes its high dependency on suppliers to deliver components according to its production schedule. It acknowledges that shortages of key components or raw materials—some of which are single-source suppliers—can disrupt production. Furthermore, if a supplier is unable to deliver materials needed for battery production, Ford's ability to produce electric vehicles could be significantly impacted (10-K 2023, Item 1A).
+
+In summary, both Rivian and Ford acknowledge the risks associated with dependence on single-source suppliers within their supply chains.
+
+PATHS:
+  [0.7801] RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors__chunk_10
+  [0.7794] RIVN 10-Q 2025-08-05 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-08-05__5__Item_1A_Risk_Factors__chunk_10
+  [0.7738] RIVN 10-Q 2025-11-04 | Item 1A. Risk Factors
+            -> RIVN_10Q_2025-11-04__5__Item_1A_Risk_Factors__chunk_10
+  [0.7682] RIVN 10-K 2025 | Item 1A. Risk Factors
+            -> RIVN_10K_2025__1__Item_1A_Risk_Factors__chunk_10
+  [0.7654] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_1
+  [0.7653] RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors
+            -> RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors__chunk_9
+  [0.7652] RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors
+            -> RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors__chunk_8
+  [0.7607] F 10-K 2023 | Item 1A. Risk Factors.
+            -> F_10K_2023__16__Item_1A_Risk_Factors__chunk_1
+  [0.7599] RIVN 10-K 2025 | Item 1. Business
+            -> RIVN_10K_2025__0__Item_1_Business__chunk_3
+  [0.7586] F 10-K 2023 | Item 1A. Risk Factors.
+            -> F_10K_2023__16__Item_1A_Risk_Factors__chunk_0
+
+=================================================================
+Q: Find companies whose MD&A mentions production ramp issues but whose risk factors do not emphasize battery supply.
+Mode:     graph_rag
+Tickers:  []
+Clusters: [940, 502, 944]
+Latency:  {'embed_ms': 410.9, 'search_ms': 36.8, 'traverse_ms': 3.0, 'llm_ms': 16502.3, 'total_ms': 16953.1}
+
+ANSWER:
+**Companies Identified:**
+
+1. **General Motors (GM)**
+   - **MD&A (10-K 2024)**: GM outlines its commitment to transitioning towards electric vehicles while also mentioning the challenges posed by supply chain disruptions and production ramp issues, stating that disruptions negatively impacted net income and identifying a cost reduction program (Section: Management’s Discussion and Analysis of Financial Condition and Results of Operations).
+   - **Risk Factors (10-K 2024)**: Although GM faces risks related to the ability of suppliers to deliver parts necessary for production, the specific mention of battery supply is not a significant focus (Section: Item 1A. Risk Factors).
+
+2. **Lucid Motors (LCID)**
+   - **MD&A (10-K 2023)**: The company mentions challenges related to scaling production, which could lead to increased costs and logistics challenges as they ramp up production (Section: Management’s Discussion and Analysis of Financial Condition and Results of Operations).
+   - **Risk Factors (10-K 2023)**: While they discuss supply chain and component sourcing issues, the emphasis on battery supply is prevalent but may not be the primary concern compared with other operational risks like labor issues or logistics (Section: Item 1A. Risk Factors).
+
+These companies illustrate a scenario where the MD&A reflects production ramp-up issues, while risk factors focus less prominently on battery supply specifically.
+
+PATHS:
+  [0.7694] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7687] F 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.7675] LCID 10-Q 2025-05-06 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7671] LCID 10-Q 2025-08-05 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7646] GM 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.7644] LCID 10-K 2025 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7636] LCID 10-K 2023 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7634] LCID 10-Q 2025-11-05 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.7607] GM 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.7602] GM 10-Q 2025-10-21 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+
+=================================================================
+Q: Find companies whose MD&A mentions production ramp issues but whose risk factors do not emphasize battery supply.
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 412.0, 'search_ms': 18.3, 'traverse_ms': 0, 'llm_ms': 16523.0, 'total_ms': 16953.4}
+
+ANSWER:
+Based on the provided excerpts, here are the relevant findings for each company:
+
+1. **Ford (F)**:  
+   - **10-K 2022 | Item 1A. Risk Factors**: The risk factors emphasize the company's dependence on suppliers for components and raw materials, including lithium and other elements crucial for battery production, which can disrupt vehicle production.  
+   - **10-K 2023 | Item 1A. Risk Factors**: Similar themes are echoed, with a strong mention of battery raw materials affecting the production of electric vehicles.  
+   - **Conclusion**: Ford does not meet the criteria, as both MD&A and risk factors highlight the significance of battery supply issues.
+
+2. **Lucid Motors (LCID)**:  
+   - **10-Q 2025-05-06 | Item 1A. Risk Factors**: The risk factors extensively discuss supplier financial health and the impact on production, highlighting lithium-ion battery cells specifically.  
+   - **10-Q 2025-08-05 | Item 1A. Risk Factors**: Continuing to mention risks related to battery cell supply and other materials.  
+   - **Conclusion**: Lucid does not meet the criteria as risk factors emphasize battery supply concerns.
+
+3. **General Motors (GM)**:  
+   - **10-K 2024 | Item 7. MD&A**: Discusses the challenges in scaling production and also mentions the importance of raw materials and suppliers in a forward-looking context.  
+   - **10-K 2023 | Item 7. MD&A**: Mentions supply chain challenges but does not emphasize battery supply in the risk factors related to production ramp.  
+   - **Conclusion**: GM partially meets the criteria as it mentions production ramp issues but does not specifically emphasize battery supply concerns in risk factors.
+
+### Summary:
+The only company that appears to fit the criteria, with mentions of production ramp issues in their MD&A while their risk factors do not emphasize battery supply, is **General Motors (GM)**.
+
+**Citations:**  
+- GM | 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations  
+- GM | 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+PATHS:
+  [0.7694] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_0
+  [0.7687] F 10-K 2023 | Item 1A. Risk Factors.
+            -> F_10K_2023__16__Item_1A_Risk_Factors__chunk_0
+  [0.7675] LCID 10-Q 2025-05-06 | Item 1A. Risk Factors.
+            -> LCID_10Q_2025-05-06__7__Item_1A_Risk_Factors__chunk_19
+  [0.7671] LCID 10-Q 2025-08-05 | Item 1A. Risk Factors.
+            -> LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors__chunk_19
+  [0.7646] GM 10-K 2024 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GM_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_37
+  [0.7644] LCID 10-K 2025 | Item 1A. Risk Factors.
+            -> LCID_10K_2025__2__Item_1A_Risk_Factors__chunk_19
+  [0.7636] LCID 10-K 2023 | Item 1A. Risk Factors.
+            -> LCID_10K_2023__2__Item_1A_Risk_Factors__chunk_17
+  [0.7634] LCID 10-Q 2025-11-05 | Item 1A. Risk Factors.
+            -> LCID_10Q_2025-11-05__7__Item_1A_Risk_Factors__chunk_19
+  [0.7607] GM 10-K 2023 | Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_37
+  [0.7602] GM 10-Q 2025-10-21 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> GM_10Q_2025-10-21__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_43
+
+=================================================================
+Q: Trace all sections related to autonomous driving litigation for Tesla.
+Mode:     graph_rag
+Tickers:  ['TSLA']
+Clusters: [1053, 1060]
+Latency:  {'embed_ms': 253.0, 'search_ms': 33.4, 'traverse_ms': 3.4, 'llm_ms': 32525.7, 'total_ms': 32815.6}
+
+ANSWER:
+The autonomous driving litigation for Tesla can be traced through several sections across different filings. Below are the relevant excerpts and summaries highlighting the key details related to this litigation:
+
+1. **10-Q 2025-07-24** (Item 1. FINANCIAL STATEMENTS):
+   - A proposed class action was filed on February 27, 2023, in the U.S. District Court for the Northern District of California against Tesla, Inc., Elon Musk, and certain current and former executives. The complaint alleges material misrepresentations and omissions about Tesla’s Autopilot and Full-Self Driving (FSD) technologies, seeking monetary damages on behalf of persons who purchased Tesla stock from February 19, 2019, to February 17, 2023. An amended complaint was filed on September 5, 2023, naming only Tesla and Musk as defendants. On November 6, 2023, Tesla moved to dismiss the amended complaint, and on September 30, 2024, the Court granted Tesla’s motion to dismiss without prejudice. Final judgment was issued in Tesla's favor on November 26, 2024, and a notice of appeal was filed on December 23, 2024 (10-Q 2025-07-24, excerpts).
+
+2. **10-Q 2025-10-23** (Item 1. FINANCIAL STATEMENTS):
+   - Following the same context, the litigation details reiterate similar points concerning the class action filed on February 27, 2023, regarding the Autopilot and FSD allegations. The document also notes Tesla's response and the outcomes, emphasizing the legal proceedings connected to material misrepresentations (10-Q 2025-10-23, excerpts).
+
+3. **10-K 2025** (Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA):
+   - The 10-K 2025 filing reflects on the outcomes related to the class action concerning Autopilot and FSD technologies. Specifically, it discusses the motions to dismiss and the final judgment in favor of Tesla. It details a proposed class action filed against Tesla, Tsm Musk, and other executives for violations of federal securities laws due to alleged misrepresentations regarding Autopilot technology (10-K 2025, excerpts).
+
+4. **10-Q 2024-10-24** (Item 1. FINANCIAL STATEMENTS):
+   - This filing similarly notes that a proposed class action was filed in February 2023 against Tesla and its executives regarding Autopilot and FSD misrepresentations. It outlines the community of claims regarding consumer protection and warranty law violations in relation to the technologies offered by Tesla (10-Q 2024-10-24, excerpts).
+
+5. **10-K 2024** (Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA):
+   - The 2024 10-K filing contains additional context concerning complaints about Autopilot and FSD capabilities that assert there were significant misrepresentations. It reinforces previous claims regards Tesla’s autonomy technology and highlights ongoing legal proceedings (10-K 2024, excerpts).
+
+In summary, the litigation focusing on autonomous driving technologies at Tesla encompasses several complaints regarding misrepresentations related to Autopilot and Full-Self Driving capabilities, with consistent references across multiple SEC filings from 2023 to 2025. The company has repeatedly defended itself, highlighting motions to dismiss and final judgments favorable to Tesla.
+
+PATHS:
+  [0.8316] TSLA 10-Q 2025-07-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8275] TSLA 10-Q 2025-10-23 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8224] TSLA 10-Q 2025-07-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.822] TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8174] TSLA 10-K 2022 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8162] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8155] TSLA 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8151] TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.8151] TSLA 10-Q 2024-10-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.814] TSLA 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+
+=================================================================
+Q: Trace all sections related to autonomous driving litigation for Tesla.
+Mode:     rag
+Tickers:  ['TSLA']
+Clusters: None
+Latency:  {'embed_ms': 325.4, 'search_ms': 121.2, 'traverse_ms': 0, 'llm_ms': 10999.1, 'total_ms': 11445.7}
+
+ANSWER:
+The sections related to autonomous driving litigation for Tesla can be found in the provided excerpts across various SEC filings. Here is a summary of the relevant sections:
+
+1. **10-Q (2024-10-24) | Item 1. FINANCIAL STATEMENTS:**
+   - It mentions a proposed class action filed in the U.S. District Court for the Northern District of California against Tesla, Inc., Elon Musk, and certain current and former executives alleging material misrepresentations and omissions about the Company’s Autopilot and Full-Self Driving (FSD) technology, seeking monetary damages and other relief for shareholders who purchased Tesla stock between February 19, 2019, and February 17, 2023. A subsequent amended complaint was filed on September 5, 2023, against Tesla and Elon Musk, and a motion to dismiss it was made by Tesla on November 6, 2023, which resulted in a dismissal without prejudice on September 30, 2024 (Source: [9]).
+
+2. **10-Q (2025-07-24) | Item 1. FINANCIAL STATEMENTS:**
+   - Further detailed accounts of a proposed class action regarding claims about Tesla’s driver assistance technology systems through various court actions. This includes a motion for a preliminary injunction regarding the use of "Full Self-Driving Capability," which was opposed by Tesla and subsequently denied on September 30, 2023. The court compelled some plaintiffs to arbitration while dismissing the claims of others with leave to amend (Source: [1] and [3]).
+
+3. **10-Q (2025-10-23) | Item 1. FINANCIAL STATEMENTS:**
+   - It includes additional updates on similar ongoing litigation pertaining to the Autopilot and FSD claims, reiterating the motions to dismiss, developments in class certification, and ongoing arbitration proceedings (Source: [2]).
+
+4. **10-K (2025) | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA:**
+   - This filing discusses continuous litigation related to Autopilot technology, including an August 4, 2025, complaint alleging violations of federal securities laws regarding alleged misrepresentations concerning Autopilot and FSD features that was filed by shareholders (Source: [8]).
+
+5. **10-K (2024) | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA:**
+   - This section outlines the ongoing state and federal law claims made about the driver assistance technology, details about settlements, and outlines previous court rulings in these cases (Source: [10]).
+
+These sections reflect Tesla's ongoing challenges in litigation related to its autonomous vehicle technology and highlight the complexities of legal claims against the company. The cases involve a mixture of shareholder lawsuits and consumer claims, all trying to address issues of alleged misrepresentations and operational safety regarding Autopilot and FSD capabilities.
+
+PATHS:
+  [0.8316] TSLA 10-Q 2025-07-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2025-07-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_31
+  [0.8275] TSLA 10-Q 2025-10-23 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2025-10-23__2__Item_1_FINANCIAL_STATEMENTS__chunk_35
+  [0.8224] TSLA 10-Q 2025-07-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2025-07-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_32
+  [0.822] TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_68
+  [0.8174] TSLA 10-K 2022 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> TSLA_10K_2022__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_79
+  [0.8162] TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_64
+  [0.8155] TSLA 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> TSLA_10K_2024__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_62
+  [0.8151] TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_69
+  [0.8151] TSLA 10-Q 2024-10-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2024-10-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_33
+  [0.814] TSLA 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> TSLA_10K_2024__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_61
+

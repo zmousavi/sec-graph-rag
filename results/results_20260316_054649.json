@@ -1,0 +1,209 @@
+[
+  {
+    "timestamp": "2026-03-16T05:46:44.159674+00:00",
+    "mode": "graph_rag",
+    "question": "How did Rivian's cost reduction strategy in 2023 connect to their supplier decisions?",
+    "answer": "Rivian's cost reduction strategy in 2023 was closely linked to its decisions regarding supplier agreements, particularly the termination of its body stamping supply agreement with Shiloh Industries. This strategic choice aimed to achieve significant cost savings by entering a new contract with Martinrea International, which allowed Rivian to lower its per vehicle stamping costs from approximately $1,840 to $1,590. The anticipated savings from this new arrangement were projected to be around $87.5 million annually based on Rivian's targeted production run rate of 350,000 vehicles in 2024 (Source: [2], Section 1).\n\nAlthough terminating the contract with Shiloh Industries incurred a one-time penalty of $47.3 million that was payable by December 15, 2023, Rivian management deemed this penalty justifiable in light of the long-term economic benefits associated with reducing overall production costs. The breakeven point for this penalty was estimated at approximately 189,200 vehicles, which Rivian expected to surpass in the first half of 2025 (Source: [2], Section 1).\n\nIn summary, Rivian's approach to cost reduction through supplier negotiations exemplified a proactive strategy to enhance long-term profitability by aligning their supply chain decisions with broader financial objectives. These decisions were crucial as Rivian aimed to improve its gross profit margins and reduce its overall cost of revenues amid growing production volumes and financial pressures (Source: [6], [8], [9], 10-K 2023, Item 7).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      560
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2023__0__Item_1_Business",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8279,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_305736de_sec_1_shd_1",
+          "upload_RIVN_305736de_sec_1",
+          "upload_RIVN_305736de",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.824,
+        "label": "RIVN article 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_0700613b_sec_1_shd_1",
+          "upload_RIVN_0700613b_sec_1",
+          "upload_RIVN_0700613b",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.824,
+        "label": "RIVN article 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_d9da934b_sec_1_shd_1",
+          "upload_RIVN_d9da934b_sec_1",
+          "upload_RIVN_d9da934b",
+          "RIVN_10K_2023"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8072,
+        "label": "RIVN letter 2023-Q4 | Section 1"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_3",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.805,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_6",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8043,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_cf794616_sec_1_shd_1",
+          "upload_RIVN_cf794616_sec_1",
+          "upload_RIVN_cf794616",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8034,
+        "label": "RIVN article 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8014,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_5",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7996,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_7",
+          "RIVN_10K_2023__0__Item_1_Business",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.797,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 699.3,
+      "search_ms": 74.0,
+      "traverse_ms": 4.4,
+      "llm_ms": 7507.9,
+      "total_ms": 8285.7
+    }
+  },
+  {
+    "timestamp": "2026-03-16T05:46:49.782131+00:00",
+    "mode": "rag",
+    "question": "How did Rivian's cost reduction strategy in 2023 connect to their supplier decisions?",
+    "answer": "Rivian's cost reduction strategy in 2023 was significantly linked to its decisions regarding suppliers, particularly highlighted by the termination of their body stamping supply agreement with Shiloh Industries. This decision was motivated by a desire to improve long-term unit economics, which led Rivian to negotiate a replacement contract with Martinrea International at a lower rate of $1,590 per vehicle set, resulting in savings of $250 per vehicle, or approximately $87.5 million annually based on Rivian's anticipated production run rate of 350,000 units in 2024. \n\nRivian management deemed that the long-term benefits of absorbing a one-time $47.3 million exit fee to terminate the Shiloh contract were justified. The breakeven point on the exit penalty was projected to be around 189,200 vehicles, which Rivian expects to surpass by the first half of 2025. This strategic move aligns with Rivian's ongoing effort to reduce bill-of-material costs by 20% per vehicle by the end of 2024.\n\nMoreover, Rivian's overall cost reduction approach included enhancing operational efficiencies and controlling costs associated with raw materials and manufacturing. In their supply chain management, Rivian aimed to build strategic partnerships with suppliers not only for procurement but also for collaboration on product development and performance improvements. This approach was intended to mitigate risks associated with sole-sourcing and supply chain disruptions, further supporting Rivian's cost reduction goals. \n\nThus, the supplier decisions made in 2023 were integral to Rivian's overarching cost reduction strategy, aligning procurement practices with their goal of improving profitability amid rising costs and economic pressures.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 180.1,
+      "search_ms": 19.5,
+      "traverse_ms": 0,
+      "llm_ms": 5422.4,
+      "total_ms": 5622.1
+    }
+  }
+]

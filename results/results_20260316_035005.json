@@ -1,0 +1,2113 @@
+[
+  {
+    "timestamp": "2026-03-16T03:46:29.314867+00:00",
+    "mode": "graph_rag",
+    "question": "What are Tesla's main risk factors in their 2023 annual report?",
+    "answer": "In Tesla's 2023 10-K filing, the main risk factors highlighted in the 'Item 1A. RISK FACTORS' section include the following:\n\n1. **Product Launch and Production Delays**: Tesla faces potential delays in product launches and ramping up production, which could negatively impact their business (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n2. **Supplier Relationships and Component Shortages**: The company may encounter challenges in managing supplier relationships and may face shortages of critical components, impacting production and product delivery (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n3. **Demand Forecasting**: Accurately forecasting demand for electric vehicles and energy products is crucial, and any failures in this regard could harm Tesla's operating results (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n4. **Union Activities**: Disruptions related to union activities could adversely affect Tesla\u2019s operations and labor costs (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n5. **Product Recalls and Warranty Claims**: The company must manage the risks associated with potential product recalls and claims, which could result in substantial costs and impact financial performance (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n6. **Product Liability Claims**: Tesla faces significant product liability risks, particularly as it introduces more advanced technologies like Autopilot and Full Self-Driving (FSD) capabilities, which may result in legal claims and reputational damage (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n7. **Insurance Coverage**: Tesla's insurance coverage may not be adequate to protect against all business risks, leading to potential financial burdens (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n8. **Debt Covenant Restrictions**: Restrictions imposed by debt agreements may limit Tesla's ability to operate the business flexibly, which could impact its financial health (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n9. **Cybersecurity Risks**: The company's information technology systems could be vulnerable to cyber-attacks, compromising data security and leading to significant liabilities (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n10. **Market Risks**: Tesla operates in a competitive automotive market subject to consumer preferences, economic conditions, and regulatory changes, which could adversely affect sales and profitability (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\n11. **Lithium-Ion Battery Supply**: The success of Tesla\u2019s product lines depends heavily on the availability of lithium-ion batteries, where any supply chain disruptions could impact production (Source: TSLA | 10-K 2023 | Item 1A. RISK FACTORS).\n\nThese factors underscore the various challenges Tesla faces as it continues to grow and navigate the rapidly changing landscape of the electric vehicle and energy industries.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2023"
+      ],
+      "form_type": "10-K"
+    },
+    "clusters_used": [
+      502,
+      1060,
+      604
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_9",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8296,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_65",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8272,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_5",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8195,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_7",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.818,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_1",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8159,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_12",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8137,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__1__Item_1_BUSINESS__chunk_7",
+          "TSLA_10K_2023__1__Item_1_BUSINESS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8123,
+        "label": "TSLA 10-K 2023 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_16",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8096,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_2",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8072,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_62",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.807,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 1209.2,
+      "search_ms": 33.0,
+      "traverse_ms": 2.1,
+      "llm_ms": 13133.9,
+      "total_ms": 14378.2
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:46:42.987250+00:00",
+    "mode": "rag",
+    "question": "What are Tesla's main risk factors in their 2023 annual report?",
+    "answer": "Tesla's 2023 annual report identifies several significant risk factors that could adversely affect its business, financial condition, and operating results. The key risk factors include:\n\n1. **Product Vulnerabilities and Cybersecurity Risks**: Tesla faces risks associated with potential vulnerabilities in its products and systems. The report states, \"there can be no assurance that any vulnerabilities will not be exploited before they can be identified, or that our remediation efforts are or will be successful,\" highlighting the possibility of data loss and unauthorized access, which could lead to legal claims and harm to their brand (Chunk 1).\n\n2. **Labor Relations and Union Activities**: The report notes that any disruptions caused by union activities could adversely affect Tesla's business. It mentions that \"employee participation in industrial collective bargaining agreements... can result in higher employee costs and increased risk of work stoppages\" (Chunk 1). This risk is compounded by ongoing campaigns by unions to organize certain operations.\n\n3. **Product Recalls and Safety Regulations**: Tesla must manage the risk of product recalls due to safety concerns or compliance issues. The document states that \"recalls... could result in significant expense, supply chain complications and service burdens\" (Chunk 1). This risk is underscored by past and potential future recalls driven by regulators or internal assessments.\n\n4. **Warranty Claims and Reserves**: There is a risk that Tesla's warranty reserves may be insufficient to cover future claims, as stated: \"If our warranty reserves are inadequate to cover future warranty claims on our products, our financial condition and operating results may be harmed\" (Chunk 1). Estimates are described as \"inherently uncertain.\"\n\n5. **Legal Proceedings and Investigations**: Tesla is currently involved in various legal actions and investigations, including a class action relating to Autopilot and FSD technologies, which \"seeks money damages and other relief... for persons who purchased Tesla stock\" (Chunk 2). There is also mention of ongoing regulatory inquiries that could have \"material adverse impact on our business\" if they lead to enforcement actions.\n\n6. **Cybersecurity Threats**: The report highlights potential cybersecurity threats, stating that operations could be disrupted by \"cyber-attacks or other security incidents, which could result in data breaches\" (Chunk 4). The vulnerability of Tesla\u2019s IT systems to such attacks poses significant risks, including reputational damage.\n\n7. **Competitive Landscape and Market Demand**: Tesla faces intense competition from both established automakers and new entrants in the electric vehicle market. The report notes that \"many established and new automobile manufacturers have entered or have announced plans to enter the market for electric and other alternative fuel vehicles\" (Chunk 7), suggesting that competition could impact Tesla\u2019s market share and sales.\n\n8. **Dependence on Key Personnel**: Tesla is highly dependent on its CEO, Elon Musk, stating, \"the loss of the services of any of our key employees or any significant portion of our workforce could disrupt our operations\" (Chunk 4). This introduces risks related to talent retention and leadership continuity.\n\n9. **Regulatory Compliance and ESG Factors**: The report mentions that changing government regulations and stakeholder expectations around Environmental, Social, and Governance (ESG) practices could result in increased costs or risks (Chunk 6). Failure to comply or meet these evolving expectations could harm Tesla\u2019s brand and operational viability.\n\n10. **Natural Disasters and External Events**: Tesla acknowledges risks from natural disasters and other unforeseen events that can adversely affect operations. Events outside of control, such as \"natural disasters, wars, health epidemics,\" etc., have the potential to disrupt production and impact results (Chunk 6).\n\nThese risk factors encompass a wide range of potential issues, from operational challenges and compliance to market competition and legal risks, underscoring the complexities that Tesla navigates as it strives to grow its business.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2023"
+      ],
+      "form_type": "10-K"
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 362.6,
+      "search_ms": 14.4,
+      "traverse_ms": 0,
+      "llm_ms": 13294.8,
+      "total_ms": 13671.8
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:46:48.328884+00:00",
+    "mode": "graph_rag",
+    "question": "What was Ford's revenue in 2023?",
+    "answer": "Ford's total revenue for the year ended December 31, 2023, was $176.191 billion, as reported in the 10-K filing for 2023 under the Selected Income Statement Information section (Item 7) (source: F | 10-K 2023 | Item 7).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      944,
+      536,
+      260
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_10K_2023__82__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10K_2023__82__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8561,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__43__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10K_2023__43__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8551,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__44__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "F_10K_2023__44__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8479,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__101__Item_16_Form_10_K_Summary__chunk_23",
+          "F_10K_2023__101__Item_16_Form_10_K_Summary",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8478,
+        "label": "F 10-K 2023 | Item 16. Form 10-K Summary."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__101__Item_16_Form_10_K_Summary__chunk_24",
+          "F_10K_2023__101__Item_16_Form_10_K_Summary",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8437,
+        "label": "F 10-K 2023 | Item 16. Form 10-K Summary."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__80__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10K_2023__80__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8332,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__101__Item_16_Form_10_K_Summary__chunk_25",
+          "F_10K_2023__101__Item_16_Form_10_K_Summary",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8322,
+        "label": "F 10-K 2023 | Item 16. Form 10-K Summary."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 136.5,
+      "search_ms": 32.5,
+      "traverse_ms": 2.9,
+      "llm_ms": 5169.4,
+      "total_ms": 5341.3
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:46:50.128231+00:00",
+    "mode": "rag",
+    "question": "What was Ford's revenue in 2023?",
+    "answer": "Ford's total revenue in 2023 was $176.191 billion. This figure includes revenues from various sources such as vehicles, parts, and accessories totaling $161.052 billion, used vehicles at $1.873 billion, services and other revenue at $2.902 billion, leasing income of $4.284 billion, financing income of $5.980 billion, and insurance income of $0.100 billion.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 406.4,
+      "search_ms": 17.5,
+      "traverse_ms": 0,
+      "llm_ms": 1375.0,
+      "total_ms": 1799.0
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:46:52.933671+00:00",
+    "mode": "graph_rag",
+    "question": "How much cash did Rivian have at the end of 2023?",
+    "answer": "At the end of 2023, Rivian had cash and cash equivalents amounting to $7,857 million, as detailed in the consolidated balance sheet in their 10-K filing for the year ended December 31, 2023 (source: RIVN | 10-K 2023 | Item 8. Financial Statements and Supplementary Data).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      529,
+      560
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_6",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8394,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_4",
+          "RIVN_10K_2023__8__Item_8_Financial_Statements_and_Supplementary_Data",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8379,
+        "label": "RIVN 10-K 2023 | Item 8. Financial Statements and Supplementary Data"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_5",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8342,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_10",
+          "RIVN_10K_2023__8__Item_8_Financial_Statements_and_Supplementary_Data",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8285,
+        "label": "RIVN 10-K 2023 | Item 8. Financial Statements and Supplementary Data"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 449.5,
+      "search_ms": 37.6,
+      "traverse_ms": 16.2,
+      "llm_ms": 2301.7,
+      "total_ms": 2805.2
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:46:54.531102+00:00",
+    "mode": "rag",
+    "question": "How much cash did Rivian have at the end of 2023?",
+    "answer": "At the end of 2023, Rivian had cash and cash equivalents of $7,857 million, as stated in the consolidated balance sheets excerpt.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 375.8,
+      "search_ms": 15.8,
+      "traverse_ms": 0,
+      "llm_ms": 1205.6,
+      "total_ms": 1597.3
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:47:16.092639+00:00",
+    "mode": "graph_rag",
+    "question": "Compare the risk factors of Tesla and Ford in their 2023 annual reports.",
+    "answer": "The risk factors highlighted in the 2023 annual reports of Tesla and Ford present a diverse range of operational, legal, regulatory, and financial concerns. Below is a comparative analysis based on specific excerpts from their 10-K filings:\n\n### 1. **Operational Dependency on Suppliers**\n- **Ford**: Ford emphasized its dependence on suppliers for components and raw materials critical for vehicle production, particularly for electric vehicles (EVs). The company faced potential disruptions from shortages of materials such as lithium, cobalt, nickel, graphite, and manganese, which could significantly disrupt its production schedules and increase costs ([5](https://www.sec.gov/edgar/secs/ford-2023-10-k-item-1A-risk-factors)).\n  \n- **Tesla**: Tesla similarly acknowledges the risks associated with its supply chain, particularly regarding dependencies on specific components and raw materials. It recognizes that disruptions in its supply line could halt production or lead to significant delays ([4](https://www.sec.gov/edgar/secs/tesla-2023-10-k-item-8-financial-statements-and-supplementary-data)).\n\n### 2. **Legal and Regulatory Risks**\n- **Ford**: Ford faces considerable legal and regulatory risks, including potential litigation related to product defects, compliance with safety and emissions regulations, and government scrutiny. These issues could result in fines, damage claims, and increased costs of compliance, particularly as the automotive industry navigates demanding environmental standards ([6](https://www.sec.gov/edgar/secs/ford-2023-10-k-item-1A-risk-factors)).\n  \n- **Tesla**: Tesla also reports on various legal challenges, including class action lawsuits regarding its Autopilot and Full Self-Driving (FSD) technology. Moreover, Tesla faces scrutiny from regulators and governmental authorities, which could lead to investigations or enforcement actions that might adversely affect its financial outlook ([4](https://www.sec.gov/edgar/secs/tesla-2023-10-k-item-8-financial-statements-and-supplementary-data)).\n\n### 3. **Market and Competitive Risks**\n- **Ford**: Ford highlights the intense competition it faces in the automotive market, particularly from new entrants and traditional manufacturers ramping up EV production. This competitive pressure may lead to pricing challenges and affect market share ([1](https://www.sec.gov/edgar/secs/ford-2023-10-k-item-7-managements-discussion-and-analysis)).\n  \n- **Tesla**: Tesla underlines its competition in both the automotive and technology sectors, noting the rapid advancement of competitors, particularly in the electric vehicle space. There is concern about market acceptance of its vehicles relative to those of its competitors and how new entrants could disrupt its market position ([4](https://www.sec.gov/edgar/secs/tesla-2023-10-k-item-8-financial-statements-and-supplementary-data)).\n\n### 4. **Environmental Regulation Compliance**\n- **Ford**: Ford identifies risks associated with evolving environmental regulations. Factors like emissions standards and market acceptance of EVs could necessitate substantial modifications to product plans and lead to financial liabilities if standards are not met ([9](https://www.sec.gov/edgar/secs/ford-2023-10-k-item-1A-risk-factors)).\n  \n- **Tesla**: Tesla mentions compliance with emissions regulations but emphasizes a broad range of technology and data privacy issues, particularly concerning the implications of its AI technologies. As it expands its autonomous vehicle offerings, it faces regulatory hurdles that could incur costs ([4](https://www.sec.gov/edgar/secs/tesla-2023-10-k-item-8-financial-statements-and-supplementary-data)).\n\n### 5. **Economic Risks**\n- **Ford**: Ford's report discusses the impacts of economic fluctuations, labor shortages, and inflation on its operational costs and ability to maintain profitability. It specifically notes challenges related to ongoing economic shifts and their effects on the auto industry ([1](https://www.sec.gov/edgar/secs/ford-2023-10-k-item-7-managements-discussion-and-analysis)).\n  \n- **Tesla**: Tesla's mention of economic risks is more focused on its financial performance in terms of credit risks and potential financial impacts from fluctuating market conditions. It reports on how credit losses and consumer behavior could affect financial health as it navigates market volatility ([4](https://www.sec.gov/edgar/secs/tesla-2023-10-k-item-8-financial-statements-and-supplementary-data)).\n\n### Summary\nBoth Ford and Tesla face extensive risks associated with their dependency on suppliers, legal challenges, regulatory compliance, competition, and economic fluctuations. While their challenges are rooted in similar themes, Ford's focus is primarily on operational dependencies and compliance with environmental regulations, while Tesla emphasizes its legal challenges and the impacts of technological advancements in an evolving regulatory environment.\n\nThrough careful management of these risks, both companies aim to position themselves effectively in the rapidly transforming automotive landscape.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA",
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA",
+        "F"
+      ],
+      "years": [
+        "2023"
+      ],
+      "form_type": "10-K"
+    },
+    "clusters_used": [
+      944,
+      371,
+      1060
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_10K_2023__40__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10K_2023__40__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8066,
+        "label": "F 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__73__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "F_10K_2023__73__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7956,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__73__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10K_2023__73__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7954,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_65",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.795,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_0",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.791,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__27__Item_1A_Risk_Factors_Continued__chunk_0",
+          "F_10K_2023__27__Item_1A_Risk_Factors_Continued",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7889,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__22__Item_1A_Risk_Factors_Continued__chunk_0",
+          "F_10K_2023__22__Item_1A_Risk_Factors_Continued",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7886,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_1",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7866,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__28__Item_1A_Risk_Factors_Continued__chunk_0",
+          "F_10K_2023__28__Item_1A_Risk_Factors_Continued",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7852,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors (Continued)"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 1216.4,
+      "search_ms": 41.4,
+      "traverse_ms": 3.6,
+      "llm_ms": 20299.0,
+      "total_ms": 21560.5
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:47:27.935770+00:00",
+    "mode": "rag",
+    "question": "Compare the risk factors of Tesla and Ford in their 2023 annual reports.",
+    "answer": "The risk factors presented in the 2023 annual reports of Tesla and Ford highlight several similarities and differences, indicating how each company navigates the complexities of the automotive and electric vehicle markets.\n\n**1. Operational Risks:**\n- **Ford** emphasizes its heavy dependency on suppliers for timely delivery of key components, particularly for electric vehicles (EVs), citing that shortages or delivery issues of materials such as lithium and cobalt can disrupt production. They note the increased competition for these materials which can lead to challenges in acquiring them at reasonable prices.\n- **Tesla** also faces similar pressures regarding supplier relationships and raw material access, particularly for battery production. The need for reliable sourcing of materials and components is a critical operational risk for both companies.\n\n**2. Economic Factors:**\n- **Ford** mentions the volatility of commodity and energy prices, inflationary pressures, and currency exchange rate fluctuations as significant concerns. They state that rising costs related to these factors could influence their profitability.\n- **Tesla** does not explicitly discuss commodity prices in detail in the excerpts provided but acknowledges the importance of operational efficiencies amidst increasing market competition and demand for their products.\n\n**3. Market Risks:**\n- **Ford** notes the expected downward pressure on vehicle prices due to intense competition and excess capacity in the market, particularly for EVs. They highlight that long-term profitability may be impacted as a result of these pricing pressures.\n- **Tesla** identifies the competitive landscape in the EV sector, noting both established automakers and new entrants are increasing competition. This suggests that while Tesla currently leads in the EV space, it recognizes the potential for increased price competition as adoption grows.\n\n**4. Regulatory Risks:**\n- **Ford** highlights that compliance with changing safety, emissions, fuel economy, and environmental regulations may necessitate substantial modifications to their product plans and operations. This includes the uncertainty surrounding regulatory changes that could impact compliance costs and operational strategies.\n- **Tesla** similarly notes the increasing scrutiny from regulators as they aim to comply with emissions and safety standards. However, Tesla's focus on sustainability and responsible sourcing is a key aspect of their operational strategy.\n\n**5. Legal and Litigation Risks:**\n- **Ford's** risk disclosures indicate a potential for significant litigation related to product defects, environmental impacts, and compliance with various regulations. They highlight the substantial resources spent on maintaining compliance and the possible adverse publicity surrounding allegations, which could affect their reputation and sales.\n- **Tesla** also mentions ongoing legal challenges and investigations, particularly related to product features and business practices. They acknowledge that unfavorable outcomes in legal proceedings could materially affect their business and reputation.\n\n**Conclusion:**\nBoth companies confront similar operational and market risks, particularly around supply chain dependencies and regulatory compliance. However, Ford places a stronger emphasis on the potential impacts of commodity price volatility and market pricing pressures while Tesla focuses more on the competitive landscape and sustainability initiatives. Each company must navigate its unique challenges to maintain competitiveness, with investor expectations influenced by their responses to these risk factors.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA",
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA",
+        "F"
+      ],
+      "years": [
+        "2023"
+      ],
+      "form_type": "10-K"
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 191.8,
+      "search_ms": 22.7,
+      "traverse_ms": 0,
+      "llm_ms": 11628.1,
+      "total_ms": 11842.6
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:47:59.120730+00:00",
+    "mode": "graph_rag",
+    "question": "Which EV companies mention battery supply chain as a risk?",
+    "answer": "Several electric vehicle (EV) companies mention battery supply chain risks in their filings:\n\n1. **Rivian Automotive, Inc.**: Rivian's filings consistently highlight the dependency on the continued supply of battery cells as a critical risk. They express concerns about the inability or unwillingness of battery cell manufacturers to meet the demands of the EV industry, which could adversely affect their growth, manufacturing, and delivery timelines (see 10-Q 2025-05-06, Item 1A; 10-Q 2025-11-04, Item 1A; 10-K 2025, Item 1A).\n\n2. **Ford Motor Company**: In their 2024 10-K filing, Ford notes the challenges presented by the electric vehicle market, particularly issues related to commodity prices necessary for battery production, which can lead to increased material costs that affect their EV strategy (10-K 2024, Item 7).\n\n3. **Lucid Motors, Inc. (LCID)**: Lucid's 2025 10-K highlights risks associated with changes in material pricing and potential disruptions in the supply chain for battery components, emphasizing that these factors could materially impact their operations and financial condition (10-K 2025, Item 1A).\n\n4. **Tesla, Inc.**: Tesla's filings indicate risks associated with securing a reliable supply of battery materials and managing supplier relationships, which are essential for meeting their production needs (10-K 2024, Item 1A; 10-K 2023, Item 1A).\n\n5. **General Motors (GM)**: In GM's 2025 10-K, the company discusses risks related to the supply of critical materials for EV propulsion systems, notably lithium and other components needed for battery manufacturing (10-K 2025, Item 1A).\n\nThese companies recognize the significant impact that battery supply chain disruptions and the availability of critical materials can have on their ability to produce and deliver electric vehicles effectively.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      560,
+      502,
+      944
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2025-05-06",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.817,
+        "label": "RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "F_10K_2024__41__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "F_10K_2024__41__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10K_2024",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8109,
+        "label": "F 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-11-04__5__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10Q_2025-11-04__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2025-11-04",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8085,
+        "label": "RIVN 10-Q 2025-11-04 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-08-05__5__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10Q_2025-08-05__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2025-08-05",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8064,
+        "label": "RIVN 10-Q 2025-08-05 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__1__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10K_2025__1__Item_1A_Risk_Factors",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8055,
+        "label": "RIVN 10-K 2025 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2025__2__Item_1A_Risk_Factors__chunk_4",
+          "GM_10K_2025__2__Item_1A_Risk_Factors",
+          "GM_10K_2025",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8054,
+        "label": "GM 10-K 2025 | Item\u00a01A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2025__2__Item_1A_Risk_Factors__chunk_19",
+          "LCID_10K_2025__2__Item_1A_Risk_Factors",
+          "LCID_10K_2025",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8054,
+        "label": "LCID 10-K 2025 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__1__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10K_2024__1__Item_1A_Risk_Factors",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8044,
+        "label": "RIVN 10-K 2024 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2024__2__Item_1A_RISK_FACTORS__chunk_3",
+          "TSLA_10K_2024__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2024",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8043,
+        "label": "TSLA 10-K 2024 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_3",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8032,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 1591.7,
+      "search_ms": 31.7,
+      "traverse_ms": 3.7,
+      "llm_ms": 29557.0,
+      "total_ms": 31184.1
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:48:02.834357+00:00",
+    "mode": "rag",
+    "question": "Which EV companies mention battery supply chain as a risk?",
+    "answer": "Based on the excerpts provided, Rivian Automotive, Inc. specifically highlights the battery supply chain as a risk. They emphasize their dependence on the continued supply of battery cells for their vehicles, stating that \"the inability or unwillingness of battery cell manufacturers to build or operate battery cell manufacturing plants to supply the numbers of battery cells... required to support the growth of the electric or plug-in hybrid vehicle industry as demand for such cells increases would impact our projected manufacturing and delivery timelines, and adversely affect our business, prospects, financial condition, results of operations, or cash flows.\" Additionally, they note that their EVs contain components purchased from suppliers, many of which are single or limited-source suppliers, creating a significant reliance on the battery supply chain.\n\nThe excerpts do not mention any other specific EV companies discussing the battery supply chain as a risk. Therefore, based on the information provided, Rivian is the only company explicitly referenced regarding this concern.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 751.4,
+      "search_ms": 20.1,
+      "traverse_ms": 0,
+      "llm_ms": 2941.9,
+      "total_ms": 3713.4
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:48:10.631848+00:00",
+    "mode": "graph_rag",
+    "question": "How do Tesla and Rivian describe their manufacturing challenges?",
+    "answer": "Both Tesla and Rivian face unique manufacturing challenges, but Rivian's disclosures provide particular insights into their circumstances. \n\nRivian outlines its manufacturing challenges in several filings. In their 2024 10-K filing, Rivian acknowledges that their plant in Normal, Illinois, operates significantly below its full production capacity. This underutilization leads to higher costs per unit, impacting profitability. Rivian also points to specific challenges related to the introduction of new vehicle platforms, such as the R2 platform, indicating that the integration of new technologies necessitates significant capital expenditures and could temporarily disrupt production capacity (RIVN | 10-K 2024 | Item 7).\n\nAdditionally, Rivian faces challenges related to supply chain resilience. They mention their reliance on hundreds of suppliers, many of whom are single- or limited-source, posing risks if those suppliers fail to deliver materials or components on time or at acceptable costs (RIVN | 10-K 2024 | Item 1. Business). Battery raw materials are highlighted as particularly vulnerable, and Rivian is actively working to manage these risks by exploring alternative suppliers and technologies while navigating global supply chain complexities (RIVN | 10-K 2024 | Item 1. Business).\n\nOverall, while both companies contend with the complexities of scaling production to meet demand and the associated costs, Rivian's emphasis on vertical integration and the development of new platforms signals a distinct strategic approach to tackle these manufacturing challenges. \n\nFor more details, see:\n- RIVN | 10-K 2024 | Item 1. Business\n- RIVN | 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA",
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA",
+        "RIVN"
+      ]
+    },
+    "clusters_used": [
+      560,
+      540
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2023__0__Item_1_Business",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8285,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2024__0__Item_1_Business",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8214,
+        "label": "RIVN 10-K 2024 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2022__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2022__0__Item_1_Business",
+          "RIVN_10K_2022",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8195,
+        "label": "RIVN 10-K 2022 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2025__0__Item_1_Business",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.819,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8102,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8095,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-11-07__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "RIVN_10Q_2024-11-07__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10Q_2024-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8095,
+        "label": "RIVN 10-Q 2024-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-11-04__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_3",
+          "RIVN_10Q_2025-11-04__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10Q_2025-11-04",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.809,
+        "label": "RIVN 10-Q 2025-11-04 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__0__Item_1_Business__chunk_3",
+          "RIVN_10K_2024__0__Item_1_Business",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8084,
+        "label": "RIVN 10-K 2024 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_0",
+          "RIVN_10K_2025__0__Item_1_Business",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8075,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 169.3,
+      "search_ms": 40.1,
+      "traverse_ms": 3.7,
+      "llm_ms": 7583.9,
+      "total_ms": 7797.1
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:48:17.924832+00:00",
+    "mode": "rag",
+    "question": "How do Tesla and Rivian describe their manufacturing challenges?",
+    "answer": "The excerpts provided do not include any details specifically about Tesla's manufacturing challenges, as they focus solely on Rivian's operations and strategies. However, Rivian does describe various challenges related to manufacturing, which can be summarized as follows:\n\n1. **Production Capacity and Efficiency**: Rivian mentions operating below full production capacity at its Normal Factory. The factory's installed capacity is noted as being higher than actual production, leading to increased costs per unit due to lower utilization. They indicate that improvements are expected following a plant retooling upgrade, suggesting that they are working to enhance manufacturing efficiencies.\n\n2. **Component Shortages**: Rivian faces significant challenges with manufacturing-related product component shortages, which they attribute to their reliance on suppliers that often have limited or single-source dependencies. This includes raw materials essential for production, particularly battery materials like lithium, nickel, graphite, and cobalt. Rivian proactively engages with suppliers to mitigate risks associated with these sole-source materials.\n\n3. **Supply Chain Complexity**: The company notes that the supply chain for their products is intricate and global, facing challenges such as price volatility, regulatory hurdles, and competition for raw materials. The longer and more variable timelines for obtaining these materials add a layer of uncertainty to their manufacturing processes.\n\n4. **Integration of New Models**: Rivian plans to introduce the R2 platform, which requires further integration into their existing Normal Factory. They are preparing for initial production of the R2, and any delays in the execution of this integration could affect their overall operational efficiency and financial results.\n\n5. **Cost Management**: Rivian emphasizes the need to manage costs effectively. They highlight the importance of achieving timely and effective cost reductions by improving manufacturing processes and negotiating better terms with suppliers.\n\nIn summary, Rivian describes manufacturing challenges that include underutilization of production capacity leading to higher costs, reliance on limited-source suppliers causing component shortages, the complexities of a global supply chain, and the need for effective cost management and integration of new models.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA",
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA",
+        "RIVN"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 191.8,
+      "search_ms": 21.3,
+      "traverse_ms": 0,
+      "llm_ms": 7079.2,
+      "total_ms": 7292.4
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:48:31.749800+00:00",
+    "mode": "graph_rag",
+    "question": "How did Tesla's risk factors change between 2022 and 2023?",
+    "answer": "Tesla's risk factors exhibited notable changes between the 2022 and 2023 10-K filings, indicating an evolving landscape of challenges the company anticipates facing. Here are some key differences:\n\n1. **Strengthened Focus on Supply Chain and Production Risks**: In the 2023 10-K filing, Tesla emphasized the challenges in managing supplier relationships and component shortages as critical risks. This reflects an ongoing concern about supply chain integrity, particularly due to past disruptions caused by factors such as the COVID-19 pandemic (Item 1A. RISK FACTORS, 2023). While similar concerns were present in the 2022 filing, the 2023 report specifies that these challenges could directly impact the scaling of manufacturing capabilities globally, highlighting a more acute awareness of the need for effective supply chain management to support production growth.\n\n2. **Increased Scrutiny and Legal Risks**: The 2023 filing mentions potential legal claims related to unauthorized access to Tesla\u2019s products and systems, broadening the narrative around risks associated with cybersecurity (Item 1A. RISK FACTORS, 2023). The emphasis on data security and the potential for legal ramifications indicate a growing recognition of the threats posed by digital vulnerabilities, reflecting broader industry trends.\n\n3. **Consumer Behavior and Economic Considerations**: The company\u2019s considerations regarding consumer demand and economic cycles have been expanded upon in the 2023 filing. It now includes specific mention of the need to accurately forecast demand for electric vehicles and energy products, suggesting that market fluctuations are becoming more impactful on Tesla's operations amid increasing competition (Item 1A. RISK FACTORS, 2023).\n\n4. **Labor Relations Risks**: The 2023 report introduces additional focus on risks associated with union activities and labor relations, noting that such factors could impact production and has implications for employee costs (Item 1A. RISK FACTORS, 2023). This indicates an acknowledgment of how labor dynamics may pose risks to operational continuity and cost structure.\n\n5. **Enhanced Focus on Warranty and Compliance Risks**: Tesla's 2023 filing illustrates increased emphasis on the adequacy of warranty reserves to cover future claims and broader product liability issues which were touched upon but less pronounced in the previous year (Item 1A. RISK FACTORS, 2023). This change reflects caution regarding the financial implications of product returns and liabilities.\n\nIn summary, Tesla's risk factors in 2023 highlight an enhanced focus on supply chain and production management, cybersecurity legal challenges, consumer demand forecasting, labor relations, and warranty reserve adequacy, reflecting their evolving operational environment and the complexities involved in scaling their business.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2022",
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      1060,
+      502,
+      1053
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_65",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7918,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.785,
+        "label": "TSLA 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_62",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7822,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2022__2__Item_1A_RISK_FACTORS__chunk_3",
+          "TSLA_10K_2022__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2022",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7798,
+        "label": "TSLA 10-K 2022 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2022__6__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "TSLA_10K_2022__6__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10K_2022",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7787,
+        "label": "TSLA 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2022__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_79",
+          "TSLA_10K_2022__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2022",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7707,
+        "label": "TSLA 10-K 2022 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2022__2__Item_1A_RISK_FACTORS__chunk_16",
+          "TSLA_10K_2022__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2022",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7686,
+        "label": "TSLA 10-K 2022 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_61",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7682,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_9",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7666,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS__chunk_5",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7653,
+        "label": "TSLA 10-K 2023 | Item 1A. RISK FACTORS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 205.8,
+      "search_ms": 33.8,
+      "traverse_ms": 3.8,
+      "llm_ms": 13580.8,
+      "total_ms": 13824.4
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:49:07.604348+00:00",
+    "mode": "rag",
+    "question": "How did Tesla's risk factors change between 2022 and 2023?",
+    "answer": "The risk factors for Tesla encountered notable changes between 2022 and 2023, as reflected in the excerpts provided. Here are the key differences:\n\n1. **Legal Proceedings and Litigation Risks:**\n   - In 2022, Tesla faced multiple lawsuits, including ongoing litigation related to a performance award for Elon Musk and a derivative action concerning directors' compensation. By 2023, the complexity of Tesla's legal challenges had increased, with new class action lawsuits being filed related to allegations of misrepresentations regarding the company's Autopilot and Full Self-Driving (FSD) technologies. For instance, on February 27, 2023, a class-action suit alleged that Tesla and Elon Musk made material misstatements about Autopilot capabilities, reflecting heightened scrutiny on the company\u2019s public statements and product safety (Chunk 1).\n\n2. **Government Investigations:**\n   - The number of investigations by various regulatory bodies has remained a constant risk; however, the specific focus has expanded in 2023. Tesla faced investigations by the National Highway Traffic Safety Administration, the SEC, and the DOJ concerning vehicle functionality and compliance issues (Chunk 3). This increase in scrutiny suggests growing regulatory pressures compared to prior years.\n\n3. **Financial Impact and Performance:**\n   - Tesla's financial performance improved significantly from 2022 to 2023, with revenues increasing from $81.46 billion to $96.77 billion and net income rising from $12.56 billion to $15.00 billion (Chunk 2). Despite these gains, the consistent challenge of unpredictable operating costs remains, as there could be varying financial results from period to period due to fluctuations in production and product launches (Chunk 7).\n\n4. **Operational Risks:**\n   - In 2023, Tesla emphasized the need to grow its access to battery cells and manage costs related to raw material prices more prominently. This is critical as the demand for electric vehicles increases. Disruptions in the supply chain, particularly for battery cells, were identified as significant operational risks, indicating a shift from merely managing production to ensuring the stability of supply chains (Chunk 4).\n\n5. **Market Demand Considerations:**\n   - The risk factor related to market demand for electric vehicles remained relevant, but with a nuanced shift towards competition and perceptions of Tesla's products. While the market interest in electric vehicles was described as increasing, concerns about consumer adoption, competition, and product perception were highlighted as critical issues, emphasizing an increasingly competitive landscape for Tesla (Chunk 4).\n\nIn conclusion, Tesla's risk factors evolved between 2022 and 2023. The company faced an increase in legal challenges, expanded regulatory scrutiny, and ongoing operational risks tied to supply chains and market demand, all set against a backdrop of significant financial performance improvements. This indicated a climate where regulatory and competitive risks may pose a more pronounced impact on Tesla's business strategy moving forward.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2022",
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 666.7,
+      "search_ms": 11.8,
+      "traverse_ms": 0,
+      "llm_ms": 35175.4,
+      "total_ms": 35854.0
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:49:14.347065+00:00",
+    "mode": "graph_rag",
+    "question": "What does GM say about its electric vehicle strategy?",
+    "answer": "General Motors (GM) outlines a comprehensive electric vehicle (EV) strategy emphasizing its commitment to achieving an annual production capacity of one million EVs in North America by 2025. A crucial component of this strategy is the Ultium platform, which provides a flexible architecture for various EV models across different brands and vehicle types, allowing for rapid response to customer preferences and shorter lead times in design and development compared to internal combustion engine (ICE) vehicles (GM 10-K 2023, Item 1. Business). \n\nIn addition to expanding its EV production, GM is also investing heavily in charging infrastructure to support the growth of its EV lineup. As part of its initiative, GM plans to enhance customer access to charging solutions at home, workplaces, and public locations. This includes partnerships with multiple charging networks and a collaboration with Tesla to provide access to a significant number of Supercharger stations for GM EV drivers starting in early 2024 (GM 10-K 2023, Item 1. Business).\n\nFurthermore, GM is focused on creating a world-class portfolio of EVs while maintaining a diverse range of profitable ICE vehicles. The company aims to align its manufacturing capabilities with consumer demand, adjusting its production strategies based on market conditions and consumer adoption rates (GM 10-K 2023, Item 1. Business).\n\nOverall, GM's EV strategy is characterized by ongoing investments, a commitment to diverse vehicle options, and a robust charging infrastructure, positioning the company to meet the challenges and opportunities presented by the evolving automotive market (GM 10-K 2023, Item 1. Business).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "GM"
+      ]
+    },
+    "clusters_used": [
+      940,
+      944
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_0",
+          "GM_10K_2023__1__Item_1_Business",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8611,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2022__1__Item_1_Business__chunk_0",
+          "GM_10K_2022__1__Item_1_Business",
+          "GM_10K_2022",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8513,
+        "label": "GM 10-K 2022 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2025__1__Item_1_Business__chunk_0",
+          "GM_10K_2025__1__Item_1_Business",
+          "GM_10K_2025",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8466,
+        "label": "GM 10-K 2025 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2024__1__Item_1_Business__chunk_0",
+          "GM_10K_2024__1__Item_1_Business",
+          "GM_10K_2024",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8382,
+        "label": "GM 10-K 2024 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2025__2__Item_1A_Risk_Factors__chunk_1",
+          "GM_10K_2025__2__Item_1A_Risk_Factors",
+          "GM_10K_2025",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.834,
+        "label": "GM 10-K 2025 | Item\u00a01A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_1",
+          "GM_10K_2023__1__Item_1_Business",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8314,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2025__1__Item_1_Business__chunk_1",
+          "GM_10K_2025__1__Item_1_Business",
+          "GM_10K_2025",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8254,
+        "label": "GM 10-K 2025 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2024__2__Item_1A_Risk_Factors__chunk_1",
+          "GM_10K_2024__2__Item_1A_Risk_Factors",
+          "GM_10K_2024",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8215,
+        "label": "GM 10-K 2024 | Item\u00a01A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2022__1__Item_1_Business__chunk_16",
+          "GM_10K_2022__1__Item_1_Business",
+          "GM_10K_2022",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8196,
+        "label": "GM 10-K 2022 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_15",
+          "GM_10K_2023__1__Item_1_Business",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8195,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 297.5,
+      "search_ms": 42.2,
+      "traverse_ms": 3.8,
+      "llm_ms": 6398.8,
+      "total_ms": 6742.4
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:49:33.469929+00:00",
+    "mode": "rag",
+    "question": "What does GM say about its electric vehicle strategy?",
+    "answer": "General Motors (GM) articulates a comprehensive electric vehicle (EV) strategy aimed at achieving leadership in the transition to an all-electric future. Key highlights of their strategy include:\n\n1. **Production Goals**: GM plans to scale its annual EV production capacity in North America to **one million units by the end of 2025** and intends to exceed **two million units globally** within the same timeframe. This ambitious target is supported by their EV propulsion architecture, Ultium, which is designed to be flexible across various vehicle types and models.\n\n2. **Investment in Manufacturing Infrastructure**: They have retooled plants, such as GM\u2019s **Factory ZERO** in Detroit-Hamtramck, into dedicated EV facilities. Furthermore, GM announced its intent to **convert the Orion Assembly plant** in Michigan to produce electric pickups by **2026**. The company also invested in battery cell production through a joint venture with LG Energy Solution at multiple locations, including Warren, Ohio; Spring Hill, Tennessee; and Lansing, Michigan.\n\n3. **Charging Infrastructure**: GM is heavily investing in EV charging solutions, with plans for nearly **$750 million** through 2025 to enhance home and public charging capabilities. They aim to ensure customers have access to comprehensive charging solutions, including a strategic partnership with **EVgo** to install 3,250 DC fast charging stalls across key metropolitan areas in the U.S.\n\n4. **Market Positioning**: GM emphasizes a dual focus on both EVs and internal combustion engine (ICE) vehicles, particularly full-size trucks and SUVs, which are core to their financial performance. They also stress the importance of delivering competitively priced, high-quality EVs that meet consumer demands.\n\n5. **Innovation and Sustainability**: GM's EV strategy includes developing advanced driver assistance systems and autonomous vehicle technology, all while adhering to sustainability goals. The company has committed to becoming carbon neutral by 2040 and aims to eliminate tailpipe emissions from new U.S. light-duty vehicles by 2035.\n\n6. **Challenges and Realignment**: GM recognizes that consumer adoption of EVs has been slower than anticipated due to factors such as government policy changes, charging infrastructure availability, and competitive pressures. Consequently, the company has made strategic adjustments to its EV manufacturing capacity to align with the pace of market demand.\n\nIn summary, GM's EV strategy focuses on scaling production capacity, enhancing infrastructure, leveraging technology for improved vehicle offerings, and maintaining a competitive edge in both the EV and ICE markets while addressing regulatory challenges and consumer preferences.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "GM"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 134.9,
+      "search_ms": 17.4,
+      "traverse_ms": 0,
+      "llm_ms": 18970.1,
+      "total_ms": 19122.4
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:49:40.465068+00:00",
+    "mode": "graph_rag",
+    "question": "What does Lucid say about its reservation backlog or order numbers?",
+    "answer": "The provided excerpts do not contain specific details regarding Lucid Motors' reservation backlog or order numbers. However, Lucid does discuss its vehicle production and delivery figures. For instance, in the second quarter of 2025, Lucid produced 3,863 vehicles and delivered 3,309 vehicles (Source: LCID | 10-Q 2025-08-05 | Item 2). Similarly, in the third quarter of 2025, the company produced 3,891 vehicles and delivered 4,078 vehicles (Source: LCID | 10-Q 2025-11-05 | Item 2).\n\nIf you seek detailed information on reservation backlogs or specific order numbers, those would typically be discussed in investor presentations, earnings calls, or specific sections of future filings that address order metrics, which are not provided in the current excerpts.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "LCID"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "LCID"
+      ]
+    },
+    "clusters_used": [
+      970,
+      502,
+      468
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "LCID_10Q_2025-08-05__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10Q_2025-08-05__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2025-08-05",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7668,
+        "label": "LCID 10-Q 2025-08-05 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2024-11-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10Q_2024-11-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2024-11-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7665,
+        "label": "LCID 10-Q 2024-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2025__1__Item_1_Business__chunk_0",
+          "LCID_10K_2025__1__Item_1_Business",
+          "LCID_10K_2025",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7663,
+        "label": "LCID 10-K 2025 | Item 1. Business."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10K_2024",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.766,
+        "label": "LCID 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__1__Item_1_Business__chunk_0",
+          "LCID_10K_2023__1__Item_1_Business",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7652,
+        "label": "LCID 10-K 2023 | Item 1. Business."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-05-06__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10Q_2025-05-06__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2025-05-06",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7634,
+        "label": "LCID 10-Q 2025-05-06 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10K_2022",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7619,
+        "label": "LCID 10-K 2022 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-11-05__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10Q_2025-11-05__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2025-11-05",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7581,
+        "label": "LCID 10-Q 2025-11-05 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "LCID_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10K_2024",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7575,
+        "label": "LCID 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2025__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10K_2025__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10K_2025",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7573,
+        "label": "LCID 10-K 2025 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 154.1,
+      "search_ms": 27.4,
+      "traverse_ms": 2.4,
+      "llm_ms": 6810.7,
+      "total_ms": 6994.7
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:49:43.458835+00:00",
+    "mode": "rag",
+    "question": "What does Lucid say about its reservation backlog or order numbers?",
+    "answer": "The excerpts provided do not include any specific information regarding Lucid's reservation backlog or order numbers. Therefore, I cannot provide details about these metrics.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "LCID"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "LCID"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 408.7,
+      "search_ms": 19.8,
+      "traverse_ms": 0,
+      "llm_ms": 2564.9,
+      "total_ms": 2993.5
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:49:50.897399+00:00",
+    "mode": "graph_rag",
+    "question": "What interest rate risks does Ford Credit specifically disclose?",
+    "answer": "Ford Credit specifically discloses several interest rate risks in its filings, particularly relating to the effects of interest rate fluctuations on its cash flow and economic value. Here are the key points:\n\n1. **Market Risk Exposure**: Ford Credit acknowledges its exposure to market risks related to changes in interest rates, which may adversely affect its cash flow and economic value (10-K 2024, Item 7A).\n\n2. **Assets and Debt Re-Pricing**: The company's assets and related debt have different re-pricing periods. Consequently, they respond differently to changes in interest rates. Ford Credit's assets primarily consist of fixed-rate retail financing and operating lease contracts, along with floating-rate wholesale receivables. In contrast, its debt is mainly fixed-rate (10-K 2024, Item 7A).\n\n3. **Interest Rate Risk Management Objective**: Ford Credit's objective is to reduce volatility in cash flows and economic value by employing risk management strategies based on established risk tolerance levels. This includes the use of economic value sensitivity analysis and re-pricing gap analysis (10-K 2024, Item 7A).\n\n4. **Interest Rate Swaps**: To manage interest rate risk, Ford Credit utilizes interest rate swaps to convert portions of its floating-rate debt to fixed or fixed-rate debt to floating, ensuring their exposure remains within desired limits. The Asset-Liability Committee reviews the re-pricing mismatch monthly (10-K 2024, Item 7A).\n\n5. **Pre-Tax Cash Flow Sensitivity**: Ford Credit conducts a pre-tax cash flow sensitivity analysis. This analysis measures the anticipated cash flow changes associated with its interest-rate-sensitive assets, liabilities, and derivatives when assuming hypothetical changes in interest rates over a 12-month horizon. As of December 31, 2024, a one-percentage-point increase in interest rates is projected to increase pre-tax cash flow by $107 million, while a decrease of the same magnitude would reduce it by $107 million (10-K 2024, Item 7A).\n\n6. **Future Uncertainty**: Ford Credit notes that actual interest rate changes are rarely instantaneous or parallel. Therefore, the real-world impact on cash flow could differ from the results projected in their sensitivity analyses due to dependency on various assumptions (10-K 2024, Item 7A).\n\nOverall, the disclosures highlight Ford Credit's structured approach to managing interest rate risks through a combination of analytical modeling, risk management strategies, and financial instruments.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ]
+    },
+    "clusters_used": [
+      195,
+      709,
+      944
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_10K_2024__93__Item_7A_Quantitative_and_Qualitative_Disclosures_A__chunk_0",
+          "F_10K_2024__93__Item_7A_Quantitative_and_Qualitative_Disclosures_A",
+          "F_10K_2024",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8778,
+        "label": "F 10-K 2024 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__93__Item_7A_Quantitative_and_Qualitative_Disclosures_A__chunk_0",
+          "F_10K_2023__93__Item_7A_Quantitative_and_Qualitative_Disclosures_A",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8777,
+        "label": "F 10-K 2023 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__80__Item_7A_Quantitative_and_Qualitative_Disclosures_A__chunk_0",
+          "F_10K_2025__80__Item_7A_Quantitative_and_Qualitative_Disclosures_A",
+          "F_10K_2025",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8775,
+        "label": "F 10-K 2025 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2022__94__Item_7A_Quantitative_and_Qualitative_Disclosures_A__chunk_0",
+          "F_10K_2022__94__Item_7A_Quantitative_and_Qualitative_Disclosures_A",
+          "F_10K_2022",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8762,
+        "label": "F 10-K 2022 | Item 7A. Quantitative and Qualitative Disclosures About Market Risk (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2024-10-29__63__Item_3_Quantitative_and_Qualitative_Disclosures_Ab__chunk_0",
+          "F_10Q_2024-10-29__63__Item_3_Quantitative_and_Qualitative_Disclosures_Ab",
+          "F_10Q_2024-10-29",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8565,
+        "label": "F 10-Q 2024-10-29 | Item 3. Quantitative and Qualitative Disclosures About Market Risk."
+      },
+      {
+        "node_ids": [
+          "F_10Q_2025-10-24__64__Item_3_Quantitative_and_Qualitative_Disclosures_Ab__chunk_0",
+          "F_10Q_2025-10-24__64__Item_3_Quantitative_and_Qualitative_Disclosures_Ab",
+          "F_10Q_2025-10-24",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8562,
+        "label": "F 10-Q 2025-10-24 | Item 3. Quantitative and Qualitative Disclosures About Market Risk."
+      },
+      {
+        "node_ids": [
+          "F_10Q_2025-05-06__60__Item_3_Quantitative_and_Qualitative_Disclosures_Ab__chunk_0",
+          "F_10Q_2025-05-06__60__Item_3_Quantitative_and_Qualitative_Disclosures_Ab",
+          "F_10Q_2025-05-06",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8561,
+        "label": "F 10-Q 2025-05-06 | Item 3. Quantitative and Qualitative Disclosures About Market Risk."
+      },
+      {
+        "node_ids": [
+          "F_10Q_2025-07-31__63__Item_3_Quantitative_and_Qualitative_Disclosures_Ab__chunk_0",
+          "F_10Q_2025-07-31__63__Item_3_Quantitative_and_Qualitative_Disclosures_Ab",
+          "F_10Q_2025-07-31",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8558,
+        "label": "F 10-Q 2025-07-31 | Item 3. Quantitative and Qualitative Disclosures About Market Risk."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__24__Item_1A_Risk_Factors_Continued__chunk_1",
+          "F_10K_2023__24__Item_1A_Risk_Factors_Continued",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8505,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__24__Item_1A_Risk_Factors_Continued__chunk_0",
+          "F_10K_2023__24__Item_1A_Risk_Factors_Continued",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8372,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors (Continued)"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 245.0,
+      "search_ms": 31.0,
+      "traverse_ms": 2.7,
+      "llm_ms": 7159.0,
+      "total_ms": 7437.8
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:49:56.615998+00:00",
+    "mode": "rag",
+    "question": "What interest rate risks does Ford Credit specifically disclose?",
+    "answer": "Ford Credit discloses several specific interest rate risks:\n\n1. **Different Re-pricing Periods**: Ford Credit outlines that its assets and related debt have different re-pricing periods, which means they respond differently to changes in interest rates. This difference can lead to volatility in cash flows and economic value.\n\n2. **Composition of Assets and Debt**: The assets primarily consist of fixed-rate retail financing and operating lease contracts, as well as floating-rate wholesale receivables. Conversely, the debt consists mostly of fixed-rate and floating-rate term debt. Floating-rate debt can lead to exposure during interest rate fluctuations.\n\n3. **Impact of Interest Rate Changes**: The company uses various analyses to measure the sensitivity of its pre-tax cash flow to interest rate changes. It anticipates that if interest rates rise, the interest received on its assets will increase more than the interest paid on its liabilities, thereby initially increasing pre-tax cash flow. Conversely, falling interest rates could initially decrease pre-tax cash flow.\n\n4. **Pre-Tax Cash Flow Sensitivity Analysis**: Ford Credit conducts a sensitivity analysis of pre-tax cash flow to hypothetical interest rate changes. For example, it estimates that a one percentage point instantaneous increase in interest rates could increase pre-tax cash flow by $78 million in 2023 and $107 million in 2024, while a one percentage point decrease would decrease pre-tax cash flow by the same amounts.\n\n5. **Interest Rate Swaps**: Ford Credit enters into interest rate swaps to manage its interest rate risk. These swaps convert portions of its floating-rate debt to fixed or fixed-rate debt to floating to keep exposure within established tolerances.\n\n6. **Assumptions and Variability**: The assumptions used in their models and analyses are emphasized to be critical, as actual results can vary due to the inherent unpredictability of interest rate movements and other factors, possibly leading to different cash flow impacts than projected.\n\nOverall, Ford Credit's strategies and analyses indicate a comprehensive approach to managing interest rate risk, focusing on minimizing volatility in cash flows and economic values stemming from interest rate changes.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 185.4,
+      "search_ms": 21.4,
+      "traverse_ms": 0,
+      "llm_ms": 5511.0,
+      "total_ms": 5717.9
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:50:01.893581+00:00",
+    "mode": "graph_rag",
+    "question": "What specific production volume targets does Rivian set for its Normal, Illinois plant?",
+    "answer": "Rivian's Normal, Illinois plant, known as the Normal Factory, has an annual production capacity that has evolved over time, reflecting Rivian's strategic planning. According to Rivian's 10-K filing for 2025 (Item 1. Business), the Normal Factory is equipped to produce up to **215,000 vehicles annually** when operating at full capacity and on multiple shifts. This capacity is expected to be distributed among various vehicle platforms: **155,000 R2 vehicles, 85,000 R1 vehicles, and 65,000 Rivian Commercial Vans (RCVs)**, allowing Rivian to optimize production across these platforms.\n\nAdditionally, Rivian plans to begin initial production of the R2 model at the Normal Factory in the **first half of 2026**, which will support the expansion of production capacity to the aforementioned 215,000 units per year (10-Q 2025-08-05, Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ]
+    },
+    "clusters_used": [
+      560,
+      540
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10K_2024__3__Item_2_Properties__chunk_0",
+          "RIVN_10K_2024__3__Item_2_Properties",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8578,
+        "label": "RIVN 10-K 2024 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__3__Item_2_Properties__chunk_0",
+          "RIVN_10K_2025__3__Item_2_Properties",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8543,
+        "label": "RIVN 10-K 2025 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__3__Item_2_Properties__chunk_0",
+          "RIVN_10K_2023__3__Item_2_Properties",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8463,
+        "label": "RIVN 10-K 2023 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8343,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2025__0__Item_1_Business",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8327,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2024__0__Item_1_Business",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8266,
+        "label": "RIVN 10-K 2024 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8236,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-08-05__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_3",
+          "RIVN_10Q_2025-08-05__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10Q_2025-08-05",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8207,
+        "label": "RIVN 10-Q 2025-08-05 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors__chunk_6",
+          "RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2024-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8171,
+        "label": "RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-11-07__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "RIVN_10Q_2024-11-07__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10Q_2024-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8168,
+        "label": "RIVN 10-Q 2024-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 327.8,
+      "search_ms": 22.9,
+      "traverse_ms": 1.8,
+      "llm_ms": 4924.7,
+      "total_ms": 5277.3
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:50:05.958557+00:00",
+    "mode": "rag",
+    "question": "What specific production volume targets does Rivian set for its Normal, Illinois plant?",
+    "answer": "Rivian sets a production capacity target for its Normal, Illinois plant (referred to as the \"Normal Factory\") to produce up to 215,000 vehicles annually. This includes an expectation for up to 155,000 R2 vehicles, 85,000 R1 vehicles, and 65,000 Rivian Commercial Vans (RCVs) when the equipment is operated at full rate and on multiple shifts. Additionally, it is noted that initial production of the R2 will begin at the Normal Factory, which is part of the plan to expand production capacity to meet this target (see excerpts from Chunk 4, Chunk 5, and Chunk 10).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 378.2,
+      "search_ms": 15.0,
+      "traverse_ms": 0,
+      "llm_ms": 3671.6,
+      "total_ms": 4064.8
+    }
+  }
+]

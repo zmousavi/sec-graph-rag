@@ -15,6 +15,10 @@ build/
 # macOS
 .DS_Store
 
+# Large pipeline data (not for git)
+data/
+manifest/
+
 # Local artifacts / downloads
 docs/
 docs_txt/

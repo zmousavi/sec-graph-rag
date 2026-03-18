@@ -1,0 +1,981 @@
+[
+  {
+    "timestamp": "2026-03-16T18:26:08.406194+00:00",
+    "mode": "graph_rag",
+    "question": "Which automakers mention both union risk and battery raw material constraints?",
+    "answer": "Both Ford and Rivian mention risks related to union issues and constraints on batteries and raw materials in their SEC filings.\n\n1. **Ford**: In its 10-K filings for 2023 and 2025, Ford highlights significant operational risks associated with its reliance on suppliers for battery raw materials such as lithium, cobalt, nickel, graphite, and manganese. Additionally, the company identifies the potential for labor issues, including disputes under collective bargaining agreements with labor unions, which could disrupt production schedules and overall operations (10-K 2025, Item 1A).\n\n2. **Rivian**: Rivian\u2019s filings also highlight its dependence on a limited number of suppliers for critical components, including battery cells, and the potential for production disruptions due to issues with suppliers. Furthermore, Rivian discusses the challenges posed by union negotiations and the impact of these issues on their supply chain and production capabilities (10-K 2023, Item 1A; Q1 2025, Item 1A).\n\nIn summary, both Ford (in 10-K filings for 2023 and 2025) and Rivian (in 10-K 2023 and Q1 2025) address risks related to union activities as well as supply chain constraints for battery raw materials.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      944,
+      560,
+      502
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_0",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.809,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_1",
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued",
+          "F_10K_2022",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8011,
+        "label": "F 10-K 2022 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_0",
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued",
+          "F_10K_2022",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.797,
+        "label": "F 10-K 2022 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_1",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7882,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__1__Item_1A_Risk_Factors__chunk_9",
+          "RIVN_10K_2024__1__Item_1A_Risk_Factors",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7865,
+        "label": "RIVN 10-K 2024 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-05-06__7__Item_1A_Risk_Factors__chunk_19",
+          "LCID_10Q_2025-05-06__7__Item_1A_Risk_Factors",
+          "LCID_10Q_2025-05-06",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7834,
+        "label": "LCID 10-Q 2025-05-06 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "F_10K_2024__17__Item_1A_Risk_Factors_Continued__chunk_1",
+          "F_10K_2024__17__Item_1A_Risk_Factors_Continued",
+          "F_10K_2024",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7827,
+        "label": "F 10-K 2024 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2025-05-06",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7823,
+        "label": "RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors__chunk_7",
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7802,
+        "label": "RIVN 10-K 2023 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__2__Item_1A_Risk_Factors_Continued__chunk_1",
+          "F_10K_2025__2__Item_1A_Risk_Factors_Continued",
+          "F_10K_2025",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7796,
+        "label": "F 10-K 2025 | Item 1A. Risk Factors (Continued)"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 785.2,
+      "search_ms": 42.5,
+      "traverse_ms": 3.3,
+      "llm_ms": 5782.7,
+      "total_ms": 6613.8
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:26:14.954380+00:00",
+    "mode": "rag",
+    "question": "Which automakers mention both union risk and battery raw material constraints?",
+    "answer": "The excerpts indicate that Ford is affected by both union risks and battery raw material constraints. \n\n1. **Union Risk**: Ford mentions risks related to labor issues, such as potential disputes under collective bargaining agreements and negotiations that can affect production: \"A work stoppage or other limitation on production has occurred, and could in the future occur, at Ford\u2019s facilities, at a facility in its supply chain... as a result of labor issues, such as shortages of available employees, disputes under existing collective bargaining agreements with labor unions...\".\n\n2. **Battery Raw Material Constraints**: Ford also discusses the significant dependence on raw materials for battery production, highlighting the dependency on materials like lithium, cobalt, nickel, graphite, and manganese, as well as the potential disruption to production due to supply constraints: \"For the production of our electric vehicles, we are dependent on the supply of batteries and the raw materials (e.g., lithium, cobalt, nickel, graphite, and manganese) used by our suppliers to produce those batteries.\"\n\nThe excerpts do not provide information about other automakers mentioning these risks, so based on the provided excerpts, only Ford is addressed regarding union risk and battery raw material constraints.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 307.0,
+      "search_ms": 117.0,
+      "traverse_ms": 0,
+      "llm_ms": 6123.5,
+      "total_ms": 6547.6
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:26:48.436640+00:00",
+    "mode": "graph_rag",
+    "question": "Compare changes in risk disclosures from 2022 to 2023 for Tesla, Ford, and GM.",
+    "answer": "Here\u2019s a comparative analysis of risk disclosures for General Motors (GM) from its SEC filings in 2022 and 2023, as the specific data for Tesla and Ford was not provided in the excerpts.\n\n### General Motors (GM)\n\n**1. Foreign Currency Exchange Rate Risk:**\n   - **2022 Disclosure**: GM had foreign currency derivatives with notional amounts of $4.1 billion and reported a net fair value liability of $0.2 billion. The potential loss in fair value for such financial instruments from a 10% adverse change in quoted foreign currency exchange rates was deemed insignificant (\"10-K 2022, Item 7A\").\n   - **2023 Disclosure**: GM reported a higher net fair value liability of $0.4 billion for foreign currency risks, with the outstanding foreign currency exposures being highlighted as significant between the U.S. Dollar and various foreign currencies. The potential loss in fair value from a 10% adverse change in exchange rates remained insignificant, indicating a potential increase in exposure (\"10-K 2023, Item 7A\").\n\n**2. Interest Rate Risk:**\n   - **2022 Disclosure**: No interest rate swap positions were reported to manage interest rate exposures. A 10% decrease in interest rates would have potentially increased the fair value of debt by $0.8 billion (\"10-K 2022, Item 7A\").\n   - **2023 Disclosure**: Interest rate swaps were used in 2023, although described as insignificant, and the potential increase in fair value resulting from a 10% drop in interest rates was reported at $0.7 billion. The presence of interest rate management strategies shows a more proactive risk management approach (\"10-K 2023, Item 7A\").\n\n**3. Other Market Risk Factors:**\n   - **2022 Disclosure**: The descriptions were focused on theoretical models and hypothetical scenarios to measure sensitivity without indicating specific mitigations beyond derivatives.\n   - **2023 Disclosure**: The disclosures included a clearer framework of oversight by the Chief Financial Officer and the Financial Risk Council, demonstrating a structured approach to managing financial risks and the potential shortfalls in modeling methods (\"10-K 2023, Item 7A\").\n\n### Summary of Key Changes\n- **Increased Net Fair Value Liability for Foreign Currency Risks**: GM's disclosures reflected a growing concern over foreign currency exposure with a higher liability reported in 2023 compared to 2022, despite the potential adverse impacts remaining insignificant.\n- **Implementation of Interest Rate Management**: The incorporation of interest rate swaps in 2023 highlights a shift towards a more active management strategy of interest rate risk.\n- **Structured Risk Management Oversight**: A more defined governance structure was presented in 2023, indicating a strategic evolution in GM\u2019s risk management framework.\n\nThis comparison indicates that GM's focus on its financial risk management framework has strengthened, as seen through both increased liabilities and the introduction of derivatives to manage interest rate risks. Unfortunately, specific comparative data for Tesla and Ford could not be derived from the provided excerpts. Additional research on their respective 10-K filings would be necessary for those companies.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA",
+      "F",
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA",
+        "F",
+        "GM"
+      ],
+      "years": [
+        "2022",
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      416,
+      940,
+      371
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GM_10K_2023__8__Item_7A__chunk_1",
+          "GM_10K_2023__8__Item_7A",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8098,
+        "label": "GM 10-K 2023 | Item\u00a07A."
+      },
+      {
+        "node_ids": [
+          "GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_33",
+          "GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2022",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8089,
+        "label": "GM 10-K 2022 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2022__7__Item_7A__chunk_1",
+          "GM_10K_2022__7__Item_7A",
+          "GM_10K_2022",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.807,
+        "label": "GM 10-K 2022 | Item\u00a07A."
+      },
+      {
+        "node_ids": [
+          "GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_7",
+          "GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2022",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8032,
+        "label": "GM 10-K 2022 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__8__Item_7A__chunk_0",
+          "GM_10K_2023__8__Item_7A",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8006,
+        "label": "GM 10-K 2023 | Item\u00a07A."
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_3",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7998,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2022__7__Item_7A__chunk_0",
+          "GM_10K_2022__7__Item_7A",
+          "GM_10K_2022",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7986,
+        "label": "GM 10-K 2022 | Item\u00a07A."
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_4",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7979,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_25",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7954,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 384.7,
+      "search_ms": 307.0,
+      "traverse_ms": 3.9,
+      "llm_ms": 32785.8,
+      "total_ms": 33481.5
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:27:00.302884+00:00",
+    "mode": "rag",
+    "question": "Compare changes in risk disclosures from 2022 to 2023 for Tesla, Ford, and GM.",
+    "answer": "Based on the provided excerpts, here's a comparison of changes in risk disclosures related to foreign currency and interest rate risks for General Motors (GM) and Ford from 2022 to 2023. There was no information provided in the excerpts specific to Tesla.\n\n### General Motors (GM):\n1. **Foreign Currency Risk:**\n   - **2022:** GM reported translation losses of $37 million and transaction remeasurement gains of $173 million. They indicated exposure to foreign currency risk due to the translation and remeasurement of results from international operations.\n   - **2023:** The translation losses increased significantly to $169 million, while transaction remeasurement gains rose to $344 million. This indicates increased volatility in foreign currency impacts on operations. \n   - **Net fair value liability with foreign currency exposure:** The liability increased from $0.2 billion in 2022, showcasing a notable change in exposure.\n\n2. **Interest Rate Risk:**\n   - **2022:** GM was liability-sensitive, with net interest income sensitivity reflecting a negative impact of $(4.3) billion in a 100 basis points increase in interest rates.\n   - **2023:** The sensitivity analysis indicated a larger negative impact of $(7.7) billion under similar interest rate scenarios, suggesting a heightened sensitivity to interest rate changes.\n\n### Ford:\n1. **Foreign Currency Risk:**\n   - The excerpts did not provide detailed year-over-year figures specifically for Ford's foreign currency risk for 2022 compared to 2023.\n   - Ford disclosed that the financial institutions participate in a Supply Chain Finance program impacting their liquidity but did not present specific foreign currency or interest rate impacts for the provided years.\n\n2. **Interest Rate Risk:**\n   - **2022 and 2023:** Ford did not report specific year-over-year changes in sensitivity to interest rates in the provided excerpts as GM did. The excerpts mainly outlined general risks without quantitative comparisons for interest rate risk across the two years.\n\n### Summary:\n- **General Motors** experienced significant changes in both foreign currency and interest rate risks, as evidenced by increased translation losses and greater sensitivity to interest rate changes.\n- **Ford's disclosures** lacked specific figures for direct comparison but did describe supply chain finance-related risks and their implications. There appears to be a less detailed quantitative analysis compared to GM.\n\n### Conclusion:\nGeneral Motors presents a clearer and detailed picture of changing risk dynamics from 2022 to 2023, highlighting increased risks, while Ford's information was more general, lacking specific year-over-year comparisons for both foreign currency and interest rate risks. There were no specific disclosures available for Tesla in the excerpts provided.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA",
+      "F",
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA",
+        "F",
+        "GM"
+      ],
+      "years": [
+        "2022",
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 232.2,
+      "search_ms": 113.3,
+      "traverse_ms": 0,
+      "llm_ms": 11519.9,
+      "total_ms": 11865.4
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:27:19.066021+00:00",
+    "mode": "graph_rag",
+    "question": "Which EV companies discuss single-source supplier dependence?",
+    "answer": "Both Rivian and Ford discuss their reliance on single or limited-source suppliers in their risk factor sections.\n\n1. **Rivian**: In its 10-Q filings, Rivian outlines that it depends on existing vendors and suppliers, a significant number of which are single or limited source suppliers. This dependence creates risks related to the unavailability of components, which could adversely impact its production capabilities and overall business. For instance, in the 10-Q filing for November 4, 2025, Rivian states: \"We are dependent on our existing suppliers, a significant number of which are single or limited source suppliers\" (RIVN | 10-Q 2025-11-04 | Item 1A. Risk Factors).\n\n2. **Ford**: Similarly, Ford highlights its high dependency on suppliers for key components and raw materials, including the challenges posed by relying on single sources. In its 10-K filing for 2023, Ford mentions, \"If there is a shortage of a key component in our supply chain or a supplier is unable to deliver a component to us in accordance with our specifications... [it] can disrupt Ford\u2019s production of vehicles\" (F | 10-K 2023 | Item 1A. Risk Factors).\n\nBoth companies recognize that relying on single-source suppliers can lead to potential disruptions in their supply chains, which can have significant negative implications for their operations and financial performance.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      560,
+      944,
+      502
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10Q_2025-05-06__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2025-05-06",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7801,
+        "label": "RIVN 10-Q 2025-05-06 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-08-05__5__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10Q_2025-08-05__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2025-08-05",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7794,
+        "label": "RIVN 10-Q 2025-08-05 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2025-11-04__5__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10Q_2025-11-04__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2025-11-04",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7738,
+        "label": "RIVN 10-Q 2025-11-04 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__1__Item_1A_Risk_Factors__chunk_10",
+          "RIVN_10K_2025__1__Item_1A_Risk_Factors",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7682,
+        "label": "RIVN 10-K 2025 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_1",
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued",
+          "F_10K_2022",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7654,
+        "label": "F 10-K 2022 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors__chunk_9",
+          "RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2024-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7653,
+        "label": "RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors__chunk_8",
+          "RIVN_10Q_2024-11-07__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2024-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7652,
+        "label": "RIVN 10-Q 2024-11-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_1",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7607,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_3",
+          "RIVN_10K_2025__0__Item_1_Business",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7599,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_0",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7586,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 368.6,
+      "search_ms": 36.3,
+      "traverse_ms": 2.5,
+      "llm_ms": 18355.2,
+      "total_ms": 18762.7
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:27:23.365270+00:00",
+    "mode": "rag",
+    "question": "Which EV companies discuss single-source supplier dependence?",
+    "answer": "The excerpts explicitly mention Rivian as an EV company discussing single-source supplier dependence. Rivian's filings indicate that \"a significant number of [its] suppliers are single or limited source suppliers\" and that the company depends heavily on these suppliers for critical components. Furthermore, they note, \"our EVs contain thousands of components that we purchase from hundreds of mostly single- or limited-source suppliers, for which no immediate or readily available alternative supplier exists.\" This highlights Rivian's vulnerability to supply chain disruptions due to its reliance on single-source suppliers.\n\nIn contrast, the excerpts containing information about Ford also mention supplier dependencies, but they focus more broadly on the complexities and general risks associated with sourcing components and raw materials rather than specific single-source issues like Rivian. Ford's filings emphasize its dependence on suppliers to deliver components but do not highlight single-source supplier risks as a primary concern in the same way Rivian does.\n\nThus, the only company that specifically discusses single-source supplier dependence in the provided excerpts is Rivian.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 206.0,
+      "search_ms": 19.0,
+      "traverse_ms": 0,
+      "llm_ms": 4073.7,
+      "total_ms": 4298.8
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:27:41.183033+00:00",
+    "mode": "graph_rag",
+    "question": "Find companies whose MD&A mentions production ramp issues but whose risk factors do not emphasize battery supply.",
+    "answer": "Based on the provided excerpts, the companies that mention production ramp issues in their Management\u2019s Discussion and Analysis (MD&A) but do not emphasize battery supply in their risk factors are as follows:\n\n1. **Lucid Motors (LCID)**:\n   - In the 2023 10-K filing, under the MD&A section, Lucid highlights challenges in scaling production and managing services efficiently. The excerpt mentions issues related to the logistics of accurately forecasting and transporting components as they scale operations (see [7] SOURCE: LCID | 10-K 2023 | Item 1A. Risk Factors).\n   - However, the corresponding risk factors do not specifically emphasize battery supply but highlight challenges related to supply chain dependencies and potential delays due to logistics and operational processes (see [6] SOURCE: LCID | 10-K 2025 | Item 1A. Risk Factors).\n\n2. **General Motors (GM)**:\n   - In its 2023 10-K filing, GM discusses maintaining profitability and performance amid operational challenges but does not focus explicitly on battery supply issues within its risk factors. Instead, GM's risks include general supply chain disruptions and cost pressures due to inflation and other factors that could impact production without a direct mention of battery supply in the provided excerpts (see [9] SOURCE: GM | 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations).\n   \nBoth companies highlight production ramp issues but do not emphasize battery supply in their risk factors, aligning with the criteria specified in your query.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      940,
+      502,
+      944
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued__chunk_0",
+          "F_10K_2022__16__Item_1A_Risk_Factors_Continued",
+          "F_10K_2022",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7693,
+        "label": "F 10-K 2022 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_0",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7685,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-05-06__7__Item_1A_Risk_Factors__chunk_19",
+          "LCID_10Q_2025-05-06__7__Item_1A_Risk_Factors",
+          "LCID_10Q_2025-05-06",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7675,
+        "label": "LCID 10-Q 2025-05-06 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors__chunk_19",
+          "LCID_10Q_2025-08-05__7__Item_1A_Risk_Factors",
+          "LCID_10Q_2025-08-05",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7671,
+        "label": "LCID 10-Q 2025-08-05 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "GM_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_37",
+          "GM_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2024",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7646,
+        "label": "GM 10-K 2024 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2025__2__Item_1A_Risk_Factors__chunk_19",
+          "LCID_10K_2025__2__Item_1A_Risk_Factors",
+          "LCID_10K_2025",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7644,
+        "label": "LCID 10-K 2025 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__2__Item_1A_Risk_Factors__chunk_17",
+          "LCID_10K_2023__2__Item_1A_Risk_Factors",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7635,
+        "label": "LCID 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2025-11-05__7__Item_1A_Risk_Factors__chunk_19",
+          "LCID_10Q_2025-11-05__7__Item_1A_Risk_Factors",
+          "LCID_10Q_2025-11-05",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7635,
+        "label": "LCID 10-Q 2025-11-05 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_37",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7607,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2025-10-21__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_43",
+          "GM_10Q_2025-10-21__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2025-10-21",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7601,
+        "label": "GM 10-Q 2025-10-21 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 1172.6,
+      "search_ms": 61.3,
+      "traverse_ms": 2.6,
+      "llm_ms": 16580.7,
+      "total_ms": 17817.3
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:27:48.248361+00:00",
+    "mode": "rag",
+    "question": "Find companies whose MD&A mentions production ramp issues but whose risk factors do not emphasize battery supply.",
+    "answer": "Based on the excerpts provided, all mentions of production ramp issues are heavily tied to challenges around battery supply and raw materials sourcing, particularly in the context of electric vehicle (EV) production. Here are some specific details:\n\n1. **Production Ramp Issues**: \n   - There are multiple instances where the excerpts discuss difficulties related to scaling up production, like unexpected production disruptions, inventory write-downs or asset impairment, and challenges associated with matching component purchases to needs.\n   - For instance, it states, \"If we continue to experience logistics challenges... we may incur unexpected production disruption, storage, transportation and write-off costs, which could have a material adverse effect on our results of operations and financial condition.\"\n\n2. **Focus on Battery Supply**:\n   - The excerpts frequently mention specific risks related to the supply of batteries and their components, including lithium, cobalt, nickel, graphite, and manganese. They emphasize the relationship between scaling production and maintaining a steady supply of these materials.\n   - The text states, \"As we increase our production of electric vehicles, we expect our need for such materials to increase significantly,\" indicating a direct link between production ramp and battery supply issues.\n\nGiven this information, I cannot find specific companies whose MD&A mentions production ramp issues without emphasizing battery supply based on the excerpts provided. The relationship between production scaling and battery supply is highlighted, indicating that any production ramp challenges are likely viewed through the lens of supply chain constraints related to batteries and raw materials. Thus, it appears there are no companies fitting your specified criteria within the provided excerpts.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 158.1,
+      "search_ms": 18.6,
+      "traverse_ms": 0,
+      "llm_ms": 6888.0,
+      "total_ms": 7064.8
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:28:23.171039+00:00",
+    "mode": "graph_rag",
+    "question": "Trace all sections related to autonomous driving litigation for Tesla.",
+    "answer": "Tesla is involved in several ongoing legal matters related to autonomous driving litigation, predominantly concerning its Autopilot and Full Self-Driving (FSD) capabilities. Below is a traced summary of the sections relevant to this litigation, referencing specific filings and sections.\n\n1. **10-Q Filing (July 24, 2025)**\n   - **Section**: Item 1. FINANCIAL STATEMENTS\n   - **Excerpt**: This filing discusses various lawsuits against Tesla, including proposed class actions alleging defects and misrepresentations concerning its driver assistance technology systems. It states that on **February 27, 2023**, a proposed class action was filed against Tesla, Inc., Elon Musk, and certain current and former Company executives for material misrepresentations regarding the Autopilot and FSD technologies. The claim seeks damages for those who purchased Tesla stock between **February 19, 2019, and February 17, 2023** (Source: [3]).\n\n2. **10-Q Filing (October 23, 2025)**\n   - **Section**: Item 1. FINANCIAL STATEMENTS\n   - **Excerpt**: This section reaffirms ongoing lawsuits related to Tesla's FSD technology, mentioning a proposed class action filed on **February 27, 2023**, that alleges misrepresentations about the effectiveness of Tesla's autonomous driving technology (Source: [2]).\n\n3. **10-K Filing (2025)**\n   - **Section**: Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA\n   - **Excerpt**: It details ongoing litigation from a proposed class action filed on **August 4, 2025**, in the U.S. District Court for the Western District of Texas. This case alleges violations of federal securities laws through alleged material misrepresentations in public filings regarding the effectiveness of Autopilot and FSD. It seeks monetary damages on behalf of individuals who purchased Tesla stock between **April 19, 2023, and June 22, 2025** (Source: [8]).\n\n4. **10-Q Filing (October 24, 2024)**\n   - **Section**: Item 1. FINANCIAL STATEMENTS\n   - **Excerpt**: The litigation concerning alleged misrepresentations about the Autopilot and FSD technologies is again highlighted. An amended complaint was filed on **September 5, 2023**, naming only Tesla and Elon Musk as defendants, and Tesla moved to dismiss this complaint (Source: [9]).\n\n5. **10-K Filing (2024)**\n   - **Section**: Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA\n   - **Excerpt**: This section reflects on various ongoing litigations related to the complaints made against Tesla regarding its driver assistance technology, including that the complaints allege Tesla violates federal antitrust and warranty laws from **March 2019 to March 2023** (Source: [10]).\n\nThese sources collectively depict a series of legal actions against Tesla regarding its autonomous driving features, emphasizing allegations of misrepresentation and violations of securities laws. The company is actively engaged in responding to these litigations, with attempts to dismiss multiple complaints while also facing pressures from class actions dealing with its FSD claims.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    "clusters_used": [
+      1053,
+      1060
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "TSLA_10Q_2025-07-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_31",
+          "TSLA_10Q_2025-07-24__2__Item_1_FINANCIAL_STATEMENTS",
+          "TSLA_10Q_2025-07-24",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8316,
+        "label": "TSLA 10-Q 2025-07-24 | Item 1. FINANCIAL STATEMENTS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2025-10-23__2__Item_1_FINANCIAL_STATEMENTS__chunk_35",
+          "TSLA_10Q_2025-10-23__2__Item_1_FINANCIAL_STATEMENTS",
+          "TSLA_10Q_2025-10-23",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8275,
+        "label": "TSLA 10-Q 2025-10-23 | Item 1. FINANCIAL STATEMENTS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2025-07-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_32",
+          "TSLA_10Q_2025-07-24__2__Item_1_FINANCIAL_STATEMENTS",
+          "TSLA_10Q_2025-07-24",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8224,
+        "label": "TSLA 10-Q 2025-07-24 | Item 1. FINANCIAL STATEMENTS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_68",
+          "TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2025",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.822,
+        "label": "TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2022__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_79",
+          "TSLA_10K_2022__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2022",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8174,
+        "label": "TSLA 10-K 2022 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_64",
+          "TSLA_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8162,
+        "label": "TSLA 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2024__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_62",
+          "TSLA_10K_2024__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2024",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8155,
+        "label": "TSLA 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_69",
+          "TSLA_10K_2025__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2025",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8151,
+        "label": "TSLA 10-K 2025 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2024-10-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_33",
+          "TSLA_10Q_2024-10-24__2__Item_1_FINANCIAL_STATEMENTS",
+          "TSLA_10Q_2024-10-24",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8151,
+        "label": "TSLA 10-Q 2024-10-24 | Item 1. FINANCIAL STATEMENTS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2024__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_61",
+          "TSLA_10K_2024__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA",
+          "TSLA_10K_2024",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.814,
+        "label": "TSLA 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 135.0,
+      "search_ms": 37.5,
+      "traverse_ms": 3.2,
+      "llm_ms": 34745.9,
+      "total_ms": 34921.6
+    }
+  },
+  {
+    "timestamp": "2026-03-16T18:28:39.882501+00:00",
+    "mode": "rag",
+    "question": "Trace all sections related to autonomous driving litigation for Tesla.",
+    "answer": "Tesla is currently facing several litigation matters related to its autonomous driving technology. The relevant sections from the excerpts include the following:\n\n1. **Driver Assistance Technology Class Actions**:\n   - A proposed class action was filed on **September 14, 2022**, against Tesla, Inc. and related entities in the **U.S. District Court for the Northern District of California**. This lawsuit alleges various claims regarding the Company\u2019s driver assistance technology systems under state and federal law. The case was consolidated with several other proposed class actions, and a **Consolidated Amended Complaint** was filed on **October 28, 2022**, seeking damages and relief for all persons who purchased or leased from Tesla between **January 1, 2016, to the present**.\n   - Further developments in this branch of litigation include:\n     - A motion for a preliminary injunction filed on **March 22, 2023**, requesting that Tesla (1) cease using the term \u201cFull Self-Driving Capability\u201d (FSD Capability), (2) cease sales and activation of FSD Capability, and (3) provide certain consumer notices about proposed court findings regarding the accuracy of the terms \u201cAutopilot\u201d and \u201cFSD Capability.\u201d Tesla opposed this motion.\n     - On **September 30, 2023**, the Court denied the request for the preliminary injunction, compelling four of five plaintiffs to arbitration and dismissing the claims of the fifth plaintiff with leave to amend the complaint. \n\n2. **Subsequent Actions and Appeals**:\n   - On **October 2, 2023**, a similar proposed class action was filed in the **San Diego County Superior Court**, which Tesla later removed to federal court. This case involves similar claims regarding the technological misrepresentations related to FSD. A motion to compel arbitration was filed by Tesla, which was not opposed by the plaintiff. On **June 27, 2024**, this case was stayed pending arbitration.\n   - Additionally, on **February 27, 2023**, another proposed class action was filed in the **U.S. District Court for the Northern District of California** against Tesla, Inc., Elon Musk, and certain current and former executives. This complaint alleges material misrepresentations and omissions about Autopilot and FSD Capability technologies, seeking money damages and other relief for individuals who purchased Tesla stock between **February 19, 2019, and February 17, 2023**. An amended complaint was filed on **September 5, 2023**, with Tesla moving to dismiss on **November 6, 2023**. The Court granted Tesla\u2019s motion to dismiss without prejudice on **September 30, 2024**, and a final judgment was entered in Tesla's favor on **November 26, 2024**. The plaintiffs appealed this ruling.\n\n3. **Warranty and Antitrust Related Complaints**:\n   - Moreover, on **March 14, 2023**, a separate proposed class action was consolidated in the **Northern District of California** alleging that Tesla violates federal antitrust and warranty laws through its repair, service, and maintenance practices related to vehicles, including claims related to Autopilot and FSD. This case has seen a series of motions to compel arbitration and dismissals, including a **Consolidated Second Amended Complaint** filed on **December 12, 2023**.\n\nThese excerpts reflect the ongoing challenges Tesla faces concerning its autonomous driving technologies and the legal scrutiny surrounding these innovations. Each case adds to the complex legal landscape the company navigates in relation to its driver-assist features.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [],
+    "latency_breakdown": {
+      "embed_ms": 314.6,
+      "search_ms": 19.7,
+      "traverse_ms": 0,
+      "llm_ms": 16376.6,
+      "total_ms": 16711.0
+    }
+  }
+]

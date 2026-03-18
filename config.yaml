@@ -1,0 +1,54 @@
+# config.yaml
+# ==========
+# Central configuration for all pipelines.
+# Add new companies here — no code changes needed.
+#
+# CIK numbers are EDGAR's permanent company identifiers.
+# Look them up at: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=TSLA&type=10-K
+
+sec:
+  # Companies to download SEC filings for.
+  # Format: TICKER: "CIK"   (CIK must be a string to preserve leading zeros)
+  companies:
+    TSLA: "1318605"       # Tesla
+    F:    "0000037996"    # Ford
+    GM:   "0001467858"    # General Motors
+    RIVN: "0001874178"    # Rivian Automotive (IPO Nov 2021, so 2022+ only)
+    LCID: "0001811210"    # Lucid Group
+    NKLA: "0001731289"    # Nikola Corp (commercial EV trucks)
+    FSR:  "0001720990"    # Fisker Inc (consumer EV startup, went bankrupt 2024)
+    GOEV: "0001750153"    # Canoo Inc (multi-purpose EV platform)
+    WKHS: "0001425287"    # Workhorse Group (electric delivery vans)
+    # AAPL: "0000320193"  # Apple  ← uncomment to add
+
+  # Fiscal year-end years to collect 10-K annual reports for.
+  # A FY2024 10-K is filed in early 2025, so we search the year after.
+  annual_years:
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+  # Number of most-recent 10-Q quarterly filings to collect per company.
+  quarterly_n: 16
+
+  # Number of most-recent DEF 14A proxy statements to collect per company.
+  def14a_n: 4
+
+  # Number of most-recent 8-K current reports to collect per company.
+  eightk_n: 20
+
+embedding:
+  # OpenAI embedding model. text-embedding-3-small is fast and cheap.
+  # If switching models, update dimensions to match and wipe + recreate Neo4j vector indexes.
+  model: text-embedding-3-small
+  dimensions: 1536
+  # How many texts to send per API call. OpenAI allows up to 2048.
+  batch_size: 100
+
+summarization:
+  # OpenAI model used to generate Document summaries during ingest.
+  model: gpt-4o-mini
+  # How many tokens of the source document to feed into the summarizer.
+  # 3000 tokens ≈ first 2-3 pages, enough to capture the document's identity.
+  input_tokens: 3000

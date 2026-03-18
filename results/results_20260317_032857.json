@@ -1,0 +1,3540 @@
+[
+  {
+    "timestamp": "2026-03-17T03:25:53.038972+00:00",
+    "mode": "graph_rag",
+    "question": "How many restricted stock units did Tesla grant to its chief financial officer in early 2024, and over what period do they vest?",
+    "answer": "In early 2024, Tesla granted its Chief Financial Officer, Vaibhav Taneja, a one-time retention grant of 2.1 million restricted stock units (RSUs). These RSUs will vest ratably over a period of 36 months, beginning February 1, 2024 (SOURCE: TSLA | research 2024 | Section 1).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2024"
+      ]
+    },
+    "clusters_used": [
+      3456,
+      1072
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_168",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8416,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_169",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8344,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_3f19fd61_sec_1_shd_1",
+          "upload_TSLA_3f19fd61_sec_1",
+          "upload_TSLA_3f19fd61",
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8295,
+        "label": "TSLA research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_144",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8268,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_3f19fd61_sec_1_shd_2",
+          "upload_TSLA_3f19fd61_sec_1",
+          "upload_TSLA_3f19fd61",
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8239,
+        "label": "TSLA research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_174",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8228,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_146",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8107,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_77",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8104,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_170",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8096,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_74",
+          "TSLA_DEF14A_2024-04-29__0__Full_Document",
+          "TSLA_DEF14A_2024-04-29",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8096,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 753.9,
+      "search_ms": 218.0,
+      "traverse_ms": 61.8,
+      "llm_ms": 10996.3,
+      "total_ms": 12030.1
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:25:57.434974+00:00",
+    "mode": "rag",
+    "question": "How many restricted stock units did Tesla grant to its chief financial officer in early 2024, and over what period do they vest?",
+    "answer": "Tesla granted 2.1 million restricted stock units (RSUs) to its Chief Financial Officer, Vaibhav Taneja, in early 2024. These RSUs will vest ratably over 36 months, beginning on February 1, 2024 (Source: TSLA | research 2024 | Section 1).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2024"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_168"
+        ],
+        "edge_types": [],
+        "score": 0.8416,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_169"
+        ],
+        "edge_types": [],
+        "score": 0.8344,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_3f19fd61_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.8295,
+        "label": "TSLA research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_144"
+        ],
+        "edge_types": [],
+        "score": 0.8268,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_3f19fd61_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.8239,
+        "label": "TSLA research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_DEF14A_2024-04-29__0__Full_Document__chunk_174"
+        ],
+        "edge_types": [],
+        "score": 0.8228,
+        "label": "TSLA DEF 14A 2024-04-29 | Full Document"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 556.6,
+      "search_ms": 87.2,
+      "traverse_ms": 0,
+      "llm_ms": 3751.9,
+      "total_ms": 4395.8
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:26:12.596503+00:00",
+    "mode": "graph_rag",
+    "question": "What annual insurance cost does a commercial operator pay per Rivian electric delivery van compared to a comparable diesel vehicle?",
+    "answer": "The specific annual insurance cost for a Rivian Electric Delivery Van (EDV) compared to a comparable diesel vehicle is not detailed in the available SEC filings. However, insurance costs can vary significantly based on various factors including vehicle value, usage, location, and the type of coverage selected.\n\nTypically, electric vehicles (EVs) like the Rivian EDV could have different insurance rates due to their higher initial cost and the costs associated with specialized repair and battery replacement, which can increase overall premiums compared to diesel vehicles. Conversely, some insurance companies may offer lower premiums for EVs due to their lower risk profiles based on crash statistics and potential discounts for environmentally friendly vehicles.\n\nFor accurate comparisons, it would be beneficial to consult specific insurance providers or databases for tailored quotes based on individual circumstances and vehicle specifications.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "form_type": "10-K"
+    },
+    "clusters_used": [
+      1013,
+      1019
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_3",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8021,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_1",
+          "RIVN_10K_2025__0__Item_1_Business",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.801,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__0__Item_1_Business__chunk_1",
+          "RIVN_10K_2024__0__Item_1_Business",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8,
+        "label": "RIVN 10-K 2024 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2022__0__Item_1_Business__chunk_0",
+          "RIVN_10K_2022__0__Item_1_Business",
+          "RIVN_10K_2022",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7984,
+        "label": "RIVN 10-K 2022 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_0",
+          "RIVN_10K_2023__0__Item_1_Business",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7973,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_1",
+          "RIVN_10K_2023__0__Item_1_Business",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7944,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_0",
+          "RIVN_10K_2025__0__Item_1_Business",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7934,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_4",
+          "RIVN_10K_2025__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7931,
+        "label": "RIVN 10-K 2025 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_8",
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7926,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_5",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.792,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 502.1,
+      "search_ms": 144.1,
+      "traverse_ms": 2.8,
+      "llm_ms": 14512.1,
+      "total_ms": 15161.3
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:26:16.872463+00:00",
+    "mode": "rag",
+    "question": "What annual insurance cost does a commercial operator pay per Rivian electric delivery van compared to a comparable diesel vehicle?",
+    "answer": "The excerpts provided do not contain any information regarding annual insurance costs for Rivian electric delivery vans, nor do they provide a comparison to insurance costs for comparable diesel vehicles. Therefore, I cannot answer the question based on the available information.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ],
+      "form_type": "10-K"
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_3"
+        ],
+        "edge_types": [],
+        "score": 0.8023,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.8012,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__0__Item_1_Business__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.8002,
+        "label": "RIVN 10-K 2024 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2022__0__Item_1_Business__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7986,
+        "label": "RIVN 10-K 2022 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7975,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__0__Item_1_Business__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.7945,
+        "label": "RIVN 10-K 2023 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7936,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_4"
+        ],
+        "edge_types": [],
+        "score": 0.7933,
+        "label": "RIVN 10-K 2025 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7928,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_5"
+        ],
+        "edge_types": [],
+        "score": 0.7922,
+        "label": "RIVN 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 495.5,
+      "search_ms": 77.7,
+      "traverse_ms": 0,
+      "llm_ms": 3702.4,
+      "total_ms": 4275.7
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:26:32.240815+00:00",
+    "mode": "graph_rag",
+    "question": "What fraction of battery cells produced at General Motors' Ohio gigafactory passed quality inspection in Q3 2023, and how does that compare to the joint-venture target?",
+    "answer": "In Q3 2023, the Lordstown facility of Ultium Cells LLC produced a total of 847,000 battery cells. The average cell yield rate, which reflects the percentage of cells that passed quality inspection, was 73%. This yield rate is below the joint venture target of 85% set in the agreement with LG Energy Solution. Thus, to calculate the fraction that passed inspection: \n\n\\[ \n\\text{Fraction Passed} = \\frac{\\text{Yield Rate}}{100} = \\frac{73}{100} = 0.73 \n\\]\n\nTherefore, 73% of the produced cells passed inspection, which falls short of the targeted yield rate of 85%. This information is sourced from General Motors' Q3 2023 operations report on Ultium Cells LLC (SOURCE: GM | research 2023-Q3 | Section 1).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "GM"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      415,
+      1074,
+      1852
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_GM_8f328c7b_sec_1_shd_1",
+          "upload_GM_8f328c7b_sec_1",
+          "upload_GM_8f328c7b",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8705,
+        "label": "GM research 2023-Q3 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_GM_8f328c7b_sec_1_shd_2",
+          "upload_GM_8f328c7b_sec_1",
+          "upload_GM_8f328c7b",
+          "TSLA_10K_2022__3__Item_2_PROPERTIES"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8548,
+        "label": "GM research 2023-Q3 | Section 1"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_1",
+          "GM_10K_2023__1__Item_1_Business",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8003,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8",
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7961,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_0",
+          "GM_10K_2023__1__Item_1_Business",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7954,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_28",
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-07-25",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.791,
+        "label": "GM 10-Q 2023-07-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_65",
+          "GM_10Q_2023-10-24__1__Item_1_Condensed_Consolidated_Financial_Statements",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7893,
+        "label": "GM 10-Q 2023-10-24 | Item\u00a01. Condensed Consolidated Financial Statements"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7884,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-07-25__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_47",
+          "GM_10Q_2023-07-25__1__Item_1_Condensed_Consolidated_Financial_Statements",
+          "GM_10Q_2023-07-25",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7875,
+        "label": "GM 10-Q 2023-07-25 | Item\u00a01. Condensed Consolidated Financial Statements"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_12",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.786,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 214.6,
+      "search_ms": 53.0,
+      "traverse_ms": 2.7,
+      "llm_ms": 15097.7,
+      "total_ms": 15368.1
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:26:39.217441+00:00",
+    "mode": "rag",
+    "question": "What fraction of battery cells produced at General Motors' Ohio gigafactory passed quality inspection in Q3 2023, and how does that compare to the joint-venture target?",
+    "answer": "In Q3 2023, the Lordstown Ultium Cells facility produced battery cells with an average yield rate of 73%. This was below the target yield rate of 85% set in the joint-venture agreement with LG Energy Solution. The yield shortfall was attributed to issues in the production process related to electrode thickness variation, electrolyte fill volume inconsistency, and separator misalignment (source: [1], Section 1). Thus, the fraction of battery cells produced that passed quality inspection is 73%, which is 12 percentage points lower than the target.",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "GM"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_GM_8f328c7b_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.8705,
+        "label": "GM research 2023-Q3 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_GM_8f328c7b_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.8548,
+        "label": "GM research 2023-Q3 | Section 1"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.8003,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7961,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7954,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__5__Item_3_Legal_Proceedings__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7927,
+        "label": "GM 10-K 2023 | Item\u00a03. Legal Proceedings"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_28"
+        ],
+        "edge_types": [],
+        "score": 0.791,
+        "label": "GM 10-Q 2023-07-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 146.1,
+      "search_ms": 28.8,
+      "traverse_ms": 0,
+      "llm_ms": 6801.4,
+      "total_ms": 6976.3
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:26:47.709976+00:00",
+    "mode": "graph_rag",
+    "question": "How far along is Ford's BlueOval City mega-campus construction as of late 2023, and when is production expected to start?",
+    "answer": "As of September 2023, Ford's BlueOval City mega-campus construction is 34% complete, with first vehicle production anticipated to start in Q2 2026. This information is detailed in the Ford Motor Company Q3 2023 report on the BlueOval City project, which is part of their extensive $5.6 billion investment in the initiative (source: Ford Motor Company \u2013 BlueOval City Construction Progress Report, Q3 2023).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      3119,
+      1490,
+      1075
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_F_ab563d3c_sec_1_shd_1",
+          "upload_F_ab563d3c_sec_1",
+          "upload_F_ab563d3c",
+          "LCID_10K_2023__2__Item_1A_Risk_Factors"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8709,
+        "label": "F research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_F_ab563d3c_sec_1_shd_2",
+          "upload_F_ab563d3c_sec_1",
+          "upload_F_ab563d3c",
+          "LCID_10K_2023__2__Item_1A_Risk_Factors"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8646,
+        "label": "F research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_31",
+          "F_DEF14A_2023-03-31__0__Full_Document",
+          "F_DEF14A_2023-03-31",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7877,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_4",
+          "F_DEF14A_2023-03-31__0__Full_Document",
+          "F_DEF14A_2023-03-31",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7777,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_51",
+          "F_DEF14A_2023-03-31__0__Full_Document",
+          "F_DEF14A_2023-03-31",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7717,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_50",
+          "F_DEF14A_2023-03-31__0__Full_Document",
+          "F_DEF14A_2023-03-31",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7635,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_73",
+          "F_DEF14A_2023-03-31__0__Full_Document",
+          "F_DEF14A_2023-03-31",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7621,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-07-28__45__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2023-07-28__45__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2023-07-28",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7583,
+        "label": "F 10-Q 2023-07-28 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-05-03__44__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2023-05-03__44__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2023-05-03",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7582,
+        "label": "F 10-Q 2023-05-03 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-10-27__47__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2023-10-27__47__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2023-10-27",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7576,
+        "label": "F 10-Q 2023-10-27 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 205.8,
+      "search_ms": 47.7,
+      "traverse_ms": 2.5,
+      "llm_ms": 8236.1,
+      "total_ms": 8492.1
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:26:58.515910+00:00",
+    "mode": "rag",
+    "question": "How far along is Ford's BlueOval City mega-campus construction as of late 2023, and when is production expected to start?",
+    "answer": "As of late 2023, Ford has broken ground at BlueOval City in West Tennessee but has not specified the exact progress of construction in the provided excerpts. However, the excerpts indicate that the initial production at BlueOval City is slated for 2026. This information is sourced from the DEF 14A filing dated March 31, 2023, which states: \"Broke ground at BlueOval City in West Tennessee, where we will assemble our next EV truck and advanced batteries to power future Ford and Lincoln EVs\" and mentions that initial production is expected in 2026 [1].",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_31"
+        ],
+        "edge_types": [],
+        "score": 0.7877,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_4"
+        ],
+        "edge_types": [],
+        "score": 0.7777,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__32__Item_2_Properties__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7734,
+        "label": "F 10-K 2023 | Item 2. Properties."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__72__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7723,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_51"
+        ],
+        "edge_types": [],
+        "score": 0.7717,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-07-28__52__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7712,
+        "label": "F 10-Q 2023-07-28 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-05-03__51__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7664,
+        "label": "F 10-Q 2023-05-03 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_50"
+        ],
+        "edge_types": [],
+        "score": 0.7635,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_DEF14A_2023-03-31__0__Full_Document__chunk_73"
+        ],
+        "edge_types": [],
+        "score": 0.7621,
+        "label": "F DEF 14A 2023-03-31 | Full Document"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-07-28__45__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7583,
+        "label": "F 10-Q 2023-07-28 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 181.4,
+      "search_ms": 23.3,
+      "traverse_ms": 0,
+      "llm_ms": 10600.9,
+      "total_ms": 10805.6
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:05.449967+00:00",
+    "mode": "graph_rag",
+    "question": "How many Lucid vehicles were delivered to Saudi Arabia's sovereign wealth fund in Q3 2023 under the government purchase agreement?",
+    "answer": "In Q3 2023, Lucid Group delivered 847 vehicles to the Public Investment Fund of Saudi Arabia under the binding purchase agreement. This delivery volume marked the highest quarterly delivery since commercial operations commenced in Q2 2022 (Source: LCID, research 2023-Q3, Section 1).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "LCID"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "LCID"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      453,
+      1076
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_LCID_4d8e6fa2_sec_1_shd_1",
+          "upload_LCID_4d8e6fa2_sec_1",
+          "upload_LCID_4d8e6fa2",
+          "F_10K_2023__101__Item_16_Form_10_K_Summary"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8553,
+        "label": "LCID research 2023-Q3 | Section 1"
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-08-07__2__Item_1_Financial_Statements__chunk_45",
+          "LCID_10Q_2023-08-07__2__Item_1_Financial_Statements",
+          "LCID_10Q_2023-08-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.845,
+        "label": "LCID 10-Q 2023-08-07 | Item 1. Financial Statements."
+      },
+      {
+        "node_ids": [
+          "LCID_DEF14A_2023-03-13__0__Full_Document__chunk_109",
+          "LCID_DEF14A_2023-03-13__0__Full_Document",
+          "LCID_DEF14A_2023-03-13",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8446,
+        "label": "LCID DEF 14A 2023-03-13 | Full Document"
+      },
+      {
+        "node_ids": [
+          "LCID_DEF14A_2023-03-13__0__Full_Document__chunk_108",
+          "LCID_DEF14A_2023-03-13__0__Full_Document",
+          "LCID_DEF14A_2023-03-13",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8384,
+        "label": "LCID DEF 14A 2023-03-13 | Full Document"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__9__Item_8_Financial_Statements_and_Supplementary_Data__chunk_74",
+          "LCID_10K_2023__9__Item_8_Financial_Statements_and_Supplementary_Data",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8376,
+        "label": "LCID 10-K 2023 | Item 8. Financial Statements and Supplementary Data."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-11-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13",
+          "LCID_10Q_2023-11-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2023-11-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8353,
+        "label": "LCID 10-Q 2023-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-05-08__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8",
+          "LCID_10Q_2023-05-08__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2023-05-08",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8349,
+        "label": "LCID 10-Q 2023-05-08 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13",
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2023-08-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8325,
+        "label": "LCID 10-Q 2023-08-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_12",
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2023-08-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8322,
+        "label": "LCID 10-Q 2023-08-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_10",
+          "LCID_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8314,
+        "label": "LCID 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 481.1,
+      "search_ms": 36.4,
+      "traverse_ms": 3.0,
+      "llm_ms": 6413.2,
+      "total_ms": 6933.8
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:11.117309+00:00",
+    "mode": "rag",
+    "question": "How many Lucid vehicles were delivered to Saudi Arabia's sovereign wealth fund in Q3 2023 under the government purchase agreement?",
+    "answer": "Lucid delivered 847 vehicles to the Public Investment Fund of Saudi Arabia in Q3 2023 under the binding purchase agreement for up to 100,000 units. This delivery represents the largest single-quarter delivery volume to the PIF since the commencement of commercial deliveries in Q2 2022. (Source: LCID | research 2023-Q3 | Section 1)",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "LCID"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "LCID"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_LCID_4d8e6fa2_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.8554,
+        "label": "LCID research 2023-Q3 | Section 1"
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-08-07__2__Item_1_Financial_Statements__chunk_45"
+        ],
+        "edge_types": [],
+        "score": 0.845,
+        "label": "LCID 10-Q 2023-08-07 | Item 1. Financial Statements."
+      },
+      {
+        "node_ids": [
+          "LCID_DEF14A_2023-03-13__0__Full_Document__chunk_109"
+        ],
+        "edge_types": [],
+        "score": 0.8445,
+        "label": "LCID DEF 14A 2023-03-13 | Full Document"
+      },
+      {
+        "node_ids": [
+          "LCID_DEF14A_2023-03-13__0__Full_Document__chunk_108"
+        ],
+        "edge_types": [],
+        "score": 0.8383,
+        "label": "LCID DEF 14A 2023-03-13 | Full Document"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__9__Item_8_Financial_Statements_and_Supplementary_Data__chunk_74"
+        ],
+        "edge_types": [],
+        "score": 0.8376,
+        "label": "LCID 10-K 2023 | Item 8. Financial Statements and Supplementary Data."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-11-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13"
+        ],
+        "edge_types": [],
+        "score": 0.8352,
+        "label": "LCID 10-Q 2023-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-05-08__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.8349,
+        "label": "LCID 10-Q 2023-05-08 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13"
+        ],
+        "edge_types": [],
+        "score": 0.8324,
+        "label": "LCID 10-Q 2023-08-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_12"
+        ],
+        "edge_types": [],
+        "score": 0.8321,
+        "label": "LCID 10-Q 2023-08-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.8313,
+        "label": "LCID 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 295.5,
+      "search_ms": 17.0,
+      "traverse_ms": 0,
+      "llm_ms": 5354.7,
+      "total_ms": 5667.2
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:17.569889+00:00",
+    "mode": "graph_rag",
+    "question": "What dollar amount did Rivian commit to factory automation at its Normal plant, and how many production cells are being converted?",
+    "answer": "Rivian committed to a $340 million investment in robotic welding automation at its Normal, Illinois manufacturing facility. This investment includes the conversion of 23 production cells to automated robotic welding systems, representing approximately 60% of the facility's body shop welding operations by weld count (RIVN | research 2024 | Section 1).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ]
+    },
+    "clusters_used": [
+      1013,
+      540,
+      1087
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_RIVN_8137c4e9_sec_1_shd_1",
+          "upload_RIVN_8137c4e9_sec_1",
+          "upload_RIVN_8137c4e9",
+          "GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.882,
+        "label": "RIVN research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_8137c4e9_sec_1_shd_2",
+          "upload_RIVN_8137c4e9_sec_1",
+          "upload_RIVN_8137c4e9",
+          "GM_10K_2022__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8773,
+        "label": "RIVN research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__3__Item_2_Properties__chunk_0",
+          "RIVN_10K_2024__3__Item_2_Properties",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8336,
+        "label": "RIVN 10-K 2024 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__3__Item_2_Properties__chunk_0",
+          "RIVN_10K_2025__3__Item_2_Properties",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8272,
+        "label": "RIVN 10-K 2025 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2025__0__Item_1_Business",
+          "RIVN_10K_2025",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8166,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1",
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8133,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__3__Item_2_Properties__chunk_0",
+          "RIVN_10K_2023__3__Item_2_Properties",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8112,
+        "label": "RIVN 10-K 2023 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__0__Item_1_Business__chunk_2",
+          "RIVN_10K_2024__0__Item_1_Business",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8055,
+        "label": "RIVN 10-K 2024 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-11-07__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_12",
+          "RIVN_10Q_2024-11-07__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10Q_2024-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8044,
+        "label": "RIVN 10-Q 2024-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "RIVN_10K_2024",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8041,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 477.9,
+      "search_ms": 117.4,
+      "traverse_ms": 2.6,
+      "llm_ms": 5854.3,
+      "total_ms": 6452.4
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:21.837412+00:00",
+    "mode": "rag",
+    "question": "What dollar amount did Rivian commit to factory automation at its Normal plant, and how many production cells are being converted?",
+    "answer": "Rivian committed $340 million to a robotic welding automation program at its Normal, Illinois facility in Q4 2023. The program involves the conversion of 23 production cells to automate welding processes (Source: [1], Section: Phase 2 Automation Investment).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "RIVN"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "RIVN"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_RIVN_8137c4e9_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.882,
+        "label": "RIVN research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_RIVN_8137c4e9_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.8773,
+        "label": "RIVN research 2024 | Section 1"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__3__Item_2_Properties__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.8336,
+        "label": "RIVN 10-K 2024 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__3__Item_2_Properties__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.8272,
+        "label": "RIVN 10-K 2025 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2025__0__Item_1_Business__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.8166,
+        "label": "RIVN 10-K 2025 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.8133,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__3__Item_2_Properties__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.8112,
+        "label": "RIVN 10-K 2023 | Item 2. Properties"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__0__Item_1_Business__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.8055,
+        "label": "RIVN 10-K 2024 | Item 1. Business"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-11-07__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_12"
+        ],
+        "edge_types": [],
+        "score": 0.8044,
+        "label": "RIVN 10-Q 2024-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2024__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.8041,
+        "label": "RIVN 10-K 2024 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 318.3,
+      "search_ms": 68.8,
+      "traverse_ms": 0,
+      "llm_ms": 3880.1,
+      "total_ms": 4267.3
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:26.344024+00:00",
+    "mode": "graph_rag",
+    "question": "By how much did General Motors reduce the price of the Equinox EV in fall 2023, and what was the resulting vehicle price?",
+    "answer": "In October 2023, General Motors reduced the MSRP of the Chevrolet Equinox EV by $6,300, bringing the price of the vehicle down to **$34,995** for the base 1LT configuration. This price point made the Equinox EV eligible for the full $7,500 federal tax credit under the Inflation Reduction Act for most buyers. The reduction was a strategic response to significant price reductions by Tesla on its Model Y lineup, aiming to enhance the Equinox EV's competitive position in the market ([GM | research 2023 | Section 1](2)).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "GM"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      415,
+      1852,
+      1088
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_GM_c62b1dce_sec_1_shd_2",
+          "upload_GM_c62b1dce_sec_1",
+          "upload_GM_c62b1dce",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.9041,
+        "label": "GM research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_GM_c62b1dce_sec_1_shd_1",
+          "upload_GM_c62b1dce_sec_1",
+          "upload_GM_c62b1dce",
+          "TSLA_10K_2023__2__Item_1A_RISK_FACTORS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8951,
+        "label": "GM research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_26",
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7864,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_11",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7835,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_27",
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7826,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_22",
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7792,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_0",
+          "GM_10K_2023__1__Item_1_Business",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7786,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_10",
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7786,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_1",
+          "GM_10K_2023__1__Item_1_Business",
+          "GM_10K_2023",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7761,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8",
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.776,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 205.1,
+      "search_ms": 45.9,
+      "traverse_ms": 3.0,
+      "llm_ms": 4252.1,
+      "total_ms": 4506.2
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:29.869676+00:00",
+    "mode": "rag",
+    "question": "By how much did General Motors reduce the price of the Equinox EV in fall 2023, and what was the resulting vehicle price?",
+    "answer": "General Motors reduced the MSRP of the Chevrolet Equinox EV by $6,300 in October 2023. The resulting vehicle price for the Equinox EV 1LT remained at $34,995, as it was already at its floor price before the adjustment. The price reduction also applied to the 2LT and RS configurations, bringing the 2LT price from $43,295 to $36,995 and the RS price from $48,995 to $42,695. This pricing adjustment reflected competitive pressure from Tesla's price reductions in the mass-market EV segment. \n\n(Source: [2] GM | research 2023 | Section 1)",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "GM"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "GM"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_GM_c62b1dce_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.9041,
+        "label": "GM research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_GM_c62b1dce_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.8951,
+        "label": "GM research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_26"
+        ],
+        "edge_types": [],
+        "score": 0.7864,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_11"
+        ],
+        "edge_types": [],
+        "score": 0.7835,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_27"
+        ],
+        "edge_types": [],
+        "score": 0.7826,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_22"
+        ],
+        "edge_types": [],
+        "score": 0.7792,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__1__Item_1_Business__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7786,
+        "label": "GM 10-K 2023 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.7786,
+        "label": "GM 10-K 2023 | Item\u00a07. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 206.5,
+      "search_ms": 26.8,
+      "traverse_ms": 0,
+      "llm_ms": 3292.1,
+      "total_ms": 3525.4
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:35.149889+00:00",
+    "mode": "graph_rag",
+    "question": "How many corrective action requests did Ford issue to its battery suppliers in Q2 2023, and what escalation measures were applied to repeat offenders?",
+    "answer": "In Q2 2023, Ford issued 14 corrective action requests (CARs) to battery module suppliers, which marked a 40% increase from Q1 2023. Of these, 3 suppliers were placed on controlled shipping status as an escalation measure for repeat offenders. Controlled shipping status involves stringent quality control measures, requiring the supplier to implement 100% inspection at the source and at Ford receiving facilities, along with weekly progress reporting to Ford's quality leadership. This status is a serious quality intervention aimed at addressing persistent quality issues. This information is sourced from Ford's Supplier Quality Management Report for Q2 2023, under the section detailing corrective action activity [F | research 2023-Q2 | Section 1].",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      311,
+      1089,
+      1490
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_F_ca7f1801_sec_1_shd_1",
+          "upload_F_ca7f1801_sec_1",
+          "upload_F_ca7f1801",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8842,
+        "label": "F research 2023-Q2 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_F_ca7f1801_sec_1_shd_2",
+          "upload_F_ca7f1801_sec_1",
+          "upload_F_ca7f1801",
+          "RIVN_10K_2023__6__Item_7_Management_s_Discussion_and_Analysis_of_Fin"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8752,
+        "label": "F research 2023-Q2 | Section 1"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__17__Item_1A_Risk_Factors_Continued__chunk_0",
+          "F_10K_2023__17__Item_1A_Risk_Factors_Continued",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8143,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-10-27__34__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2023-10-27__34__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2023-10-27",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.798,
+        "label": "F 10-Q 2023-10-27 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_0",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7909,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-05-03__44__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "F_10Q_2023-05-03__44__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "F_10Q_2023-05-03",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7891,
+        "label": "F 10-Q 2023-05-03 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_1",
+          "F_10K_2023__16__Item_1A_Risk_Factors",
+          "F_10K_2023",
+          "F"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7886,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 1050.3,
+      "search_ms": 42.8,
+      "traverse_ms": 1.6,
+      "llm_ms": 4185.1,
+      "total_ms": 5280.0
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:42.625710+00:00",
+    "mode": "rag",
+    "question": "How many corrective action requests did Ford issue to its battery suppliers in Q2 2023, and what escalation measures were applied to repeat offenders?",
+    "answer": "In Q2 2023, Ford issued a total of **14 formal corrective action requests** (CARs) to its battery module suppliers, which is an increase of 4 compared to Q1 2023 (SOURCE: F | research 2023-Q2 | Section 1).\n\nAs for escalation measures applied to repeat offenders, **3 suppliers were placed on controlled shipping status** as part of the corrective actions taken. Controlled shipping is the most serious quality intervention short of part resourcing, requiring the supplier to implement 100% inspection at both source and Ford receiving facilities and to provide weekly progress reports to Ford's quality leadership. Among the three controlled shipping events, two were resolved within the quarter, while the third supplier remained on controlled shipping status as of the report date, with expected resolution pending completion of process capability improvement actions (SOURCE: F | research 2023-Q2 | Section 1).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "F"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "F"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_F_ca7f1801_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.8843,
+        "label": "F research 2023-Q2 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_F_ca7f1801_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.8753,
+        "label": "F research 2023-Q2 | Section 1"
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__17__Item_1A_Risk_Factors_Continued__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.8144,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors (Continued)"
+      },
+      {
+        "node_ids": [
+          "upload_F_ab563d3c_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.8033,
+        "label": "F research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-10-27__34__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7981,
+        "label": "F 10-Q 2023-10-27 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__16__Item_1A_Risk_Factors__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.791,
+        "label": "F 10-K 2023 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "F_10K_2023__62__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.791,
+        "label": "F 10-K 2023 | Item 7.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      },
+      {
+        "node_ids": [
+          "F_10Q_2023-05-03__44__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7891,
+        "label": "F 10-Q 2023-05-03 | Item 2.  Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Continued)"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 120.6,
+      "search_ms": 23.3,
+      "traverse_ms": 0,
+      "llm_ms": 7331.6,
+      "total_ms": 7475.6
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:55.427370+00:00",
+    "mode": "graph_rag",
+    "question": "What safety rating did Lucid's Gravity SUV receive from federal regulators during its 2023 certification testing?",
+    "answer": "The Lucid Gravity SUV received a 5-star safety rating from the National Highway Traffic Safety Administration (NHTSA) during its certification testing in November 2023. This rating was achieved in all categories, representing the highest possible safety rating available from NHTSA (see LCID Product Development Report \u2014 Q4 2023, NHTSA Safety Testing and Certification section).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "LCID"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "LCID"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      453,
+      468,
+      1090
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_LCID_07694441_sec_1_shd_1",
+          "upload_LCID_07694441_sec_1",
+          "upload_LCID_07694441",
+          "GM_10K_2023__10__Item_9A_Controls_and_Procedures"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8797,
+        "label": "LCID research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_LCID_07694441_sec_1_shd_2",
+          "upload_LCID_07694441_sec_1",
+          "upload_LCID_07694441",
+          "GM_10K_2023__10__Item_9A_Controls_and_Procedures"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8615,
+        "label": "LCID research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__1__Item_1_Business__chunk_2",
+          "LCID_10K_2023__1__Item_1_Business",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7981,
+        "label": "LCID 10-K 2023 | Item 1. Business."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7975,
+        "label": "LCID 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_DEF14A_2023-03-13__0__Full_Document__chunk_56",
+          "LCID_DEF14A_2023-03-13__0__Full_Document",
+          "LCID_DEF14A_2023-03-13",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7924,
+        "label": "LCID DEF 14A 2023-03-13 | Full Document"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__1__Item_1_Business__chunk_1",
+          "LCID_10K_2023__1__Item_1_Business",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7895,
+        "label": "LCID 10-K 2023 | Item 1. Business."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-11-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10Q_2023-11-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2023-11-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7884,
+        "label": "LCID 10-Q 2023-11-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-11-07__7__Item_1A_Risk_Factors__chunk_11",
+          "LCID_10Q_2023-11-07__7__Item_1A_Risk_Factors",
+          "LCID_10Q_2023-11-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7874,
+        "label": "LCID 10-Q 2023-11-07 | Item 1A. Risk Factors."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__1__Item_1_Business__chunk_9",
+          "LCID_10K_2023__1__Item_1_Business",
+          "LCID_10K_2023",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7869,
+        "label": "LCID 10-K 2023 | Item 1. Business."
+      },
+      {
+        "node_ids": [
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0",
+          "LCID_10Q_2023-08-07__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "LCID_10Q_2023-08-07",
+          "LCID"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.785,
+        "label": "LCID 10-Q 2023-08-07 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 189.5,
+      "search_ms": 47.5,
+      "traverse_ms": 4.9,
+      "llm_ms": 12559.5,
+      "total_ms": 12801.5
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:27:58.395835+00:00",
+    "mode": "rag",
+    "question": "What safety rating did Lucid's Gravity SUV receive from federal regulators during its 2023 certification testing?",
+    "answer": "The Lucid Gravity SUV received a 5-star safety rating in all categories from the National Highway Traffic Safety Administration (NHTSA) during its certification testing, which was completed in November 2023 (SOURCE: [1] LCID | research 2023 | Section 1, \"NHTSA Safety Testing and Certification\").",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "LCID"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "LCID"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_LCID_07694441_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.8796,
+        "label": "LCID research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_LCID_07694441_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.8616,
+        "label": "LCID research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__1__Item_1_Business__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7981,
+        "label": "LCID 10-K 2023 | Item 1. Business."
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7976,
+        "label": "LCID 10-K 2023 | Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+      },
+      {
+        "node_ids": [
+          "LCID_DEF14A_2023-03-13__0__Full_Document__chunk_56"
+        ],
+        "edge_types": [],
+        "score": 0.7925,
+        "label": "LCID DEF 14A 2023-03-13 | Full Document"
+      },
+      {
+        "node_ids": [
+          "LCID_10K_2023__1__Item_1_Business__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.7894,
+        "label": "LCID 10-K 2023 | Item 1. Business."
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 613.4,
+      "search_ms": 22.0,
+      "traverse_ms": 0,
+      "llm_ms": 2332.8,
+      "total_ms": 2968.2
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:09.533851+00:00",
+    "mode": "graph_rag",
+    "question": "How many charging locations and total connectors did Tesla's Supercharger network have at the end of 2023, and how many new stations opened that year?",
+    "answer": "At the end of 2023, Tesla's Supercharger network had a total of 5,265 stations and 48,082 individual charging connectors. In that year, Tesla opened 1,142 new Supercharger stations globally (Section 1, TSLA 10-K 2023, Item 7: Management's Discussion and Analysis of Financial Condition and Results of Operations).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": [
+      1053,
+      1091,
+      604
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_TSLA_d8d0349e_sec_1_shd_1",
+          "upload_TSLA_d8d0349e_sec_1",
+          "upload_TSLA_d8d0349e",
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8809,
+        "label": "TSLA research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_d8d0349e_sec_1_shd_2",
+          "upload_TSLA_d8d0349e_sec_1",
+          "upload_TSLA_d8d0349e",
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.8721,
+        "label": "TSLA research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__1__Item_1_BUSINESS__chunk_2",
+          "TSLA_10K_2023__1__Item_1_BUSINESS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7595,
+        "label": "TSLA 10-K 2023 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7532,
+        "label": "TSLA 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-04-24__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "TSLA_10Q_2023-04-24__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10Q_2023-04-24",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7476,
+        "label": "TSLA 10-Q 2023-04-24 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-10-23__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "TSLA_10Q_2023-10-23__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10Q_2023-10-23",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7463,
+        "label": "TSLA 10-Q 2023-10-23 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-07-24__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "TSLA_10Q_2023-07-24__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10Q_2023-07-24",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7462,
+        "label": "TSLA 10-Q 2023-07-24 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_78e55f36_sec_1_shd_3",
+          "upload_TSLA_78e55f36_sec_1",
+          "upload_TSLA_78e55f36",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "LINKED_TO"
+        ],
+        "score": 0.7445,
+        "label": "TSLA transcript 2023-Q4 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1",
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7423,
+        "label": "TSLA 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-10-23__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1",
+          "TSLA_10Q_2023-10-23__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "TSLA_10Q_2023-10-23",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7412,
+        "label": "TSLA 10-Q 2023-10-23 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 171.0,
+      "search_ms": 46.9,
+      "traverse_ms": 3.2,
+      "llm_ms": 10916.6,
+      "total_ms": 11137.8
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:15.911121+00:00",
+    "mode": "rag",
+    "question": "How many charging locations and total connectors did Tesla's Supercharger network have at the end of 2023, and how many new stations opened that year?",
+    "answer": "As of December 31, 2023, Tesla's Supercharger network had a total of **5,265 stations** and **48,082 individual charging connectors**. In that year, Tesla opened **1,142 new Supercharger stations** globally (source: TSLA | research 2023 | Section 1).",
+    "cache_status": "miss",
+    "tickers_detected": [
+      "TSLA"
+    ],
+    "filters_applied": {
+      "tickers": [
+        "TSLA"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "upload_TSLA_d8d0349e_sec_1_shd_1"
+        ],
+        "edge_types": [],
+        "score": 0.8809,
+        "label": "TSLA research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_d8d0349e_sec_1_shd_2"
+        ],
+        "edge_types": [],
+        "score": 0.8721,
+        "label": "TSLA research 2023 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__1__Item_1_BUSINESS__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7595,
+        "label": "TSLA 10-K 2023 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7533,
+        "label": "TSLA 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-04-24__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7475,
+        "label": "TSLA 10-Q 2023-04-24 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-10-23__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7462,
+        "label": "TSLA 10-Q 2023-10-23 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-07-24__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7461,
+        "label": "TSLA 10-Q 2023-07-24 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "upload_TSLA_78e55f36_sec_1_shd_3"
+        ],
+        "edge_types": [],
+        "score": 0.7445,
+        "label": "TSLA transcript 2023-Q4 | Section 1"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.7423,
+        "label": "TSLA 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "TSLA_10Q_2023-10-23__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.741,
+        "label": "TSLA 10-Q 2023-10-23 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 388.0,
+      "search_ms": 24.4,
+      "traverse_ms": 0,
+      "llm_ms": 5964.5,
+      "total_ms": 6376.9
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:28.605774+00:00",
+    "mode": "graph_rag",
+    "question": "After which corporate transaction did an EV startup's board conclude that substantial doubt about the company's ability to continue as a going concern had been eliminated, and what was the company's primary operational focus at that time?",
+    "answer": "The substantial doubt about Nikola Corporation's ability to continue as a going concern was eliminated following the completion of a business combination transaction in 2020. At that time, the company's primary operational focus was on developing and commercializing battery electric and hydrogen fuel cell electric vehicles, alongside constructing hydrogen fueling stations (as stated in their filing: NKLA | 10-Q 2020-11-09 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      2664,
+      2826,
+      3004
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GOEV_10Q_2024-11-14__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "GOEV_10Q_2024-11-14__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GOEV_10Q_2024-11-14",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8024,
+        "label": "GOEV 10-Q 2024-11-14 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10",
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "GOEV_10K_2022",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8011,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_17",
+          "NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "NKLA_10Q_2024-08-09",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7991,
+        "label": "NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2024-08-19__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0",
+          "WKHS_10Q_2024-08-19__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10Q_2024-08-19",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7981,
+        "label": "WKHS 10-Q 2024-08-19 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_15",
+          "NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "NKLA_10Q_2020-11-09",
+          "NKLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7954,
+        "label": "NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2021-05-17__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8",
+          "GOEV_10Q_2021-05-17__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GOEV_10Q_2021-05-17",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7954,
+        "label": "GOEV 10-Q 2021-05-17 | Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10",
+          "WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "WKHS_10K_2023",
+          "WKHS"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7943,
+        "label": "WKHS 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_9",
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN",
+          "GOEV_10K_2022",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7939,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2021-11-15__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10",
+          "GOEV_10Q_2021-11-15__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GOEV_10Q_2021-11-15",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7931,
+        "label": "GOEV 10-Q 2021-11-15 | Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2022-05-10__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "GOEV_10Q_2022-05-10__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GOEV_10Q_2022-05-10",
+          "GOEV"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.793,
+        "label": "GOEV 10-Q 2022-05-10 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 160.9,
+      "search_ms": 108.7,
+      "traverse_ms": 3.2,
+      "llm_ms": 12421.2,
+      "total_ms": 12694.1
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:32.661284+00:00",
+    "mode": "rag",
+    "question": "After which corporate transaction did an EV startup's board conclude that substantial doubt about the company's ability to continue as a going concern had been eliminated, and what was the company's primary operational focus at that time?",
+    "answer": "The specific corporate transaction that led to the conclusion that substantial doubt about the company's ability to continue as a going concern had been eliminated was the completion of a private placement of $200.0 million aggregate principal amount of the June 2022 Toggle Convertible Notes, which occurred during the second quarter of 2022. The net proceeds from this issuance were approximately $183.2 million. At that time, the company was primarily focused on enhancing its operational capabilities and pursuing future sales efforts within the electric vehicle (EV) sector.\n\nThis information can be found in the excerpt from Nikola's 10-Q filing dated August 9, 2024, where they discussed access to capital and the impact of previous financing arrangements on their operational strategy (see source [3]). Specifically, the mention of the toggle notes transaction and the overview of operational focuses, such as capital management and fiscal sustainability during expansion, aligns with the timelines and impacts described.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GOEV_10Q_2024-11-14__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.8023,
+        "label": "GOEV 10-Q 2024-11-14 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.8011,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-08-09__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_17"
+        ],
+        "edge_types": [],
+        "score": 0.7992,
+        "label": "NKLA 10-Q 2024-08-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2020-08-07__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_3"
+        ],
+        "edge_types": [],
+        "score": 0.7985,
+        "label": "GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "WKHS_10Q_2024-08-19__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7981,
+        "label": "WKHS 10-Q 2024-08-19 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "F_10K_2025__88__Item_16_Form_10_K_Summary__chunk_3"
+        ],
+        "edge_types": [],
+        "score": 0.7958,
+        "label": "F 10-K 2025 | Item 16. Form 10-K Summary."
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2020-11-09__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_15"
+        ],
+        "edge_types": [],
+        "score": 0.7954,
+        "label": "NKLA 10-Q 2020-11-09 | Item 2. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10Q_2021-05-17__3__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7954,
+        "label": "GOEV 10-Q 2021-05-17 | Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.7943,
+        "label": "WKHS 10-K 2023 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      },
+      {
+        "node_ids": [
+          "GOEV_10K_2022__5__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_9"
+        ],
+        "edge_types": [],
+        "score": 0.7939,
+        "label": "GOEV 10-K 2022 | Item 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 205.3,
+      "search_ms": 63.4,
+      "traverse_ms": 0,
+      "llm_ms": 3786.4,
+      "total_ms": 4055.2
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:37.634055+00:00",
+    "mode": "graph_rag",
+    "question": "Which EV manufacturer agreed to exclusively supply last-mile electric delivery vehicles to a single commercial customer for a fixed period, followed by a right-of-first-refusal window, with no minimum purchase commitment specified in the agreement?",
+    "answer": "Rivian Automotive, Inc. agreed to exclusively supply last-mile electric delivery vehicles to Amazon Logistics, Inc. for a fixed period until the fourth anniversary of the Initial Delivery Date, during which they would exclusively provide these vehicles. Following this period, Amazon would have a right of first refusal to purchase any last-mile delivery vehicles produced by Rivian for an additional two years. Notably, the EDV Agreement does not specify any minimum purchase commitments from Amazon (see Rivian's DEF 14A filings from April 29, 2024, and 2022-04-27, as well as the SEC 10-K filings).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      1013,
+      2389,
+      2826
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_64",
+          "RIVN_DEF14A_2024-04-29__0__Full_Document",
+          "RIVN_DEF14A_2024-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8072,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2022-04-27__0__Full_Document__chunk_74",
+          "RIVN_DEF14A_2022-04-27__0__Full_Document",
+          "RIVN_DEF14A_2022-04-27",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.8068,
+        "label": "RIVN DEF 14A 2022-04-27 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors__chunk_8",
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors",
+          "RIVN_10K_2023",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7974,
+        "label": "RIVN 10-K 2023 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-05-07__5__Item_1A_Risk_Factors__chunk_8",
+          "RIVN_10Q_2024-05-07__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2024-05-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7967,
+        "label": "RIVN 10-Q 2024-05-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_78",
+          "RIVN_DEF14A_2025-04-29__0__Full_Document",
+          "RIVN_DEF14A_2025-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.796,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_9",
+          "RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2024-08-06",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7957,
+        "label": "RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_77",
+          "RIVN_DEF14A_2025-04-29__0__Full_Document",
+          "RIVN_DEF14A_2025-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7929,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_65",
+          "RIVN_DEF14A_2024-04-29__0__Full_Document",
+          "RIVN_DEF14A_2024-04-29",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7914,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors__chunk_5",
+          "RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors",
+          "RIVN_10Q_2023-11-07",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7902,
+        "label": "RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2023-05-01__0__Full_Document__chunk_68",
+          "RIVN_DEF14A_2023-05-01__0__Full_Document",
+          "RIVN_DEF14A_2023-05-01",
+          "RIVN"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7883,
+        "label": "RIVN DEF 14A 2023-05-01 | Full Document"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 209.9,
+      "search_ms": 38.3,
+      "traverse_ms": 2.4,
+      "llm_ms": 4721.9,
+      "total_ms": 4972.5
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:50.212308+00:00",
+    "mode": "rag",
+    "question": "Which EV manufacturer agreed to exclusively supply last-mile electric delivery vehicles to a single commercial customer for a fixed period, followed by a right-of-first-refusal window, with no minimum purchase commitment specified in the agreement?",
+    "answer": "Rivian Automotive, Inc. agreed to exclusively supply last-mile electric delivery vehicles (EDVs) to Amazon Logistics, Inc. Until the fourth anniversary of the Initial Delivery Date, Rivian would exclusively provide last-mile delivery vehicles to Logistics, and from the fourth anniversary to the sixth anniversary, Logistics would have a right of first refusal to purchase any last-mile delivery vehicles that Rivian produces. Importantly, the EDV Agreement does not include any minimum purchase requirements from Logistics (SOURCE: RIVN | DEF 14A 2022-04-27 | Section: Transactions with Amazon.com NV Investment Holdings LLC and its Affiliates, EDV Agreement).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_64"
+        ],
+        "edge_types": [],
+        "score": 0.8072,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2022-04-27__0__Full_Document__chunk_74"
+        ],
+        "edge_types": [],
+        "score": 0.8068,
+        "label": "RIVN DEF 14A 2022-04-27 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10K_2023__1__Item_1A_Risk_Factors__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7974,
+        "label": "RIVN 10-K 2023 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-05-07__5__Item_1A_Risk_Factors__chunk_8"
+        ],
+        "edge_types": [],
+        "score": 0.7967,
+        "label": "RIVN 10-Q 2024-05-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_78"
+        ],
+        "edge_types": [],
+        "score": 0.796,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_9"
+        ],
+        "edge_types": [],
+        "score": 0.7957,
+        "label": "RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_77"
+        ],
+        "edge_types": [],
+        "score": 0.7929,
+        "label": "RIVN DEF 14A 2025-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_65"
+        ],
+        "edge_types": [],
+        "score": 0.7914,
+        "label": "RIVN DEF 14A 2024-04-29 | Full Document"
+      },
+      {
+        "node_ids": [
+          "RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors__chunk_5"
+        ],
+        "edge_types": [],
+        "score": 0.7902,
+        "label": "RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "RIVN_DEF14A_2023-05-01__0__Full_Document__chunk_68"
+        ],
+        "edge_types": [],
+        "score": 0.7883,
+        "label": "RIVN DEF 14A 2023-05-01 | Full Document"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 196.2,
+      "search_ms": 22.5,
+      "traverse_ms": 0,
+      "llm_ms": 12359.2,
+      "total_ms": 12578.0
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:53.591365+00:00",
+    "mode": "graph_rag",
+    "question": "Which automaker's autonomous vehicle subsidiary had its state operating permits suspended after regulators found that company representatives had not been fully transparent about a secondary vehicle movement during a pedestrian accident investigation?",
+    "answer": "The automaker whose autonomous vehicle subsidiary had its state operating permits suspended is General Motors (GM). This occurred after regulators from the California Department of Motor Vehicles (DMV) determined that Cruise, GM's autonomous vehicle subsidiary, had not been fully transparent regarding a secondary vehicle movement during a pedestrian accident investigation. This information can be found in GM's 10-Q filing dated October 24, 2023, specifically in the 'Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations' section.",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": [
+      415,
+      1852,
+      604
+    ],
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10",
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-10-24",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7723,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-04-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "GM_10Q_2024-04-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2024-04-23",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7666,
+        "label": "GM 10-Q 2024-04-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2025__1__Item_1_BUSINESS__chunk_6",
+          "TSLA_10K_2025__1__Item_1_BUSINESS",
+          "TSLA_10K_2025",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7647,
+        "label": "TSLA 10-K 2025 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-04-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10",
+          "GM_10Q_2023-04-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-04-25",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7629,
+        "label": "GM 10-Q 2023-04-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_11",
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2023-07-25",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7614,
+        "label": "GM 10-Q 2023-07-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-07-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2",
+          "GM_10Q_2024-07-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin",
+          "GM_10Q_2024-07-23",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7613,
+        "label": "GM 10-Q 2024-07-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2024__1__Item_1_Business__chunk_1",
+          "GM_10K_2024__1__Item_1_Business",
+          "GM_10K_2024",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.748,
+        "label": "GM 10-K 2024 | Item\u00a01. Business"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2023__1__Item_1_BUSINESS__chunk_6",
+          "TSLA_10K_2023__1__Item_1_BUSINESS",
+          "TSLA_10K_2023",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.745,
+        "label": "TSLA 10-K 2023 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-04-23__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_40",
+          "GM_10Q_2024-04-23__1__Item_1_Condensed_Consolidated_Financial_Statements",
+          "GM_10Q_2024-04-23",
+          "GM"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.7446,
+        "label": "GM 10-Q 2024-04-23 | Item\u00a01. Condensed Consolidated Financial Statements"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2024__1__Item_1_BUSINESS__chunk_6",
+          "TSLA_10K_2024__1__Item_1_BUSINESS",
+          "TSLA_10K_2024",
+          "TSLA"
+        ],
+        "edge_types": [
+          "HAS_SHADOW",
+          "HAS_SECTION",
+          "HAS_DOCUMENT"
+        ],
+        "score": 0.744,
+        "label": "TSLA 10-K 2024 | Item 1. BUSINESS"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 206.9,
+      "search_ms": 45.8,
+      "traverse_ms": 2.7,
+      "llm_ms": 3123.3,
+      "total_ms": 3378.7
+    }
+  },
+  {
+    "timestamp": "2026-03-17T03:28:57.380889+00:00",
+    "mode": "rag",
+    "question": "Which automaker's autonomous vehicle subsidiary had its state operating permits suspended after regulators found that company representatives had not been fully transparent about a secondary vehicle movement during a pedestrian accident investigation?",
+    "answer": "The automaker whose autonomous vehicle subsidiary had its state operating permits suspended is General Motors (GM). The subsidiary in question is Cruise. The suspension was a result of regulators perceiving that Cruise representatives were not explicit about a secondary movement of the Cruise AV during the investigation of a pedestrian accident. This information can be found in the GM 10-Q filed on October 24, 2023, under the section discussing the incident and regulatory actions related to it ([1] GM | 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations).",
+    "cache_status": "miss",
+    "tickers_detected": [],
+    "filters_applied": {},
+    "clusters_used": null,
+    "supporting_paths": [
+      {
+        "node_ids": [
+          "GM_10Q_2023-10-24__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.7723,
+        "label": "GM 10-Q 2023-10-24 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2023__2__Item_1A_Risk_Factors__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7687,
+        "label": "GM 10-K 2023 | Item\u00a01A. Risk Factors"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-04-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7666,
+        "label": "GM 10-Q 2024-04-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "TSLA_10K_2025__1__Item_1_BUSINESS__chunk_6"
+        ],
+        "edge_types": [],
+        "score": 0.7647,
+        "label": "TSLA 10-K 2025 | Item 1. BUSINESS"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-04-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_10"
+        ],
+        "edge_types": [],
+        "score": 0.7629,
+        "label": "GM 10-Q 2023-04-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "F_10K_2024__37__Item_3_Legal_Proceedings_Continued__chunk_0"
+        ],
+        "edge_types": [],
+        "score": 0.7617,
+        "label": "F 10-K 2024 | Item 3. Legal Proceedings (Continued)"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2023-07-25__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_11"
+        ],
+        "edge_types": [],
+        "score": 0.7614,
+        "label": "GM 10-Q 2023-07-25 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "GM_10Q_2024-07-23__2__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_2"
+        ],
+        "edge_types": [],
+        "score": 0.7613,
+        "label": "GM 10-Q 2024-07-23 | Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+      },
+      {
+        "node_ids": [
+          "NKLA_10Q_2024-10-31__7__Item_1A_RISK_FACTORS__chunk_20"
+        ],
+        "edge_types": [],
+        "score": 0.7529,
+        "label": "NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS"
+      },
+      {
+        "node_ids": [
+          "GM_10K_2024__1__Item_1_Business__chunk_1"
+        ],
+        "edge_types": [],
+        "score": 0.748,
+        "label": "GM 10-K 2024 | Item\u00a01. Business"
+      }
+    ],
+    "latency_breakdown": {
+      "embed_ms": 144.1,
+      "search_ms": 24.8,
+      "traverse_ms": 0,
+      "llm_ms": 3620.2,
+      "total_ms": 3789.2
+    }
+  }
+]

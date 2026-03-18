@@ -1,0 +1,36 @@
+General Motors — Ultium Cells LLC Manufacturing Operations Report
+Joint Venture Operations Summary — Q3 2023
+
+Introduction
+
+Ultium Cells LLC, the battery cell manufacturing joint venture between General Motors and LG Energy Solution, operates production facilities in Warren, Ohio and Lordstown, Ohio, with additional facilities under construction in Spring Hill, Tennessee and Lansing, Michigan. This report summarizes operational performance at the Lordstown facility for the third quarter of 2023, covering cell yield rates, throughput capacity, quality metrics, and ramp trajectory toward nameplate capacity.
+
+The Lordstown facility represents GM's first large-scale domestic battery cell manufacturing operation and is critical to the company's ambition to produce one million electric vehicles annually in North America by 2025. Performance at Lordstown is closely monitored by the GM Board and serves as the operational blueprint for subsequent Ultium Cells facilities.
+
+Facility Overview and Nameplate Capacity
+
+The Lordstown Ultium Cells facility encompasses 2.8 million square feet of manufacturing space and is designed for a nameplate capacity of 35 gigawatt-hours annually when fully ramped. The facility employs approximately 1,100 direct manufacturing employees and operates on a continuous three-shift production schedule. Capital investment in the facility totals approximately $2.3 billion through Q3 2023, with remaining buildout expenditures of approximately $400 million anticipated through mid-2024.
+
+The facility produces pouch-format lithium-ion cells using nickel-manganese-cobalt chemistry at a 70:10:20 ratio, consistent with the cell specification used across GM's Ultium platform vehicle lineup including the GMC Hummer EV, Chevy Silverado EV, and Cadillac Lyriq.
+
+Production Volume and Throughput
+
+Ultium Cells Lordstown shipped 847,000 cells to GM assembly facilities in Q3 2023, representing a 34% increase over Q2 2023 volumes. The production ramp reflects the completion of electrode coating line commissioning in July 2023 and stabilization of the electrolyte filling process following equipment modifications implemented in August. At current throughput rates, the facility is operating at approximately 28% of nameplate capacity, consistent with the revised ramp schedule communicated to the GM Board in June 2023.
+
+Cell Yield and Quality Performance
+
+Cell yield rate is the primary operational metric tracked by the Ultium Cells management team and the GM-LG joint venture oversight committee. Yield is defined as the percentage of cells entering the formation and aging process that pass all electrical, dimensional, and safety tests and are released for shipment to GM assembly plants. Cell yield rates at the Lordstown Ultium Cells facility averaged 73% in Q3 2023, below the 85% target set in the JV agreement with LG Energy Solution. The shortfall was attributed to three root causes: electrode thickness variation in the coating process (contributing approximately 6 percentage points of yield loss), electrolyte fill volume inconsistency (contributing approximately 4 percentage points), and separator misalignment during cell stacking (contributing approximately 2 percentage points). Corrective actions for all three issues were implemented between August and October 2023. Preliminary October data indicates yield rates have improved to approximately 79%, and management expects to reach the 85% target by Q1 2024.
+
+The yield gap has resulted in higher-than-planned scrap costs and has contributed to a cell cost per kilowatt-hour that exceeds the joint venture's internal target. GM has declined to publicly disclose the specific cell cost figure but has acknowledged in investor communications that Ultium cell costs remain above the $100/kWh threshold that the company considers competitive with leading cell suppliers.
+
+Safety and Compliance
+
+The Lordstown facility maintained a recordable incident rate of 1.2 per 200,000 work hours in Q3 2023, below the automotive industry average of 1.8 and consistent with LG Energy Solution's safety performance standards across its global manufacturing network. No thermal runaway events or significant process safety incidents were recorded during the quarter.
+
+The facility completed its first voluntary third-party environmental compliance audit in September 2023, covering wastewater treatment, air emissions from electrolyte solvent recovery systems, and hazardous waste disposal practices. No significant compliance findings were identified, and the facility received certification under the ISO 14001 environmental management standard.
+
+Ramp Trajectory and Outlook
+
+GM and LG Energy Solution have revised the Lordstown ramp schedule twice since the facility opened in August 2022, reflecting challenges common to greenfield battery cell manufacturing operations. The current plan targets 50% of nameplate capacity by Q2 2024 and full nameplate capacity by Q4 2025, one year later than the original schedule. The revised timeline reflects the time required to achieve stable high-yield production at each process step before advancing throughput.
+
+GM has communicated to investors that the Ultium Cells ramp challenges are consistent with industry experience and do not alter the company's long-term EV production strategy. The company expects unit cell costs to decline significantly as yield rates improve and volumes increase, reaching competitiveness with imported cell alternatives by 2026.

@@ -1,0 +1,42 @@
+Rivian Automotive — Normal Manufacturing Facility Capital Investment Update
+Manufacturing Operations Report — Q4 2023
+
+Overview
+
+Rivian's Normal, Illinois manufacturing facility represents the company's sole vehicle production site and the primary driver of its near-term cost reduction strategy. The facility, a converted Mitsubishi Motors plant acquired by Rivian in 2017, has undergone extensive renovation and retooling across multiple phases to support production of the R1T pickup truck, R1S SUV, and Electric Delivery Van platforms.
+
+As Rivian progresses toward its medium-term production targets, the company has initiated a series of capital investments in manufacturing automation, tooling upgrades, and process efficiency improvements intended to reduce variable cost per vehicle and increase production throughput without commensurate increases in direct labor headcount.
+
+Phase 1 Facility Investment — Completed 2022
+
+Phase 1 capital investments, completed in 2022, focused on establishing baseline production capability for the R1T and R1S. This phase encompassed installation of the primary body shop weld lines, paint shop infrastructure, and final assembly conveyor systems. Total Phase 1 capital investment was approximately $5 billion, inclusive of land, building renovation, and manufacturing equipment.
+
+Phase 1 production capacity was established at 65,000 vehicles annually, a rate the company reached in Q4 2023 following ramp challenges in prior periods related to battery pack assembly sequencing and semiconductor component availability.
+
+Phase 2 Automation Investment — Announced Q4 2023
+
+In Q4 2023, Rivian committed $340 million to a robotic welding automation program at its Normal, Illinois facility, with full deployment expected by Q4 2024 across 23 production cells. The program involves replacement of manual metal inert gas welding stations with automated robotic welding systems in the body shop's structural joining operations, targeting improvements in weld consistency, cycle time, and operator ergonomics. The 23 production cells targeted by the program represent approximately 60% of the facility's body shop welding operations by weld count, with the remaining cells retained as manual or semi-automated processes due to the complexity of specific joint geometries that favor human dexterity over robotic precision.
+
+Rivian selected ABB Robotics as the primary equipment supplier for the automation program, with Comau providing integration services for the robot programming and cell layout design. The program is expected to reduce direct labor hours per vehicle in the body shop by approximately 18%, contributing to the company's target of reducing total manufacturing cost per vehicle by 20% by the end of 2024 relative to the 2022 baseline.
+
+The capital investment will be depreciated over 10 years on a straight-line basis, consistent with Rivian's accounting policy for manufacturing equipment. On an annualized basis, the incremental depreciation associated with the automation program represents approximately $34 million, which will be reflected in cost of revenues beginning Q4 2024 as the equipment is placed in service.
+
+R2 Platform Preparation and Tooling Investment
+
+In parallel with Phase 2 automation investments, Rivian is conducting advance tooling and facility planning work for the R2 platform, a lower-priced vehicle line targeting the mainstream electric SUV segment. While R2 production is planned to begin at a separate facility (with the Georgia site announced as the primary candidate), certain tooling, stamping dies, and test fixtures for R2 components are being fabricated in 2024 for validation activities at the Normal facility ahead of production site readiness.
+
+Rivian has indicated that R2-related advance tooling expenses will be expensed as incurred during the pre-production phase, with the total expected to be in the range of $80 to $120 million through 2025. These costs will be reported as research and development expense in Rivian's income statement.
+
+Supply Chain Localization
+
+A related element of Rivian's Normal facility strategy is the progressive localization of component supply to reduce inbound logistics costs and lead times. As of Q4 2023, Rivian has secured supply agreements with seven Tier 1 and Tier 2 suppliers that have established or committed to facilities within 200 miles of the Normal plant. The localized supply base currently covers approximately 35% of component value per vehicle, with a target of 55% by end of 2025.
+
+Locally sourced components include seat systems (Lear Corporation, Mendon, Michigan), door panels and interior trim (Magna International, Troy, Michigan), and HVAC systems (Valeo, various US locations). Battery cells continue to be sourced from Samsung SDI in South Korea with no announced domestic cell supply alternative, representing the most significant remaining long-haul logistics dependency in Rivian's supply chain.
+
+Workforce Implications
+
+The Phase 2 automation program is not expected to result in workforce reductions. Rivian's collective bargaining discussions with the United Auto Workers, which have been ongoing since Q2 2023, have incorporated commitments to maintain headcount at the Normal facility and to provide retraining support for workers transitioning from manual welding roles to robot operation and maintenance positions. The company employs approximately 6,800 production workers at the Normal facility as of Q4 2023.
+
+Financial Outlook
+
+Rivian management has guided that the combination of Phase 2 automation investments, supply chain localization, and R1 platform engineering changes will contribute to a positive gross profit per vehicle by the end of 2024. The company reported a negative gross profit of approximately $38,000 per vehicle in Q2 2023, and management has consistently communicated a trajectory toward gross profit breakeven as a key near-term financial milestone.

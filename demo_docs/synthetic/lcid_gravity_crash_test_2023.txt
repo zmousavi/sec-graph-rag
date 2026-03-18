@@ -1,0 +1,40 @@
+Lucid Motors — Gravity SUV Safety Certification and Vehicle Development Update
+Product Development Report — Q4 2023
+
+Introduction
+
+The Lucid Gravity is the company's second production vehicle and its first SUV, designed to leverage the core technology platform developed for the Lucid Air sedan while addressing the higher cargo volume, seating capacity, and towing requirements of the premium SUV segment. The Gravity represents Lucid's most important vehicle program since the Air, both for its revenue potential and for its role in demonstrating the scalability of Lucid's in-house motor, battery, and software architecture to a second vehicle body style.
+
+This report summarizes Gravity's Q4 2023 development milestones, with focus on safety testing, regulatory certification activities, and the vehicle's readiness for production launch in 2024.
+
+Vehicle Architecture and Key Specifications
+
+The Gravity shares the Lucid Electric Advanced Platform (LEAP) with the Air, utilizing the same front and rear motor architecture and the same prismatic cell battery technology. The Gravity will be offered with a 118 kWh battery pack in the standard configuration and a 122 kWh pack in the Grand Touring and Dream Edition variants, providing EPA-estimated ranges of approximately 440 and 460 miles respectively. These range figures, if confirmed by final EPA testing, would represent class-leading range for a seven-passenger electric SUV by a substantial margin.
+
+The vehicle is designed for seven-passenger seating with a third-row configuration that accommodates adults up to approximately 5 feet 11 inches in height, addressing a noted limitation of some competing premium electric SUVs whose third rows are suitable only for children. Towing capacity is rated at 6,000 pounds, enabling the Gravity to serve buyers with light trailer and boat towing needs who would otherwise be excluded from the premium electric SUV consideration set.
+
+NHTSA Safety Testing and Certification
+
+Lucid Motors completed crash testing certification for the Gravity SUV in November 2023, achieving a 5-star NHTSA rating in all categories with a peak structural load tolerance of 4.8G. The five-star rating across all NHTSA test categories represents the highest possible rating and positions the Gravity competitively with the top-rated premium SUVs from Tesla (Model X), Volvo (EX90), and Mercedes-Benz (EQS SUV). The 4.8G peak structural load figure reflects the performance of the Gravity's octagonal space frame in the roof crush test, which applies progressively increasing loads to the vehicle roof to assess resistance to rollover-related structural collapse. The 4.8G figure exceeds the NHTSA minimum standard of 3.0G by a substantial margin and is competitive with the highest-performing vehicles in the test's history.
+
+Lucid's engineering team attributed the roof crush performance to the Gravity's aluminum-intensive unibody structure, which incorporates high-strength 7000-series aluminum alloys in the A-pillar and B-pillar sections. The use of aerospace-grade aluminum in the passenger cell structure reflects Lucid's origins as a vehicle design firm with significant aerospace talent and design influence.
+
+IIHS Testing
+
+In addition to NHTSA testing, Lucid submitted the Gravity for Insurance Institute for Highway Safety evaluation in Q4 2023. IIHS testing was not complete as of the report date, but Lucid engineering leadership expressed confidence that the vehicle's structural performance and advanced driver assistance system suite would qualify for the Top Safety Pick+ designation, IIHS's highest rating category.
+
+Lucid's driver assistance system, Lucid DreamDrive Pro, includes forward collision warning, automatic emergency braking with pedestrian detection, lane departure warning, lane centering, adaptive cruise control, and blind spot monitoring. DreamDrive Pro is standard on all Gravity trim levels.
+
+Euro NCAP Preparation
+
+Lucid is simultaneously preparing the Gravity for Euro NCAP testing to support the vehicle's planned European market launch in 2025. Euro NCAP and NHTSA test protocols differ in several important areas, including pedestrian protection testing methodology and the assessment of active safety systems. Lucid's certification team has completed pre-validation testing for Euro NCAP's frontal full-width rigid barrier test and has identified one structural reinforcement modification to the lower firewall section needed to optimize pedestrian legform test performance. The modification is incorporated in all production-specification vehicles.
+
+Production Readiness
+
+Lucid's AMP-1 facility in Casa Grande, Arizona completed Gravity tooling installation and process validation activities in Q4 2023, with pre-production build events scheduled for Q1 2024. The pre-production builds will be used for final validation of manufacturing processes, quality control procedures, and supply chain sequencing before the start of regular production. First deliveries of the Gravity to reservation holders are targeted for mid-2024, with initial production volumes limited by battery pack manufacturing capacity at the Casa Grande facility.
+
+Lucid has received approximately 7,200 Gravity reservations as of Q4 2023, representing a reservation backlog sufficient to support several months of production at initial production rates. The company has not disclosed the deposit amount or the proportion of reservations from existing Air customers.
+
+Pricing and Market Positioning
+
+The Lucid Gravity will be priced starting at approximately $79,900 for the base configuration, with Grand Touring and Dream Edition variants priced above $100,000. The pricing positions the Gravity in the upper-premium SUV segment against the Tesla Model X, Rivian R1S, and Mercedes-Benz EQS SUV. Lucid has indicated that the Gravity's combination of range, performance, and interior volume will justify its positioning above the Rivian R1S on a price-to-specification basis.

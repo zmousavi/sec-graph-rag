@@ -1,0 +1,1116 @@
+=================================================================
+Q: Which electric vehicle startup ultimately ceased operations and entered liquidation, and in its final annual report prior to that event, what specific conditions raised substantial doubt about its ability to continue as a going concern?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [3004, 2826, 2889, 3037, 1019, 2674]
+Latency:  {'embed_ms': 818.0, 'search_ms': 1988.4, 'traverse_ms': 22.8, 'llm_ms': 15923.5, 'total_ms': 18752.7}
+
+ANSWER:
+- Candidate entities: Nikola Corporation, Workhorse Group Inc., Canoo Inc. (GOEV).
+- Selected entity: Nikola Corporation.
+- Supporting facts (combined across passages):
+  - Nikola Corporation ceased operations and entered liquidation after filing for Chapter 11 bankruptcy on February 19, 2025. The company sold substantially all its assets and confirmed a Plan of Liquidation, which resulted in the cancellation of all equity interests with no distribution to shareholders (Sources [1], [3], [7]).
+  - In its final annual report prior to filing for bankruptcy, the company disclosed financial circumstances that raised substantial doubt about its ability to continue as a going concern. These included a net loss of $966.3 million for the year and an accumulated deficit of around $3.1 billion, indicating a dire need for additional capital to support ongoing operations and the successful execution of its business strategy (Sources [4], [6], [8]).
+  - The report further indicated issues with the company’s liquidity and significant operating losses, emphasizing its dependency on potential financing and capital raising efforts, which were uncertain at best (Source [4], [6]).
+
+Final Answer: Nikola Corporation ultimately ceased operations and entered liquidation, citing substantial doubt about its ability to continue as a going concern due to a net loss of $966.3 million and an accumulated deficit of approximately $3.1 billion in its final annual report prior to the bankruptcy filing.
+
+PATHS:
+  [0.6017] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5923] WKHS 10-K 2023 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5816] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5748] NKLA 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5716] WKHS 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5701] NKLA 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5684] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5673] WKHS 10-K 2024 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5669] GOEV 10-K 2022 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5663] WKHS 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.0] GOEV 10-K 2022 | Item 16. Form 10-K Summary | 108
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.0] GOEV 10-K 2022 | Item 7A. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.0] GOEV 10-K 2023 | Item 16. Form 10-K Summary | 137
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.0] GOEV 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.0] GOEV 10-K 2023 | Item 7A. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+
+=================================================================
+Q: Which electric vehicle startup ultimately ceased operations and entered liquidation, and in its final annual report prior to that event, what specific conditions raised substantial doubt about its ability to continue as a going concern?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 345.7, 'search_ms': 23.7, 'traverse_ms': 0, 'llm_ms': 15702.8, 'total_ms': 16072.3}
+
+ANSWER:
+- Candidate entities: Nikola Corporation, Workhorse Group Inc.
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages):
+  - Nikola Corporation ultimately ceased operations and entered liquidation. The Plan of Liquidation, confirmed by the Bankruptcy Court on September 12, 2025, entails the cancellation of the company’s common stock, with shareholders receiving nothing from their interests.
+  - In its final annual report before liquidation, management indicated that the need for Bankruptcy Petitions under Chapter 11 raised substantial doubt about the company's ability to continue as a going concern. Key issues contributing to this doubt included recurring losses from operations, an accumulated deficit, projected capital needs, and the inability to maintain sufficient financial resources for ongoing operations, highlighting the failure to generate sufficient sales and liquidity to support its business model.
+
+PATHS:
+  [0.8011] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.7967] WKHS 10-K 2023 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10
+  [0.7907] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_5
+  [0.7861] WKHS 10-K 2023 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> WKHS_10K_2023__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_8
+  [0.7847] NKLA 10-K 2024 | Item 8. Financial Statements and Supplementary Data
+            -> NKLA_10K_2024__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_91
+  [0.7842] WKHS 10-K 2024 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2024__2__Item_1A_RISK_FACTORS__chunk_3
+  [0.7842] GOEV 10-K 2022 | Item 1A. RISK FACTORS
+            -> GOEV_10K_2022__2__Item_1A_RISK_FACTORS__chunk_4
+  [0.7835] WKHS 10-K 2024 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> WKHS_10K_2024__9__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_11
+
+=================================================================
+Q: Which company that later entered restructuring had previously developed an alternative energy powertrain platform, and what operational commitments did it state it would maintain during the restructuring process?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1013, 453, 2354, 415, 2826, 1019]
+Latency:  {'embed_ms': 165.7, 'search_ms': 15727.8, 'traverse_ms': 22.9, 'llm_ms': 7531.5, 'total_ms': 23448.0}
+
+ANSWER:
+- Candidate entities: Lucid Group, Inc., General Motors (GM), Rivian Automotive, Inc., Fisker Inc.
+- Selected entity: Lucid Group, Inc.
+- Supporting facts (combined across passages):
+  - Lucid Group, Inc. previously developed an advanced electric vehicle powertrain platform and announced a restructuring plan on March 28, 2023, intended to reduce operating expenses through workforce reduction and other cost-saving measures.
+  - During the restructuring process, Lucid indicated that it would maintain operational commitments focused on improving productivity and ensuring that production could continue in alignment with evolving business needs. The restructuring plan was expected to be substantially completed by the end of Q2 2023 and involved recording significant restructuring charges associated with severance and employee transition costs.
+
+Final Answer: Lucid Group, Inc. previously developed an alternative energy powertrain platform and stated it would maintain operational commitments focused on productivity during its restructuring process.
+
+PATHS:
+  [0.5552] LCID 10-Q 2023-05-08 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5538] LCID 10-Q 2023-08-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5523] GM 10-K 2022 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5502] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5475] LCID 10-Q 2023-11-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5452] RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5403] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5383] FSR 10-Q 2022-11-07 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5375] GM 10-Q 2025-10-21 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5358] NKLA 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.0] FSR 10-K 2022 | Item 1. Business.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 7.    Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2023 | Item 1.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2023 | Item 7.    Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2021-05-17 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which company that later entered restructuring had previously developed an alternative energy powertrain platform, and what operational commitments did it state it would maintain during the restructuring process?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 508.0, 'search_ms': 21.2, 'traverse_ms': 0, 'llm_ms': 7396.3, 'total_ms': 7925.5}
+
+ANSWER:
+- Candidate entities: Lucid Motors (LCID), Rivian (RIVN), Nikola (NKLA), General Motors (GM), Tesla (TSLA)
+- Selected entity: Lucid Motors (LCID)
+- Supporting facts (from passages):
+  - Lucid Motors developed an electric vehicle powertrain platform and has been involved in restructuring efforts, announcing a "Restructuring Plan" on March 28, 2023, aimed at reducing operating expenses and improving productivity through workforce reduction.
+  - During the restructuring process, Lucid stated it would maintain its operational commitments including ensuring ongoing employee termination benefits are recognized when payments are probable and estimable, alongside other restructuring charges primarily related to severance payments and employee benefits. 
+
+Final Answer: Lucid Motors (LCID); it will maintain ongoing employee termination benefits and other operational commitments during restructuring.
+
+PATHS:
+  [0.7776] LCID 10-Q 2023-05-08 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-05-08__2__Item_1_Financial_Statements__chunk_10
+  [0.7771] LCID 10-Q 2023-08-07 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-08-07__2__Item_1_Financial_Statements__chunk_16
+  [0.7759] GM 10-K 2022 | Item 1. Business
+            -> GM_10K_2022__1__Item_1_Business__chunk_16
+  [0.7756] RIVN 10-Q 2025-05-06 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> RIVN_10Q_2025-05-06__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_13
+  [0.7741] LCID 10-Q 2023-11-07 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-11-07__2__Item_1_Financial_Statements__chunk_17
+  [0.7717] TSLA 10-Q 2025-10-23 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2025-10-23__2__Item_1_FINANCIAL_STATEMENTS__chunk_39
+  [0.7698] NKLA 10-Q 2021-11-04 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> NKLA_10Q_2021-11-04__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_1
+  [0.7685] GM 10-Q 2025-10-21 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2025-10-21__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_51
+  [0.7685] NKLA 10-K 2023 | Item 1A. Risk Factors
+            -> NKLA_10K_2023__2__Item_1A_Risk_Factors__chunk_13
+  [0.767] RIVN 10-Q 2025-08-05 | Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+            -> RIVN_10Q_2025-08-05__1__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_16
+
+=================================================================
+Q: Which manufacturer disclosed that failed negotiations with creditors triggered an event causing its obligations to become immediately due, and how did that event lead to its subsequent bankruptcy filing?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1168, 2889, 3004, 3379, 2624, 3308]
+Latency:  {'embed_ms': 290.6, 'search_ms': 5516.9, 'traverse_ms': 6.9, 'llm_ms': 13751.1, 'total_ms': 19565.5}
+
+ANSWER:
+- **Candidate entities**: Nikola Corporation, Fisker Inc., Canoo, Inc.
+- **Selected entity**: Fisker Inc.
+- **Supporting facts (combined across passages)**: 
+
+Fisker Inc. disclosed that failed negotiations with creditors and multiple events of default led to immediate obligations becoming due. The occurrence of these defaults stemmed from various issues such as the company's failure to make required interest payments on its convertible notes and the suspension of its common stock from trading on the NYSE, which triggered an acceleration clause in the maturity of its obligations. Specifically, the company failed to make a required interest payment of approximately $8.4 million due on March 15, 2024, on the unsecured 2.50% convertible notes due in 2026, which constituted a default under the indentures governing these notes. This led to automatic acceleration of the principal amount owed under the convertible notes, resulting in the company being unable to meet its immediate financial obligations. Consequently, Fisker Inc. pursued bankruptcy under Chapter 11, as it sought to reorganize its debts and operations amid these financial difficulties.
+
+PATHS:
+  [0.5495] NKLA 8-K 2025-02-19 | Item 2.04            Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5464] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5414] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5324] FSR 10-K 2023 | Item 8.    Financial Statements and Supplementary Data.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.532] FSR 10-Q 2023-11-22 | Item 2.04 Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5318] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5129] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.511] FSR 8-K 2024-04-22 | Item 1.01 | Entry into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5106] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.506] FSR 8-K 2024-03-18 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 16. | Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 15.    Exhibit and Financial Statement Schedules.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 16.    Form 10-K Summary
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 8.    Financial Statements and Supplementary Data.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2023 | Item 16. | Form 10-K Summary | 121
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which manufacturer disclosed that failed negotiations with creditors triggered an event causing its obligations to become immediately due, and how did that event lead to its subsequent bankruptcy filing?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 313.3, 'search_ms': 18.5, 'traverse_ms': 0, 'llm_ms': 11656.2, 'total_ms': 11988.1}
+
+ANSWER:
+- Candidate entities: Fisker Inc., Canoo, Inc.
+- Selected entity: Fisker Inc.
+- Supporting facts (from passages): 
+    - Fisker Inc. experienced an event of default due to multiple issues, including failing to make required interest payments on its convertible notes due in 2026 and the delisting of its Class A common stock from the NYSE. These defaults triggered rights for the investors to accelerate the debt and demand immediate payment (Passages [2], [3], [5], [9], [10]). Following this, on May 7, 2024, Fisker Austria, a subsidiary of Fisker Inc., voluntarily filed for restructuring under the Austrian Insolvency Code, indicating significant financial distress for the parent company (Passage [2]). As per the disclosures, these financial troubles culminated in the necessity for Fisker Inc. to consider filing for bankruptcy protection, although it had not yet formally done so at the date of the passages (Passages [4], [8], [9]). 
+
+Final Answer: Fisker Inc., due to failed negotiations concerning its debt obligations triggered by defaults on payments and the delisting of its stock, which forced the company into severe financial distress and considered bankruptcy filing.
+
+PATHS:
+  [0.7748] NKLA 8-K 2025-02-19 | Item 2.04            Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> NKLA_8K_2025-02-19__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.774] FSR 8-K 2024-05-08 | Item 8.01    Other Events
+            -> FSR_8K_2024-05-08__1__Item_8_01_Other_Events__chunk_0
+  [0.771] FSR 8-K 2024-06-24 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_8K_2024-06-24__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7665] FSR 10-K 2023 | Item 8.    Financial Statements and Supplementary Data.
+            -> FSR_10K_2023__9__Item_8_Financial_Statements_and_Supplementary_Data__chunk_61
+  [0.7662] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+            -> FSR_8K_2024-05-08__0__Item_1_01_Entry_into_a_Material_Definitive_Agreeme__chunk_1
+  [0.7661] FSR 10-Q 2023-11-22 | Item 2.04 Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_10Q_2023-11-22__9__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+  [0.7563] GOEV 8-K 2025-01-21 | Item 1.03 | Bankruptcy or Receivership
+            -> GOEV_8K_2025-01-21__0__Item_1_03_Bankruptcy_or_Receivership__chunk_0
+  [0.7555] FSR 8-K 2024-04-22 | Item 1.01 | Entry into a Material Definitive Agreement
+            -> FSR_8K_2024-04-22__0__Item_1_01_Entry_into_a_Material_Definitive_Agreeme__chunk_0
+  [0.7552] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+            -> FSR_8K_2024-05-08__0__Item_1_01_Entry_into_a_Material_Definitive_Agreeme__chunk_0
+  [0.7533] FSR 8-K 2024-03-18 | Item 2.04 | Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement.
+            -> FSR_8K_2024-03-18__1__Item_2_04_Triggering_Events_That_Accelerate_or_Inc__chunk_0
+
+=================================================================
+Q: In which company’s filings did a business combination resolve prior doubts about its viability, and what categories of vehicles was it pursuing at that time?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [3004, 1168, 2354, 2674, 1013, 3037]
+Latency:  {'embed_ms': 333.0, 'search_ms': 9046.8, 'traverse_ms': 16.3, 'llm_ms': 11536.3, 'total_ms': 20933.5}
+
+ANSWER:
+- Candidate entities: Workhorse Group Inc., Fisker Inc.
+- Selected entity: Workhorse Group Inc.
+- Supporting facts (combined across passages):
+  - Workhorse Group Inc. underwent a business combination that clarified doubts regarding its viability. Specifically, the merger agreement with Motiv Power Systems, Inc. was entered on August 15, 2025. This merger was seen as a strategic move to bolster Workhorse's prospects and is noted in its filings as having resolved prior questions about the company's operational validity.
+  - At that time, Workhorse was actively pursuing the design, manufacture, and distribution of all-electric vehicles, including the C-1000 platform as part of its vehicle range, which also included the reintroduction of the C-1000 vehicle with certain modifications following compliance reviews (referencing FMVSS compliance).
+
+Final Answer: Workhorse Group Inc. had a business combination that resolved prior doubts about its viability, and it was pursuing all-electric vehicles, including the C-1000 platform.
+
+PATHS:
+  [0.566] WKHS 10-Q 2025-08-15 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5643] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5616] GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.559] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5566] WKHS 10-Q 2022-05-10 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5558] FSR 10-Q 2021-05-17 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5556] WKHS 10-Q 2021-11-09 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5554] RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5549] WKHS 10-K 2022 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5538] WKHS 10-Q 2022-11-08 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.0] FSR 10-Q 2021-11-15 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2022-05-09 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2022-08-08 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2022-11-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2023-05-09 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: In which company’s filings did a business combination resolve prior doubts about its viability, and what categories of vehicles was it pursuing at that time?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 472.5, 'search_ms': 17.9, 'traverse_ms': 0, 'llm_ms': 4201.8, 'total_ms': 4692.3}
+
+ANSWER:
+- Candidate entities: Workhorse Group, Inc. (WKHS)
+- Selected entity: Workhorse Group, Inc.
+- Supporting facts (from passages):
+  - Workhorse filed a 10-Q report where it discussed its recent business combination with Motiv Power Systems. This merger helped to resolve previous doubts about the company's viability as they sought to expand its portfolio in the electric vehicle sector.
+  - Workhorse operates as an Original Equipment Manufacturer (OEM) primarily focused on the design, manufacture, and distribution of all-electric vehicles. 
+
+Final Answer: Workhorse Group, Inc. was pursuing all-electric vehicles at the time of the business combination that resolved doubts about its viability.
+
+PATHS:
+  [0.7832] WKHS 10-Q 2025-08-15 | Item 1. FINANCIAL STATEMENTS
+            -> WKHS_10Q_2025-08-15__2__Item_1_FINANCIAL_STATEMENTS__chunk_39
+  [0.7816] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+            -> FSR_10Q_2021-08-11__1__Item_1_Financial_Statements__chunk_36
+  [0.7806] GOEV 10-Q 2020-08-07 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> GOEV_10Q_2020-08-07__2__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_3
+  [0.7792] FSR 10-Q 2021-08-11 | Item 1. Financial Statements.
+            -> FSR_10Q_2021-08-11__1__Item_1_Financial_Statements__chunk_37
+  [0.7784] WKHS 10-Q 2022-05-10 | Item 1. FINANCIAL STATEMENTS
+            -> WKHS_10Q_2022-05-10__2__Item_1_FINANCIAL_STATEMENTS__chunk_14
+  [0.7784] RIVN 10-Q 2025-11-04 | Item 1. Financial Statements (unaudited)
+            -> RIVN_10Q_2025-11-04__0__Item_1_Financial_Statements_unaudited__chunk_32
+  [0.7778] FSR 10-Q 2021-05-17 | Item 1. Financial Statements.
+            -> FSR_10Q_2021-05-17__1__Item_1_Financial_Statements__chunk_11
+  [0.7774] WKHS 10-Q 2021-11-09 | Item 1. FINANCIAL STATEMENTS
+            -> WKHS_10Q_2021-11-09__2__Item_1_FINANCIAL_STATEMENTS__chunk_20
+  [0.7771] WKHS 10-Q 2022-11-08 | Item 1. FINANCIAL STATEMENTS
+            -> WKHS_10Q_2022-11-08__2__Item_1_FINANCIAL_STATEMENTS__chunk_19
+  [0.7771] WKHS 10-K 2022 | Item 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+            -> WKHS_10K_2022__8__Item_8_FINANCIAL_STATEMENTS_AND_SUPPLEMENTARY_DATA__chunk_37
+
+=================================================================
+Q: Which manufacturer entered into a commercial agreement that restricted its ability to sell a specific vehicle type to other customers for a defined period, and how did that agreement change after the exclusivity window expired?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1013, 1618, 2389, 311, 3157, 415]
+Latency:  {'embed_ms': 166.8, 'search_ms': 7028.3, 'traverse_ms': 14.3, 'llm_ms': 9945.1, 'total_ms': 17154.6}
+
+ANSWER:
+- Candidate entities: Rivian Automotive, Ford Motor Company
+- Selected entity: Rivian Automotive
+- Supporting facts (combined across passages):
+  Rivian Automotive entered into a commercial agreement with Amazon in 2019, known as the EDV Agreement, which initially restricted Rivian's ability to sell electric delivery vans (EDVs) to other commercial customers. As per the terms of the original agreement, Rivian was required to provide exclusivity and first refusal rights to Amazon for these specific vehicles. However, in November 2023, Rivian amended the EDV Agreement, allowing it to sell commercial vans to third parties after the exclusivity period, subject to certain fees and limitations regarding customer type and vehicle volume. Thus, the restrictions imposed by the original agreement changed, enabling Rivian to pursue additional commercial opportunities following the expiration of the exclusivity window and the amendment of the agreement.
+
+PATHS:
+  [0.5286] RIVN DEF 14A 2022-04-27 | Full Document
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5058] F 10-K 2024 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5003] RIVN DEF 14A 2025-04-29 | Full Document
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4893] RIVN 10-Q 2023-08-08 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4852] FSR 8-K 2024-01-10 | Item 8.01    Other Events
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.4849] F 10-K 2023 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.4824] GM 10-K 2024 | Item 1. Business
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.4786] RIVN 10-Q 2023-05-09 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.469] RIVN 10-K 2023 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.4685] RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.0] F 10-K 2022 | Item 3. Legal Proceedings.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which manufacturer entered into a commercial agreement that restricted its ability to sell a specific vehicle type to other customers for a defined period, and how did that agreement change after the exclusivity window expired?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 306.0, 'search_ms': 16.4, 'traverse_ms': 0, 'llm_ms': 3368.3, 'total_ms': 3690.8}
+
+ANSWER:
+- Candidate entities: Rivian Automotive, Amazon
+- Selected entity: Rivian Automotive
+- Supporting facts (from passages):
+  - Rivian Automotive entered into a commercial agreement (the EDV Agreement) with Amazon in February 2019, which initially restricted Rivian from selling Electric Delivery Vans (EDVs) to other commercial customers.
+  - This restriction changed in November 2023 when the agreement was amended to allow Rivian to sell commercial vans to third parties, subject to certain fees and limitations based on customer type and vehicle volume. The exclusivity rights granted to Amazon apply for five years from January 1, 2024, and fees for all sales of Rivian commercial vans apply for ten years from January 1, 2024, unless the EDV Agreement is terminated.
+
+PATHS:
+  [0.7649] RIVN DEF 14A 2022-04-27 | Full Document
+            -> RIVN_DEF14A_2022-04-27__0__Full_Document__chunk_77
+  [0.7528] F 10-K 2024 | Item 3. Legal Proceedings (Continued)
+            -> F_10K_2024__37__Item_3_Legal_Proceedings_Continued__chunk_0
+  [0.7507] RIVN DEF 14A 2025-04-29 | Full Document
+            -> RIVN_DEF14A_2025-04-29__0__Full_Document__chunk_77
+  [0.7444] RIVN 10-Q 2023-08-08 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-08-08__5__Item_1A_Risk_Factors__chunk_6
+  [0.7429] FSR 8-K 2024-01-10 | Item 8.01    Other Events
+            -> FSR_8K_2024-01-10__1__Item_8_01_Other_Events__chunk_0
+  [0.7417] F 10-K 2023 | Item 3. Legal Proceedings (Continued)
+            -> F_10K_2023__36__Item_3_Legal_Proceedings_Continued__chunk_0
+  [0.7406] GM 10-K 2024 | Item 1. Business
+            -> GM_10K_2024__1__Item_1_Business__chunk_2
+  [0.7388] RIVN 10-Q 2023-05-09 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-05-09__5__Item_1A_Risk_Factors__chunk_6
+  [0.735] RIVN DEF 14A 2024-04-29 | Full Document
+            -> RIVN_DEF14A_2024-04-29__0__Full_Document__chunk_64
+  [0.7342] RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_9
+
+=================================================================
+Q: Which automaker faced regulatory action related to its autonomous vehicle operations, and what operational or strategic consequences did it later report as a result of that action?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1053, 604, 415, 1618, 311, 453]
+Latency:  {'embed_ms': 180.3, 'search_ms': 11471.4, 'traverse_ms': 16.5, 'llm_ms': 12110.6, 'total_ms': 23779.0}
+
+ANSWER:
+- Candidate entities: Ford, Tesla
+- Selected entity: Ford
+
+**Supporting facts (combined across passages):**
+Ford has faced regulatory action regarding its autonomous vehicle operations. This includes scrutiny from the National Highway Traffic Safety Administration (NHTSA) concerning its BlueCruise system, which has been subject to investigations regarding potential misuse by customers and whether the advertising of this technology is misleading. As a consequence of these investigations, Ford could face substantial compliance costs, potential safety recalls, fines, penalties, and reputational harm. The regulatory landscape, which is evolving rapidly, particularly regarding autonomous vehicle technologies, may also inhibit Ford's ability to provide these features to consumers. Additionally, there has been increased regulatory scrutiny on emissions compliance, resulting in potential delays in the adoption of electric vehicles and increased compliance costs for Ford.
+
+Furthermore, the company entered into a consent order with the NHTSA to address allegations related to a past recall concerning rearview camera performance, which includes a $165 million civil penalty and commitments to improve compliance practices, including ongoing assessments and reporting requirements to NHTSA. 
+
+Overall, the regulatory actions and compliance costs associated with both autonomous vehicle technologies and emissions standards have operational and strategic implications, potentially affecting Ford's ability to innovate within these areas.
+
+PATHS:
+  [0.6125] F 10-K 2024 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.6018] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.6016] TSLA 10-K 2025 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5925] TSLA 10-Q 2023-07-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5878] TSLA 10-Q 2023-04-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5828] TSLA 10-Q 2025-10-23 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5823] TSLA 10-K 2024 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5788] F 10-K 2024 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5784] TSLA 10-Q 2023-10-23 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5778] TSLA 10-K 2023 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 3. Legal Proceedings (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which automaker faced regulatory action related to its autonomous vehicle operations, and what operational or strategic consequences did it later report as a result of that action?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 400.8, 'search_ms': 16.5, 'traverse_ms': 0, 'llm_ms': 3561.8, 'total_ms': 3979.2}
+
+ANSWER:
+- Candidate entities: Ford Motor Company, Tesla, General Motors, Cruise (a subsidiary of GM), Nikola
+- Selected entity: Ford Motor Company
+- Supporting facts (from passages):
+  1. Ford entered into a consent order with the NHTSA regarding a recall conducted in 2020 related to rearview camera performance, which was investigated for timely compliance with regulations. This order included a civil penalty of $165 million, with funds allocated towards enhancing compliance and safety practices.
+  2. Ford faces regulatory scrutiny regarding its autonomous vehicle technologies, including investigations into its BlueCruise system. The company must report to NHTSA any crashes involving its advanced driver assistance systems, which may result in fines, penalties, or reputational harm if issues arise.
+  3. Stringent regulations and increased scrutiny of compliance requirements are affecting Ford's operational strategy, necessitating modifications to product plans and facilities to comply with evolving regulations concerning safety, emissions, and autonomous technologies.
+
+PATHS:
+  [0.8063] F 10-K 2024 | Item 3. Legal Proceedings (Continued)
+            -> F_10K_2024__37__Item_3_Legal_Proceedings_Continued__chunk_0
+  [0.8006] TSLA 10-K 2025 | Item 1. BUSINESS
+            -> TSLA_10K_2025__1__Item_1_BUSINESS__chunk_6
+  [0.8005] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2025__13__Item_1A_Risk_Factors_Continued__chunk_1
+  [0.8002] GM 10-K 2023 | Item 1A. Risk Factors
+            -> GM_10K_2023__2__Item_1A_Risk_Factors__chunk_2
+  [0.796] TSLA 10-Q 2023-07-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2023-07-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_44
+  [0.7935] TSLA 10-Q 2023-04-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2023-04-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_36
+  [0.7923] NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2024-10-31__7__Item_1A_RISK_FACTORS__chunk_20
+  [0.7916] TSLA 10-K 2024 | Item 1. BUSINESS
+            -> TSLA_10K_2024__1__Item_1_BUSINESS__chunk_6
+  [0.7909] TSLA 10-Q 2025-10-23 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2025-10-23__2__Item_1_FINANCIAL_STATEMENTS__chunk_37
+  [0.7892] F 10-K 2024 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2024__29__Item_1A_Risk_Factors_Continued__chunk_0
+
+=================================================================
+Q: For the company that ultimately entered liquidation, what risks or uncertainties had it previously disclosed regarding its ability to sustain operations, and how did those relate to its eventual outcome?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [3004, 2635, 2547, 1019, 1013, 2777]
+Latency:  {'embed_ms': 443.6, 'search_ms': 5833.0, 'traverse_ms': 6.1, 'llm_ms': 14572.1, 'total_ms': 20854.9}
+
+ANSWER:
+- Candidate entities: VectoIQ Acquisition Corp., Hennessy Capital Acquisition Corp. IV, Spartan Energy Acquisition Corp.
+- Selected entity: Spartan Energy Acquisition Corp.
+- Supporting facts (combined across passages):
+  1. Spartan Energy Acquisition Corp. disclosed in its filings that if the company is unable to complete an initial business combination within 24 months from the IPO, it would be required to cease operations except for the purposes of winding down, redeem public shares, and then liquidate. This raises "substantial doubt about the Company's ability to continue as a going concern."
+  2. The mandatory liquidation provisions create significant risk as the company might have to liquidate after reaching that deadline if a business combination is not achieved. This uncertainty regarding its operational sustainability was raised multiple times across several filings.
+  3. As of March 31, 2020, the company also reported a working capital deficit and indicated concerns about its ongoing liquidity, explicitly stating that it may need to obtain additional funds. This alludes to a fragile financial position that aligned with the eventual outcome of liquidation when it failed to secure further business operations.
+
+Overall, Spartan Energy Acquisition Corp. had previously disclosed its risks related to liquidity and uncertain business operations, which were directly linked to its eventual liquidation.
+
+PATHS:
+  [0.568] NKLA 10-Q 2020-05-11 | Item 1. Interim Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5667] GOEV 10-Q 2020-08-07 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5659] RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5651] FSR 10-Q 2019-11-12 | Item
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5598] GOEV 10-Q 2020-05-06 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5571] RIVN 10-Q 2022-05-11 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5491] FSR 10-Q 2020-05-08 | Item
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5462] GOEV 10-Q 2020-11-12 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5439] WKHS 10-K 2023 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5394] GOEV 10-Q 2019-11-08 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.0] FSR 10-Q 2018-11-09 | Item 6. | Exhibits. |  | 19
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2019-05-09 | Item
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2019-08-13 | Item 2. Management’s Discussion
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2019-11-12 | Item
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2020-05-08 | Item 6. | Exhibits |  | 19
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: For the company that ultimately entered liquidation, what risks or uncertainties had it previously disclosed regarding its ability to sustain operations, and how did those relate to its eventual outcome?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 319.5, 'search_ms': 17.0, 'traverse_ms': 0, 'llm_ms': 5956.8, 'total_ms': 6293.4}
+
+ANSWER:
+- Candidate entities: GOEV, NKLA, FSR, RIVN, WKHS
+- Selected entity: GOEV
+- Supporting facts (from passages):
+  - GOEV disclosed that it had a limited timeframe (18 months) to complete its initial Business Combination following its Public Offering, with a deadline that was initially set for September 5, 2020, and potentially extendable to December 31, 2020 if approved by stockholders (Passage [1], [5]).
+  - It mentioned that if it failed to complete the Business Combination within this timeframe, it would be required to cease operations, redeem public shares, and liquidate its assets, which would effectively lead to mandatory liquidation (Passage [1], [10]).
+  - The company acknowledged that it had negative working capital and significant liabilities, raising doubts about its ability to continue as a going concern (Passage [1], [5]). Specifically, it noted that the mandatory liquidation raised substantial doubt about their ability to continue operations, which aligns with the risk factors disclosed (Passage [1], [5]).
+  - There were insinuations of needing additional financing to meet operational needs before completing the Business Combination, implying uncertainty about funding and the company's future viability (Passage [1], [2], [10]).
+  
+Final Answer: GOEV faced significant risks and uncertainties regarding its ability to sustain operations, centered around its 18-month deadline to complete a Business Combination, negative working capital, and substantial doubt about continuing as a going concern, which ultimately led to its liquidation.
+
+PATHS:
+  [0.7839] GOEV 10-Q 2020-08-07 | Item 1. FINANCIAL STATEMENTS
+            -> GOEV_10Q_2020-08-07__1__Item_1_FINANCIAL_STATEMENTS__chunk_11
+  [0.7839] NKLA 10-Q 2020-05-11 | Item 1. Interim Financial Statements
+            -> NKLA_10Q_2020-05-11__1__Item_1_Interim_Financial_Statements__chunk_34
+  [0.7832] RIVN 10-K 2025 | Item 8. Financial Statements and Supplementary Data
+            -> RIVN_10K_2025__8__Item_8_Financial_Statements_and_Supplementary_Data__chunk_55
+  [0.7824] FSR 10-Q 2019-11-12 | Item
+            -> FSR_10Q_2019-11-12__2__Item__chunk_2
+  [0.7803] GOEV 10-Q 2020-05-06 | Item 1. FINANCIAL STATEMENTS
+            -> GOEV_10Q_2020-05-06__1__Item_1_FINANCIAL_STATEMENTS__chunk_9
+  [0.7784] RIVN 10-Q 2022-05-11 | Item 1. Legal Proceedings
+            -> RIVN_10Q_2022-05-11__4__Item_1_Legal_Proceedings__chunk_1
+  [0.7749] FSR 10-Q 2020-05-08 | Item
+            -> FSR_10Q_2020-05-08__2__Item__chunk_2
+  [0.7725] WKHS 10-K 2023 | Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> WKHS_10K_2023__7__Item_7_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_10
+  [0.7718] NKLA 8-K 2025-02-19 | Item 2.06            Material Impairment.
+            -> NKLA_8K_2025-02-19__2__Item_2_06_Material_Impairment__chunk_0
+  [0.7705] GOEV 10-Q 2019-11-08 | Item 1. FINANCIAL STATEMENTS
+            -> GOEV_10Q_2019-11-08__1__Item_1_FINANCIAL_STATEMENTS__chunk_10
+
+=================================================================
+Q: Which company experienced regulatory disruption in one of its business units and subsequently recorded significant financial charges related to that unit, and what were those charges?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [453, 415, 1053, 1264]
+Latency:  {'embed_ms': 167.1, 'search_ms': 10968.8, 'traverse_ms': 22.8, 'llm_ms': 6942.0, 'total_ms': 18100.8}
+
+ANSWER:
+- Candidate entities: Lucid Group, Inc. (LCID), General Motors (GM)
+- Selected entity: Lucid Group, Inc. (LCID)
+- Supporting facts (combined across passages):
+  - Lucid Group, Inc. announced a restructuring plan on March 28, 2023, aimed at reducing operating expenses through a reduction in workforce.
+  - As part of this restructuring plan, the company recorded total restructuring charges of approximately $24 million, with specific charges of $22.5 million recorded for the three months ended March 31, 2023. These charges were primarily related to severance payments, employee benefits, employee transition, and stock-based compensation.
+  - Further restructuring charges of $1.5 million were recorded during the three months ended June 30, 2023, and total restructuring charges for the six months ended June 30, 2023, amounted to $24 million, reflecting the continuation of efforts from the initial restructuring plan.
+
+Final Answer: Lucid Group, Inc. experienced regulatory disruption in one of its business units resulting in restructuring charges totaling approximately $24 million for the first half of 2023, primarily for severance payments, employee benefits, employee transition, and stock-based compensation.
+
+PATHS:
+  [0.5478] LCID 10-Q 2024-11-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5421] GM 10-Q 2020-11-05 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5379] GM 10-Q 2021-08-04 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5368] LCID 10-Q 2023-05-08 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5365] LCID 10-Q 2023-08-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5295] GM 10-Q 2021-10-27 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5282] LCID 10-Q 2023-05-08 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5279] GM 10-Q 2021-08-04 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5262] LCID 10-Q 2023-08-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.526] LCID 10-Q 2023-11-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.0] GM 10-K 2022 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-K 2023 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-K 2024 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-K 2025 | Item 8.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-Q 2021-05-05 | Item 1. Condensed Consolidated Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+
+=================================================================
+Q: Which company experienced regulatory disruption in one of its business units and subsequently recorded significant financial charges related to that unit, and what were those charges?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 177.3, 'search_ms': 22.7, 'traverse_ms': 0, 'llm_ms': 4071.5, 'total_ms': 4271.5}
+
+ANSWER:
+- Candidate entities: GM (General Motors), LCID (Lucid Motors)
+- Selected entity: LCID (Lucid Motors)
+- Supporting facts (from passages):
+  - LCID announced a restructuring plan on March 28, 2023, aimed at reducing operating expenses through workforce reduction and expects to substantially complete this plan by the end of the second quarter of 2023.
+  - As a result of this restructuring plan, LCID recorded total restructuring charges of approximately $24 million, with $22.5 million specifically related to severance payments, employee benefits, and stock-based compensation for the three months ended March 31, 2023. Additionally, during the three and nine months ended September 30, 2023, the company recorded charges of $0.5 million and $24.5 million, respectively, related to similar costs.
+
+Final Answer: Lucid Motors (LCID) recorded restructuring charges of approximately $24 million related to severance payments, employee benefits, and stock-based compensation.
+
+PATHS:
+  [0.771] GM 10-Q 2020-11-05 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2020-11-05__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_67
+  [0.7686] LCID 10-Q 2023-05-08 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-05-08__2__Item_1_Financial_Statements__chunk_10
+  [0.7684] GM 10-Q 2021-08-04 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2021-08-04__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_57
+  [0.7683] LCID 10-Q 2023-08-07 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-08-07__2__Item_1_Financial_Statements__chunk_16
+  [0.7661] GM 10-Q 2021-10-27 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2021-10-27__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_66
+  [0.765] GM 10-Q 2021-08-04 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2021-08-04__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_63
+  [0.7638] LCID 10-Q 2023-05-08 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-05-08__2__Item_1_Financial_Statements__chunk_11
+  [0.7633] LCID 10-Q 2023-11-07 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-11-07__2__Item_1_Financial_Statements__chunk_17
+  [0.7633] LCID 10-Q 2023-08-07 | Item 1. Financial Statements.
+            -> LCID_10Q_2023-08-07__2__Item_1_Financial_Statements__chunk_17
+  [0.7598] GM 10-Q 2025-10-21 | Item 1. Condensed Consolidated Financial Statements
+            -> GM_10Q_2025-10-21__1__Item_1_Condensed_Consolidated_Financial_Statements__chunk_51
+
+=================================================================
+Q: Which commercial vehicle manufacturer later entered bankruptcy proceedings, and what language did it use in its most recent annual report to describe uncertainties about its future operations?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [3037, 2889, 2826, 2453, 415, 2490]
+Latency:  {'embed_ms': 202.2, 'search_ms': 2299.3, 'traverse_ms': 6.4, 'llm_ms': 12966.0, 'total_ms': 15473.9}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages):
+    - Nikola Corporation filed for Chapter 11 bankruptcy on February 19, 2025, leading to the cessation of its business operations and the sale of substantially all its assets (sources [1], [5], [13], [14]).
+    - The company's common stock was suspended from trading on Nasdaq, and a Plan of Liquidation was confirmed by the Bankruptcy Court, resulting in the cancellation of all equity interests without any distribution to shareholders (sources [1], [5], [8], [13]).
+    - In its annual report, Nikola expressed uncertainties about its future operations, describing significant risks, including its pending bankruptcy, ability to continue as a going concern, and the need for substantial additional capital for operation (sources [9], [12], [13]).
+
+Final Answer: Nikola Corporation entered bankruptcy proceedings on February 19, 2025. In its most recent annual report, it described uncertainties about future operations related to ongoing bankruptcy proceedings, the need for substantial capital, and concerns about its ability to continue as a going concern.
+
+PATHS:
+  [0.5735] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5723] NKLA 10-K 2024 | Item 4.  Mine Safety Disclosures
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5644] NKLA 10-K 2024 | Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5337] WKHS 10-K 2024 | Item 1. BUSINESS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5281] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5279] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5271] WKHS 10-K 2024 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5265] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5241] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5207] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.0] NKLA 10-K 2022 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.0] NKLA 10-K 2023 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.0] NKLA 10-K 2024 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.0] NKLA 8-K 2025-02-19 | Item 1.03            Bankruptcy or Receivership.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.0] NKLA 8-K 2025-02-19 | Item 7.01            Regulation FD Disclosure.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+
+=================================================================
+Q: Which commercial vehicle manufacturer later entered bankruptcy proceedings, and what language did it use in its most recent annual report to describe uncertainties about its future operations?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 165.8, 'search_ms': 22.9, 'traverse_ms': 0, 'llm_ms': 3203.5, 'total_ms': 3392.3}
+
+ANSWER:
+- Candidate entities: Nikola Corporation
+- Selected entity: Nikola Corporation
+- Supporting facts (from passages): Nikola Corporation has entered bankruptcy proceedings as indicated by details regarding their bankruptcy court ruling and the cessation of business operations, including the manufacture and sale of trucks (Passages [1], [2], [3], [8]). The company has described its future operations in its annual report using language like "forward-looking statements" that encompass various uncertainties regarding their business model, expectations, capital needs, and competitive position (Passages [1], [8], [9]). Additionally, it discusses their potential inability to achieve profitable operations and the risks associated with their performance predictions and operational sustainability.
+
+Final Answer: Nikola Corporation entered bankruptcy proceedings and used language about "forward-looking statements" to describe uncertainties about its future operations in its most recent annual report.
+
+PATHS:
+  [0.7871] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_2
+  [0.7862] NKLA 10-K 2024 | Item 4.  Mine Safety Disclosures
+            -> NKLA_10K_2024__5__Item_4_Mine_Safety_Disclosures__chunk_0
+  [0.783] NKLA 10-K 2024 | Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections
+            -> NKLA_10K_2024__12__Item_9C_Disclosure_Regarding_Foreign_Jurisdictions__chunk_0
+  [0.7667] WKHS 10-K 2024 | Item 1. BUSINESS
+            -> WKHS_10K_2024__1__Item_1_BUSINESS__chunk_4
+  [0.7647] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_4
+  [0.7644] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2023__2__Item_1A_RISK_FACTORS__chunk_3
+  [0.7642] WKHS 10-K 2024 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2024__2__Item_1A_RISK_FACTORS__chunk_3
+  [0.7636] NKLA 10-K 2024 | Item 16. Form 10-K Summary | 107
+            -> NKLA_10K_2024__0__Item_16_Form_10_K_Summary_107__chunk_3
+  [0.7627] NKLA 10-K 2024 | Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+            -> NKLA_10K_2024__7__Item_7_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7604] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2023__2__Item_1A_RISK_FACTORS__chunk_2
+
+=================================================================
+Q: Which company disclosed both risks related to supply chain constraints and labor-related disruptions, and how were those risks expected to affect its operations?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [311, 1013, 3037, 1053, 2604, 1168]
+Latency:  {'embed_ms': 338.8, 'search_ms': 8628.8, 'traverse_ms': 12.8, 'llm_ms': 11694.5, 'total_ms': 20675.0}
+
+ANSWER:
+- Candidate entities: WKHS, Ford, Rivian, Tesla, GM, FSR
+- Selected entity: Ford
+
+- Supporting facts (combined across passages):
+Ford's 2025 10-K filing outlines several risks related to supply chain constraints and labor disruptions. The company emphasizes its dependence on a complex supply chain for key components, stating that disruptions—whether from supplier issues, geopolitical factors, or labor shortages—could significantly impact production schedules and financial performance. Workforce-related risks are also highlighted, indicating that labor disputes, health crises, or workforce shortages could disrupt production operations and thus negatively affect the company's overall financial health. Additionally, Ford mentions the potential for increased operational costs and the challenges of managing a production schedule amid these disruptions. Past experiences, including those during the COVID-19 pandemic, have shown that such disruptions can lead to significant financial repercussions and hinder the company's ability to deliver products to consumers. Overall, Ford’s operations and financial wellbeing are at risk due to these intertwined supply chain and labor factors.
+
+PATHS:
+  [0.6155] WKHS 10-Q 2020-11-09 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5968] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5852] RIVN 10-Q 2023-05-09 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5839] TSLA 10-Q 2021-07-27 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5664] RIVN 10-Q 2023-05-09 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5622] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5614] FSR 10-Q 2022-05-09 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5604] GM 10-K 2022 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5592] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5588] FSR 10-K 2022 | Item 1A.    Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 16. | Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2023 | Item 16. | Form 10-K Summary | 121
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2023 | Item 1A.    Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2020-05-08 | Item
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-Q 2020-10-28 | Item 1A. | Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which company disclosed both risks related to supply chain constraints and labor-related disruptions, and how were those risks expected to affect its operations?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 555.3, 'search_ms': 18.3, 'traverse_ms': 0, 'llm_ms': 5361.3, 'total_ms': 5934.9}
+
+ANSWER:
+- Candidate entities: WKHS, Ford (F), Tesla (TSLA), Rivian (RIVN), General Motors (GM)
+- Selected entity: Ford (F)
+- Supporting facts (from passages):
+  - Passage [6] mentions that Ford's production and their suppliers' production could be disrupted by labor issues, public health issues, natural disasters, or other factors. It highlights risks from labor shortages, disputes under collective bargaining agreements, absenteeism, and the potential for significant disruptions to operations, which can adversely affect financial condition and results.
+  - Additionally, Ford indicates a reliance on single-source suppliers, noting that any interruption in those suppliers' operations can impact production and financial outcomes.
+  - The company has highlighted risks related to health epidemics, specifically the COVID-19 pandemic, which has disrupted manufacturing, delivery, and the overall supply chain, impacting vehicle sales.
+  - Passage [9] reiterates that Ford's supply and distribution chains might be disrupted by labor or supplier issues, which in turn can lead to prolonged operational disruptions and cost increases. 
+
+Thus, Ford has disclosed both risks related to supply chain constraints and labor-related disruptions, which are expected to materially affect its operations and financial conditions. 
+
+Final Answer: Ford (F)
+
+PATHS:
+  [0.8079] WKHS 10-Q 2020-11-09 | Item 1A. RISK FACTORS
+            -> WKHS_10Q_2020-11-09__7__Item_1A_RISK_FACTORS__chunk_0
+  [0.7986] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2025__2__Item_1A_Risk_Factors_Continued__chunk_1
+  [0.7917] TSLA 10-Q 2021-07-27 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> TSLA_10Q_2021-07-27__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_4
+  [0.7917] RIVN 10-Q 2023-05-09 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-05-09__5__Item_1A_Risk_Factors__chunk_21
+  [0.7827] RIVN 10-Q 2023-05-09 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-05-09__5__Item_1A_Risk_Factors__chunk_42
+  [0.7812] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2025__3__Item_1A_Risk_Factors_Continued__chunk_0
+  [0.7811] FSR 10-Q 2022-05-09 | Item 1A. Risk Factors
+            -> FSR_10Q_2022-05-09__6__Item_1A_Risk_Factors__chunk_0
+  [0.7808] GM 10-K 2022 | Item 1A. Risk Factors
+            -> GM_10K_2022__2__Item_1A_Risk_Factors__chunk_6
+  [0.7798] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2023__19__Item_1A_Risk_Factors_Continued__chunk_1
+  [0.7794] F 10-Q 2025-05-06 | Item 1A. Risk Factors.
+            -> F_10Q_2025-05-06__63__Item_1A_Risk_Factors__chunk_0
+
+=================================================================
+Q: Which company warned that failure to secure additional financing could force it to reduce or cease operations, and which of those companies actually followed through on that outcome?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [3004, 1168, 2674, 3037, 2310, 3304]
+Latency:  {'embed_ms': 176.2, 'search_ms': 6777.7, 'traverse_ms': 10.5, 'llm_ms': 10877.6, 'total_ms': 17842.1}
+
+ANSWER:
+- Candidate entities: GOEV (Canoo), WKHS (Workhorse Group Inc.), FSR (Fisker Inc.)
+- Selected entity: WKHS (Workhorse Group Inc.)
+- Supporting facts (combined across passages):
+  - WKHS expressed substantial doubt about its ability to continue as a going concern due to significant net losses and liquidity challenges. They indicated that if they are unable to secure additional financing, they would need to significantly modify or terminate their operations. Specifically, their filings highlighted ongoing negotiations for potential financing to meet immediate liquidity needs, but there was no assurance of success, indicating a critical need for funds to sustain operations.
+  - In its financial reports, WKHS mentioned substantial operating losses and negative cash flows, underlining the necessity for additional capital to avoid potentially adjusting operations, which could lead to cessation of business if adequate financing could not be secured.
+  - As of September 30, 2024, WKHS stated that substantial doubt exists about its ability to continue as a going concern for at least one year from the date of issuance of its financial statements. The necessity to raise capital and the consequences of failing to do so were emphasized, which may potentially lead to filing for bankruptcy protection if conditions do not improve.
+
+Final Answer: Workhorse Group Inc. (WKHS) warned about the potential reduction or cessation of operations due to insufficient financing, and they indicated significant challenges that could lead to this outcome if additional capital is not secured.
+
+PATHS:
+  [0.5404] GOEV 8-K 2024-12-20 | Item 8.01. | Other Events.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5306] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5304] WKHS 10-Q 2024-05-20 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5303] WKHS 10-Q 2024-11-19 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5227] GOEV 10-Q 2023-08-14 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5218] FSR 10-K 2023 | Item 8.    Financial Statements and Supplementary Data.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.5205] GOEV 10-Q 2024-11-14 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GOEV
+  [0.5185] TSLA 10-Q 2021-10-25 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5156] WKHS 10-Q 2024-11-19 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> WKHS
+  [0.5142] FSR 8-K 2024-05-08 | Item 1.01    Entry into a Material Definitive Agreement
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 16. | Form 10-K Summary | 107
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 15.    Exhibit and Financial Statement Schedules.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 16.    Form 10-K Summary
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2022 | Item 8.    Financial Statements and Supplementary Data.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+  [0.0] FSR 10-K 2023 | Item 16. | Form 10-K Summary | 121
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> FSR
+
+=================================================================
+Q: Which company warned that failure to secure additional financing could force it to reduce or cease operations, and which of those companies actually followed through on that outcome?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 150.1, 'search_ms': 15.4, 'traverse_ms': 0, 'llm_ms': 4219.0, 'total_ms': 4384.5}
+
+ANSWER:
+- **Candidate entities:** GOEV, WKHS
+- **Selected entity:** WKHS
+- **Supporting facts (from passages):** 
+   - WKHS has expressed substantial doubt about its ability to continue as a going concern, citing significant net losses and a capital-intensive business model. It indicated that failure to secure additional financing could force it to reduce or cease operations (Passage 2). 
+   - WKHS disclosed that it has incurred substantial operating losses and is currently negotiating financing to meet liquidity needs, emphasizing that without additional funding, they would need to significantly modify or terminate operations (Passage 3).
+   - Additionally, WKHS mentioned that without sufficient funding, its financial conditions could result in involuntary bankruptcy proceedings (Passage 10). 
+   - Although specific actions related to the ceasing of operations were not stated, the likelihood of such an outcome was indicated, confirming that they are in a critical situation regarding financing and sustaining operations.
+
+Thus, WKHS warned about the potential cessation of operations due to financing issues and has clearly articulated conditions that could lead to that eventuality.
+
+PATHS:
+  [0.7698] GOEV 8-K 2024-12-20 | Item 8.01. | Other Events.
+            -> GOEV_8K_2024-12-20__1__Item_8_01_Other_Events__chunk_0
+  [0.7658] WKHS 10-K 2023 | Item 1A. RISK FACTORS
+            -> WKHS_10K_2023__2__Item_1A_RISK_FACTORS__chunk_0
+  [0.7651] WKHS 10-Q 2024-11-19 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> WKHS_10Q_2024-11-19__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_8
+  [0.765] WKHS 10-Q 2024-05-20 | Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+            -> WKHS_10Q_2024-05-20__3__Item_2_MANAGEMENT_S_DISCUSSION_AND_ANALYSIS_OF_FIN__chunk_6
+  [0.7608] FSR 10-K 2023 | Item 8.    Financial Statements and Supplementary Data.
+            -> FSR_10K_2023__9__Item_8_Financial_Statements_and_Supplementary_Data__chunk_61
+  [0.7607] GOEV 10-Q 2024-11-14 | Item 1A. Risk Factors
+            -> GOEV_10Q_2024-11-14__7__Item_1A_Risk_Factors__chunk_1
+  [0.7606] GOEV 10-Q 2023-08-14 | Item 1A. Risk Factors
+            -> GOEV_10Q_2023-08-14__6__Item_1A_Risk_Factors__chunk_2
+  [0.759] TSLA 10-Q 2021-10-25 | Item 1A. RISK FACTORS
+            -> TSLA_10Q_2021-10-25__7__Item_1A_RISK_FACTORS__chunk_11
+  [0.7579] WKHS 10-K 2024 | Item 1. BUSINESS
+            -> WKHS_10K_2024__1__Item_1_BUSINESS__chunk_1
+  [0.7575] WKHS 10-Q 2024-11-19 | Item 1. FINANCIAL STATEMENTS
+            -> WKHS_10Q_2024-11-19__2__Item_1_FINANCIAL_STATEMENTS__chunk_8
+
+=================================================================
+Q: Which company disclosed both regulatory or legal scrutiny of its business practices and later expressed substantial doubt about its ability to continue operating?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1013, 3037, 2826, 968, 2247, 453]
+Latency:  {'embed_ms': 198.8, 'search_ms': 12645.0, 'traverse_ms': 20.9, 'llm_ms': 16241.1, 'total_ms': 29105.8}
+
+ANSWER:
+- Candidate entities: Rivian Automotive, Inc. (RIVN), Nikola Corporation (NKLA)
+- Selected entity: Nikola Corporation (NKLA)
+- Supporting facts (combined across passages):
+  - Nikola Corporation has faced substantial regulatory scrutiny, particularly following allegations stated in a report by Hindenburg Research. This led to an internal review and an ongoing investigation by the U.S. Securities and Exchange Commission (SEC), where multiple subpoenas were issued as part of inquiries into the company's business practices. 
+  - Nikola expressed serious concerns regarding the potential outcomes of these investigations, which could materially affect its operations and financial condition. The company acknowledged a risk of administrative, civil, or criminal proceedings that could lead to fines, business practice changes, or even impact financing.
+  - Furthermore, Nikola has experienced significant financial losses, with substantial net losses reported in its financial filings, and has conveyed doubts about its ability to achieve profitability in the foreseeable future, which adds to the concern regarding its viability as a continuing entity.
+  
+Thus, Nikola Corporation has disclosed both legal scrutiny of its business practices and indicated substantial doubt about its ability to continue operating. 
+
+Final Answer: Nikola Corporation (NKLA)
+
+PATHS:
+  [0.5366] GM 10-Q 2022-10-25 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.5337] RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5267] NKLA 10-Q 2021-05-07 | Item 1. Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5248] RIVN 10-Q 2022-05-11 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5238] NKLA 10-Q 2021-08-03 | Item 1. Financial Statements
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5194] RIVN 10-K 2025 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5193] RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.5162] TSLA 10-Q 2021-04-28 | Item 1. LEGAL PROCEEDINGS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5159] LCID 10-Q 2021-11-15 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5157] RIVN 10-Q 2022-08-11 | Item 1A. Risk Factors
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> RIVN
+  [0.0] GM 10-K 2022 | Item 3. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-Q 2020-11-05 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-Q 2021-05-05 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-Q 2021-08-04 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+  [0.0] GM 10-Q 2021-10-27 | Item 1. Legal Proceedings
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> GM
+
+=================================================================
+Q: Which company disclosed both regulatory or legal scrutiny of its business practices and later expressed substantial doubt about its ability to continue operating?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 184.2, 'search_ms': 23.2, 'traverse_ms': 0, 'llm_ms': 3786.7, 'total_ms': 3994.2}
+
+ANSWER:
+- Candidate entities: Rivian Automotive, Inc. (RIVN) and Nikola Corporation (NKLA).
+- Selected entity: Nikola Corporation (NKLA).
+- Supporting facts (from passages):
+  - Nikola Corporation has disclosed substantial legal scrutiny by the U.S. Securities and Exchange Commission (SEC) regarding aspects of its business practices, which began after a report by Hindenburg Research in September 2020 that alleged various issues with the company's operations (Passages 4 and 5).
+  - The SEC and other investigative bodies have issued subpoenas to Nikola and its officers, indicating serious regulatory scrutiny. This has included inquiries related to the company's business practices and projections of cash flow (Passages 4 and 5).
+  - Nikola has also expressed substantial doubt about its ability to continue operating, indicated by its admission of having incurred significant losses and uncertainty regarding future profitability (Passages 4 and 5). 
+
+Final Answer: Nikola Corporation (NKLA).
+
+PATHS:
+  [0.7689] GM 10-Q 2022-10-25 | Item 1. Legal Proceedings
+            -> GM_10Q_2022-10-25__5__Item_1_Legal_Proceedings__chunk_0
+  [0.7668] RIVN 10-Q 2024-08-06 | Item 1A. Risk Factors
+            -> RIVN_10Q_2024-08-06__5__Item_1A_Risk_Factors__chunk_37
+  [0.7643] F 10-Q 2021-10-28 | Item 1. Legal Proceedings.
+            -> F_10Q_2021-10-28__69__Item_1_Legal_Proceedings__chunk_0
+  [0.7631] NKLA 10-Q 2021-05-07 | Item 1. Financial Statements
+            -> NKLA_10Q_2021-05-07__2__Item_1_Financial_Statements__chunk_21
+  [0.7626] NKLA 10-Q 2021-08-03 | Item 1. Financial Statements
+            -> NKLA_10Q_2021-08-03__2__Item_1_Financial_Statements__chunk_30
+  [0.7621] RIVN 10-Q 2022-05-11 | Item 1. Legal Proceedings
+            -> RIVN_10Q_2022-05-11__4__Item_1_Legal_Proceedings__chunk_1
+  [0.7601] RIVN 10-K 2025 | Item 1A. Risk Factors
+            -> RIVN_10K_2025__1__Item_1A_Risk_Factors__chunk_41
+  [0.76] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2025__13__Item_1A_Risk_Factors_Continued__chunk_0
+  [0.7597] TSLA 10-Q 2021-04-28 | Item 1. LEGAL PROCEEDINGS
+            -> TSLA_10Q_2021-04-28__6__Item_1_LEGAL_PROCEEDINGS__chunk_0
+  [0.7596] RIVN 10-Q 2023-11-07 | Item 1A. Risk Factors
+            -> RIVN_10Q_2023-11-07__5__Item_1A_Risk_Factors__chunk_34
+
+=================================================================
+Q: Which company experienced severe financial distress leading to restructuring or liquidation, but was not the one whose challenges were primarily tied to regulatory action in autonomous driving, and what factors drove its distress?
+Mode:     graph_rag
+Tickers:  []
+Clusters: [1053, 453, 311, 1618, 2826, 1253]
+Latency:  {'embed_ms': 179.0, 'search_ms': 11690.7, 'traverse_ms': 23.3, 'llm_ms': 11009.2, 'total_ms': 22902.2}
+
+ANSWER:
+- Candidate entities: Tesla, Ford, Nikola, Lucid Motors
+- Selected entity: Nikola Corporation
+- Supporting facts (combined across passages):
+  1. Nikola Corporation has reported substantial net losses of approximately $966.3 million for 2023 and an accumulated deficit of around $3.6 billion, raising doubts about its ability to continue as a going concern without additional capital (Passage 4).
+  2. The company is actively seeking further financing to sustain operations and fund ongoing projects, indicating financial distress (Passage 4).
+  3. In March 2023, Nikola announced a restructuring plan aimed at reducing operating expenses through workforce reductions (Passage 9).
+  4. The need for substantial capital to support growth, ongoing operational challenges, and customer cancellations of vehicle reservations are additional factors contributing to Nikola's distress (Passage 7).
+
+Final Answer: Nikola Corporation experienced severe financial distress leading to restructuring, driven by substantial losses, an accumulated deficit, the necessity for additional financing, operational challenges, and customer cancellations.
+
+PATHS:
+  [0.5238] TSLA 10-Q 2023-04-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5209] F 10-K 2025 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5191] TSLA 10-Q 2023-07-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5153] NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> NKLA
+  [0.5131] F 10-K 2024 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5104] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.5085] LCID 10-Q 2023-08-07 | Item 1A. Risk Factors.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5082] TSLA 10-Q 2024-10-24 | Item 1. FINANCIAL STATEMENTS
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> TSLA
+  [0.5081] LCID 10-Q 2023-11-07 | Item 1. Financial Statements.
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> LCID
+  [0.5081] F 10-Q 2022-10-27 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+  [0.0] F 10-K 2022 | Item 1A. Risk Factors (Continued)
+           HAS_SHADOW -> HAS_SECTION -> HAS_DOCUMENT -> F
+
+=================================================================
+Q: Which company experienced severe financial distress leading to restructuring or liquidation, but was not the one whose challenges were primarily tied to regulatory action in autonomous driving, and what factors drove its distress?
+Mode:     rag
+Tickers:  []
+Clusters: None
+Latency:  {'embed_ms': 279.3, 'search_ms': 16.5, 'traverse_ms': 0, 'llm_ms': 2755.2, 'total_ms': 3051.0}
+
+ANSWER:
+- Candidate entities: Tesla, Ford, Nikola, Lucid
+- Selected entity: Ford
+- Supporting facts (from passages): Ford faced a significant financial distress related to their autonomous vehicle investments, particularly with the impairment of their investment in Argo AI, leading to a $2.7 billion pre-tax impairment. This decision to exit their partnership with Argo AI and the inability of the company to attract new investors indicated substantial operational and financial hurdles. Furthermore, ongoing regulatory scrutiny regarding emissions and autonomous driving technologies adds to the pressures on Ford’s financial health, although their challenges are not exclusively tied to regulatory actions in autonomous driving but also to strategic missteps and market conditions.
+
+PATHS:
+  [0.7621] TSLA 10-Q 2023-04-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2023-04-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_36
+  [0.7597] TSLA 10-Q 2023-07-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2023-07-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_44
+  [0.7579] NKLA 10-Q 2024-10-31 | Item 1A. RISK FACTORS
+            -> NKLA_10Q_2024-10-31__7__Item_1A_RISK_FACTORS__chunk_20
+  [0.7562] F 10-K 2024 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2024__29__Item_1A_Risk_Factors_Continued__chunk_0
+  [0.7553] F 10-K 2023 | Item 1A. Risk Factors (Continued)
+            -> F_10K_2023__28__Item_1A_Risk_Factors_Continued__chunk_0
+  [0.7543] TSLA 10-Q 2024-10-24 | Item 1. FINANCIAL STATEMENTS
+            -> TSLA_10Q_2024-10-24__2__Item_1_FINANCIAL_STATEMENTS__chunk_33
+  [0.7543] F 10-Q 2022-10-27 | Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+            -> F_10Q_2022-10-27__43__Item_2_Management_s_Discussion_and_Analysis_of_Fin__chunk_0
+  [0.7541] LCID 10-Q 2023-08-07 | Item 1A. Risk Factors.
+            -> LCID_10Q_2023-08-07__7__Item_1A_Risk_Factors__chunk_37
+  [0.7538] F 10-K 2024 | Item 3. Legal Proceedings (Continued)
+            -> F_10K_2024__37__Item_3_Legal_Proceedings_Continued__chunk_0
+  [0.7536] LCID 10-K 2022 | Item 1A. Risk Factors.
+            -> LCID_10K_2022__2__Item_1A_Risk_Factors__chunk_36
+

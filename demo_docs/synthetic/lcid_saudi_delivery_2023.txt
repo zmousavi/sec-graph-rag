@@ -1,0 +1,40 @@
+Lucid Group, Inc. — Middle East Operations and Sovereign Partnership Update
+Regional Market Report — Q3 2023
+
+Introduction
+
+Lucid Group's Middle East operations represent a strategically significant component of the company's global commercialization strategy. The region offers a combination of favorable regulatory conditions for EV adoption, high-income consumer demographics aligned with Lucid's premium positioning, and a committed institutional anchor customer in the Public Investment Fund of Saudi Arabia. This report summarizes Lucid's Middle East operational performance for Q3 2023, with particular focus on vehicle deliveries, manufacturing facility development in King Abdullah Economic City, and the status of the binding PIF purchase agreement.
+
+Saudi Arabia Market Context
+
+Saudi Arabia has committed to significant electric vehicle adoption targets as part of its Vision 2030 economic diversification initiative, with a stated goal of achieving 30% EV penetration in new vehicle sales by 2030. The country's combination of high per-capita income, low domestic fuel prices (which reduce EV operating cost advantage), and extreme heat climate conditions that stress EV battery thermal management systems creates a distinctive product requirement environment.
+
+Lucid's Air sedan, with its class-leading efficiency of approximately 4.5 miles per kilowatt-hour and advanced thermal management architecture, is well-positioned for the Saudi climate. The vehicle's 516-mile EPA-rated range provides a meaningful buffer against the range degradation experienced in extreme heat conditions.
+
+Public Investment Fund Binding Purchase Agreement
+
+In May 2021, Lucid entered into a binding purchase agreement with the Public Investment Fund of Saudi Arabia for the supply of between 50,000 and 100,000 Lucid Air vehicles over a 10-year period. The agreement includes both government fleet vehicles for use by Saudi ministries and agencies and consumer-facing vehicles for sale through Lucid's Saudi retail network. Pricing terms under the agreement are not publicly disclosed, though the vehicles are understood to be supplied at pricing consistent with Lucid's standard retail pricing structure with volume-based adjustments.
+
+The PIF is also Lucid's largest shareholder, holding approximately 60% of outstanding shares as of Q3 2023, making the customer relationship inseparable from Lucid's capital structure and governance. The PIF's dual role as investor and customer has been a source of both stability and scrutiny, with some institutional investors expressing concern about related-party dynamics in the commercial arrangement.
+
+Q3 2023 Vehicle Deliveries — Middle East
+
+Lucid delivered 847 vehicles to the Public Investment Fund of Saudi Arabia in Q3 2023 under the binding purchase agreement for up to 100,000 units, representing the largest single-quarter delivery volume to the PIF since the commencement of commercial deliveries in Q2 2022. The Q3 deliveries included a mix of Air Pure, Air Touring, and Air Grand Touring configurations, with the majority allocated to government fleet use. Cumulative deliveries to the PIF through Q3 2023 reached approximately 2,100 vehicles, representing approximately 4% of the lower bound of the purchase commitment volume. Lucid's Middle East delivery operations are managed through a distribution hub in Jeddah, with customer delivery centers in Riyadh, Jeddah, and Dubai.
+
+In addition to PIF fleet vehicles, Lucid recorded 143 consumer retail deliveries in Saudi Arabia and the UAE in Q3 2023, bringing total regional retail volume to approximately 380 units year-to-date. Consumer demand has been supported by Saudi government EV incentive programs including VAT exemptions and registration fee waivers for battery electric vehicles.
+
+AMP-2 Manufacturing Facility — King Abdullah Economic City
+
+Lucid's Advanced Manufacturing Plant 2, under construction in King Abdullah Economic City on the Red Sea coast, is intended to serve as the primary manufacturing base for Lucid's Middle East and export vehicle production once operational. AMP-2 is designed for an initial capacity of 5,000 vehicles annually, expandable to 150,000 vehicles with future investment.
+
+As of Q3 2023, AMP-2 construction is approximately 40% complete, with structural steel erection for the main assembly building underway. Lucid has indicated that AMP-2 will commence limited production of the Lucid Air in 2025, with production of the Gravity SUV to follow. The facility will initially serve as a right-hand-drive vehicle assembly point for regional markets before scaling to full manufacturing capability.
+
+Regional Dealer Network Expansion
+
+Lucid operates seven retail and service locations across Saudi Arabia and the UAE as of Q3 2023, with plans to open an additional four locations in Qatar, Kuwait, and Bahrain by the end of 2024. The regional service network has been a focus of customer satisfaction improvement efforts following initial delivery issues related to software integration in vehicles configured for Middle East market specifications.
+
+The company has established a regional parts distribution center in Dubai to support service operations across the Gulf Cooperation Council, reducing parts logistics lead times from the Lucid AMP-1 facility in Casa Grande, Arizona.
+
+Financial Contribution and Outlook
+
+Middle East revenue represented approximately 23% of Lucid's total revenue in Q3 2023, reflecting the significance of the PIF relationship to Lucid's near-term financial performance. Management has guided that Middle East deliveries will remain a key driver of vehicle volume through 2025, with PIF annual purchase volume expectations of 2,000 to 4,000 units through the period. The ramp of AMP-2 production from 2025 onward is expected to reduce per-vehicle logistics costs for Middle East customers and support margin improvement in the region.

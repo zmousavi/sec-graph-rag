@@ -1,0 +1,502 @@
+
+
+
+
+
+
+
+Purpose
+This document defines the Data Foundations and Structural Ingestion layer. It bridges the gap between raw financial documents and the multi-layered Neo4j graph required for local and global reasoning.
+
+1. Data Acquisition Strategy (What & Where)
+To enable "Cross-Document Intelligence," the system requires overlapping datasets from competing entities.
+Target Entities
+Configured in config.yaml (not hardcoded). Add new companies there — no code changes needed.
+Current: Tesla (TSLA), Ford (F)
+Required Document Types
+SEC Filings (The Ground Truth):
+Source: SEC EDGAR.
+Documents: 10-K (Annual) and 10-Q (Quarterly) for 2022, 2023, and 2024.
+Format: HTML (Essential for parsing internal section headers).
+Earnings Transcripts (The Human Layer):
+Source: Company Investor Relations pages or Seeking Alpha.
+Documents: Full transcripts for the last 4 fiscal quarters.
+Market Intelligence (The External Layer):
+Source: Yahoo Finance / Morningstar.
+Documents: Top 5 news articles per company from the last 6 months.
+
+2. Ingestion & Pre-Processing (Cleaning & Exploding)
+Documents are not treated as flat files. They are "exploded" into a hierarchical structure to preserve context at scale.
+A. Section-Based Splitting (SEC Logic)
+Action: Parse HTML tags to identify "Item" headers.
+Target: Isolate major sections (e.g., Item 1A: Risk Factors, Item 7: Management Discussion).
+Node Mapping: Each isolated Item becomes a Section Node linked to the parent Document Node.
+B. Shadow Chunking (Reasoning Logic)
+Action: Sub-divide Section Nodes into "Shadow Nodes."
+Constraint: 1,000-token window with 20% semantic overlap.
+Purpose: Shadow nodes are the vector search entry points in the Cursor-style retrieval architecture.
+They are invisible to the user — the user sees Document and Section nodes.
+The retrieval engine lands on Shadow nodes via vector search, then traverses the graph outward.
+Known limitation — tables: Financial tables are a single large block with no double newlines, so the
+  paragraph-first chunker treats them as oversized paragraphs and slides a token window over them.
+  This splits rows from headers and numbers from labels. Table chunks rank low in vector search
+  because they are mostly numbers with no semantic content. The surrounding MD&A prose (which
+  explains the numbers in plain English) chunks cleanly and is what retrieval actually hits.
+  FUTURE FIX: table-aware parsing in clean.py — detect pipe/tab structures and either skip tables
+  or extract key rows as structured data before chunking.
+C. Speaker Attribution (Transcript Logic)
+Action: Regex-based splitting by speaker name (e.g., Elon Musk: [Text]).
+Node Mapping: Each speech block becomes a Statement Node linked to a Speaker Entity.
+
+3. The Knowledge Graph Schema (Neo4j)
+Node Definitions
+User Node: The top-level anchor the user interacts with (e.g., "Tesla 2023 Folder").
+Document Node: The root of an individual file (e.g., "TSLA_10K_2023").
+  - Neo4j stores: summary (LLM-generated), source_url (GCS path), embedding, metadata.
+  - Neo4j does NOT store the full document text. Full text lives in GCS/S3.
+  - When a user needs to read the full document, it is fetched from GCS via source_url.
+  - This applies to ALL documents: SEC filings, user-uploaded files, transcripts, etc.
+Section Node: A specific chapter within a document.
+  - Neo4j stores: summary (LLM-generated), embedding, metadata.
+  - Neo4j does NOT store the full section text. Full text lives in GCS/S3 (same file as Document).
+Shadow Node (The Leaf): 1,000 tokens of raw text + vector embedding.
+  - Shadow nodes DO store their chunk text in Neo4j — chunks are small enough (~4KB each).
+  - At scale (millions of chunks), embeddings should migrate to a dedicated vector store
+    (Pinecone, Weaviate, or pgvector) with Neo4j retaining only {id, cluster_id} for graph
+    traversal. The shadow node ID is the stable foreign key tying Neo4j, the vector store,
+    and GCS together. Nothing in the current design needs to change — migration is additive.
+Entity Node: DROPPED. Automated entity extraction (NER) does not scale and produces noisy,
+  brittle edges. Cross-document connections emerge instead through:
+  (a) Louvain community detection on graph topology (cluster_id on every node), and
+  (b) User-defined concept nodes connected manually or via LLM assistance.
+
+Storage Architecture
+  Neo4j:        graph structure + summaries + embeddings + metadata + shadow chunks
+  File storage: full document text (all sizes, all types)
+                LOCAL DEV: local disk path stored in source_file on Document node
+                PROD:      GCS/S3 URL stored in source_url on Document node
+                No code changes needed to migrate — just swap the field value and fetch method.
+  Redis:        cached graph paths keyed by question hash (Step 9)
+  The source_file (local) / source_url (prod) field on Document nodes is the bridge to full text.
+  Upload API flow (prod): full text → GCS → get URL → Neo4j node with summary + source_url + embedding.
+  Upload API flow (local): full text → local disk → get path → Neo4j node with summary + source_file + embedding.
+
+Relationship Definitions
+[:HAS_DOCUMENT]: Connects Company (or any parent node) to Document. Pipeline-generated.
+[:HAS_SECTION]: Connects Document to Sections. Pipeline-generated.
+[:HAS_SHADOW]: Connects Section to Shadow Chunks. Pipeline-generated.
+[:NEXT_CHUNK]: Connects Shadow Chunks sequentially (Chain-of-Thought retrieval). Pipeline-generated.
+[:LINKED_TO]: The single edge type for all user-drawn connections. Used when a user:
+  - uploads a document and places it under another node (child)
+  - links two existing documents as peers (horizontal)
+  - attaches an external document to any node in the tree
+  Direction (from→to) is preserved in Neo4j but carries no special meaning —
+  it is set to the order the user drew the edge (source → target).
+  Kept separate from pipeline edges so user-drawn structure is always
+  distinguishable from pipeline-generated structure.
+NOTE: [:MENTIONS] and automated entity edges are dropped. See Entity Node note above.
+
+User-Defined Parent/Child Documents
+Users can link any Document to any other node at runtime via [:LINKED_TO].
+This is an API/UI concern, not a pipeline concern — no ingest changes needed.
+User-created container nodes (e.g. "EV Battery Research") should use a distinct type
+such as Folder to differentiate them from pipeline-ingested Document nodes.
+
+4. Execution Workflow (Step-by-Step)
+
+SEC Pipeline (batch, offline data loading):
+Step 1: Collection
+  Download HTML and TXT files for all companies in config.yaml.
+Step 2: Clean
+  Strip HTML/XBRL noise, normalize Item headers.
+Step 3: Ingest
+  Split into sections, chunk each section into shadow nodes, write manifest.json.
+  Document.text = null (filled by Step 4), Section.text = stub (filled by Step 4).
+  Shadow.text = raw chunk text (final, no LLM needed).
+  No API calls — fast, offline, re-runnable.
+Step 4: Summarize
+  For each Document: read source file → LLM → write summary + text to manifest.
+  For each Section: read source file → re-split → get clean section text → LLM →
+    write summary + text to manifest.
+  Full document text is NOT stored in manifest or Neo4j — only the LLM summary.
+Step 5: Neo4j Load
+  Import manifest into Neo4j.
+  Document: summary, text (=summary), source_file (→ becomes source_url in prod), metadata.
+  Section:  summary, text (=summary), metadata.
+  Shadow:   text (raw chunk), token_count, metadata.
+Step 6: Embed
+  Generate embeddings for Document (summary), Section (summary), Shadow (chunk text).
+  Store on node in Neo4j for now. Migration path: Pinecone/pgvector at ~500k chunks.
+Step 7: Cluster (Louvain) — DONE
+  Build similarity graph first (financial graph is a tree — Louvain on structural edges
+  produces one cluster per document branch, useless for routing).
+  Phase 1: load Section embeddings from manifest/embeddings.parquet, compute pairwise
+    cosine similarity, write [:SIMILAR_TO {score}] edges for pairs above threshold.
+    Threshold history: 0.82 → 188 clusters / 66 singletons → lowered to 0.78.
+    Final: 0.78 → 121 clusters, 7209 SIMILAR_TO edges, modularity=0.7572.
+  Phase 2: GDS Louvain on SIMILAR_TO edges (UNDIRECTED) → writes cluster_id to Section nodes.
+  Phase 3: propagate cluster_id from Section → Shadow via HAS_SHADOW Cypher SET.
+  Phase 4: verify 100% coverage (1069/1069 Section, 6322/6322 Shadow).
+  Phase 5 (NOT YET DONE): Centrality — run gds.pageRank on the SIMILAR_TO projection
+    immediately after Louvain, write centrality score to each Section node.
+    High-centrality sections are topically central (many SIMILAR_TO edges) and should
+    be weighted higher in cluster ranking. Used by retrieve.py once Redis is built.
+    Add to cluster.py alongside the existing Louvain phases.
+  NOTE: Shadow index must be created at 1536 dims (not 768). Embeddings should be
+    restored from manifest/embeddings.parquet if Neo4j is wiped (embed.py parquet backup).
+
+Real Product (user-upload flow, API-driven):
+  User uploads document → full text → GCS → source_url returned.
+  API generates summary via LLM → creates Document node in Neo4j with summary + source_url.
+  API chunks text into shadow nodes → embeds → writes to Neo4j.
+  User reads document → fetch from GCS via source_url (never from Neo4j).
+
+  OPEN QUESTION — What to re-embed when content is added/changed:
+  Three cases to decide before building the upload API:
+
+  (a) User appends text to a document:
+      - New text → new shadow nodes only (old shadows untouched)
+      - Re-summarize + re-embed the Document node (summary is stale)
+      - Re-summarize + re-embed affected Section nodes
+      Decision needed: how to detect which sections were affected?
+
+  (b) User edits/replaces a section:
+      - DETACH DELETE old Shadow nodes for that section
+      - Re-chunk new section text → new shadow nodes + embeddings
+      - Re-summarize + re-embed that Section node
+      - Re-summarize + re-embed the parent Document node
+      Decision needed: do we version the old section or hard-delete it?
+
+  (c) New version supersedes old document (e.g. amended filing):
+      - Option 1: DETACH DELETE old Document + all descendants, load fresh
+      - Option 2: Keep old document, add [:SUPERSEDES] relationship from new to old,
+        mark old Document with superseded=true so retrieval engine skips it
+      Decision needed: do users need access to superseded versions?
+
+  NOTE: The graph does not auto-detect contradictions between versions.
+  Surfacing conflicts is a retrieval/reasoning concern, not an ingestion concern.
+  Louvain clustering will group related content — retrieval can surface both versions
+  and let the LLM reason about which is current.
+
+Step 8: Retrieval Orchestrator — DONE (retrieve.py)
+  Two modes for fair side-by-side comparison:
+
+  Both modes:
+    - detect_filters(question): extract ticker(s) (word-boundary regex for single-char tickers
+      like "F" to avoid matching "factors", "for", etc.), year(s), form_type from question text.
+    - Same metadata WHERE filters applied to vector search in both modes.
+
+  RAG mode (baseline):
+    - Embed query → vector search on Shadow index with metadata filters.
+    - Raw chunk texts → flat LLM prompt → answer.
+    - Top-K: VECTOR_TOP_K_RAG=10.
+
+  Graph RAG mode:
+    - Step 1: embed query.
+    - Step 2: global vector search (VECTOR_TOP_K_GLOBAL=20) → get cluster_ids of top hits.
+    - Step 3: rank clusters by sum-of-similarity → pick top CLUSTER_TOP_N=3.
+    - Step 4: cluster-scoped vector search (VECTOR_TOP_K_CLUSTER=10 per cluster) with filters.
+    - Step 5: traverse_up() — shadow → Section (via HAS_SHADOW←) → Document (via HAS_SECTION←)
+      → Company (via HAS_DOCUMENT←); also fetch NEXT_CHUNK neighbor for continuity.
+    - Step 6: structured LLM prompt with provenance (company, doc, section, summary, chunk text).
+    - Fallback: if cluster search returns < MIN_RESULTS_FALLBACK=3 results, fall back to global search.
+    - Empty context guard: return "No relevant documents found" if traversal is empty (prevents hallucination).
+
+  Supporting paths output contract (per result):
+    {node_ids: [shadow_id, section_id, doc_id, company_id], edge_types, score, label}
+
+  Key findings from comparison run:
+    - Graph RAG clearly outperforms RAG on cross-company questions (found all 5 companies
+      vs RAG finding only Rivian for battery supply chain question).
+    - Cluster routing surfaces topically related sections across companies that raw vector
+      search misses when top-K is limited.
+    - Metadata filters are essential for single-company questions — without them both modes
+      hallucinate or blend companies.
+
+Step 9: Redis Cache — NOT BUILT
+  Three jobs in one:
+
+  (a) Question path cache — primary optimization
+      Key: q:{qhash}:paths  Value: [{node_ids, edge_types, score, answer_snippet}]
+      Key: q:{qhash}:meta   Value: {embedding_hash, cluster_candidates, top_seeds, timestamp}
+      TTL: configurable. On cache hit, skip all retrieval and return immediately.
+
+  (b) Node popularity counters
+      Key: node:{id}:hits   Value: integer counter
+      Incremented in retrieve.py every time a node appears in a returned path.
+      Used in cluster ranking: clusters whose nodes have high hit counts get a boost
+      on top of the raw cosine similarity score. This makes the system learn over time —
+      frequently-retrieved sections float to the top of cluster ranking.
+
+  (c) Cluster hot cache (optional, add later)
+      Key: cluster:{cluster_id}:hot_nodes  Value: top node IDs by hit count
+      Pre-computed summary of each cluster's most popular nodes.
+      Used to seed traversal without a full vector search in that cluster.
+
+  Where popularity fits in retrieve.py:
+    After traversal, for each returned path: INCR node:{id}:hits for all node_ids.
+    In get_top_clusters(): fetch hit counts for candidate cluster nodes, add weighted
+    hit score to the cosine similarity score before ranking.
+    Requires Redis to be running; retrieve.py should degrade gracefully if Redis is down.
+
+Step 10: User Upload / Incremental Ingestion — DONE (upload.py)
+  Real product use case: users upload arbitrary documents and attach them to any node
+  in the tree via [:LINKED_TO]. Parent can be a Company, Document, or Section.
+  Tree structure is user-defined, not pipeline-defined.
+
+  WHY THIS IS DIFFERENT FROM THE BATCH PIPELINE:
+    The batch pipeline runs Louvain on the full corpus. You cannot rerun full Louvain
+    on every upload — it's too expensive and requires all sections to be present.
+    New documents need cluster_id assigned incrementally without a full rerun.
+
+  INCREMENTAL CLUSTER ASSIGNMENT (nearest-neighbor):
+    1. Embed the new section summary (same model as batch pipeline).
+    2. Load Section embeddings from parquet (already on disk).
+    3. Compute cosine similarity between new section and all existing sections.
+    4. Assign the cluster_id of the most similar existing section.
+    5. Propagate cluster_id down to the new section's shadow nodes.
+    This is fast (one vector lookup), content-aware, and requires no GDS.
+
+  UPLOAD FLOW (upload.py):
+    Input:  text file path + parent node ID + optional metadata (ticker, form_type, period).
+    Steps:
+      1. Chunk text into shadow nodes (same 1000-token / 20% overlap logic as ingest.py).
+      2. LLM-generate a summary for the document and each section.
+      3. Embed document summary, section summaries, shadow chunk texts.
+      4. Nearest-neighbor cluster assignment for each section → propagate to shadows.
+      5. Write Document + Section + Shadow nodes to Neo4j.
+      6. Write [:LINKED_TO] edge from parent node to new Document node.
+      7. Write [:HAS_SECTION], [:HAS_SHADOW], [:NEXT_CHUNK] edges within new document.
+      8. Append new embeddings to the parquet backup.
+    Output: new document node ID + cluster assignments printed.
+
+  DEMO SCENARIO (financial domain):
+    - Tesla Q4 2023 earnings call transcript → attach as child of TSLA Company node.
+    - Rivian analyst report → attach as child of RIVN 10-K 2023 Document node.
+    - Battery supply chain article → attach as child of a Risk Factors Section node.
+    Then rerun retrieve.py on the same questions and show Graph RAG finds the new
+    documents via cluster routing while RAG misses them (diluted by the larger corpus).
+
+  NATURAL PARENT-CHILD DOCUMENT RELATIONSHIPS (Financial Domain):
+  The following table shows which document types naturally belong as children of other
+  document types. This is how users would actually build the tree in a financial context.
+
+  Parent Node                    Child Document Type              Relationship Rationale
+  ─────────────────────────────────────────────────────────────────────────────────────
+  Company (e.g. TSLA)            10-K (Annual Report)             Primary filing, top-level
+  Company (e.g. TSLA)            10-Q (Quarterly Report)          Periodic update to annual
+  Company (e.g. TSLA)            Earnings Call Transcript         Accompanies each 10-Q/10-K
+  10-K Document                  Earnings Call Transcript         Q&A expands on annual results
+  10-K Document                  Analyst Report (Buy/Sell/Hold)   Analyst reaction to annual
+  10-K Document                  Proxy Statement (DEF 14A)        Annual shareholder vote docs
+  10-K Document                  SEC Comment Letter + Response    SEC review of that filing
+  10-Q Document                  Press Release (earnings)         Pre-filing earnings release
+  10-Q Document                  Earnings Call Transcript         Q&A expands on quarterly
+  Risk Factors Section           NHTSA Recall Notice              Specific risk materialized
+  Risk Factors Section           Industry Article (analyst/press) External context for a risk
+  MD&A Section                   Investor Presentation (slides)   Management's own narrative
+  MD&A Section                   Competitor 10-K MD&A             Cross-company comparison
+  Earnings Call Transcript       Goldman / Morgan analyst note    Analyst follow-up from call
+
+  Multi-level example (3 levels deep):
+    TSLA (Company)
+      └── 10-K 2023 (Document)           [:LINKED_TO]
+            └── Q4 2023 Earnings Call     [:LINKED_TO]
+                  └── Goldman analyst note [:LINKED_TO]
+
+  Demo files uploaded (demo_docs/):
+    tsla_q4_2023_earnings.txt                      → TSLA Company node (upload_TSLA_78e55f36)
+    rivn_q4_2023_shareholder_letter.txt            → RIVN_10K_2023 Document node (upload_RIVN_d9da934b)
+    rivn_amazon_vans_2023.txt                      → TSLA_10K_2022__3__Item_2_PROPERTIES (intentionally misplaced; cluster 560)
+    rivn_supplier_contract_cancellation_2023.txt   → TSLA_10K_2022__3__Item_2_PROPERTIES (intentionally misplaced; cluster 560)
+
+  EDGE TYPE: [:LINKED_TO] is the single user-drawn edge type (replaces old [:CONTAINS]).
+  CLI: python upload.py --mode upload --file ... --linked_to <node_id> --title ...
+       python upload.py --mode append --expand_node <doc_id> --file ...  (not yet implemented)
+
+  GRAPH RAG vs RAG finding: at current corpus size both modes find uploaded docs via
+  vector similarity. The cluster routing advantage shows at 200+ docs where global
+  search degrades. Misplacement demo works structurally (cluster 560 correct despite
+  wrong tree node) but RAG also finds the chunks directly.
+
+  NOTE: Periodic full Louvain rerun (e.g. nightly) will re-optimize cluster assignments
+    for all incrementally-added documents. Nearest-neighbor is an approximation —
+    it gets the new document into retrieval immediately but the cluster may shift
+    slightly after the next full rerun. This is acceptable for a production system.
+
+Step 11: API Layer — NOT BUILT (api.py, FastAPI)
+  Wraps retrieve.py and upload.py as HTTP endpoints. Makes the system interactive
+  and demoable without editing QUESTIONS lists or reading JSON files.
+
+  Endpoints:
+    POST /query
+      Body: {question: str, mode: "rag" | "graph_rag" | "both"}
+      Returns: {answer, supporting_paths, clusters_used, cache_status, latency_breakdown}
+      Checks Redis cache first (Step 9). Falls back to full retrieval on miss.
+      After retrieval: writes paths to Redis cache + increments node hit counters.
+
+    POST /upload
+      Body: {text: str, parent_id: str, metadata: {title, ticker, form_type, period}}
+      Returns: {doc_id, section_count, shadow_count, cluster_assignments}
+      Calls upload.py logic. Attaches new document to parent_id via [:LINKED_TO].
+
+  Both endpoints degrade gracefully if Redis is down (skip cache, skip hit counters).
+
+Step 12: Centrality in cluster.py — NOT BUILT (Phase 5)
+  Add gds.pageRank to cluster.py immediately after Phase 2 (Louvain).
+  Runs on the same in-memory SIMILAR_TO projection before it is dropped.
+  Writes centrality score to each Section node in Neo4j.
+  retrieve.py then uses centrality as a secondary signal in cluster ranking:
+    cluster_score = sum_of_similarity + 0.2 * avg_centrality_of_top_nodes
+  Requires Redis (Step 9) to be useful — centrality boosts are only meaningful
+  when combined with popularity counters to identify truly hot+central nodes.
+  Add after Redis is built.
+
+Step 13: Path Reranking — NOT BUILT (add when corpus > ~200 docs)
+  After graph traversal, score each candidate path with a secondary model before
+  sending to LLM synthesis. Prevents redundant, stale, or off-topic paths from
+  diluting the answer as the corpus grows.
+  Signals: relevance to prompt, logical completeness, redundancy, freshness.
+  Implementation: lightweight cross-encoder or second LLM call scoring each
+  (query, path_text) pair. Keep top N paths, discard rest before synthesis.
+  Not needed at current corpus size (40 docs). Revisit at 200+ docs.
+
+Step 14: Corpus Expansion — NEXT
+  WHY WE ARE EXPANDING:
+    Extensive testing (needle-in-haystack experiments with 10 synthetic docs, ticker-free
+    queries, cross-company questions) showed that Graph RAG and RAG produce identical
+    results at current corpus size (~6,000 shadows, 40 documents). The reason: global
+    top-k vector search works fine when the corpus is small — the right chunk always
+    makes the top-10 because there is not enough competing content to displace it.
+    Louvain cluster routing only becomes a meaningful differentiator when the corpus is
+    large enough that global top-k starts missing the right chunks. At ~30,000+ shadows,
+    competing chunks from unrelated sections push the answer out of the global top-10,
+    but cluster routing narrows the search space to the right neighborhood first.
+
+  WHAT WE ARE ADDING:
+    Same 5 companies (TSLA, F, GM, RIVN, LCID) — keeping the domain focused so
+    clusters remain semantically meaningful (EV industry) rather than fragmenting
+    by language or industry when new companies are added.
+
+    Filing types to add:
+      - All available 10-Q quarterly filings for 2021, 2022, 2023, 2024 (not just last 4)
+        Config change: quarterly_n: 4 → 16 in config.yaml
+      - DEF 14A proxy statements (executive compensation, shareholder votes)
+      - 8-K current reports (material events, earnings releases)
+
+    Expected corpus size after expansion:
+      Current:  ~40 documents, ~1,069 sections, ~6,322 shadows
+      Target:   ~200+ documents, ~5,000+ sections, ~30,000+ shadows
+
+  HOW TO EXECUTE (no code changes needed — pipeline is already incremental):
+    1. Update config.yaml: quarterly_n: 16
+    2. Run collect.py   → downloads only new files (skips existing)
+    3. Run clean.py     → processes only new files
+    4. Run ingest.py    → adds new sections/shadows to manifest
+    5. Run summarize.py → LLM summaries for new docs only
+    6. Run load_neo4j.py → MERGE (idempotent, existing nodes untouched)
+    7. Run embed.py     → embeds new nodes only
+    8. Run cluster.py   → full Louvain rerun on all nodes (cluster IDs reassign, that is fine)
+
+  AFTER EXPANSION:
+    Rerun the ticker-free needle questions. At 30,000 shadows, the needle doc
+    (scoring ~0.83) will be beaten by many other chunks in a global search, and
+    RAG will miss it. Cluster routing will narrow to the right neighborhood and
+    find it. That is the demonstration.
+
+5. Output Contract (Success Metrics)
+A successful implementation must allow:
+Local Fact Check: Retrieve the exact Shadow Node containing Tesla's R&D spend.
+Structural Integrity: View a clear tree from any node down to the specific paragraph.
+Cluster Routing: Query is answered by searching the correct Louvain cluster, not the full graph.
+Path Transparency: Every answer includes the graph path that produced it (node_ids + edge_types).
+
+---
+
+## cross-encoder-reranking (2026-03-18)
+
+### Current Retrieval Flow
+
+Graph RAG:
+1. Embed question → 1536-dim vector
+2. Global vector search top-20 seeds → get cluster_ids
+3. Rank clusters by mean cosine score → top 6
+4. Per cluster: fetch all shadows (up to 5000, seed-biased) → numpy cosine score → keep top 3 per cluster = 18 anchors
+5. traverse_up: shadow → section → document → company (gets section_title, section_summary, ticker, form_type, period)
+6. traverse_similar: follow SIMILAR_TO from anchor sections → up to 5 neighbors → score + add
+   (SIMILAR_TO edges built offline in cluster.py: exact pairwise cosine on all Section embeddings, threshold=0.78 → 7209 edges)
+   NOTE — limited value, kept because it is the only graph traversal for pipeline docs:
+   Theoretical benefit: finds sections topically similar to the anchor section regardless of query phrasing —
+   a different similarity axis than query→shadow (section-to-section vs query-to-chunk).
+   Practical reality: largely redundant with vector search. If a neighbor section scores 0.78+ against the
+   anchor, and the anchor scores well against the query, the neighbor almost certainly surfaces in global
+   vector search anyway. No evaluation improvement observed from this hop.
+   Real reason it exists: pipeline docs (10-K, 10-Q) have no LINKED_TO edges — those belong only to
+   user-uploaded docs. Without SIMILAR_TO, Graph RAG has no graph edges to traverse on pipeline content
+   and reduces to flat vector search. SIMILAR_TO provides the traversal structure that justifies calling
+   it a graph. Consider removing once richer edge types (e.g. temporal, NLI-based) are added.
+7. traverse_keyword: follow HAS_KEYWORD from anchor shadows → up to 5 more → score + add
+   (HAS_KEYWORD edges built offline in extract_keywords.py + load_keywords.py: keyBERT extracts top phrases from each Shadow, edges written with score; connects shadows sharing the same keyword across companies)
+8. Cross-encoder rerank all traversed rows
+9. Build supporting paths
+10. LLM gets: for each row — source label + section summary + chunk text
+
+RAG:
+1. Embed question
+2. Global vector search top-18 shadows with metadata filters
+3. Cross-encoder rerank
+4. LLM gets: source label + chunk text (no section summary)
+
+### Added This Stage
+- Cross-encoder reranking (ms-marco-MiniLM-L-6-v2) applied after cosine retrieval in both RAG and Graph RAG modes
+- Seed-biased sampling in fetch_shadows_in_clusters (CLUSTER_FETCH_CAP=5000) — guarantees global index seeds survive the cap before numpy scoring
+- Score formula fix: numpy cosine now uses (1+cosine)/2 to match Neo4j vector index output
+- Cluster ranking changed from sum → mean cosine score (prevents high-volume clusters from dominating)
+- HAS_KEYWORD edges + traverse_keyword() — cross-company thematic linking via shared keyword nodes
+- Evaluation suite reduced from 14 → 13 questions (removed ambiguous SPAC question Q11)
+- Compound-condition failure documented in Q13 comment (Graph RAG limitation + future agentic fix)
+
+### Evaluation Results (13 questions, GOEV/NKLA/FSR/RIVN/LCID)
+- Graph RAG: 11/13
+- RAG: 11/13
+- Key finding: cross-encoder fixed Q7/Q9/Q13 for Graph RAG (+3) but introduced Q6 regression (-1)
+- Root cause of tie: corpus too small (6,322 shadows, 40 docs) — global vector search finds the right chunk directly, cluster routing advantage not yet visible
+
+### Next Stage: corpus-expansion
+- Expand to 200+ docs / 30,000+ shadows (Step 14 in plan)
+- Then: FastAPI layer (Step 11), Redis cache (Step 9), Centrality (Step 12)
+
+---
+
+## Graph RAG Implementation Status (2026-03-18)
+
+### Already Implemented ✅
+- Retrieval Orchestrator (retrieve.py)
+- Neo4j with embeddings + cluster_ids
+- Global HNSW → cluster routing
+- Per-cluster retrieval + Python cosine scoring (top 3 per cluster × 6 clusters = 18 anchors)
+- SIMILAR_TO graph traversal (1 hop) with real cosine scoring
+- Structured path objects + output contract
+- Latency breakdown
+- Dual-mode RAG vs Graph RAG side-by-side evaluation
+- 14-question evaluation suite (GOEV/NKLA/FSR/RIVN)
+
+### Not Implemented — Relevant to Graph RAG Quality
+
+| Missing | What it does | Impact |
+|---------|-------------|--------|
+| Path reranking (Step 5) | Lightweight model scores candidate paths by relevance + completeness, not just cosine | Would help pick FSR over NKLA when both score similarly |
+| Multi-hop traversal | Architecture calls for 2–4 hops, currently only 1 SIMILAR_TO hop | Answer in document C reachable from anchor A via B — currently impossible |
+| Cluster ranking with hit rate + centrality | Rank clusters by similarity + prior hit rate + centrality, currently sum only | Better cluster selection |
+| Redis path cache | Cache paths not just answers, reuse computation | Speed only, not quality |
+| Node hit counters | Hot nodes get boosted in reranking | Quality over time |
+| Semantic overlap check | Reuse paths from similar past questions | Speed + quality |
+
+### Most Impactful Next Steps
+1. Path reranking — directly addresses same-event ambiguity (FSR vs NKLA)
+2. Multi-hop traversal — the only thing that can make Graph RAG structurally beat RAG
+
+### Current Evaluation Score (latest run)
+- Graph RAG: 10/14
+- RAG: 10/14 (tied — Graph RAG has not yet demonstrated superiority)
+- Root cause: no question currently requires multi-hop traversal across document boundaries

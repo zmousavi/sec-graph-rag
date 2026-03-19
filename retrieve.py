@@ -70,6 +70,15 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from neo4j import GraphDatabase
 
+try:
+    from sentence_transformers import CrossEncoder as _CrossEncoderClass
+    _CROSS_ENCODER_AVAILABLE = True
+except ImportError:
+    _CROSS_ENCODER_AVAILABLE = False
+
+# Lazy-loaded; first call triggers model download (~80 MB, cached after that).
+_cross_encoder = None
+
 load_dotenv()
 
 # ---------------------------------------------------------------------------
@@ -86,6 +95,8 @@ NEO4J_PASS = os.getenv("NEO4J_PASSWORD", "")
 EMB_MODEL  = _cfg["embedding"]["model"]       # text-embedding-3-small
 EMB_DIMS   = _cfg["embedding"]["dimensions"]  # 1536
 LLM_MODEL  = _cfg["summarization"]["model"]   # gpt-4o-mini
+
+CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 # How many shadows to retrieve in each search pass.
 VECTOR_TOP_K_GLOBAL  = 20   # global pass — used for cluster routing
@@ -148,6 +159,7 @@ class RetrievalResult:
         print(f"  latency:  embed={lat.get('embed_ms',0):.0f}ms  "
               f"search={lat.get('search_ms',0):.0f}ms  "
               f"traverse={lat.get('traverse_ms',0):.0f}ms  "
+              f"rerank={lat.get('rerank_ms',0):.0f}ms  "
               f"llm={lat.get('llm_ms',0):.0f}ms  "
               f"total={lat.get('total_ms',0):.0f}ms")
 
@@ -289,17 +301,28 @@ def search_shadows(tx, q_vec: list, filters: dict, top_k: int,
 def get_top_clusters(seeds: list, top_n: int) -> list:
     """
     Given seed shadows from global search, return the top_n cluster_ids
-    ranked by sum of similarity scores within each cluster. 
-    XXXXXXXXXXXXXXXXXX A big cluster might overshadow a smaller one with a few high scoring chunks, rank by sum not optimal XXXXXXXXXXXXXXXXXX
-    Clusters with null cluster_id (singletons) are included as their own group.
+    ranked by MEAN similarity score within each cluster.
+
+    CHANGED from sum → mean (2026-03-18):
+      Sum favoured high-volume companies (e.g. NKLA with 2000+ chunks) because
+      more seeds from that company accumulate a higher total even when individual
+      scores are mediocre. Mean ranks clusters by how relevant their chunks are
+      on average, regardless of cluster size. Revert to sum if mean turns out to
+      under-select large clusters that genuinely dominate the answer.
+
+    Clusters with null cluster_id (singletons) are excluded.
     """
     cluster_scores: dict = {}
+    cluster_counts: dict = {}
     for row in seeds:
         cid = row.get("cluster_id")
         if cid is None:
             continue
         cluster_scores[cid] = cluster_scores.get(cid, 0.0) + row["score"]
-    ranked = sorted(cluster_scores.items(), key=lambda x: x[1], reverse=True)
+        cluster_counts[cid] = cluster_counts.get(cid, 0) + 1
+    cluster_means = {cid: cluster_scores[cid] / cluster_counts[cid]
+                     for cid in cluster_scores}
+    ranked = sorted(cluster_means.items(), key=lambda x: x[1], reverse=True)
     return [cid for cid, _ in ranked[:top_n]]
 
 
@@ -307,11 +330,23 @@ def get_top_clusters(seeds: list, top_n: int) -> list:
 # Step 4G — Graph RAG: true cluster-scoped search via embedding fetch + numpy
 # ===========================================================================
 
-def fetch_shadows_in_clusters(tx, cluster_ids: list, filters: dict) -> list:
+CLUSTER_FETCH_CAP = 5000  # max shadows fetched per cluster before numpy scoring
+
+
+def fetch_shadows_in_clusters(tx, cluster_ids: list, filters: dict,
+                               seed_ids: set = None) -> list:
     """
     Fetch ALL shadows (with embeddings) from the selected clusters.
     Metadata filters applied here to stay consistent with global search.
     Embeddings are returned so Python can score them against q_vec.
+
+    When the result set exceeds CLUSTER_FETCH_CAP, seed-biased sampling is used:
+    shadows that were already identified as relevant by the global vector search
+    (seed_ids) are always kept; remaining slots are filled randomly from the rest.
+    This prevents the key chunks that scored well in the index from being evicted
+    by pure random sampling — the original bug that caused Q14 to miss the NKLA
+    Hindenburg chunk (cluster 2826 had 1819 shadows; only 27.6% chance of survival
+    with the old random.sample(rows, 1000) approach).
     """
     where_clauses = ["sh.cluster_id IN $cluster_ids"]
     params = {"cluster_ids": cluster_ids}
@@ -347,8 +382,14 @@ def fetch_shadows_in_clusters(tx, cluster_ids: list, filters: dict) -> list:
                doc.period     AS period
     """, **params)
     rows = result.data()
-    if len(rows) > 1000:
-        rows = random.sample(rows, 1000)
+    if len(rows) > CLUSTER_FETCH_CAP:
+        if seed_ids:
+            priority = [r for r in rows if r["shadow_id"] in seed_ids]
+            rest     = [r for r in rows if r["shadow_id"] not in seed_ids]
+            n_fill   = max(0, CLUSTER_FETCH_CAP - len(priority))
+            rows = priority + random.sample(rest, min(n_fill, len(rest)))
+        else:
+            rows = random.sample(rows, CLUSTER_FETCH_CAP)
     return rows
 
 
@@ -356,6 +397,14 @@ def score_and_rank(candidates: list, q_vec: list, top_k: int) -> list:
     """
     Compute cosine similarity between q_vec and each candidate's embedding.
     Returns top_k candidates sorted by score descending, with score injected.
+
+    SCORE FORMULA — (1 + cosine) / 2:
+      Neo4j's vector index returns scores in this form (maps cosine [-1,1] → [0,1]).
+      We apply the same formula here so numpy scores are directly comparable to
+      the index scores shown in supporting_paths and used for cluster routing.
+      Ranking is unaffected (the transformation is monotonic), but the numbers
+      now read consistently: e.g. 0.763 from the index ↔ 0.763 from numpy.
+      Verified 2026-03-18: numpy raw cosine 0.527 → (1+0.527)/2 = 0.763 ✓
     """
     if not candidates:
         return []
@@ -368,10 +417,61 @@ def score_and_rank(candidates: list, q_vec: list, top_k: int) -> list:
             continue
         v = np.array(emb, dtype=np.float32)
         v_norm = v / (np.linalg.norm(v) + 1e-9)
-        score = float(np.dot(q_norm, v_norm))
+        score = (1.0 + float(np.dot(q_norm, v_norm))) / 2.0
         scored.append({**row, "score": score})
     scored.sort(key=lambda x: x["score"], reverse=True)
     return scored[:top_k]
+
+
+def rerank(question: str, rows: list, text_key: str) -> list:
+    """
+    Cross-encoder reranking (Step 5 of the Cursor-Style spec).
+
+    WHY THIS RUNS AFTER COSINE, NOT INSTEAD OF IT:
+      A cross-encoder scores each (question, chunk) pair jointly via a full
+      neural network forward pass — it reads both together, which makes it far
+      more accurate than cosine similarity on near-tie cases (e.g. FSR vs NKLA
+      chunks that are both about creditor negotiations).
+      But it costs ~5-20 ms per pair, so running it on the full corpus (~7k+
+      shadows) would take several minutes. Cosine via HNSW is O(log N) and runs
+      in milliseconds — it narrows the field to ~20-30 candidates, which the
+      cross-encoder re-scores in ~50-200 ms total.
+
+    HOW THIS FIXES Q7/Q8/Q9:
+      Cosine sees "creditor negotiations / debt acceleration / bankruptcy" and
+      scores NKLA and FSR chunks nearly identically (near-tied embeddings). The
+      cross-encoder sees the *full question* alongside each chunk and recognises
+      that mid-2024 timing, the specific trigger (failed negotiations → default →
+      acceleration), and the causal chain match FSR's 8-K — not NKLA's story.
+
+    MODEL: ms-marco-MiniLM-L-6-v2
+      Trained on MS MARCO passage relevance pairs. Fast (~1ms/pair on CPU).
+      Returns a raw logit (higher = more relevant); not bounded to [0,1] but
+      monotonically comparable within a query.
+
+    Returns rows reordered by cross-encoder score descending.
+    The 'score' field on each row is replaced with the cross-encoder score
+    so it propagates correctly into supporting_paths and LLM context ordering.
+    Rows where text_key is missing or empty are pushed to the end.
+    """
+    global _cross_encoder
+    if not _CROSS_ENCODER_AVAILABLE or not rows:
+        return rows
+
+    if _cross_encoder is None:
+        _cross_encoder = _CrossEncoderClass(CROSS_ENCODER_MODEL)
+
+    valid   = [r for r in rows if r.get(text_key)]
+    invalid = [r for r in rows if not r.get(text_key)]
+
+    pairs = [(question, r[text_key]) for r in valid]
+    ce_scores = _cross_encoder.predict(pairs)  # numpy array, float32
+
+    for row, ce_score in zip(valid, ce_scores):
+        row["score"] = float(ce_score)
+
+    valid.sort(key=lambda r: r["score"], reverse=True)
+    return valid + invalid
 
 
 # ===========================================================================
@@ -424,9 +524,21 @@ def traverse_up(tx, shadow_ids: list) -> list:
 def traverse_similar(tx, section_ids: list, already_seen: set, top_n: int = 5) -> list:
     """
     Follow SIMILAR_TO edges from anchor sections to their neighbors.
-    This is the actual multi-hop graph traversal — RAG cannot do this.
     Returns traversal rows in the same format as traverse_up so they
     can be merged into the same context.
+
+    SIMILAR_TO edges are built offline in cluster.py via exact pairwise cosine on all
+    Section embeddings (threshold=0.78 → 7209 edges). They encode section-to-section
+    similarity, a different axis than query-to-chunk (vector search).
+
+    LIMITED VALUE — kept because it is the only graph traversal for pipeline docs:
+    Pipeline docs (10-K, 10-Q) have no LINKED_TO edges — those belong only to
+    user-uploaded docs. Without SIMILAR_TO, Graph RAG has no graph edges to traverse
+    on pipeline content and reduces to flat vector search. In practice the hop is
+    largely redundant: if a neighbor section scores 0.78+ against the anchor, and the
+    anchor scores well against the query, the neighbor almost certainly surfaces in the
+    global vector search anyway. No evaluation improvement observed from this hop.
+    Consider removing once richer edge types (temporal, NLI-based) are added.
     """
     result = tx.run("""
         UNWIND $section_ids AS sid
@@ -455,6 +567,63 @@ def traverse_similar(tx, section_ids: list, already_seen: set, top_n: int = 5) -
                null             AS contains_parent_label
         LIMIT $top_n
     """, section_ids=section_ids, seen=list(already_seen), top_n=top_n)
+    return result.data()
+
+
+# ===========================================================================
+# Step 5G-c — Follow HAS_KEYWORD edges for cross-company thematic linking
+# ===========================================================================
+
+def traverse_keyword(tx, shadow_ids: list, already_seen: set, top_n: int = 5) -> list:
+    """
+    For the anchor shadows, find their top keywords (by HAS_KEYWORD score),
+    then return other Shadow nodes (not yet seen) that share those keywords.
+
+    HAS_KEYWORD edges built offline by extract_keywords.py (keyBERT extracts top
+    phrases from each Shadow) + load_keywords.py (writes edges to Neo4j with score).
+    Connects shadows across companies that share the same keyword node.
+
+    Theoretical benefit: cross-company thematic linking — surfaces NKLA and FSR
+    chunks that both discuss "going concern" or "convertible notes" even if they
+    are in different clusters that were not selected by cluster routing.
+
+    Practical reality: keywords are too generic in SEC filings. Terms like
+    "going concern" and "debt acceleration" appear in dozens of chunks across
+    all companies. The hop pulls in noise rather than signal — adds more
+    ambiguous same-concept chunks from the wrong company rather than helping
+    disambiguate. No evaluation improvement observed. Same root limitation as
+    SIMILAR_TO: does not help with disambiguation (FSR vs NKLA) because both
+    companies use identical legal language for the same concepts.
+    """
+    result = tx.run("""
+        UNWIND $shadow_ids AS sid
+        MATCH (sh:Shadow {id: sid})-[r:HAS_KEYWORD]->(k:Keyword)
+        WITH k, max(r.score) AS best_score
+        ORDER BY best_score DESC
+        LIMIT 5
+        MATCH (neighbor:Shadow)-[:HAS_KEYWORD]->(k)
+        WHERE NOT neighbor.id IN $seen
+        MATCH (sec:Section)-[:HAS_SHADOW]->(neighbor)
+        MATCH (doc:Document)-[:HAS_SECTION]->(sec)
+        OPTIONAL MATCH (co:Company)-[:HAS_DOCUMENT]->(doc)
+        RETURN DISTINCT
+               neighbor.id        AS shadow_id,
+               neighbor.text      AS shadow_text,
+               neighbor.embedding AS embedding,
+               null               AS cluster_id,
+               null               AS next_chunk_text,
+               sec.id             AS section_id,
+               sec.title          AS section_title,
+               sec.summary        AS section_summary,
+               doc.id             AS doc_id,
+               doc.ticker         AS ticker,
+               doc.form_type      AS form_type,
+               doc.period         AS period,
+               co.id              AS company_id,
+               null               AS contains_parent_id,
+               null               AS contains_parent_label
+        LIMIT $top_n
+    """, shadow_ids=shadow_ids, seen=list(already_seen), top_n=top_n)
     return result.data()
 
 
@@ -570,8 +739,10 @@ def synthesize_graph_rag(question: str, traversed: list) -> str:
 
 The answer may NOT appear in a single passage. You must combine information across multiple passages when they refer to the same company or event.
 
+Passages are ordered by relevance — earlier passages are more relevant to the question. Weight them accordingly.
+
 Instructions:
-1. Identify the most likely company/entity mentioned across the evidence.
+1. Identify the company/entity that the earliest, most relevant passages point to.
 2. Focus only on passages related to that entity.
 3. Combine facts across those passages to answer the question.
 4. Do NOT require the full answer to appear in one place.
@@ -636,6 +807,12 @@ class RetrievalOrchestrator:
                 )
             search_ms = (time.time() - t0) * 1000
 
+            # Cross-encoder rerank: replaces cosine ordering for the LLM.
+            # Cosine retrieves the candidate set; cross-encoder picks the best order.
+            t0_re = time.time()
+            shadows = rerank(question, shadows, "text")
+            rerank_ms = (time.time() - t0_re) * 1000
+
             t0 = time.time()
             answer = synthesize_rag(question, shadows)
             llm_ms = (time.time() - t0) * 1000
@@ -662,6 +839,7 @@ class RetrievalOrchestrator:
                     "embed_ms":    round(embed_ms,    1),
                     "search_ms":   round(search_ms,   1),
                     "traverse_ms": 0,
+                    "rerank_ms":   round(rerank_ms,   1),
                     "llm_ms":      round(llm_ms,      1),
                     "total_ms":    round(total_ms,    1),
                 },
@@ -681,15 +859,22 @@ class RetrievalOrchestrator:
             )
         cluster_ids = get_top_clusters(seeds, CLUSTER_TOP_N)
 
-        # Step 4G — true cluster-scoped search: fetch all embeddings, score in Python
-        # Step 4G — per-cluster scoring: top CHUNKS_PER_CLUSTER from each cluster,
-        # pooled together. Cap 1000 per cluster before scoring.
+        # Step 4G — per-cluster scoring: fetch embeddings, score in Python with numpy.
+        # Seed-biased sampling (cap CLUSTER_FETCH_CAP) ensures index-identified seeds
+        # are never evicted before the numpy re-score step.
+        seed_ids_by_cluster: dict = {}
+        for s in seeds:
+            cid = s.get("cluster_id")
+            if cid is not None:
+                seed_ids_by_cluster.setdefault(cid, set()).add(s["shadow_id"])
+
         anchor_shadows = []
         if cluster_ids:
             for cid in cluster_ids:
+                sids = seed_ids_by_cluster.get(cid, set())
                 with driver.session() as session:
                     candidates = session.execute_read(
-                        lambda tx, c=cid: fetch_shadows_in_clusters(tx, [c], filters)
+                        lambda tx, c=cid, s=sids: fetch_shadows_in_clusters(tx, [c], filters, seed_ids=s)
                     )
                 anchor_shadows.extend(score_and_rank(candidates, q_vec, CHUNKS_PER_CLUSTER))
             anchor_shadows.sort(key=lambda x: x["score"], reverse=True)
@@ -727,7 +912,30 @@ class RetrievalOrchestrator:
         for row in similar_rows:
             scores[row["shadow_id"]] = row["score"]
         traversed = traversed + similar_rows
+
+        # Step 5G-c — follow HAS_KEYWORD edges for cross-company thematic linking
+        seen_shadow_ids = {row["shadow_id"] for row in traversed}
+        with driver.session() as session:
+            keyword_rows = session.execute_read(
+                lambda tx: traverse_keyword(tx, shadow_ids, seen_shadow_ids)
+            )
+        keyword_rows = score_and_rank(keyword_rows, q_vec, len(keyword_rows))
+        for row in keyword_rows:
+            scores[row["shadow_id"]] = row["score"]
+        traversed = traversed + keyword_rows
+
         traverse_ms = (time.time() - t0) * 1000
+
+        # Sort traversed by cosine score descending — initial ordering before rerank.
+        traversed.sort(key=lambda r: scores.get(r["shadow_id"], 0.0), reverse=True)
+
+        # Cross-encoder rerank: Graph RAG text is in shadow_text field.
+        # Replaces cosine ordering; scores dict updated so paths reflect CE scores.
+        t0_re = time.time()
+        traversed = rerank(question, traversed, "shadow_text")
+        rerank_ms = (time.time() - t0_re) * 1000
+        for row in traversed:
+            scores[row["shadow_id"]] = row["score"]
 
         # Step 6G — build paths
         paths = build_paths(traversed, scores)
@@ -750,6 +958,7 @@ class RetrievalOrchestrator:
                 "embed_ms":    round(embed_ms,    1),
                 "search_ms":   round(search_ms,   1),
                 "traverse_ms": round(traverse_ms, 1),
+                "rerank_ms":   round(rerank_ms,   1),
                 "llm_ms":      round(llm_ms,      1),
                 "total_ms":    round(total_ms,    1),
             },
@@ -801,8 +1010,6 @@ QUESTIONS = [
     # ------------------------------------------------------------------
     "In which EV startup’s quarterly filing from late 2020 did the board first conclude that a business combination had eliminated all substantial doubt about the company’s going concern status, and what two types of electric vehicles was it developing at that time?",
 
-    "Which EV startup disclosed in a quarterly filing that a completed business combination resolved prior going concern uncertainty, and what types of electric vehicles was it developing at the time?",
-
     # ------------------------------------------------------------------
     # RIVN — exclusivity agreement (original Q5, kept)
     # ------------------------------------------------------------------
@@ -819,6 +1026,23 @@ QUESTIONS = [
     # NKLA — regulatory scrutiny + going concern (original Q12, kept)
     # ------------------------------------------------------------------
     # needle: NKLA — SEC/Hindenburg scrutiny + later going concern doubt
+    #
+    # WHY GRAPH RAG FAILS THIS (2026-03-18):
+    #   Compound condition problem — "regulatory scrutiny" AND "going concern"
+    #   are encoded as a single combined embedding. The vector search routes to
+    #   clusters that score well on the blended concept, but NKLA's Hindenburg /
+    #   SEC scrutiny chunks and its going-concern chunks live in different clusters
+    #   (or are filtered out by the cluster routing step in favour of GM/Ford legal
+    #   proceedings that score higher). RAG gets it right via flat global search
+    #   because it has no cluster gating — both chunk types surface independently.
+    #
+    # FUTURE FIX — agentic multi-query retrieval:
+    #   Split the compound question into two sub-queries:
+    #     1. "Which EV company faced regulatory or legal scrutiny of its business practices?"
+    #     2. "Which EV company expressed substantial doubt about its ability to continue?"
+    #   Run separate vector searches, boost companies that appear in BOTH result
+    #   sets (intersection scoring). This jointly enforces both conditions instead
+    #   of relying on a single blended embedding to capture the conjunction.
     "Which company disclosed both regulatory or legal scrutiny of its business practices and later expressed substantial doubt about its ability to continue operating?",
 ]  
 

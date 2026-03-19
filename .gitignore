@@ -40,5 +40,4 @@ yahoo_finance_txt_clean/
 .claude/
 
 # Personal notes and test files
-Plan.txt
 test_*.py

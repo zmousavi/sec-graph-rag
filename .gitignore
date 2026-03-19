@@ -41,3 +41,6 @@ yahoo_finance_txt_clean/
 
 # Personal notes and test files
 test_*.py
+
+# Legacy package structure
+src/

@@ -12,7 +12,7 @@ WHY EMBEDDINGS:
 
 WHICH NODES GET EMBEDDED:
   Shadow   → text = the raw chunk (1,000 tokens). Fine-grained retrieval.
-  Section  → text = title + first paragraph. Mid-level retrieval.
+  Section  → text = summary. Mid-level retrieval.
   Document → text = LLM-generated summary. Coarse routing ("which filing?").
   Company  → no text field, skipped.
 

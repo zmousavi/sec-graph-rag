@@ -100,7 +100,7 @@ CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 # How many shadows to retrieve in each search pass.
 VECTOR_TOP_K_GLOBAL  = 20   # global pass — used for cluster routing
-CHUNKS_PER_CLUSTER   = 3    # top chunks kept per cluster (3 × 6 clusters = 18 anchors)
+CHUNKS_PER_CLUSTER   = 6    # top chunks kept per cluster (6 × 6 clusters = 36 anchors)
 VECTOR_TOP_K_RAG     = 18   # flat retrieval for RAG baseline — matches Graph RAG anchor count
 
 # How many top clusters to route to after global search.
@@ -521,24 +521,24 @@ def traverse_up(tx, shadow_ids: list) -> list:
 # Step 5G-b — Follow SIMILAR_TO edges to neighboring sections (actual graph hop)
 # ===========================================================================
 
-def traverse_similar(tx, section_ids: list, already_seen: set, top_n: int = 5) -> list:
+def traverse_similar(tx, section_ids: list, already_seen: set, top_n_per_anchor: int = 3) -> list:
     """
-    Follow SIMILAR_TO edges from anchor sections to their neighbors.
-    Returns traversal rows in the same format as traverse_up so they
-    can be merged into the same context.
+    Follow SIMILAR_TO edges from each anchor section to its neighbors.
 
-    SIMILAR_TO edges are built offline in cluster.py via exact pairwise cosine on all
-    Section embeddings (threshold=0.78 → 7209 edges). They encode section-to-section
-    similarity, a different axis than query-to-chunk (vector search).
+    SIMILAR_TO edges are built offline in cluster.py: pairwise cosine on all Section
+    embeddings, threshold=0.78 → ~7 neighbors per section on average. This is the
+    primary graph traversal for pipeline docs (10-K, 10-Q) — they have no LINKED_TO
+    edges, so without SIMILAR_TO Graph RAG would reduce to flat vector search on
+    pipeline content.
 
-    LIMITED VALUE — kept because it is the only graph traversal for pipeline docs:
-    Pipeline docs (10-K, 10-Q) have no LINKED_TO edges — those belong only to
-    user-uploaded docs. Without SIMILAR_TO, Graph RAG has no graph edges to traverse
-    on pipeline content and reduces to flat vector search. In practice the hop is
-    largely redundant: if a neighbor section scores 0.78+ against the anchor, and the
-    anchor scores well against the query, the neighbor almost certainly surfaces in the
-    global vector search anyway. No evaluation improvement observed from this hop.
-    Consider removing once richer edge types (temporal, NLI-based) are added.
+    PER-ANCHOR CAP (top_n_per_anchor=3):
+      Previous design used a single LIMIT across all anchors — 18 sections competed
+      for 5 total slots, so most anchors contributed nothing. Now each anchor section
+      gets up to top_n_per_anchor neighbor sections independently. With 18 anchors
+      this yields up to 54 candidates before cross-encoder reranking filters them down.
+
+    The first shadow of each neighbor section is returned as the content representative.
+    Cross-encoder reranking (called after this function) handles final selection.
     """
     result = tx.run("""
         UNWIND $section_ids AS sid
@@ -547,26 +547,27 @@ def traverse_similar(tx, section_ids: list, already_seen: set, top_n: int = 5) -
         MATCH (doc:Document)-[:HAS_SECTION]->(neighbor)
         OPTIONAL MATCH (co:Company)-[:HAS_DOCUMENT]->(doc)
         MATCH (neighbor)-[:HAS_SHADOW]->(sh:Shadow)
-        WITH neighbor, doc, co, sh
-        ORDER BY neighbor.id, sh.id
-        WITH neighbor, doc, co, collect(sh)[0] AS sh
-        RETURN sh.id            AS shadow_id,
-               sh.text          AS shadow_text,
-               sh.embedding     AS embedding,
-               null             AS cluster_id,
-               null             AS next_chunk_text,
-               neighbor.id      AS section_id,
-               neighbor.title   AS section_title,
-               neighbor.summary AS section_summary,
-               doc.id           AS doc_id,
-               doc.ticker       AS ticker,
-               doc.form_type    AS form_type,
-               doc.period       AS period,
-               co.id            AS company_id,
-               null             AS contains_parent_id,
-               null             AS contains_parent_label
-        LIMIT $top_n
-    """, section_ids=section_ids, seen=list(already_seen), top_n=top_n)
+        WITH sid, neighbor, doc, co, sh
+        ORDER BY sid, neighbor.id, sh.id
+        WITH sid, neighbor, doc, co, collect(sh)[0] AS sh
+        WITH sid, collect({neighbor: neighbor, doc: doc, co: co, sh: sh})[0..$top_n] AS top_neighbors
+        UNWIND top_neighbors AS row
+        RETURN row.sh.id            AS shadow_id,
+               row.sh.text          AS shadow_text,
+               row.sh.embedding     AS embedding,
+               null                 AS cluster_id,
+               null                 AS next_chunk_text,
+               row.neighbor.id      AS section_id,
+               row.neighbor.title   AS section_title,
+               row.neighbor.summary AS section_summary,
+               row.doc.id           AS doc_id,
+               row.doc.ticker       AS ticker,
+               row.doc.form_type    AS form_type,
+               row.doc.period       AS period,
+               row.co.id            AS company_id,
+               null                 AS contains_parent_id,
+               null                 AS contains_parent_label
+    """, section_ids=section_ids, seen=list(already_seen), top_n=top_n_per_anchor)
     return result.data()
 
 
@@ -574,56 +575,62 @@ def traverse_similar(tx, section_ids: list, already_seen: set, top_n: int = 5) -
 # Step 5G-c — Follow HAS_KEYWORD edges for cross-company thematic linking
 # ===========================================================================
 
-def traverse_keyword(tx, shadow_ids: list, already_seen: set, top_n: int = 5) -> list:
+def traverse_keyword(tx, shadow_ids: list, already_seen: set, top_keywords_per_anchor: int = 3, top_neighbors_per_keyword: int = 3) -> list:
     """
-    For the anchor shadows, find their top keywords (by HAS_KEYWORD score),
-    then return other Shadow nodes (not yet seen) that share those keywords.
+    For each anchor shadow, find its top keywords (by HAS_KEYWORD score), then
+    return other Shadow nodes (not yet seen) that share those keywords.
 
     HAS_KEYWORD edges built offline by extract_keywords.py (keyBERT extracts top
     phrases from each Shadow) + load_keywords.py (writes edges to Neo4j with score).
     Connects shadows across companies that share the same keyword node.
 
-    Theoretical benefit: cross-company thematic linking — surfaces NKLA and FSR
-    chunks that both discuss "going concern" or "convertible notes" even if they
-    are in different clusters that were not selected by cluster routing.
+    PER-ANCHOR CAP (top_keywords_per_anchor=3, top_neighbors_per_keyword=3):
+      Previous design collapsed all 18 anchors into 5 global keywords → most anchors
+      contributed nothing to keyword traversal. Now each anchor gets its top
+      top_keywords_per_anchor keywords independently, and each keyword returns up to
+      top_neighbors_per_keyword neighbor shadows. With 18 anchors this yields up to
+      18 × 3 × 3 = 162 candidates (heavily deduplicated in practice) before
+      cross-encoder reranking filters them down.
 
-    Practical reality: keywords are too generic in SEC filings. Terms like
-    "going concern" and "debt acceleration" appear in dozens of chunks across
-    all companies. The hop pulls in noise rather than signal — adds more
-    ambiguous same-concept chunks from the wrong company rather than helping
-    disambiguate. No evaluation improvement observed. Same root limitation as
-    SIMILAR_TO: does not help with disambiguation (FSR vs NKLA) because both
-    companies use identical legal language for the same concepts.
+    Cross-company thematic linking: surfaces chunks from companies not selected by
+    cluster routing if they share specific keyword nodes with the anchor shadows.
+    Cross-encoder reranking (called after this function) handles final selection.
     """
     result = tx.run("""
         UNWIND $shadow_ids AS sid
         MATCH (sh:Shadow {id: sid})-[r:HAS_KEYWORD]->(k:Keyword)
-        WITH k, max(r.score) AS best_score
-        ORDER BY best_score DESC
-        LIMIT 5
+        WITH sid, k, r.score AS kw_score
+        ORDER BY sid, kw_score DESC
+        WITH sid, collect({k: k, score: kw_score})[0..$top_kw] AS top_kws
+        UNWIND top_kws AS kw_row
+        WITH sid, kw_row.k AS k, kw_row.score AS kw_score
         MATCH (neighbor:Shadow)-[:HAS_KEYWORD]->(k)
         WHERE NOT neighbor.id IN $seen
         MATCH (sec:Section)-[:HAS_SHADOW]->(neighbor)
         MATCH (doc:Document)-[:HAS_SECTION]->(sec)
         OPTIONAL MATCH (co:Company)-[:HAS_DOCUMENT]->(doc)
+        WITH sid, neighbor, sec, doc, co, max(kw_score) AS best_kw_score
+        ORDER BY sid, best_kw_score DESC
+        WITH sid, collect({neighbor: neighbor, sec: sec, doc: doc, co: co})[0..$top_nb] AS top_neighbors
+        UNWIND top_neighbors AS row
         RETURN DISTINCT
-               neighbor.id        AS shadow_id,
-               neighbor.text      AS shadow_text,
-               neighbor.embedding AS embedding,
-               null               AS cluster_id,
-               null               AS next_chunk_text,
-               sec.id             AS section_id,
-               sec.title          AS section_title,
-               sec.summary        AS section_summary,
-               doc.id             AS doc_id,
-               doc.ticker         AS ticker,
-               doc.form_type      AS form_type,
-               doc.period         AS period,
-               co.id              AS company_id,
-               null               AS contains_parent_id,
-               null               AS contains_parent_label
-        LIMIT $top_n
-    """, shadow_ids=shadow_ids, seen=list(already_seen), top_n=top_n)
+               row.neighbor.id        AS shadow_id,
+               row.neighbor.text      AS shadow_text,
+               row.neighbor.embedding AS embedding,
+               null                   AS cluster_id,
+               null                   AS next_chunk_text,
+               row.sec.id             AS section_id,
+               row.sec.title          AS section_title,
+               row.sec.summary        AS section_summary,
+               row.doc.id             AS doc_id,
+               row.doc.ticker         AS ticker,
+               row.doc.form_type      AS form_type,
+               row.doc.period         AS period,
+               row.co.id              AS company_id,
+               null                   AS contains_parent_id,
+               null                   AS contains_parent_label
+    """, shadow_ids=shadow_ids, seen=list(already_seen),
+         top_kw=top_keywords_per_anchor, top_nb=top_neighbors_per_keyword)
     return result.data()
 
 
@@ -937,6 +944,12 @@ class RetrievalOrchestrator:
         for row in traversed:
             scores[row["shadow_id"]] = row["score"]
 
+        # Cap traversed to top 20 after reranking before LLM synthesis.
+        # Cross-encoder has already ordered by relevance — keep best 20 only.
+        # Prevents context length errors as traversal pool grows with expanded
+        # CHUNKS_PER_CLUSTER, traverse_similar, and traverse_keyword.
+        traversed = traversed[:20]
+
         # Step 6G — build paths
         paths = build_paths(traversed, scores)
 
@@ -970,7 +983,7 @@ class RetrievalOrchestrator:
 # ===========================================================================
 
 
-QUESTIONS = [
+QUESTIONSSSSSSSSS = [
     # All questions are ticker-free — no company name mentioned.
     # Each targets a specific fact in a real SEC filing (10-K, 10-Q, 8-K, or DEF 14A).
 
@@ -1021,30 +1034,169 @@ QUESTIONS = [
     # ------------------------------------------------------------------
     # needle: NKLA 10-K — going concern language prior to Chapter 11
     "Which commercial vehicle manufacturer later entered bankruptcy proceedings, and what language did it use in its most recent annual report to describe uncertainties about its future operations?",
+] 
+
+# ===========================================================================
+# OLD QUESTIONS — commented out 2026-03-22
+# Problem: all name the company explicitly (Nikola, Fisker, Canoo) so the
+# ticker filter does the narrowing before cluster routing gets a chance.
+# Question vocabulary also closely matches SEC filing language — no semantic
+# gap for Graph RAG to bridge.
+# ===========================================================================
+# QUESTIONS_OLD = [
+#     # NKLA — regulatory scrutiny + going concern (compound condition)
+#     # needle: NKLA SEC/Hindenburg scrutiny + going concern doubt
+#     # answer: Nikola — SEC investigation from Hindenburg short-seller report +
+#     #         "substantial doubt" language in subsequent annual filings.
+#     # why graph rag fails: compound embedding blends two separate concepts;
+#     #                      scrutiny and going-concern chunks live in different
+#     #                      clusters; RAG global search surfaces both independently.
+#     "Which company disclosed both regulatory or legal scrutiny of its business practices and later expressed substantial doubt about its ability to continue operating?",
+#
+#     # NKLA — cash trajectory across 2 annual reports (needs 10-K 2021 + 10-K 2022)
+#     # needle: NKLA 10-K 2021 + NKLA 10-K 2022
+#     # answer: Cash declined from $497.2M (year-end 2021) to $233.4M (year-end 2022).
+#     #         Going concern language appeared in both. Net loss grew from $690.4M to $784.2M.
+#     # why graph rag wins: no year filter — must traverse NKLA 10-K cluster to surface
+#     #                     both documents; RAG may only retrieve one year.
+#     "How did Nikola's cash reserves and going concern language change in the two annual reports before it entered bankruptcy?",
+#
+#     # NKLA — going concern progression across 3 annual reports (10-K 2022 + 2023 + 2024)
+#     # needle: NKLA 10-K 2022 + 2023 + 2024
+#     # answer: Net loss grew from $784.2M (2022) to $966.3M (2023). Going concern language
+#     #         in both. Final filing (2024 10-K) disclosed Chapter 11 filing; Plan of
+#     #         Liquidation confirmed September 12, 2025.
+#     # why graph rag wins: no year filter — must traverse all NKLA 10-K nodes; RAG
+#     #                     retrieves whichever year ranks highest by cosine.
+#     "How did Nikola's financial condition deteriorate across its annual reports leading up to its bankruptcy filing?",
+#
+#     # FSR — distress escalation across 6 8-K filings (Mar–May 2024)
+#     # needle: FSR 8-K 2024-03-18 + 2024-03-25 + 2024-04-03 + 2024-04-04 + 2024-04-22 + 2024-05-08
+#     # answer: (1) Mar 18 — 10-K filing failure triggered debt acceleration;
+#     #         (2) Mar 25 — NYSE suspended trading ("abnormally low" share price);
+#     #         (3) Apr 3  — director McDermott resigned, restructuring explored;
+#     #         (4) Apr 4  — forbearance agreement signed;
+#     #         (5) Apr 22 — CRO Michael Healy appointed, forbearance extended;
+#     #         (6) May 7  — Austrian subsidiary Fisker GmbH filed under Austrian law.
+#     # why graph rag wins: form_type=8-K filter + FSR cluster surfaces all six events;
+#     #                     RAG with 18 chunks retrieves 1-2 events at most.
+#     "What sequence of events did Fisker disclose in its 8-K filings in early 2024 that escalated its financial distress toward bankruptcy?",
+#
+#     # NKLA — proxy + financial filings cross-form (DEF 14A Apr 2024 + 10-K 2023)
+#     # needle: NKLA DEF 14A 2024-04-24 + NKLA 10-K 2023
+#     # answer: Proxy proposed (1) reverse stock split to maintain Nasdaq bid price and
+#     #         (2) broadening investor base. Concurrent 10-K disclosed going concern doubt
+#     #         and net loss of $966.3M.
+#     # why graph rag wins: no form_type filter — must retrieve both DEF 14A and 10-K from
+#     #                     NKLA cluster; cosine query tends to surface one form type only.
+#     "What proposals were put to Nikola stockholders in its April 2024 proxy statement, and what going concern disclosures appeared in Nikola's filings around that same time?",
+#
+#     # GOEV — business combination closing + first going concern (8-K + 10-Q)
+#     # needle: GOEV 8-K Dec 2020 (Hennessy Capital IV merger closed) +
+#     #         GOEV 10-Q May 2021 (first going concern disclosure, ~5 months later)
+#     # answer: Merger closed December 2020. First quarterly filing (May 2021 10-Q)
+#     #         disclosed going concern uncertainty — ~5 months after closing.
+#     # why graph rag wins: requires connecting merger 8-K to subsequent 10-Q across
+#     #                     form types and periods; no single chunk contains both facts.
+#     "What did Canoo disclose in its first quarterly report after completing its business combination, and how soon after the merger did it first raise going concern uncertainty?",
+# ]
+
+
+QUESTIONS = [
+    # ==================================================================
+    # NEW QUESTIONS — 2026-03-22
+    # Design principles:
+    #   1. No company name or ticker in the question text.
+    #   2. Vocabulary gap: question words differ from chunk words.
+    #   3. Multi-document: correct answer requires connecting 2+ filings.
+    #   4. Cross-company where possible: requires ranking across corpus.
+    # ==================================================================
 
     # ------------------------------------------------------------------
-    # NKLA — regulatory scrutiny + going concern (original Q12, kept)
+    # FSR — NYSE suspension + forbearance (vocabulary gap)
     # ------------------------------------------------------------------
-    # needle: NKLA — SEC/Hindenburg scrutiny + later going concern doubt
-    #
-    # WHY GRAPH RAG FAILS THIS (2026-03-18):
-    #   Compound condition problem — "regulatory scrutiny" AND "going concern"
-    #   are encoded as a single combined embedding. The vector search routes to
-    #   clusters that score well on the blended concept, but NKLA's Hindenburg /
-    #   SEC scrutiny chunks and its going-concern chunks live in different clusters
-    #   (or are filtered out by the cluster routing step in favour of GM/Ford legal
-    #   proceedings that score higher). RAG gets it right via flat global search
-    #   because it has no cluster gating — both chunk types surface independently.
-    #
-    # FUTURE FIX — agentic multi-query retrieval:
-    #   Split the compound question into two sub-queries:
-    #     1. "Which EV company faced regulatory or legal scrutiny of its business practices?"
-    #     2. "Which EV company expressed substantial doubt about its ability to continue?"
-    #   Run separate vector searches, boost companies that appear in BOTH result
-    #   sets (intersection scoring). This jointly enforces both conditions instead
-    #   of relying on a single blended embedding to capture the conjunction.
-    "Which company disclosed both regulatory or legal scrutiny of its business practices and later expressed substantial doubt about its ability to continue operating?",
-]  
+    # needle: FSR 8-K 2024-03-25 (NYSE suspended trading, "abnormally low" share price)
+    #         + FSR 8-K 2024-04-04 (forbearance agreement signed with creditor)
+    # answer: Fisker Inc. — NYSE suspended trading citing abnormally low share price
+    #         while the company was simultaneously negotiating a forbearance agreement.
+    # vocabulary gap: question says "suspended from trading" / "negotiating a forbearance"
+    #                 chunks say "NYSE immediately suspended" / "forbearance agreement" —
+    #                 close but spread across two separate 8-K filings; no chunk has both.
+    # why graph rag wins: two 8-K filings in different periods must be connected via FSR
+    #                     cluster traversal; RAG retrieves one or the other, not both.
+    "Which EV company's stock was suspended from trading by a national exchange while it was simultaneously negotiating a forbearance agreement with its creditors?",
+
+    # ------------------------------------------------------------------
+    # NKLA — Hindenburg allegations (strong vocabulary gap)
+    # ------------------------------------------------------------------
+    # needle: NKLA 10-K 2021 / 10-Q (SEC investigation section, Hindenburg Research report)
+    # answer: Nikola Corporation — Hindenburg Research published a report alleging the
+    #         company misrepresented its technology (including staging a truck rolling
+    #         downhill as "in motion under its own power"). Led to SEC/DOJ investigation.
+    # vocabulary gap: question says "misrepresented the capabilities of its products
+    #                 before they existed" — chunks say "short seller report",
+    #                 "Hindenburg Research", "allegations", "SEC subpoena". Real gap.
+    # why graph rag wins: allegation chunks and SEC investigation chunks live in different
+    #                     sections; cluster traversal connects them; RAG may surface only one.
+    "Which EV startup faced public allegations that it had misrepresented the capabilities of its products before those products existed, and which external party first made those allegations?",
+
+    # ------------------------------------------------------------------
+    # RIVN — Amazon exclusivity agreement (vocabulary gap)
+    # ------------------------------------------------------------------
+    # needle: RIVN 10-K 2022 / 2023 (commercial agreement with Amazon, exclusivity period,
+    #         right of first refusal, no minimum purchase commitment)
+    # answer: Rivian — commercial agreement with Amazon gave Amazon exclusivity on
+    #         electric delivery vans through 2025; after expiry converts to right of
+    #         first refusal; Amazon has no minimum purchase obligation.
+    # vocabulary gap: question says "largest commercial customer" / "exclusive rights" —
+    #                 chunks say "commercial agreement", "exclusivity period",
+    #                 "right of first refusal". Moderate gap.
+    # why graph rag wins: exclusivity terms and right-of-first-refusal terms appear in
+    #                     different sections/filings; cluster traversal surfaces both.
+    "Which EV manufacturer disclosed that its largest commercial customer held exclusive rights to purchase a specific vehicle type for a defined period, and what happened to those rights after the exclusivity window expired?",
+
+    # ------------------------------------------------------------------
+    # GOEV — merger → going concern within 6 months (multi-hop temporal)
+    # ------------------------------------------------------------------
+    # needle: GOEV 8-K Dec 2020 (Hennessy Capital IV business combination closed) +
+    #         GOEV 10-Q May 2021 (first going concern disclosure, ~5 months post-merger)
+    # answer: Canoo — business combination with Hennessy Capital IV closed December 2020;
+    #         going concern doubt first disclosed in May 2021 10-Q, ~5 months later.
+    # vocabulary gap: question says "doubt about its ability to survive" / "supposed to
+    #                 fund its operations" — chunks say "going concern" / "substantial doubt"
+    #                 / "business combination". Gap on "survive" vs "going concern".
+    # why graph rag wins: merger date (8-K) and going concern (10-Q) are in different
+    #                     documents with different form_types and periods; no single chunk
+    #                     contains both; cluster traversal connects them.
+    "Which EV company first raised doubt about its ability to survive within six months of completing a merger that was supposed to provide the capital to fund its operations?",
+
+    # ------------------------------------------------------------------
+    # Cross-company — highest cash before bankruptcy (comparative, no ticker)
+    # ------------------------------------------------------------------
+    # needle: NKLA 10-K 2022 ($233.4M cash at year-end) vs FSR 10-K 2023 vs GOEV 10-K/10-Q
+    # answer: Nikola — held ~$233M cash at end of fiscal 2022 (its last full-year filing
+    #         before Chapter 11 in August 2023), more than FSR or GOEV at equivalent points.
+    # vocabulary gap: question says "held the most cash" — chunks say "cash and cash
+    #                 equivalents", "liquidity", "balance sheet". Moderate gap.
+    # why graph rag wins: requires retrieving and comparing financial data across NKLA,
+    #                     FSR, and GOEV simultaneously; no metadata filter narrows to one
+    #                     company; cluster routing must surface all three bankrupt EV clusters.
+    "Among the EV startups that later filed for bankruptcy, which one held the most cash at the end of its last complete fiscal year before filing?",
+
+    # ------------------------------------------------------------------
+    # Cross-company — which two disclosed going concern in same quarter (no ticker)
+    # ------------------------------------------------------------------
+    # needle: NKLA 10-Q Q3 2022 + GOEV 10-Q Q3 2022 (both disclosed going concern doubt
+    #         in filings for the quarter ending September 30, 2022)
+    # answer: Nikola and Canoo both disclosed going concern doubt in their Q3 2022
+    #         quarterly reports (period ending September 30, 2022).
+    # vocabulary gap: question says "financial survival concerns" — chunks say
+    #                 "substantial doubt", "going concern", "ability to continue". Gap exists.
+    # why graph rag wins: requires finding two different companies' 10-Q filings from the
+    #                     same period; ticker filter cannot help (no company named);
+    #                     cluster routing must surface both NKLA and GOEV going-concern clusters.
+    "Which two EV startups both disclosed financial survival concerns in their quarterly filings for the same calendar quarter?",
+]
 
 
 if __name__ == "__main__":

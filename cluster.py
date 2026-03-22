@@ -7,6 +7,10 @@ Assigns a cluster_id to every Section and Shadow node so the retrieval
 engine can route queries to the right neighborhood instead of searching
 the entire graph.
 
+MUST RUN AFTER: load_neo4j.py, embed.py, extract_keywords.py, load_keywords.py
+  Phase 1b uses HAS_KEYWORD edges already loaded in Neo4j. Run extract_keywords.py
+  and load_keywords.py before cluster.py or Phase 1b will produce no edges.
+
 WHY NOT LOUVAIN ON STRUCTURAL EDGES:
   The financial graph is a tree (Company → Document → Section → Shadow).
   Louvain on a tree produces one cluster per branch — each document becomes
@@ -22,13 +26,26 @@ WHY SECTION LEVEL (NOT SHADOW):
   cluster_id is then propagated from Section down to its Shadow children.
 
 HOW IT WORKS:
-  Phase 1 — Build similarity edges
+  Phase 1 — Build embedding similarity edges
     Load Section embeddings from manifest/embeddings.parquet.
     Compute cosine similarity between all pairs of Section nodes.
     Write [:SIMILAR_TO {score}] edges for pairs above SIMILARITY_THRESHOLD.
 
+  Phase 1b — Build keyword co-occurrence edges
+    Query Neo4j for Section pairs whose Shadow children share specific keywords
+    via HAS_KEYWORD edges (written by load_keywords.py).
+    Write [:SIMILAR_TO] edges for pairs sharing >= KEYWORD_EDGE_MIN_SHARED keywords
+    where no embedding-based edge already exists.
+    WHY THIS MATTERS: embedding similarity captures semantic closeness but misses
+    company-specific terminology. "Hindenburg" only appears in NKLA chunks —
+    keyword co-occurrence bonds NKLA allegation sections together so Louvain keeps
+    them in a tight NKLA-specific cluster rather than merging them into a generic
+    EV legal cluster with TSLA. Specific named entities (people, organisations,
+    products) that appear in only one company's filings create strong intra-company
+    bonds that embeddings alone cannot produce.
+
   Phase 2 — Run Louvain (GDS)
-    Project Section nodes + SIMILAR_TO edges into GDS memory.
+    Project Section nodes + all SIMILAR_TO edges (both sources) into GDS memory.
     Run gds.louvain.write → writes cluster_id to every Section node.
 
   Phase 3 — Propagate cluster_id down to Shadow nodes
@@ -39,13 +56,24 @@ HOW IT WORKS:
     Flag if coverage is incomplete.
 
 TUNING THE THRESHOLD:
-  SIMILARITY_THRESHOLD = 0.82 is the starting point.
+  SIMILARITY_THRESHOLD = 0.78 (current).
   Too low  (< 0.75) → one giant cluster, no routing signal.
   Too high (> 0.92) → most sections are singletons, also useless.
   If the distribution shows one cluster with >50% of nodes, lower it.
   If most clusters have 1-2 nodes, raise it.
-  Run the singleton check after each run:
-    66 singletons at 0.82 → lowered to 0.78.
+  Threshold history:
+    0.82 → 188 clusters, 66 singletons (too many isolated sections)
+    0.78 → current (121 clusters, modularity=0.757)
+
+KEYWORD_EDGE_MIN_SHARED = 8 (current).
+  Sections must share at least 8 keyword nodes to get a co-occurrence edge.
+  Too low  (1-3) → generic bankruptcy/distress vocabulary ("going concern",
+    "restructuring") creates cross-company noise edges that merge FSR + NKLA
+    into the same cluster, making disambiguation worse not better.
+  Too high (15+) → only near-identical sections connect, no new signal.
+  Threshold history:
+    3 → FSR+NKLA merged into cluster 2519 (287 sections) — too low
+    8 → current
 
 Requirements:
   pip install neo4j python-dotenv scikit-learn pandas pyarrow numpy
@@ -93,8 +121,13 @@ NEO4J_PASS = os.getenv("NEO4J_PASSWORD", "")
 #
 # Threshold history:
 #   0.82 → 188 clusters, 66 singletons (too many isolated sections)
-#   0.78 → current (lowered to reduce singletons and merge small clusters)
+#   0.78 → current (121 clusters, modularity=0.757)
 SIMILARITY_THRESHOLD = 0.78
+
+# Minimum shared keywords between two sections to create a co-occurrence edge.
+# Sections must share at least this many Keyword nodes (via their Shadow children)
+# to receive a SIMILAR_TO edge from Phase 1b.
+KEYWORD_EDGE_MIN_SHARED = 8
 
 # GDS graph projection name (in-memory, dropped after use).
 GRAPH_NAME = "financial-similarity-graph"
@@ -191,6 +224,66 @@ def build_similarity_edges(session, ids: list, matrix: np.ndarray):
         written += len(batch)
 
     print(f"  Wrote {written} SIMILAR_TO edges to Neo4j.")
+    return written
+
+
+# ===========================================================================
+# Phase 1b — Build keyword co-occurrence edges
+# ===========================================================================
+
+def build_keyword_cooccurrence_edges(session) -> int:
+    """
+    Add SIMILAR_TO edges between Section pairs whose Shadow children share
+    specific keywords via HAS_KEYWORD edges.
+
+    Only creates edges where none already exist from Phase 1 embedding similarity —
+    fills in topical bonds that cosine similarity misses. The key benefit is
+    company-specific terminology: a keyword like "Hindenburg" only appears in NKLA
+    chunks, so keyword co-occurrence creates strong intra-NKLA bonds that keep
+    NKLA allegation sections in a tight cluster instead of merging them with
+    generic EV legal content from TSLA or GM.
+
+    Score = min(shared_keyword_count / 10.0, 1.0), normalized to [0, 1].
+
+    Requires HAS_KEYWORD edges to be loaded (run extract_keywords.py +
+    load_keywords.py before cluster.py).
+    """
+    print("  Querying keyword co-occurrence between sections...")
+    result = session.run("""
+        MATCH (a:Section)-[:HAS_SHADOW]->(sa:Shadow)-[:HAS_KEYWORD]->(k:Keyword)
+              <-[:HAS_KEYWORD]-(sb:Shadow)<-[:HAS_SHADOW]-(b:Section)
+        WHERE a.id < b.id
+        WITH a, b, count(DISTINCT k) AS shared_count
+        WHERE shared_count >= $min_shared
+          AND NOT (a)-[:SIMILAR_TO]-(b)
+        RETURN a.id AS id_a, b.id AS id_b, shared_count
+    """, min_shared=KEYWORD_EDGE_MIN_SHARED)
+
+    pairs = result.data()
+    print(f"  Found {len(pairs)} keyword co-occurrence pairs (no existing SIMILAR_TO edge).")
+
+    if not pairs:
+        print("  Skipping — no pairs found. Ensure extract_keywords.py + load_keywords.py have been run.")
+        return 0
+
+    BATCH = 500
+    written = 0
+    for start in range(0, len(pairs), BATCH):
+        batch = pairs[start : start + BATCH]
+        params = [{
+            "a": r["id_a"],
+            "b": r["id_b"],
+            "score": round(min(r["shared_count"] / 10.0, 1.0), 4)
+        } for r in batch]
+        session.run("""
+            UNWIND $rows AS row
+            MATCH (a:Section {id: row.a})
+            MATCH (b:Section {id: row.b})
+            MERGE (a)-[:SIMILAR_TO {score: row.score}]->(b)
+        """, rows=params)
+        written += len(batch)
+
+    print(f"  Wrote {written} keyword co-occurrence SIMILAR_TO edges.")
     return written
 
 
@@ -332,6 +425,14 @@ if __name__ == "__main__":
         print("\nAborting — no edges to cluster on. Adjust SIMILARITY_THRESHOLD.")
         driver.close()
         exit(1)
+
+    # Phase 1b — disabled: keyword co-occurrence edges hurt cluster quality for
+    # distressed EV companies (FSR + NKLA share generic bankruptcy vocabulary,
+    # causing them to merge into the same cluster regardless of threshold).
+    # HAS_KEYWORD edges are used only at retrieval time (traverse_keyword in retrieve.py).
+    # print("\nPhase 1b — Adding keyword co-occurrence edges")
+    # with driver.session() as session:
+    #     build_keyword_cooccurrence_edges(session)
 
     # Phase 2
     print("\nPhase 2 — Running Louvain (GDS)")
